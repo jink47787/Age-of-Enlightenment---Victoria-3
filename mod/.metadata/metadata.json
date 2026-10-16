@@ -1,0 +1,40 @@
+{
+  "name": "Age of Enlightenment",
+  "id": "aoe_vic3",
+  "version": "0.1",
+  "supported_game_version": "1.13.*",
+  "short_description": "Age of Enlightenment: the AoE Remake world of 1700, ported from Victoria 2.",
+  "tags": [
+    "Total Conversion",
+    "Map",
+    "Historical"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true,
+    "replace_paths": [
+      "common/country_definitions",
+      "common/flag_definitions",
+      "common/history/ai",
+      "common/history/buildings",
+      "common/history/characters",
+      "common/history/countries",
+      "common/history/diplomacy",
+      "common/history/diplomatic_plays",
+      "common/history/global",
+      "common/history/governments",
+      "common/history/interests",
+      "common/history/lobbies",
+      "common/history/military_deployments",
+      "common/history/military_formations",
+      "common/history/political_movements",
+      "common/history/pops",
+      "common/history/population",
+      "common/history/power_blocs",
+      "common/history/production_methods",
+      "common/history/states",
+      "common/history/trade",
+      "common/history/treaties"
+    ]
+  }
+}

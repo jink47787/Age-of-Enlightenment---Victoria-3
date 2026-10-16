@@ -1,0 +1,16 @@
+﻿geographic_region_ring_of_fire = {
+	short_key = ring_of_fire
+	strategic_regions = { sr:region_indonesia sr:region_pacific_coast sr:region_gran_colombia sr:region_andes sr:region_la_plata }
+	state_regions = { STATE_TE_IKA_A_MAUI STATE_TE_WAIPOUNAMU STATE_SONORA STATE_CHIHUAHUA STATE_DURANGO STATE_MEXICO STATE_GUERRERO STATE_JALISCO STATE_ZACATECAS STATE_ELLICE_ISLANDS STATE_SOUTHERN_MALAYA STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_CHUGOKU STATE_TAINAN STATE_POGOBI }
+}
+
+geographic_region_alpide_belt = {
+	short_key = alpide_belt
+	strategic_regions = { sr:region_southern_europe sr:region_near_east sr:region_greater_persia sr:region_himalayas sr:region_north_india sr:region_indochina }
+	state_regions = { STATE_TUNISIA STATE_MARRAKESH STATE_RABAT STATE_AJDIR STATE_ORAN STATE_ALGIERS STATE_MITTELLAND STATE_WEST_SWITZERLAND STATE_KALAT STATE_KARACHI STATE_KULOB STATE_TIROL STATE_OSTERREICH }
+}
+
+geographic_region_great_rift_valley = {
+	short_key = great_rift_valley
+	strategic_regions = { sr:region_nile_basin sr:region_east_africa }
+}

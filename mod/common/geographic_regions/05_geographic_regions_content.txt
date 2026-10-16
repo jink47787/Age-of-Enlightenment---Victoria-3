@@ -1,0 +1,19 @@
+﻿geographic_region_wet_process_coffee_region = {
+	short_key = wet_process_region
+	strategic_regions = { sr:region_indonesia sr:region_central_america sr:region_gran_colombia sr:region_south_india sr:region_east_africa sr:region_equatorial_africa }
+}
+
+geographic_region_new_world = {
+	short_key = new_world
+	strategic_regions = { sr:region_oceania sr:region_canada sr:region_atlantic_coast sr:region_pacific_coast sr:region_great_plains sr:region_central_america sr:region_brazil sr:region_la_plata sr:region_andes sr:region_gran_colombia sr:region_southern_africa }
+}
+
+geographic_region_old_world = {
+	short_key = old_world
+	strategic_regions = { sr:region_balkans sr:region_russia sr:region_eastern_europe sr:region_near_east sr:region_arabia sr:region_greater_persia sr:region_himalayas sr:region_central_asia sr:region_north_india sr:region_south_india sr:region_south_china sr:region_north_china sr:region_northeast_asia sr:region_siberia sr:region_indonesia sr:region_indochina sr:region_nile_basin sr:region_north_africa sr:region_west_africa sr:region_equatorial_africa sr:region_east_africa sr:region_western_europe sr:region_northern_europe sr:region_southern_europe sr:region_central_europe }
+}
+
+geographic_region_krakatoa_tsunami_zone = {
+	short_key = krakatoa_tsunami_zone
+	state_regions = { STATE_HAWAIIAN_ISLANDS STATE_NEW_SOUTH_WALES STATE_VICTORIA STATE_QUEENSLAND STATE_SOUTH_AUSTRALIA STATE_WESTERN_AUSTRALIA STATE_NORTHERN_TERRITORY STATE_TE_IKA_A_MAUI STATE_TE_WAIPOUNAMU STATE_MARIANA_ISLANDS STATE_WEST_JAVA STATE_CEYLON STATE_BECHUANALAND STATE_ZAMBIA STATE_CAMBODIA STATE_TAHITI STATE_ELLICE_ISLANDS STATE_MAURITIUS STATE_GAZA STATE_MOCAMBIQUE STATE_SENA STATE_GQEBERHA STATE_CAPE_TOWN STATE_GAMKA STATE_CUTTACK STATE_SRIKAKULAM STATE_MYSORE STATE_CALICUT STATE_MADRAS STATE_HYDERABAD STATE_PATNA STATE_WEST_BENGAL STATE_EAST_BENGAL STATE_ASSAM STATE_MOULMEIN STATE_HAKA STATE_MANDALAY STATE_RANGOON STATE_JAMBI STATE_BANDA_ACEH STATE_BIAK STATE_CELEBES STATE_EAST_BORNEO STATE_BALI STATE_SOUTHERN_MALAYA STATE_WEST_BORNEO STATE_MINDANAO STATE_LUZON STATE_VISAYAS STATE_AMPANIHY STATE_MAHAJANGA STATE_ANKOBER STATE_HAWASSA STATE_GONDER STATE_MPIKA STATE_ASMARA STATE_MOGADISHU STATE_NOMABEB STATE_OTJOZONDJII STATE_MASHONALAND STATE_MARSABIT STATE_LODWAR STATE_LINDI STATE_MOMBASA STATE_KIGALI STATE_ENTEBBE STATE_ZULULAND STATE_BASUTOLAND STATE_TKY_GARIEP STATE_PORT_MORESBY STATE_MADANG STATE_KIRIBATI STATE_FIJI STATE_CHRISTMAS_COCOS_ISLANDS STATE_AYUTTHAYA STATE_VINHLONG STATE_CAO_BANG STATE_THANH_HOA STATE_LAOS STATE_SHAN STATE_ISAN STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_CHUGOKU STATE_WEST_SICHUAN STATE_YUNNAN STATE_CHAOZHOU STATE_GUANGXI STATE_KUIZHOU STATE_EAST_CANTON STATE_ZHANGZHOU STATE_WENZHOU STATE_SUZHOU STATE_GANZHOU STATE_HUIZHOU STATE_XIANGYANG STATE_HANYANG STATE_HUNAN STATE_WEST_CANTON STATE_HONG_KONG STATE_MACAO STATE_SHANGHAI STATE_JIAXING STATE_NINGBO STATE_TAINAN STATE_MASULIPATNAM STATE_NAGAPATAM STATE_VIZAG STATE_TRANQUEBAR STATE_YANAM STATE_PONDICHIERRY STATE_POGOBI }
+}

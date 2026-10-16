@@ -1,0 +1,38 @@
+﻿mormon = {
+	icon = gfx/interface/icons/religion_icons/protestant.dds
+	heritage = heritage_christian
+	color = { 0 0 0.5 }
+}
+
+druze = {
+	icon = gfx/interface/icons/religion_icons/shiite.dds
+	heritage = heritage_islamic
+	color = { 0.7 0.8 0.6 }
+	taboos = { liquor wine }
+}
+
+yazidi = {
+	icon = gfx/interface/icons/religion_icons/sunni.dds
+	heritage = heritage_islamic
+	color = { 0.4 0.0 1.0 }
+	taboos = { liquor wine }
+}
+
+taoist = {
+	icon = gfx/interface/icons/religion_icons/confucianism.dds
+	heritage = heritage_taoic
+	color = { 1 1 1 }
+}
+
+tengri = {
+	icon = gfx/interface/icons/religion_icons/animist.dds
+	heritage = heritage_indigenous
+	color = { 0 0.6 0.6 }
+}
+
+zoroastrian = {
+	icon = gfx/interface/icons/religion_icons/shiite.dds
+	heritage = heritage_islamic
+	color = { 1 0.8 0.1 }
+	taboos = { liquor wine }
+}

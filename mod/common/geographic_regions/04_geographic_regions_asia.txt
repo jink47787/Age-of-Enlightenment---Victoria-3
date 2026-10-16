@@ -1,0 +1,145 @@
+﻿geographic_region_asia = {
+	short_key = asia
+	strategic_regions = { sr:region_near_east sr:region_arabia sr:region_greater_persia sr:region_himalayas sr:region_central_asia sr:region_north_india sr:region_south_india sr:region_south_china sr:region_north_china sr:region_northeast_asia sr:region_siberia sr:region_indonesia sr:region_indochina sr:region_oceania }
+}
+
+geographic_region_middle_east = {
+	short_key = middle_east
+	strategic_regions = { sr:region_near_east sr:region_arabia sr:region_greater_persia }
+}
+
+geographic_region_india = {
+	short_key = india
+	strategic_regions = { sr:region_north_india sr:region_south_india }
+	state_regions = { STATE_KALAT STATE_SRINAGAR }
+}
+
+geographic_region_east_asia = {
+	short_key = east_asia
+	strategic_regions = { sr:region_south_china sr:region_north_china sr:region_northeast_asia sr:region_siberia }
+}
+
+geographic_region_south_east_asia = {
+	short_key = south_east_asia
+	strategic_regions = { sr:region_indonesia sr:region_indochina }
+}
+
+geographic_region_china = {
+	short_key = china
+	strategic_regions = { sr:region_south_china sr:region_north_china }
+}
+
+geographic_region_greater_khorasan = {
+	short_key = greater_khorasan
+	state_regions = { STATE_KUNDUZ STATE_GHAZNI }
+}
+
+geographic_region_chorasmia = {
+	short_key = chorasmia
+	state_regions = { STATE_GURGENCH }
+}
+
+geographic_region_transoxiana = {
+	short_key = transoxiana
+	state_regions = { STATE_KULOB }
+}
+
+geographic_region_honshu = {
+	short_key = honshu
+	state_regions = { STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_CHUGOKU }
+}
+
+geographic_region_ezochi = {
+	short_key = ezochi
+	state_regions = { STATE_EZO STATE_POGOBI }
+}
+
+geographic_region_japan = {
+	short_key = japan
+	state_regions = { STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_CHUGOKU STATE_POGOBI }
+}
+
+geographic_region_philippines = {
+	short_key = philippines
+	state_regions = { STATE_MINDANAO STATE_LUZON STATE_VISAYAS }
+}
+
+geographic_region_home_islands = {
+	short_key = home_islands
+	state_regions = { STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_CHUGOKU }
+}
+
+geographic_region_korea = {
+	short_key = korea
+	state_regions = { STATE_HANSEONG STATE_KWANGJU STATE_SARIWON STATE_PYONGYANG }
+}
+
+geographic_region_han_homelands = {
+	short_key = han_homelands
+	state_regions = { STATE_WEST_SICHUAN STATE_YUNNAN STATE_CHAOZHOU STATE_GUANGXI STATE_WEST_SHANDONG STATE_ZHONGDING STATE_SHANXI STATE_NINGXIA STATE_GANSU STATE_KUIZHOU STATE_EAST_CANTON STATE_ZHANGZHOU STATE_WENZHOU STATE_SUZHOU STATE_SIZHOU STATE_NANYANG STATE_DAMING STATE_GANZHOU STATE_HUIZHOU STATE_FENGYANG STATE_XIANGYANG STATE_HANYANG STATE_HUNAN STATE_WEST_CANTON STATE_HONG_KONG STATE_MACAO STATE_QINGDAO STATE_WEIHAIWEI STATE_SHANGHAI STATE_JIAXING STATE_NINGBO STATE_PORT_ARTHUR STATE_TAINAN }
+}
+
+geographic_region_indian_frontier = {
+	short_key = indian_frontier
+	state_regions = { STATE_KALAT STATE_KARACHI STATE_LAHORE STATE_SRINAGAR STATE_HAKA STATE_MANDALAY STATE_RANGOON }
+}
+
+geographic_region_turkestan = {
+	short_key = turkestan
+	state_regions = { STATE_KHIVA STATE_KULOB STATE_ALAY STATE_USTYURT STATE_GURGENCH STATE_AKMOLINSK }
+}
+
+geographic_region_burma = {
+	short_key = burma
+	state_regions = { STATE_HAKA STATE_MANDALAY STATE_RANGOON }
+}
+
+geographic_region_afghanistan = {
+	short_key = afghanistan
+	state_regions = { STATE_KUNDUZ STATE_GHAZNI }
+}
+
+geographic_region_greater_afghanistan = {
+	short_key = greater_afghanistan
+	state_regions = { STATE_KALAT STATE_KUNDUZ STATE_GHAZNI }
+}
+
+geographic_region_great_game_region = {
+	short_key = great_game_region
+	strategic_regions = { sr:region_greater_persia sr:region_central_asia }
+}
+
+geographic_region_australia = {
+	short_key = australia
+	state_regions = { STATE_NEW_SOUTH_WALES STATE_VICTORIA STATE_QUEENSLAND STATE_SOUTH_AUSTRALIA STATE_WESTERN_AUSTRALIA STATE_NORTHERN_TERRITORY }
+}
+
+geographic_region_new_zealand = {
+	short_key = new_zealand
+	state_regions = { STATE_TE_IKA_A_MAUI STATE_TE_WAIPOUNAMU }
+}
+
+geographic_region_australasia = {
+	short_key = australasia
+	state_regions = { STATE_NEW_SOUTH_WALES STATE_VICTORIA STATE_QUEENSLAND STATE_SOUTH_AUSTRALIA STATE_WESTERN_AUSTRALIA STATE_NORTHERN_TERRITORY STATE_TE_IKA_A_MAUI STATE_TE_WAIPOUNAMU }
+}
+
+geographic_region_delhi_calcutta_line = {
+	short_key = delhi_calcutta_line
+	state_regions = { STATE_PATNA STATE_DELHI }
+}
+
+geographic_region_allahabad_bombay_line = {
+	short_key = allahabad_bombay_line
+	state_regions = { STATE_EAST_BERAR STATE_JUBBULPORE STATE_BOMBAY STATE_DELHI STATE_BASSEIN STATE_GOA }
+}
+
+geographic_region_bombay_madras_line = {
+	short_key = bombay_madras_line
+	state_regions = { STATE_SRIKAKULAM STATE_MADRAS STATE_HYDERABAD STATE_BOMBAY STATE_NAGAPATAM STATE_TRANQUEBAR STATE_BASSEIN STATE_PONDICHIERRY STATE_GOA }
+}
+
+geographic_region_gujarat_bombay_line = {
+	short_key = gujarat_bombay_line
+	state_regions = { STATE_AHMEDABAD STATE_BOMBAY STATE_DIU STATE_SURAT STATE_BASSEIN STATE_GOA }
+}

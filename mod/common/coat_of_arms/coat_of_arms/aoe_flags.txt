@@ -1,0 +1,1902 @@
+﻿aoe_ABB = { textured_emblem = { texture = "aoe/ABB.tga" } }
+aoe_ABB_monarchy = { textured_emblem = { texture = "aoe/ABB_monarchy.tga" } }
+aoe_ABB_republic = { textured_emblem = { texture = "aoe/ABB_republic.tga" } }
+aoe_ABB_dominion = { textured_emblem = { texture = "aoe/ABB_dominion.tga" } }
+aoe_ABK = { textured_emblem = { texture = "aoe/ABK.tga" } }
+aoe_ABK_monarchy = { textured_emblem = { texture = "aoe/ABK_monarchy.tga" } }
+aoe_ABK_republic = { textured_emblem = { texture = "aoe/ABK_republic.tga" } }
+aoe_ABK_dominion = { textured_emblem = { texture = "aoe/ABK_dominion.tga" } }
+aoe_ACH = { textured_emblem = { texture = "aoe/ACH.tga" } }
+aoe_ACH_monarchy = { textured_emblem = { texture = "aoe/ACH_monarchy.tga" } }
+aoe_ACH_republic = { textured_emblem = { texture = "aoe/ACH_republic.tga" } }
+aoe_ACH_dominion = { textured_emblem = { texture = "aoe/ACH_dominion.tga" } }
+aoe_AFG = { textured_emblem = { texture = "aoe/AFG.tga" } }
+aoe_AFG_monarchy = { textured_emblem = { texture = "aoe/AFG_monarchy.tga" } }
+aoe_AFG_republic = { textured_emblem = { texture = "aoe/AFG_republic.tga" } }
+aoe_AFG_dominion = { textured_emblem = { texture = "aoe/AFG_dominion.tga" } }
+aoe_AGC = { textured_emblem = { texture = "aoe/AGC.tga" } }
+aoe_AGC_monarchy = { textured_emblem = { texture = "aoe/AGC_monarchy.tga" } }
+aoe_AGC_republic = { textured_emblem = { texture = "aoe/AGC_republic.tga" } }
+aoe_AGC_dominion = { textured_emblem = { texture = "aoe/AGC_dominion.tga" } }
+aoe_ALD = { textured_emblem = { texture = "aoe/ALD.tga" } }
+aoe_ALD_monarchy = { textured_emblem = { texture = "aoe/ALD_monarchy.tga" } }
+aoe_ALD_republic = { textured_emblem = { texture = "aoe/ALD_republic.tga" } }
+aoe_ALD_dominion = { textured_emblem = { texture = "aoe/ALD_dominion.tga" } }
+aoe_ANH = { textured_emblem = { texture = "aoe/ANH.tga" } }
+aoe_ANH_monarchy = { textured_emblem = { texture = "aoe/ANH_monarchy.tga" } }
+aoe_ANH_republic = { textured_emblem = { texture = "aoe/ANH_republic.tga" } }
+aoe_ANH_dominion = { textured_emblem = { texture = "aoe/ANH_dominion.tga" } }
+aoe_ANK = { textured_emblem = { texture = "aoe/ANK.tga" } }
+aoe_ANK_monarchy = { textured_emblem = { texture = "aoe/ANK_monarchy.tga" } }
+aoe_ANK_republic = { textured_emblem = { texture = "aoe/ANK_republic.tga" } }
+aoe_ANK_dominion = { textured_emblem = { texture = "aoe/ANK_dominion.tga" } }
+aoe_ANS = { textured_emblem = { texture = "aoe/ANS.tga" } }
+aoe_ANS_monarchy = { textured_emblem = { texture = "aoe/ANS_monarchy.tga" } }
+aoe_ANS_republic = { textured_emblem = { texture = "aoe/ANS_republic.tga" } }
+aoe_ANS_dominion = { textured_emblem = { texture = "aoe/ANS_dominion.tga" } }
+aoe_APC = { textured_emblem = { texture = "aoe/APC.tga" } }
+aoe_APC_monarchy = { textured_emblem = { texture = "aoe/APC_monarchy.tga" } }
+aoe_APC_republic = { textured_emblem = { texture = "aoe/APC_republic.tga" } }
+aoe_APC_dominion = { textured_emblem = { texture = "aoe/APC_dominion.tga" } }
+aoe_ARK = { textured_emblem = { texture = "aoe/ARK.tga" } }
+aoe_ARK_monarchy = { textured_emblem = { texture = "aoe/ARK_monarchy.tga" } }
+aoe_ARK_republic = { textured_emblem = { texture = "aoe/ARK_republic.tga" } }
+aoe_ARK_dominion = { textured_emblem = { texture = "aoe/ARK_dominion.tga" } }
+aoe_ARO = { textured_emblem = { texture = "aoe/ARO.tga" } }
+aoe_ARO_monarchy = { textured_emblem = { texture = "aoe/ARO_monarchy.tga" } }
+aoe_ARO_republic = { textured_emblem = { texture = "aoe/ARO_republic.tga" } }
+aoe_ARO_dominion = { textured_emblem = { texture = "aoe/ARO_dominion.tga" } }
+aoe_ASH = { textured_emblem = { texture = "aoe/ASH.tga" } }
+aoe_ASH_monarchy = { textured_emblem = { texture = "aoe/ASH_monarchy.tga" } }
+aoe_ASH_republic = { textured_emblem = { texture = "aoe/ASH_republic.tga" } }
+aoe_ASH_dominion = { textured_emblem = { texture = "aoe/ASH_dominion.tga" } }
+aoe_ASM = { textured_emblem = { texture = "aoe/ASM.tga" } }
+aoe_ASM_monarchy = { textured_emblem = { texture = "aoe/ASM_monarchy.tga" } }
+aoe_ASM_republic = { textured_emblem = { texture = "aoe/ASM_republic.tga" } }
+aoe_ASM_dominion = { textured_emblem = { texture = "aoe/ASM_dominion.tga" } }
+aoe_ATJ = { textured_emblem = { texture = "aoe/ATJ.tga" } }
+aoe_ATJ_monarchy = { textured_emblem = { texture = "aoe/ATJ_monarchy.tga" } }
+aoe_ATJ_republic = { textured_emblem = { texture = "aoe/ATJ_republic.tga" } }
+aoe_ATJ_dominion = { textured_emblem = { texture = "aoe/ATJ_dominion.tga" } }
+aoe_AUG = { textured_emblem = { texture = "aoe/AUG.tga" } }
+aoe_AUG_monarchy = { textured_emblem = { texture = "aoe/AUG_monarchy.tga" } }
+aoe_AUG_republic = { textured_emblem = { texture = "aoe/AUG_republic.tga" } }
+aoe_AUG_dominion = { textured_emblem = { texture = "aoe/AUG_dominion.tga" } }
+aoe_AUS = { textured_emblem = { texture = "aoe/AUS.tga" } }
+aoe_AUS_monarchy = { textured_emblem = { texture = "aoe/AUS_monarchy.tga" } }
+aoe_AUS_republic = { textured_emblem = { texture = "aoe/AUS_republic.tga" } }
+aoe_AUS_dominion = { textured_emblem = { texture = "aoe/AUS_dominion.tga" } }
+aoe_AWA = { textured_emblem = { texture = "aoe/AWA.tga" } }
+aoe_AWA_monarchy = { textured_emblem = { texture = "aoe/AWA_monarchy.tga" } }
+aoe_AWA_republic = { textured_emblem = { texture = "aoe/AWA_republic.tga" } }
+aoe_AWA_dominion = { textured_emblem = { texture = "aoe/AWA_dominion.tga" } }
+aoe_AYO = { textured_emblem = { texture = "aoe/AYO.tga" } }
+aoe_AYO_monarchy = { textured_emblem = { texture = "aoe/AYO_monarchy.tga" } }
+aoe_AYO_republic = { textured_emblem = { texture = "aoe/AYO_republic.tga" } }
+aoe_AYO_dominion = { textured_emblem = { texture = "aoe/AYO_dominion.tga" } }
+aoe_BAD = { textured_emblem = { texture = "aoe/BAD.tga" } }
+aoe_BAD_monarchy = { textured_emblem = { texture = "aoe/BAD_monarchy.tga" } }
+aoe_BAD_republic = { textured_emblem = { texture = "aoe/BAD_republic.tga" } }
+aoe_BAD_dominion = { textured_emblem = { texture = "aoe/BAD_dominion.tga" } }
+aoe_BAL = { textured_emblem = { texture = "aoe/BAL.tga" } }
+aoe_BAL_monarchy = { textured_emblem = { texture = "aoe/BAL_monarchy.tga" } }
+aoe_BAL_republic = { textured_emblem = { texture = "aoe/BAL_republic.tga" } }
+aoe_BAL_dominion = { textured_emblem = { texture = "aoe/BAL_dominion.tga" } }
+aoe_BAS_dominion = { textured_emblem = { texture = "aoe/BAS_dominion.tga" } }
+aoe_BAV_monarchy = { textured_emblem = { texture = "aoe/BAV_monarchy.tga" } }
+aoe_BAV_republic = { textured_emblem = { texture = "aoe/BAV_republic.tga" } }
+aoe_BAV_dominion = { textured_emblem = { texture = "aoe/BAV_dominion.tga" } }
+aoe_BBG = { textured_emblem = { texture = "aoe/BBG.tga" } }
+aoe_BBG_monarchy = { textured_emblem = { texture = "aoe/BBG_monarchy.tga" } }
+aoe_BBG_republic = { textured_emblem = { texture = "aoe/BBG_republic.tga" } }
+aoe_BBG_dominion = { textured_emblem = { texture = "aoe/BBG_dominion.tga" } }
+aoe_BDK = { textured_emblem = { texture = "aoe/BDK.tga" } }
+aoe_BDK_monarchy = { textured_emblem = { texture = "aoe/BDK_monarchy.tga" } }
+aoe_BDK_republic = { textured_emblem = { texture = "aoe/BDK_republic.tga" } }
+aoe_BDK_dominion = { textured_emblem = { texture = "aoe/BDK_dominion.tga" } }
+aoe_BDN = { textured_emblem = { texture = "aoe/BDN.tga" } }
+aoe_BDN_monarchy = { textured_emblem = { texture = "aoe/BDN_monarchy.tga" } }
+aoe_BDN_republic = { textured_emblem = { texture = "aoe/BDN_republic.tga" } }
+aoe_BDN_dominion = { textured_emblem = { texture = "aoe/BDN_dominion.tga" } }
+aoe_BEN = { textured_emblem = { texture = "aoe/BEN.tga" } }
+aoe_BEN_monarchy = { textured_emblem = { texture = "aoe/BEN_monarchy.tga" } }
+aoe_BEN_republic = { textured_emblem = { texture = "aoe/BEN_republic.tga" } }
+aoe_BEN_dominion = { textured_emblem = { texture = "aoe/BEN_dominion.tga" } }
+aoe_BHT = { textured_emblem = { texture = "aoe/BHT.tga" } }
+aoe_BHT_monarchy = { textured_emblem = { texture = "aoe/BHT_monarchy.tga" } }
+aoe_BHT_republic = { textured_emblem = { texture = "aoe/BHT_republic.tga" } }
+aoe_BHT_dominion = { textured_emblem = { texture = "aoe/BHT_dominion.tga" } }
+aoe_BHU_monarchy = { textured_emblem = { texture = "aoe/BHU_monarchy.tga" } }
+aoe_BHU_dominion = { textured_emblem = { texture = "aoe/BHU_dominion.tga" } }
+aoe_BIJ = { textured_emblem = { texture = "aoe/BIJ.tga" } }
+aoe_BIJ_monarchy = { textured_emblem = { texture = "aoe/BIJ_monarchy.tga" } }
+aoe_BIJ_republic = { textured_emblem = { texture = "aoe/BIJ_republic.tga" } }
+aoe_BIJ_dominion = { textured_emblem = { texture = "aoe/BIJ_dominion.tga" } }
+aoe_BNB = { textured_emblem = { texture = "aoe/BNB.tga" } }
+aoe_BNB_monarchy = { textured_emblem = { texture = "aoe/BNB_monarchy.tga" } }
+aoe_BNB_republic = { textured_emblem = { texture = "aoe/BNB_republic.tga" } }
+aoe_BNB_dominion = { textured_emblem = { texture = "aoe/BNB_dominion.tga" } }
+aoe_BNG = { textured_emblem = { texture = "aoe/BNG.tga" } }
+aoe_BNG_monarchy = { textured_emblem = { texture = "aoe/BNG_monarchy.tga" } }
+aoe_BNG_republic = { textured_emblem = { texture = "aoe/BNG_republic.tga" } }
+aoe_BNG_dominion = { textured_emblem = { texture = "aoe/BNG_dominion.tga" } }
+aoe_BNY = { textured_emblem = { texture = "aoe/BNY.tga" } }
+aoe_BNY_monarchy = { textured_emblem = { texture = "aoe/BNY_monarchy.tga" } }
+aoe_BNY_republic = { textured_emblem = { texture = "aoe/BNY_republic.tga" } }
+aoe_BNY_dominion = { textured_emblem = { texture = "aoe/BNY_dominion.tga" } }
+aoe_BOR = { textured_emblem = { texture = "aoe/BOR.tga" } }
+aoe_BOR_monarchy = { textured_emblem = { texture = "aoe/BOR_monarchy.tga" } }
+aoe_BOR_republic = { textured_emblem = { texture = "aoe/BOR_republic.tga" } }
+aoe_BOR_dominion = { textured_emblem = { texture = "aoe/BOR_dominion.tga" } }
+aoe_BRA_monarchy = { textured_emblem = { texture = "aoe/BRA_monarchy.tga" } }
+aoe_BRA_dominion = { textured_emblem = { texture = "aoe/BRA_dominion.tga" } }
+aoe_BRD = { textured_emblem = { texture = "aoe/BRD.tga" } }
+aoe_BRD_monarchy = { textured_emblem = { texture = "aoe/BRD_monarchy.tga" } }
+aoe_BRD_republic = { textured_emblem = { texture = "aoe/BRD_republic.tga" } }
+aoe_BRD_dominion = { textured_emblem = { texture = "aoe/BRD_dominion.tga" } }
+aoe_BRG = { textured_emblem = { texture = "aoe/BRG.tga" } }
+aoe_BRG_monarchy = { textured_emblem = { texture = "aoe/BRG_monarchy.tga" } }
+aoe_BRG_republic = { textured_emblem = { texture = "aoe/BRG_republic.tga" } }
+aoe_BRG_dominion = { textured_emblem = { texture = "aoe/BRG_dominion.tga" } }
+aoe_BRM = { textured_emblem = { texture = "aoe/BRM.tga" } }
+aoe_BRM_monarchy = { textured_emblem = { texture = "aoe/BRM_monarchy.tga" } }
+aoe_BRM_republic = { textured_emblem = { texture = "aoe/BRM_republic.tga" } }
+aoe_BRM_dominion = { textured_emblem = { texture = "aoe/BRM_dominion.tga" } }
+aoe_BRN = { textured_emblem = { texture = "aoe/BRN.tga" } }
+aoe_BRN_monarchy = { textured_emblem = { texture = "aoe/BRN_monarchy.tga" } }
+aoe_BRN_republic = { textured_emblem = { texture = "aoe/BRN_republic.tga" } }
+aoe_BRN_dominion = { textured_emblem = { texture = "aoe/BRN_dominion.tga" } }
+aoe_BRR = { textured_emblem = { texture = "aoe/BRR.tga" } }
+aoe_BRR_monarchy = { textured_emblem = { texture = "aoe/BRR_monarchy.tga" } }
+aoe_BRR_republic = { textured_emblem = { texture = "aoe/BRR_republic.tga" } }
+aoe_BRR_dominion = { textured_emblem = { texture = "aoe/BRR_dominion.tga" } }
+aoe_BRS = { textured_emblem = { texture = "aoe/BRS.tga" } }
+aoe_BRS_monarchy = { textured_emblem = { texture = "aoe/BRS_monarchy.tga" } }
+aoe_BRS_republic = { textured_emblem = { texture = "aoe/BRS_republic.tga" } }
+aoe_BRS_dominion = { textured_emblem = { texture = "aoe/BRS_dominion.tga" } }
+aoe_BRU = { textured_emblem = { texture = "aoe/BRU.tga" } }
+aoe_BRU_monarchy = { textured_emblem = { texture = "aoe/BRU_monarchy.tga" } }
+aoe_BRU_republic = { textured_emblem = { texture = "aoe/BRU_republic.tga" } }
+aoe_BRU_dominion = { textured_emblem = { texture = "aoe/BRU_dominion.tga" } }
+aoe_BSH = { textured_emblem = { texture = "aoe/BSH.tga" } }
+aoe_BSH_monarchy = { textured_emblem = { texture = "aoe/BSH_monarchy.tga" } }
+aoe_BSH_republic = { textured_emblem = { texture = "aoe/BSH_republic.tga" } }
+aoe_BSH_dominion = { textured_emblem = { texture = "aoe/BSH_dominion.tga" } }
+aoe_BTL = { textured_emblem = { texture = "aoe/BTL.tga" } }
+aoe_BTL_monarchy = { textured_emblem = { texture = "aoe/BTL_monarchy.tga" } }
+aoe_BTL_republic = { textured_emblem = { texture = "aoe/BTL_republic.tga" } }
+aoe_BTL_dominion = { textured_emblem = { texture = "aoe/BTL_dominion.tga" } }
+aoe_BTN = { textured_emblem = { texture = "aoe/BTN.tga" } }
+aoe_BTN_monarchy = { textured_emblem = { texture = "aoe/BTN_monarchy.tga" } }
+aoe_BTN_republic = { textured_emblem = { texture = "aoe/BTN_republic.tga" } }
+aoe_BTN_dominion = { textured_emblem = { texture = "aoe/BTN_dominion.tga" } }
+aoe_BUG = { textured_emblem = { texture = "aoe/BUG.tga" } }
+aoe_BUG_monarchy = { textured_emblem = { texture = "aoe/BUG_monarchy.tga" } }
+aoe_BUG_republic = { textured_emblem = { texture = "aoe/BUG_republic.tga" } }
+aoe_BUG_dominion = { textured_emblem = { texture = "aoe/BUG_dominion.tga" } }
+aoe_BUK = { textured_emblem = { texture = "aoe/BUK.tga" } }
+aoe_BUK_monarchy = { textured_emblem = { texture = "aoe/BUK_monarchy.tga" } }
+aoe_BUK_republic = { textured_emblem = { texture = "aoe/BUK_republic.tga" } }
+aoe_BUK_dominion = { textured_emblem = { texture = "aoe/BUK_dominion.tga" } }
+aoe_BUN = { textured_emblem = { texture = "aoe/BUN.tga" } }
+aoe_BUN_dominion = { textured_emblem = { texture = "aoe/BUN_dominion.tga" } }
+aoe_BUR = { textured_emblem = { texture = "aoe/BUR.tga" } }
+aoe_BUR_monarchy = { textured_emblem = { texture = "aoe/BUR_monarchy.tga" } }
+aoe_BUR_republic = { textured_emblem = { texture = "aoe/BUR_republic.tga" } }
+aoe_BUR_dominion = { textured_emblem = { texture = "aoe/BUR_dominion.tga" } }
+aoe_BXJ = { textured_emblem = { texture = "aoe/BXJ.tga" } }
+aoe_BXJ_monarchy = { textured_emblem = { texture = "aoe/BXJ_monarchy.tga" } }
+aoe_BXJ_republic = { textured_emblem = { texture = "aoe/BXJ_republic.tga" } }
+aoe_BXJ_dominion = { textured_emblem = { texture = "aoe/BXJ_dominion.tga" } }
+aoe_CAM = { textured_emblem = { texture = "aoe/CAM.tga" } }
+aoe_CAM_monarchy = { textured_emblem = { texture = "aoe/CAM_monarchy.tga" } }
+aoe_CAM_republic = { textured_emblem = { texture = "aoe/CAM_republic.tga" } }
+aoe_CAM_dominion = { textured_emblem = { texture = "aoe/CAM_dominion.tga" } }
+aoe_CDD = { textured_emblem = { texture = "aoe/CDD.tga" } }
+aoe_CDD_monarchy = { textured_emblem = { texture = "aoe/CDD_monarchy.tga" } }
+aoe_CDD_republic = { textured_emblem = { texture = "aoe/CDD_republic.tga" } }
+aoe_CDD_dominion = { textured_emblem = { texture = "aoe/CDD_dominion.tga" } }
+aoe_CHE_dominion = { textured_emblem = { texture = "aoe/CHE_dominion.tga" } }
+aoe_CHG = { textured_emblem = { texture = "aoe/CHG.tga" } }
+aoe_CHG_monarchy = { textured_emblem = { texture = "aoe/CHG_monarchy.tga" } }
+aoe_CHG_republic = { textured_emblem = { texture = "aoe/CHG_republic.tga" } }
+aoe_CHG_dominion = { textured_emblem = { texture = "aoe/CHG_dominion.tga" } }
+aoe_CHP = { textured_emblem = { texture = "aoe/CHP.tga" } }
+aoe_CHP_monarchy = { textured_emblem = { texture = "aoe/CHP_monarchy.tga" } }
+aoe_CHP_republic = { textured_emblem = { texture = "aoe/CHP_republic.tga" } }
+aoe_CHP_dominion = { textured_emblem = { texture = "aoe/CHP_dominion.tga" } }
+aoe_CHS = { textured_emblem = { texture = "aoe/CHS.tga" } }
+aoe_CHS_monarchy = { textured_emblem = { texture = "aoe/CHS_monarchy.tga" } }
+aoe_CHS_republic = { textured_emblem = { texture = "aoe/CHS_republic.tga" } }
+aoe_CHS_dominion = { textured_emblem = { texture = "aoe/CHS_dominion.tga" } }
+aoe_CHT = { textured_emblem = { texture = "aoe/CHT.tga" } }
+aoe_CHT_monarchy = { textured_emblem = { texture = "aoe/CHT_monarchy.tga" } }
+aoe_CHT_republic = { textured_emblem = { texture = "aoe/CHT_republic.tga" } }
+aoe_CHT_dominion = { textured_emblem = { texture = "aoe/CHT_dominion.tga" } }
+aoe_CIR = { textured_emblem = { texture = "aoe/CIR.tga" } }
+aoe_CIR_monarchy = { textured_emblem = { texture = "aoe/CIR_monarchy.tga" } }
+aoe_CIR_republic = { textured_emblem = { texture = "aoe/CIR_republic.tga" } }
+aoe_CIR_dominion = { textured_emblem = { texture = "aoe/CIR_dominion.tga" } }
+aoe_CIT = { textured_emblem = { texture = "aoe/CIT.tga" } }
+aoe_CIT_monarchy = { textured_emblem = { texture = "aoe/CIT_monarchy.tga" } }
+aoe_CIT_republic = { textured_emblem = { texture = "aoe/CIT_republic.tga" } }
+aoe_CIT_dominion = { textured_emblem = { texture = "aoe/CIT_dominion.tga" } }
+aoe_CLA = { textured_emblem = { texture = "aoe/CLA.tga" } }
+aoe_CLA_monarchy = { textured_emblem = { texture = "aoe/CLA_monarchy.tga" } }
+aoe_CLA_republic = { textured_emblem = { texture = "aoe/CLA_republic.tga" } }
+aoe_CLA_dominion = { textured_emblem = { texture = "aoe/CLA_dominion.tga" } }
+aoe_CMG = { textured_emblem = { texture = "aoe/CMG.tga" } }
+aoe_CMG_monarchy = { textured_emblem = { texture = "aoe/CMG_monarchy.tga" } }
+aoe_CMG_republic = { textured_emblem = { texture = "aoe/CMG_republic.tga" } }
+aoe_CMG_dominion = { textured_emblem = { texture = "aoe/CMG_dominion.tga" } }
+aoe_CMN = { textured_emblem = { texture = "aoe/CMN.tga" } }
+aoe_CMN_monarchy = { textured_emblem = { texture = "aoe/CMN_monarchy.tga" } }
+aoe_CMN_republic = { textured_emblem = { texture = "aoe/CMN_republic.tga" } }
+aoe_CMN_dominion = { textured_emblem = { texture = "aoe/CMN_dominion.tga" } }
+aoe_COB_monarchy = { textured_emblem = { texture = "aoe/COB_monarchy.tga" } }
+aoe_COB_dominion = { textured_emblem = { texture = "aoe/COB_dominion.tga" } }
+aoe_COC = { textured_emblem = { texture = "aoe/COC.tga" } }
+aoe_COC_monarchy = { textured_emblem = { texture = "aoe/COC_monarchy.tga" } }
+aoe_COC_republic = { textured_emblem = { texture = "aoe/COC_republic.tga" } }
+aoe_COC_dominion = { textured_emblem = { texture = "aoe/COC_dominion.tga" } }
+aoe_CRI_monarchy = { textured_emblem = { texture = "aoe/CRI_monarchy.tga" } }
+aoe_CRI_republic = { textured_emblem = { texture = "aoe/CRI_republic.tga" } }
+aoe_CRI_dominion = { textured_emblem = { texture = "aoe/CRI_dominion.tga" } }
+aoe_CRK = { textured_emblem = { texture = "aoe/CRK.tga" } }
+aoe_CRK_monarchy = { textured_emblem = { texture = "aoe/CRK_monarchy.tga" } }
+aoe_CRK_republic = { textured_emblem = { texture = "aoe/CRK_republic.tga" } }
+aoe_CRK_dominion = { textured_emblem = { texture = "aoe/CRK_dominion.tga" } }
+aoe_CRL = { textured_emblem = { texture = "aoe/CRL.tga" } }
+aoe_CRL_monarchy = { textured_emblem = { texture = "aoe/CRL_monarchy.tga" } }
+aoe_CRL_republic = { textured_emblem = { texture = "aoe/CRL_republic.tga" } }
+aoe_CRL_dominion = { textured_emblem = { texture = "aoe/CRL_dominion.tga" } }
+aoe_DAH = { textured_emblem = { texture = "aoe/DAH.tga" } }
+aoe_DAH_monarchy = { textured_emblem = { texture = "aoe/DAH_monarchy.tga" } }
+aoe_DAH_republic = { textured_emblem = { texture = "aoe/DAH_republic.tga" } }
+aoe_DAH_dominion = { textured_emblem = { texture = "aoe/DAH_dominion.tga" } }
+aoe_DAR = { textured_emblem = { texture = "aoe/DAR.tga" } }
+aoe_DAR_monarchy = { textured_emblem = { texture = "aoe/DAR_monarchy.tga" } }
+aoe_DAR_republic = { textured_emblem = { texture = "aoe/DAR_republic.tga" } }
+aoe_DAR_dominion = { textured_emblem = { texture = "aoe/DAR_dominion.tga" } }
+aoe_DGB = { textured_emblem = { texture = "aoe/DGB.tga" } }
+aoe_DGB_monarchy = { textured_emblem = { texture = "aoe/DGB_monarchy.tga" } }
+aoe_DGB_republic = { textured_emblem = { texture = "aoe/DGB_republic.tga" } }
+aoe_DGB_dominion = { textured_emblem = { texture = "aoe/DGB_dominion.tga" } }
+aoe_DJA = { textured_emblem = { texture = "aoe/DJA.tga" } }
+aoe_DJA_monarchy = { textured_emblem = { texture = "aoe/DJA_monarchy.tga" } }
+aoe_DJA_republic = { textured_emblem = { texture = "aoe/DJA_republic.tga" } }
+aoe_DJA_dominion = { textured_emblem = { texture = "aoe/DJA_dominion.tga" } }
+aoe_DLM = { textured_emblem = { texture = "aoe/DLM.tga" } }
+aoe_DLM_monarchy = { textured_emblem = { texture = "aoe/DLM_monarchy.tga" } }
+aoe_DLM_republic = { textured_emblem = { texture = "aoe/DLM_republic.tga" } }
+aoe_DLM_dominion = { textured_emblem = { texture = "aoe/DLM_dominion.tga" } }
+aoe_DMS = { textured_emblem = { texture = "aoe/DMS.tga" } }
+aoe_DMS_monarchy = { textured_emblem = { texture = "aoe/DMS_monarchy.tga" } }
+aoe_DMS_republic = { textured_emblem = { texture = "aoe/DMS_republic.tga" } }
+aoe_DMS_dominion = { textured_emblem = { texture = "aoe/DMS_dominion.tga" } }
+aoe_DND = { textured_emblem = { texture = "aoe/DND.tga" } }
+aoe_DND_monarchy = { textured_emblem = { texture = "aoe/DND_monarchy.tga" } }
+aoe_DND_republic = { textured_emblem = { texture = "aoe/DND_republic.tga" } }
+aoe_DND_dominion = { textured_emblem = { texture = "aoe/DND_dominion.tga" } }
+aoe_DNN = { textured_emblem = { texture = "aoe/DNN.tga" } }
+aoe_DNN_monarchy = { textured_emblem = { texture = "aoe/DNN_monarchy.tga" } }
+aoe_DNN_republic = { textured_emblem = { texture = "aoe/DNN_republic.tga" } }
+aoe_DNN_dominion = { textured_emblem = { texture = "aoe/DNN_dominion.tga" } }
+aoe_DON = { textured_emblem = { texture = "aoe/DON.tga" } }
+aoe_DON_monarchy = { textured_emblem = { texture = "aoe/DON_monarchy.tga" } }
+aoe_DON_republic = { textured_emblem = { texture = "aoe/DON_republic.tga" } }
+aoe_DON_dominion = { textured_emblem = { texture = "aoe/DON_dominion.tga" } }
+aoe_DOR = { textured_emblem = { texture = "aoe/DOR.tga" } }
+aoe_DOR_monarchy = { textured_emblem = { texture = "aoe/DOR_monarchy.tga" } }
+aoe_DOR_republic = { textured_emblem = { texture = "aoe/DOR_republic.tga" } }
+aoe_DOR_dominion = { textured_emblem = { texture = "aoe/DOR_dominion.tga" } }
+aoe_DPR = { textured_emblem = { texture = "aoe/DPR.tga" } }
+aoe_DPR_monarchy = { textured_emblem = { texture = "aoe/DPR_monarchy.tga" } }
+aoe_DPR_republic = { textured_emblem = { texture = "aoe/DPR_republic.tga" } }
+aoe_DPR_dominion = { textured_emblem = { texture = "aoe/DPR_dominion.tga" } }
+aoe_DZN = { textured_emblem = { texture = "aoe/DZN.tga" } }
+aoe_DZN_monarchy = { textured_emblem = { texture = "aoe/DZN_monarchy.tga" } }
+aoe_DZN_republic = { textured_emblem = { texture = "aoe/DZN_republic.tga" } }
+aoe_DZN_dominion = { textured_emblem = { texture = "aoe/DZN_dominion.tga" } }
+aoe_EFR = { textured_emblem = { texture = "aoe/EFR.tga" } }
+aoe_EFR_monarchy = { textured_emblem = { texture = "aoe/EFR_monarchy.tga" } }
+aoe_EFR_republic = { textured_emblem = { texture = "aoe/EFR_republic.tga" } }
+aoe_EFR_dominion = { textured_emblem = { texture = "aoe/EFR_dominion.tga" } }
+aoe_ENL = { textured_emblem = { texture = "aoe/ENL.tga" } }
+aoe_ENL_monarchy = { textured_emblem = { texture = "aoe/ENL_monarchy.tga" } }
+aoe_ENL_republic = { textured_emblem = { texture = "aoe/ENL_republic.tga" } }
+aoe_ENL_dominion = { textured_emblem = { texture = "aoe/ENL_dominion.tga" } }
+aoe_ETH = { textured_emblem = { texture = "aoe/ETH.tga" } }
+aoe_ETH_monarchy = { textured_emblem = { texture = "aoe/ETH_monarchy.tga" } }
+aoe_ETH_republic = { textured_emblem = { texture = "aoe/ETH_republic.tga" } }
+aoe_ETH_dominion = { textured_emblem = { texture = "aoe/ETH_dominion.tga" } }
+aoe_FOX = { textured_emblem = { texture = "aoe/FOX.tga" } }
+aoe_FOX_monarchy = { textured_emblem = { texture = "aoe/FOX_monarchy.tga" } }
+aoe_FOX_republic = { textured_emblem = { texture = "aoe/FOX_republic.tga" } }
+aoe_FOX_dominion = { textured_emblem = { texture = "aoe/FOX_dominion.tga" } }
+aoe_FRM = { textured_emblem = { texture = "aoe/FRM.tga" } }
+aoe_FRM_republic = { textured_emblem = { texture = "aoe/FRM_republic.tga" } }
+aoe_FRM_dominion = { textured_emblem = { texture = "aoe/FRM_dominion.tga" } }
+aoe_FUL = { textured_emblem = { texture = "aoe/FUL.tga" } }
+aoe_FUL_monarchy = { textured_emblem = { texture = "aoe/FUL_monarchy.tga" } }
+aoe_FUL_republic = { textured_emblem = { texture = "aoe/FUL_republic.tga" } }
+aoe_FUL_dominion = { textured_emblem = { texture = "aoe/FUL_dominion.tga" } }
+aoe_GAZ = { textured_emblem = { texture = "aoe/GAZ.tga" } }
+aoe_GAZ_monarchy = { textured_emblem = { texture = "aoe/GAZ_monarchy.tga" } }
+aoe_GAZ_republic = { textured_emblem = { texture = "aoe/GAZ_republic.tga" } }
+aoe_GAZ_dominion = { textured_emblem = { texture = "aoe/GAZ_dominion.tga" } }
+aoe_GBU = { textured_emblem = { texture = "aoe/GBU.tga" } }
+aoe_GBU_monarchy = { textured_emblem = { texture = "aoe/GBU_monarchy.tga" } }
+aoe_GBU_republic = { textured_emblem = { texture = "aoe/GBU_republic.tga" } }
+aoe_GBU_dominion = { textured_emblem = { texture = "aoe/GBU_dominion.tga" } }
+aoe_GEL = { textured_emblem = { texture = "aoe/GEL.tga" } }
+aoe_GEL_monarchy = { textured_emblem = { texture = "aoe/GEL_monarchy.tga" } }
+aoe_GEL_republic = { textured_emblem = { texture = "aoe/GEL_republic.tga" } }
+aoe_GEL_dominion = { textured_emblem = { texture = "aoe/GEL_dominion.tga" } }
+aoe_GEN = { textured_emblem = { texture = "aoe/GEN.tga" } }
+aoe_GEN_monarchy = { textured_emblem = { texture = "aoe/GEN_monarchy.tga" } }
+aoe_GEN_republic = { textured_emblem = { texture = "aoe/GEN_republic.tga" } }
+aoe_GEN_dominion = { textured_emblem = { texture = "aoe/GEN_dominion.tga" } }
+aoe_GEU = { textured_emblem = { texture = "aoe/GEU.tga" } }
+aoe_GEU_monarchy = { textured_emblem = { texture = "aoe/GEU_monarchy.tga" } }
+aoe_GEU_republic = { textured_emblem = { texture = "aoe/GEU_republic.tga" } }
+aoe_GEU_dominion = { textured_emblem = { texture = "aoe/GEU_dominion.tga" } }
+aoe_GFL = { textured_emblem = { texture = "aoe/GFL.tga" } }
+aoe_GFL_monarchy = { textured_emblem = { texture = "aoe/GFL_monarchy.tga" } }
+aoe_GFL_republic = { textured_emblem = { texture = "aoe/GFL_republic.tga" } }
+aoe_GFL_dominion = { textured_emblem = { texture = "aoe/GFL_dominion.tga" } }
+aoe_GOB = { textured_emblem = { texture = "aoe/GOB.tga" } }
+aoe_GOB_monarchy = { textured_emblem = { texture = "aoe/GOB_monarchy.tga" } }
+aoe_GOB_republic = { textured_emblem = { texture = "aoe/GOB_republic.tga" } }
+aoe_GOB_dominion = { textured_emblem = { texture = "aoe/GOB_dominion.tga" } }
+aoe_GOL = { textured_emblem = { texture = "aoe/GOL.tga" } }
+aoe_GOL_monarchy = { textured_emblem = { texture = "aoe/GOL_monarchy.tga" } }
+aoe_GOL_republic = { textured_emblem = { texture = "aoe/GOL_republic.tga" } }
+aoe_GOL_dominion = { textured_emblem = { texture = "aoe/GOL_dominion.tga" } }
+aoe_GRH = { textured_emblem = { texture = "aoe/GRH.tga" } }
+aoe_GRH_monarchy = { textured_emblem = { texture = "aoe/GRH_monarchy.tga" } }
+aoe_GRH_republic = { textured_emblem = { texture = "aoe/GRH_republic.tga" } }
+aoe_GRH_dominion = { textured_emblem = { texture = "aoe/GRH_dominion.tga" } }
+aoe_GRJ = { textured_emblem = { texture = "aoe/GRJ.tga" } }
+aoe_GRJ_monarchy = { textured_emblem = { texture = "aoe/GRJ_monarchy.tga" } }
+aoe_GRJ_republic = { textured_emblem = { texture = "aoe/GRJ_republic.tga" } }
+aoe_GRJ_dominion = { textured_emblem = { texture = "aoe/GRJ_dominion.tga" } }
+aoe_GUJ = { textured_emblem = { texture = "aoe/GUJ.tga" } }
+aoe_GUJ_monarchy = { textured_emblem = { texture = "aoe/GUJ_monarchy.tga" } }
+aoe_GUJ_republic = { textured_emblem = { texture = "aoe/GUJ_republic.tga" } }
+aoe_GUJ_dominion = { textured_emblem = { texture = "aoe/GUJ_dominion.tga" } }
+aoe_GZK = { textured_emblem = { texture = "aoe/GZK.tga" } }
+aoe_GZK_monarchy = { textured_emblem = { texture = "aoe/GZK_monarchy.tga" } }
+aoe_GZK_republic = { textured_emblem = { texture = "aoe/GZK_republic.tga" } }
+aoe_GZK_dominion = { textured_emblem = { texture = "aoe/GZK_dominion.tga" } }
+aoe_HAD = { textured_emblem = { texture = "aoe/HAD.tga" } }
+aoe_HAD_monarchy = { textured_emblem = { texture = "aoe/HAD_monarchy.tga" } }
+aoe_HAD_republic = { textured_emblem = { texture = "aoe/HAD_republic.tga" } }
+aoe_HAD_dominion = { textured_emblem = { texture = "aoe/HAD_dominion.tga" } }
+aoe_HAM = { textured_emblem = { texture = "aoe/HAM.tga" } }
+aoe_HAM_monarchy = { textured_emblem = { texture = "aoe/HAM_monarchy.tga" } }
+aoe_HAM_republic = { textured_emblem = { texture = "aoe/HAM_republic.tga" } }
+aoe_HAM_dominion = { textured_emblem = { texture = "aoe/HAM_dominion.tga" } }
+aoe_HAN = { textured_emblem = { texture = "aoe/HAN.tga" } }
+aoe_HAN_monarchy = { textured_emblem = { texture = "aoe/HAN_monarchy.tga" } }
+aoe_HAN_republic = { textured_emblem = { texture = "aoe/HAN_republic.tga" } }
+aoe_HAN_dominion = { textured_emblem = { texture = "aoe/HAN_dominion.tga" } }
+aoe_HAR = { textured_emblem = { texture = "aoe/HAR.tga" } }
+aoe_HAR_monarchy = { textured_emblem = { texture = "aoe/HAR_monarchy.tga" } }
+aoe_HAR_republic = { textured_emblem = { texture = "aoe/HAR_republic.tga" } }
+aoe_HAR_dominion = { textured_emblem = { texture = "aoe/HAR_dominion.tga" } }
+aoe_HAW_monarchy = { textured_emblem = { texture = "aoe/HAW_monarchy.tga" } }
+aoe_HAW_republic = { textured_emblem = { texture = "aoe/HAW_republic.tga" } }
+aoe_HAW_dominion = { textured_emblem = { texture = "aoe/HAW_dominion.tga" } }
+aoe_HES_monarchy = { textured_emblem = { texture = "aoe/HES_monarchy.tga" } }
+aoe_HES_dominion = { textured_emblem = { texture = "aoe/HES_dominion.tga" } }
+aoe_HET = { textured_emblem = { texture = "aoe/HET.tga" } }
+aoe_HET_monarchy = { textured_emblem = { texture = "aoe/HET_monarchy.tga" } }
+aoe_HET_republic = { textured_emblem = { texture = "aoe/HET_republic.tga" } }
+aoe_HET_dominion = { textured_emblem = { texture = "aoe/HET_dominion.tga" } }
+aoe_HSA = { textured_emblem = { texture = "aoe/HSA.tga" } }
+aoe_HSA_monarchy = { textured_emblem = { texture = "aoe/HSA_monarchy.tga" } }
+aoe_HSA_republic = { textured_emblem = { texture = "aoe/HSA_republic.tga" } }
+aoe_HSA_dominion = { textured_emblem = { texture = "aoe/HSA_dominion.tga" } }
+aoe_IGL = { textured_emblem = { texture = "aoe/IGL.tga" } }
+aoe_IGL_monarchy = { textured_emblem = { texture = "aoe/IGL_monarchy.tga" } }
+aoe_IGL_republic = { textured_emblem = { texture = "aoe/IGL_republic.tga" } }
+aoe_IGL_dominion = { textured_emblem = { texture = "aoe/IGL_dominion.tga" } }
+aoe_ILL = { textured_emblem = { texture = "aoe/ILL.tga" } }
+aoe_ILL_monarchy = { textured_emblem = { texture = "aoe/ILL_monarchy.tga" } }
+aoe_ILL_republic = { textured_emblem = { texture = "aoe/ILL_republic.tga" } }
+aoe_ILL_dominion = { textured_emblem = { texture = "aoe/ILL_dominion.tga" } }
+aoe_IMR = { textured_emblem = { texture = "aoe/IMR.tga" } }
+aoe_IMR_monarchy = { textured_emblem = { texture = "aoe/IMR_monarchy.tga" } }
+aoe_IMR_republic = { textured_emblem = { texture = "aoe/IMR_republic.tga" } }
+aoe_IMR_dominion = { textured_emblem = { texture = "aoe/IMR_dominion.tga" } }
+aoe_IQS = { textured_emblem = { texture = "aoe/IQS.tga" } }
+aoe_IQS_monarchy = { textured_emblem = { texture = "aoe/IQS_monarchy.tga" } }
+aoe_IQS_republic = { textured_emblem = { texture = "aoe/IQS_republic.tga" } }
+aoe_IQS_dominion = { textured_emblem = { texture = "aoe/IQS_dominion.tga" } }
+aoe_ISK = { textured_emblem = { texture = "aoe/ISK.tga" } }
+aoe_ISK_monarchy = { textured_emblem = { texture = "aoe/ISK_monarchy.tga" } }
+aoe_ISK_republic = { textured_emblem = { texture = "aoe/ISK_republic.tga" } }
+aoe_ISK_dominion = { textured_emblem = { texture = "aoe/ISK_dominion.tga" } }
+aoe_JAI_monarchy = { textured_emblem = { texture = "aoe/JAI_monarchy.tga" } }
+aoe_JAI_dominion = { textured_emblem = { texture = "aoe/JAI_dominion.tga" } }
+aoe_JAV = { textured_emblem = { texture = "aoe/JAV.tga" } }
+aoe_JAV_monarchy = { textured_emblem = { texture = "aoe/JAV_monarchy.tga" } }
+aoe_JAV_republic = { textured_emblem = { texture = "aoe/JAV_republic.tga" } }
+aoe_JAV_dominion = { textured_emblem = { texture = "aoe/JAV_dominion.tga" } }
+aoe_JEY = { textured_emblem = { texture = "aoe/JEY.tga" } }
+aoe_JEY_monarchy = { textured_emblem = { texture = "aoe/JEY_monarchy.tga" } }
+aoe_JEY_republic = { textured_emblem = { texture = "aoe/JEY_republic.tga" } }
+aoe_JEY_dominion = { textured_emblem = { texture = "aoe/JEY_dominion.tga" } }
+aoe_JOD_dominion = { textured_emblem = { texture = "aoe/JOD_dominion.tga" } }
+aoe_JOH = { textured_emblem = { texture = "aoe/JOH.tga" } }
+aoe_JOH_monarchy = { textured_emblem = { texture = "aoe/JOH_monarchy.tga" } }
+aoe_JOH_republic = { textured_emblem = { texture = "aoe/JOH_republic.tga" } }
+aoe_JOH_dominion = { textured_emblem = { texture = "aoe/JOH_dominion.tga" } }
+aoe_KAF = { textured_emblem = { texture = "aoe/KAF.tga" } }
+aoe_KAF_monarchy = { textured_emblem = { texture = "aoe/KAF_monarchy.tga" } }
+aoe_KAF_republic = { textured_emblem = { texture = "aoe/KAF_republic.tga" } }
+aoe_KAF_dominion = { textured_emblem = { texture = "aoe/KAF_dominion.tga" } }
+aoe_KAK = { textured_emblem = { texture = "aoe/KAK.tga" } }
+aoe_KAK_monarchy = { textured_emblem = { texture = "aoe/KAK_monarchy.tga" } }
+aoe_KAK_republic = { textured_emblem = { texture = "aoe/KAK_republic.tga" } }
+aoe_KAK_dominion = { textured_emblem = { texture = "aoe/KAK_dominion.tga" } }
+aoe_KAL_monarchy = { textured_emblem = { texture = "aoe/KAL_monarchy.tga" } }
+aoe_KAL_dominion = { textured_emblem = { texture = "aoe/KAL_dominion.tga" } }
+aoe_KAT = { textured_emblem = { texture = "aoe/KAT.tga" } }
+aoe_KAT_monarchy = { textured_emblem = { texture = "aoe/KAT_monarchy.tga" } }
+aoe_KAT_republic = { textured_emblem = { texture = "aoe/KAT_republic.tga" } }
+aoe_KAT_dominion = { textured_emblem = { texture = "aoe/KAT_dominion.tga" } }
+aoe_KAZ = { textured_emblem = { texture = "aoe/KAZ.tga" } }
+aoe_KAZ_monarchy = { textured_emblem = { texture = "aoe/KAZ_monarchy.tga" } }
+aoe_KAZ_republic = { textured_emblem = { texture = "aoe/KAZ_republic.tga" } }
+aoe_KAZ_dominion = { textured_emblem = { texture = "aoe/KAZ_dominion.tga" } }
+aoe_KBO = { textured_emblem = { texture = "aoe/KBO.tga" } }
+aoe_KBO_monarchy = { textured_emblem = { texture = "aoe/KBO_monarchy.tga" } }
+aoe_KBO_republic = { textured_emblem = { texture = "aoe/KBO_republic.tga" } }
+aoe_KBO_dominion = { textured_emblem = { texture = "aoe/KBO_dominion.tga" } }
+aoe_KBR = { textured_emblem = { texture = "aoe/KBR.tga" } }
+aoe_KBR_monarchy = { textured_emblem = { texture = "aoe/KBR_monarchy.tga" } }
+aoe_KBR_republic = { textured_emblem = { texture = "aoe/KBR_republic.tga" } }
+aoe_KBR_dominion = { textured_emblem = { texture = "aoe/KBR_dominion.tga" } }
+aoe_KED = { textured_emblem = { texture = "aoe/KED.tga" } }
+aoe_KED_monarchy = { textured_emblem = { texture = "aoe/KED_monarchy.tga" } }
+aoe_KED_republic = { textured_emblem = { texture = "aoe/KED_republic.tga" } }
+aoe_KED_dominion = { textured_emblem = { texture = "aoe/KED_dominion.tga" } }
+aoe_KHA = { textured_emblem = { texture = "aoe/KHA.tga" } }
+aoe_KHA_monarchy = { textured_emblem = { texture = "aoe/KHA_monarchy.tga" } }
+aoe_KHA_republic = { textured_emblem = { texture = "aoe/KHA_republic.tga" } }
+aoe_KHA_dominion = { textured_emblem = { texture = "aoe/KHA_dominion.tga" } }
+aoe_KHI = { textured_emblem = { texture = "aoe/KHI.tga" } }
+aoe_KHI_monarchy = { textured_emblem = { texture = "aoe/KHI_monarchy.tga" } }
+aoe_KHI_republic = { textured_emblem = { texture = "aoe/KHI_republic.tga" } }
+aoe_KHI_dominion = { textured_emblem = { texture = "aoe/KHI_dominion.tga" } }
+aoe_KHJ = { textured_emblem = { texture = "aoe/KHJ.tga" } }
+aoe_KHJ_monarchy = { textured_emblem = { texture = "aoe/KHJ_monarchy.tga" } }
+aoe_KHJ_republic = { textured_emblem = { texture = "aoe/KHJ_republic.tga" } }
+aoe_KHJ_dominion = { textured_emblem = { texture = "aoe/KHJ_dominion.tga" } }
+aoe_KIW = { textured_emblem = { texture = "aoe/KIW.tga" } }
+aoe_KIW_monarchy = { textured_emblem = { texture = "aoe/KIW_monarchy.tga" } }
+aoe_KIW_republic = { textured_emblem = { texture = "aoe/KIW_republic.tga" } }
+aoe_KIW_dominion = { textured_emblem = { texture = "aoe/KIW_dominion.tga" } }
+aoe_KKH = { textured_emblem = { texture = "aoe/KKH.tga" } }
+aoe_KKH_monarchy = { textured_emblem = { texture = "aoe/KKH_monarchy.tga" } }
+aoe_KKH_republic = { textured_emblem = { texture = "aoe/KKH_republic.tga" } }
+aoe_KKH_dominion = { textured_emblem = { texture = "aoe/KKH_dominion.tga" } }
+aoe_KLD = { textured_emblem = { texture = "aoe/KLD.tga" } }
+aoe_KLD_monarchy = { textured_emblem = { texture = "aoe/KLD_monarchy.tga" } }
+aoe_KLD_republic = { textured_emblem = { texture = "aoe/KLD_republic.tga" } }
+aoe_KLD_dominion = { textured_emblem = { texture = "aoe/KLD_dominion.tga" } }
+aoe_KLM = { textured_emblem = { texture = "aoe/KLM.tga" } }
+aoe_KLM_monarchy = { textured_emblem = { texture = "aoe/KLM_monarchy.tga" } }
+aoe_KLM_republic = { textured_emblem = { texture = "aoe/KLM_republic.tga" } }
+aoe_KLM_dominion = { textured_emblem = { texture = "aoe/KLM_dominion.tga" } }
+aoe_KMK = { textured_emblem = { texture = "aoe/KMK.tga" } }
+aoe_KMK_monarchy = { textured_emblem = { texture = "aoe/KMK_monarchy.tga" } }
+aoe_KMK_republic = { textured_emblem = { texture = "aoe/KMK_republic.tga" } }
+aoe_KMK_dominion = { textured_emblem = { texture = "aoe/KMK_dominion.tga" } }
+aoe_KML = { textured_emblem = { texture = "aoe/KML.tga" } }
+aoe_KML_monarchy = { textured_emblem = { texture = "aoe/KML_monarchy.tga" } }
+aoe_KML_republic = { textured_emblem = { texture = "aoe/KML_republic.tga" } }
+aoe_KML_dominion = { textured_emblem = { texture = "aoe/KML_dominion.tga" } }
+aoe_KND = { textured_emblem = { texture = "aoe/KND.tga" } }
+aoe_KND_monarchy = { textured_emblem = { texture = "aoe/KND_monarchy.tga" } }
+aoe_KND_republic = { textured_emblem = { texture = "aoe/KND_republic.tga" } }
+aoe_KND_dominion = { textured_emblem = { texture = "aoe/KND_dominion.tga" } }
+aoe_KNO = { textured_emblem = { texture = "aoe/KNO.tga" } }
+aoe_KNO_monarchy = { textured_emblem = { texture = "aoe/KNO_monarchy.tga" } }
+aoe_KNO_republic = { textured_emblem = { texture = "aoe/KNO_republic.tga" } }
+aoe_KNO_dominion = { textured_emblem = { texture = "aoe/KNO_dominion.tga" } }
+aoe_KOL = { textured_emblem = { texture = "aoe/KOL.tga" } }
+aoe_KOL_monarchy = { textured_emblem = { texture = "aoe/KOL_monarchy.tga" } }
+aoe_KOL_republic = { textured_emblem = { texture = "aoe/KOL_republic.tga" } }
+aoe_KOL_dominion = { textured_emblem = { texture = "aoe/KOL_dominion.tga" } }
+aoe_KON = { textured_emblem = { texture = "aoe/KON.tga" } }
+aoe_KON_monarchy = { textured_emblem = { texture = "aoe/KON_monarchy.tga" } }
+aoe_KON_republic = { textured_emblem = { texture = "aoe/KON_republic.tga" } }
+aoe_KON_dominion = { textured_emblem = { texture = "aoe/KON_dominion.tga" } }
+aoe_KOR = { textured_emblem = { texture = "aoe/KOR.tga" } }
+aoe_KOR_monarchy = { textured_emblem = { texture = "aoe/KOR_monarchy.tga" } }
+aoe_KOR_republic = { textured_emblem = { texture = "aoe/KOR_republic.tga" } }
+aoe_KOR_dominion = { textured_emblem = { texture = "aoe/KOR_dominion.tga" } }
+aoe_KRN = { textured_emblem = { texture = "aoe/KRN.tga" } }
+aoe_KRN_monarchy = { textured_emblem = { texture = "aoe/KRN_monarchy.tga" } }
+aoe_KRN_republic = { textured_emblem = { texture = "aoe/KRN_republic.tga" } }
+aoe_KRN_dominion = { textured_emblem = { texture = "aoe/KRN_dominion.tga" } }
+aoe_KTH = { textured_emblem = { texture = "aoe/KTH.tga" } }
+aoe_KTH_monarchy = { textured_emblem = { texture = "aoe/KTH_monarchy.tga" } }
+aoe_KTH_republic = { textured_emblem = { texture = "aoe/KTH_republic.tga" } }
+aoe_KTH_dominion = { textured_emblem = { texture = "aoe/KTH_dominion.tga" } }
+aoe_KTI = { textured_emblem = { texture = "aoe/KTI.tga" } }
+aoe_KTI_monarchy = { textured_emblem = { texture = "aoe/KTI_monarchy.tga" } }
+aoe_KTI_republic = { textured_emblem = { texture = "aoe/KTI_republic.tga" } }
+aoe_KTI_dominion = { textured_emblem = { texture = "aoe/KTI_dominion.tga" } }
+aoe_KUB = { textured_emblem = { texture = "aoe/KUB.tga" } }
+aoe_KUB_monarchy = { textured_emblem = { texture = "aoe/KUB_monarchy.tga" } }
+aoe_KUB_republic = { textured_emblem = { texture = "aoe/KUB_republic.tga" } }
+aoe_KUB_dominion = { textured_emblem = { texture = "aoe/KUB_dominion.tga" } }
+aoe_KUR = { textured_emblem = { texture = "aoe/KUR.tga" } }
+aoe_KUR_monarchy = { textured_emblem = { texture = "aoe/KUR_monarchy.tga" } }
+aoe_KUR_republic = { textured_emblem = { texture = "aoe/KUR_republic.tga" } }
+aoe_KUR_dominion = { textured_emblem = { texture = "aoe/KUR_dominion.tga" } }
+aoe_KWR = { textured_emblem = { texture = "aoe/KWR.tga" } }
+aoe_KWR_monarchy = { textured_emblem = { texture = "aoe/KWR_monarchy.tga" } }
+aoe_KWR_republic = { textured_emblem = { texture = "aoe/KWR_republic.tga" } }
+aoe_KWR_dominion = { textured_emblem = { texture = "aoe/KWR_dominion.tga" } }
+aoe_KZB = { textured_emblem = { texture = "aoe/KZB.tga" } }
+aoe_KZB_monarchy = { textured_emblem = { texture = "aoe/KZB_monarchy.tga" } }
+aoe_KZB_republic = { textured_emblem = { texture = "aoe/KZB_republic.tga" } }
+aoe_KZB_dominion = { textured_emblem = { texture = "aoe/KZB_dominion.tga" } }
+aoe_LAD_dominion = { textured_emblem = { texture = "aoe/LAD_dominion.tga" } }
+aoe_LAU = { textured_emblem = { texture = "aoe/LAU.tga" } }
+aoe_LAU_monarchy = { textured_emblem = { texture = "aoe/LAU_monarchy.tga" } }
+aoe_LAU_republic = { textured_emblem = { texture = "aoe/LAU_republic.tga" } }
+aoe_LAU_dominion = { textured_emblem = { texture = "aoe/LAU_dominion.tga" } }
+aoe_LBA = { textured_emblem = { texture = "aoe/LBA.tga" } }
+aoe_LBA_monarchy = { textured_emblem = { texture = "aoe/LBA_monarchy.tga" } }
+aoe_LBA_republic = { textured_emblem = { texture = "aoe/LBA_republic.tga" } }
+aoe_LBA_dominion = { textured_emblem = { texture = "aoe/LBA_dominion.tga" } }
+aoe_LIG = { textured_emblem = { texture = "aoe/LIG.tga" } }
+aoe_LIG_monarchy = { textured_emblem = { texture = "aoe/LIG_monarchy.tga" } }
+aoe_LIG_republic = { textured_emblem = { texture = "aoe/LIG_republic.tga" } }
+aoe_LIG_dominion = { textured_emblem = { texture = "aoe/LIG_dominion.tga" } }
+aoe_LIP_monarchy = { textured_emblem = { texture = "aoe/LIP_monarchy.tga" } }
+aoe_LIP_dominion = { textured_emblem = { texture = "aoe/LIP_dominion.tga" } }
+aoe_LNP = { textured_emblem = { texture = "aoe/LNP.tga" } }
+aoe_LNP_monarchy = { textured_emblem = { texture = "aoe/LNP_monarchy.tga" } }
+aoe_LNP_republic = { textured_emblem = { texture = "aoe/LNP_republic.tga" } }
+aoe_LNP_dominion = { textured_emblem = { texture = "aoe/LNP_dominion.tga" } }
+aoe_LOR = { textured_emblem = { texture = "aoe/LOR.tga" } }
+aoe_LOR_monarchy = { textured_emblem = { texture = "aoe/LOR_monarchy.tga" } }
+aoe_LOR_republic = { textured_emblem = { texture = "aoe/LOR_republic.tga" } }
+aoe_LOR_dominion = { textured_emblem = { texture = "aoe/LOR_dominion.tga" } }
+aoe_LOZ = { textured_emblem = { texture = "aoe/LOZ.tga" } }
+aoe_LOZ_monarchy = { textured_emblem = { texture = "aoe/LOZ_monarchy.tga" } }
+aoe_LOZ_republic = { textured_emblem = { texture = "aoe/LOZ_republic.tga" } }
+aoe_LOZ_dominion = { textured_emblem = { texture = "aoe/LOZ_dominion.tga" } }
+aoe_LUB_republic = { textured_emblem = { texture = "aoe/LUB_republic.tga" } }
+aoe_LUB_dominion = { textured_emblem = { texture = "aoe/LUB_dominion.tga" } }
+aoe_LUC_republic = { textured_emblem = { texture = "aoe/LUC_republic.tga" } }
+aoe_LUC_dominion = { textured_emblem = { texture = "aoe/LUC_dominion.tga" } }
+aoe_LUN = { textured_emblem = { texture = "aoe/LUN.tga" } }
+aoe_LUN_monarchy = { textured_emblem = { texture = "aoe/LUN_monarchy.tga" } }
+aoe_LUN_republic = { textured_emblem = { texture = "aoe/LUN_republic.tga" } }
+aoe_LUN_dominion = { textured_emblem = { texture = "aoe/LUN_dominion.tga" } }
+aoe_LXA = { textured_emblem = { texture = "aoe/LXA.tga" } }
+aoe_LXA_monarchy = { textured_emblem = { texture = "aoe/LXA_monarchy.tga" } }
+aoe_LXA_republic = { textured_emblem = { texture = "aoe/LXA_republic.tga" } }
+aoe_LXA_dominion = { textured_emblem = { texture = "aoe/LXA_dominion.tga" } }
+aoe_MAD = { textured_emblem = { texture = "aoe/MAD.tga" } }
+aoe_MAD_monarchy = { textured_emblem = { texture = "aoe/MAD_monarchy.tga" } }
+aoe_MAD_republic = { textured_emblem = { texture = "aoe/MAD_republic.tga" } }
+aoe_MAD_dominion = { textured_emblem = { texture = "aoe/MAD_dominion.tga" } }
+aoe_MAH = { textured_emblem = { texture = "aoe/MAH.tga" } }
+aoe_MAH_monarchy = { textured_emblem = { texture = "aoe/MAH_monarchy.tga" } }
+aoe_MAH_republic = { textured_emblem = { texture = "aoe/MAH_republic.tga" } }
+aoe_MAH_dominion = { textured_emblem = { texture = "aoe/MAH_dominion.tga" } }
+aoe_MAJ = { textured_emblem = { texture = "aoe/MAJ.tga" } }
+aoe_MAJ_monarchy = { textured_emblem = { texture = "aoe/MAJ_monarchy.tga" } }
+aoe_MAJ_republic = { textured_emblem = { texture = "aoe/MAJ_republic.tga" } }
+aoe_MAJ_dominion = { textured_emblem = { texture = "aoe/MAJ_dominion.tga" } }
+aoe_MAL = { textured_emblem = { texture = "aoe/MAL.tga" } }
+aoe_MAL_monarchy = { textured_emblem = { texture = "aoe/MAL_monarchy.tga" } }
+aoe_MAL_republic = { textured_emblem = { texture = "aoe/MAL_republic.tga" } }
+aoe_MAL_dominion = { textured_emblem = { texture = "aoe/MAL_dominion.tga" } }
+aoe_MAT = { textured_emblem = { texture = "aoe/MAT.tga" } }
+aoe_MAT_monarchy = { textured_emblem = { texture = "aoe/MAT_monarchy.tga" } }
+aoe_MAT_republic = { textured_emblem = { texture = "aoe/MAT_republic.tga" } }
+aoe_MAT_dominion = { textured_emblem = { texture = "aoe/MAT_dominion.tga" } }
+aoe_MAW = { textured_emblem = { texture = "aoe/MAW.tga" } }
+aoe_MAW_monarchy = { textured_emblem = { texture = "aoe/MAW_monarchy.tga" } }
+aoe_MAW_republic = { textured_emblem = { texture = "aoe/MAW_republic.tga" } }
+aoe_MAW_dominion = { textured_emblem = { texture = "aoe/MAW_dominion.tga" } }
+aoe_MBU = { textured_emblem = { texture = "aoe/MBU.tga" } }
+aoe_MBU_monarchy = { textured_emblem = { texture = "aoe/MBU_monarchy.tga" } }
+aoe_MBU_republic = { textured_emblem = { texture = "aoe/MBU_republic.tga" } }
+aoe_MBU_dominion = { textured_emblem = { texture = "aoe/MBU_dominion.tga" } }
+aoe_MEC_monarchy = { textured_emblem = { texture = "aoe/MEC_monarchy.tga" } }
+aoe_MEC_dominion = { textured_emblem = { texture = "aoe/MEC_dominion.tga" } }
+aoe_MEI_monarchy = { textured_emblem = { texture = "aoe/MEI_monarchy.tga" } }
+aoe_MEI_dominion = { textured_emblem = { texture = "aoe/MEI_dominion.tga" } }
+aoe_MEW_monarchy = { textured_emblem = { texture = "aoe/MEW_monarchy.tga" } }
+aoe_MEW_dominion = { textured_emblem = { texture = "aoe/MEW_dominion.tga" } }
+aoe_MGL = { textured_emblem = { texture = "aoe/MGL.tga" } }
+aoe_MGL_monarchy = { textured_emblem = { texture = "aoe/MGL_monarchy.tga" } }
+aoe_MGL_republic = { textured_emblem = { texture = "aoe/MGL_republic.tga" } }
+aoe_MGL_dominion = { textured_emblem = { texture = "aoe/MGL_dominion.tga" } }
+aoe_MGW = { textured_emblem = { texture = "aoe/MGW.tga" } }
+aoe_MGW_monarchy = { textured_emblem = { texture = "aoe/MGW_monarchy.tga" } }
+aoe_MGW_republic = { textured_emblem = { texture = "aoe/MGW_republic.tga" } }
+aoe_MGW_dominion = { textured_emblem = { texture = "aoe/MGW_dominion.tga" } }
+aoe_MHR = { textured_emblem = { texture = "aoe/MHR.tga" } }
+aoe_MHR_monarchy = { textured_emblem = { texture = "aoe/MHR_monarchy.tga" } }
+aoe_MHR_republic = { textured_emblem = { texture = "aoe/MHR_republic.tga" } }
+aoe_MHR_dominion = { textured_emblem = { texture = "aoe/MHR_dominion.tga" } }
+aoe_MIA = { textured_emblem = { texture = "aoe/MIA.tga" } }
+aoe_MIA_monarchy = { textured_emblem = { texture = "aoe/MIA_monarchy.tga" } }
+aoe_MIA_republic = { textured_emblem = { texture = "aoe/MIA_republic.tga" } }
+aoe_MIA_dominion = { textured_emblem = { texture = "aoe/MIA_dominion.tga" } }
+aoe_MIG = { textured_emblem = { texture = "aoe/MIG.tga" } }
+aoe_MIG_monarchy = { textured_emblem = { texture = "aoe/MIG_monarchy.tga" } }
+aoe_MIG_republic = { textured_emblem = { texture = "aoe/MIG_republic.tga" } }
+aoe_MIG_dominion = { textured_emblem = { texture = "aoe/MIG_dominion.tga" } }
+aoe_MIS = { textured_emblem = { texture = "aoe/MIS.tga" } }
+aoe_MIS_monarchy = { textured_emblem = { texture = "aoe/MIS_monarchy.tga" } }
+aoe_MIS_republic = { textured_emblem = { texture = "aoe/MIS_republic.tga" } }
+aoe_MIS_dominion = { textured_emblem = { texture = "aoe/MIS_dominion.tga" } }
+aoe_MKR = { textured_emblem = { texture = "aoe/MKR.tga" } }
+aoe_MKR_monarchy = { textured_emblem = { texture = "aoe/MKR_monarchy.tga" } }
+aoe_MKR_republic = { textured_emblem = { texture = "aoe/MKR_republic.tga" } }
+aoe_MKR_dominion = { textured_emblem = { texture = "aoe/MKR_dominion.tga" } }
+aoe_MLD = { textured_emblem = { texture = "aoe/MLD.tga" } }
+aoe_MLD_monarchy = { textured_emblem = { texture = "aoe/MLD_monarchy.tga" } }
+aoe_MLD_republic = { textured_emblem = { texture = "aoe/MLD_republic.tga" } }
+aoe_MLD_dominion = { textured_emblem = { texture = "aoe/MLD_dominion.tga" } }
+aoe_MLT = { textured_emblem = { texture = "aoe/MLT.tga" } }
+aoe_MLT_monarchy = { textured_emblem = { texture = "aoe/MLT_monarchy.tga" } }
+aoe_MLT_republic = { textured_emblem = { texture = "aoe/MLT_republic.tga" } }
+aoe_MLT_dominion = { textured_emblem = { texture = "aoe/MLT_dominion.tga" } }
+aoe_MND = { textured_emblem = { texture = "aoe/MND.tga" } }
+aoe_MND_monarchy = { textured_emblem = { texture = "aoe/MND_monarchy.tga" } }
+aoe_MND_republic = { textured_emblem = { texture = "aoe/MND_republic.tga" } }
+aoe_MND_dominion = { textured_emblem = { texture = "aoe/MND_dominion.tga" } }
+aoe_MNE = { textured_emblem = { texture = "aoe/MNE.tga" } }
+aoe_MNE_monarchy = { textured_emblem = { texture = "aoe/MNE_monarchy.tga" } }
+aoe_MNE_republic = { textured_emblem = { texture = "aoe/MNE_republic.tga" } }
+aoe_MNE_dominion = { textured_emblem = { texture = "aoe/MNE_dominion.tga" } }
+aoe_MNT = { textured_emblem = { texture = "aoe/MNT.tga" } }
+aoe_MNT_monarchy = { textured_emblem = { texture = "aoe/MNT_monarchy.tga" } }
+aoe_MNT_republic = { textured_emblem = { texture = "aoe/MNT_republic.tga" } }
+aoe_MNT_dominion = { textured_emblem = { texture = "aoe/MNT_dominion.tga" } }
+aoe_MNZ = { textured_emblem = { texture = "aoe/MNZ.tga" } }
+aoe_MNZ_monarchy = { textured_emblem = { texture = "aoe/MNZ_monarchy.tga" } }
+aoe_MNZ_republic = { textured_emblem = { texture = "aoe/MNZ_republic.tga" } }
+aoe_MNZ_dominion = { textured_emblem = { texture = "aoe/MNZ_dominion.tga" } }
+aoe_MOD_monarchy = { textured_emblem = { texture = "aoe/MOD_monarchy.tga" } }
+aoe_MOD_dominion = { textured_emblem = { texture = "aoe/MOD_dominion.tga" } }
+aoe_MOL = { textured_emblem = { texture = "aoe/MOL.tga" } }
+aoe_MOL_monarchy = { textured_emblem = { texture = "aoe/MOL_monarchy.tga" } }
+aoe_MOL_republic = { textured_emblem = { texture = "aoe/MOL_republic.tga" } }
+aoe_MOL_dominion = { textured_emblem = { texture = "aoe/MOL_dominion.tga" } }
+aoe_MOR = { textured_emblem = { texture = "aoe/MOR.tga" } }
+aoe_MOR_monarchy = { textured_emblem = { texture = "aoe/MOR_monarchy.tga" } }
+aoe_MOR_republic = { textured_emblem = { texture = "aoe/MOR_republic.tga" } }
+aoe_MOR_dominion = { textured_emblem = { texture = "aoe/MOR_dominion.tga" } }
+aoe_MOS = { textured_emblem = { texture = "aoe/MOS.tga" } }
+aoe_MOS_monarchy = { textured_emblem = { texture = "aoe/MOS_monarchy.tga" } }
+aoe_MOS_republic = { textured_emblem = { texture = "aoe/MOS_republic.tga" } }
+aoe_MOS_dominion = { textured_emblem = { texture = "aoe/MOS_dominion.tga" } }
+aoe_MRV = { textured_emblem = { texture = "aoe/MRV.tga" } }
+aoe_MRV_monarchy = { textured_emblem = { texture = "aoe/MRV_monarchy.tga" } }
+aoe_MRV_republic = { textured_emblem = { texture = "aoe/MRV_republic.tga" } }
+aoe_MRV_dominion = { textured_emblem = { texture = "aoe/MRV_dominion.tga" } }
+aoe_MSK = { textured_emblem = { texture = "aoe/MSK.tga" } }
+aoe_MSK_monarchy = { textured_emblem = { texture = "aoe/MSK_monarchy.tga" } }
+aoe_MSK_republic = { textured_emblem = { texture = "aoe/MSK_republic.tga" } }
+aoe_MSK_dominion = { textured_emblem = { texture = "aoe/MSK_dominion.tga" } }
+aoe_MTP = { textured_emblem = { texture = "aoe/MTP.tga" } }
+aoe_MTP_monarchy = { textured_emblem = { texture = "aoe/MTP_monarchy.tga" } }
+aoe_MTP_republic = { textured_emblem = { texture = "aoe/MTP_republic.tga" } }
+aoe_MTP_dominion = { textured_emblem = { texture = "aoe/MTP_dominion.tga" } }
+aoe_MUG = { textured_emblem = { texture = "aoe/MUG.tga" } }
+aoe_MUG_monarchy = { textured_emblem = { texture = "aoe/MUG_monarchy.tga" } }
+aoe_MUG_republic = { textured_emblem = { texture = "aoe/MUG_republic.tga" } }
+aoe_MUG_dominion = { textured_emblem = { texture = "aoe/MUG_dominion.tga" } }
+aoe_MUL = { textured_emblem = { texture = "aoe/MUL.tga" } }
+aoe_MUL_monarchy = { textured_emblem = { texture = "aoe/MUL_monarchy.tga" } }
+aoe_MUL_republic = { textured_emblem = { texture = "aoe/MUL_republic.tga" } }
+aoe_MUL_dominion = { textured_emblem = { texture = "aoe/MUL_dominion.tga" } }
+aoe_MUN = { textured_emblem = { texture = "aoe/MUN.tga" } }
+aoe_MUN_monarchy = { textured_emblem = { texture = "aoe/MUN_monarchy.tga" } }
+aoe_MUN_republic = { textured_emblem = { texture = "aoe/MUN_republic.tga" } }
+aoe_MUN_dominion = { textured_emblem = { texture = "aoe/MUN_dominion.tga" } }
+aoe_MYS_dominion = { textured_emblem = { texture = "aoe/MYS_dominion.tga" } }
+aoe_N00 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 128 191 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N01 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 172 151 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N02 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 114 189 158 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N03 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 165 143 130 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N04 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 173 104 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N05 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 198 190 105 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N06 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 116 153 152 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N07 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 166 176 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N08 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 176 108 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N09 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 196 194 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0A = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 101 196 106 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0B = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 180 162 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0C = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 159 145 181 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0D = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 193 185 115 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0E = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 119 93 108 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0F = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 118 187 129 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0G = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 192 192 181 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0H = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 134 177 190 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0I = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 136 164 190 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0J = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 94 161 115 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0K = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 122 198 104 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0L = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 110 128 136 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0M = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 124 175 193 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0N = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 171 149 188 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0O = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 149 189 148 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0P = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 148 184 166 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0Q = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 101 120 118 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0R = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 188 194 183 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0S = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 167 121 156 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0T = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 119 169 159 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0U = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 107 139 98 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0V = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 90 152 177 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0W = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 109 161 137 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0X = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 90 100 131 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0Y = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 185 190 112 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N0Z = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 197 191 114 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N10 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 172 151 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N11 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 114 189 158 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N12 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 165 143 130 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N13 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 173 104 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N14 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 198 190 105 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N15 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 116 153 152 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N16 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 166 176 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N17 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 176 108 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N18 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 196 194 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N19 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 129 91 126 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1A = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 180 162 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1B = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 159 145 181 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1C = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 193 185 115 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1D = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 119 93 108 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1E = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 118 187 129 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1F = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 192 192 181 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1G = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 134 177 190 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1H = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 136 164 190 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1I = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 94 161 115 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1J = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 122 198 104 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1K = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 110 128 136 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1L = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 124 175 193 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1M = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 171 149 188 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1N = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 149 189 148 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1O = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 148 184 166 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1P = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 101 120 118 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1Q = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 188 194 183 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1R = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 167 121 156 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1S = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 119 169 159 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1T = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 107 139 98 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1U = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 90 152 177 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1V = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 109 161 137 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1W = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 90 100 131 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1X = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 185 190 112 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1Y = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 197 191 114 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N1Z = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 171 184 198 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N20 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 114 189 158 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N21 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 165 143 130 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N22 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 173 104 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N23 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 198 190 105 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N24 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 116 153 152 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_NAS_monarchy = { textured_emblem = { texture = "aoe/NAS_monarchy.tga" } }
+aoe_NAS_dominion = { textured_emblem = { texture = "aoe/NAS_dominion.tga" } }
+aoe_NEP_monarchy = { textured_emblem = { texture = "aoe/NEP_monarchy.tga" } }
+aoe_NEP_dominion = { textured_emblem = { texture = "aoe/NEP_dominion.tga" } }
+aoe_NET = { textured_emblem = { texture = "aoe/NET.tga" } }
+aoe_NET_monarchy = { textured_emblem = { texture = "aoe/NET_monarchy.tga" } }
+aoe_NET_republic = { textured_emblem = { texture = "aoe/NET_republic.tga" } }
+aoe_NET_dominion = { textured_emblem = { texture = "aoe/NET_dominion.tga" } }
+aoe_NPE = { textured_emblem = { texture = "aoe/NPE.tga" } }
+aoe_NPE_monarchy = { textured_emblem = { texture = "aoe/NPE_monarchy.tga" } }
+aoe_NPE_republic = { textured_emblem = { texture = "aoe/NPE_republic.tga" } }
+aoe_NPE_dominion = { textured_emblem = { texture = "aoe/NPE_dominion.tga" } }
+aoe_NRI = { textured_emblem = { texture = "aoe/NRI.tga" } }
+aoe_NRI_monarchy = { textured_emblem = { texture = "aoe/NRI_monarchy.tga" } }
+aoe_NRI_republic = { textured_emblem = { texture = "aoe/NRI_republic.tga" } }
+aoe_NRI_dominion = { textured_emblem = { texture = "aoe/NRI_dominion.tga" } }
+aoe_NTC = { textured_emblem = { texture = "aoe/NTC.tga" } }
+aoe_NTC_monarchy = { textured_emblem = { texture = "aoe/NTC_monarchy.tga" } }
+aoe_NTC_republic = { textured_emblem = { texture = "aoe/NTC_republic.tga" } }
+aoe_NTC_dominion = { textured_emblem = { texture = "aoe/NTC_dominion.tga" } }
+aoe_NUG = { textured_emblem = { texture = "aoe/NUG.tga" } }
+aoe_NUG_monarchy = { textured_emblem = { texture = "aoe/NUG_monarchy.tga" } }
+aoe_NUG_republic = { textured_emblem = { texture = "aoe/NUG_republic.tga" } }
+aoe_NUG_dominion = { textured_emblem = { texture = "aoe/NUG_dominion.tga" } }
+aoe_NUR = { textured_emblem = { texture = "aoe/NUR.tga" } }
+aoe_NUR_monarchy = { textured_emblem = { texture = "aoe/NUR_monarchy.tga" } }
+aoe_NUR_republic = { textured_emblem = { texture = "aoe/NUR_republic.tga" } }
+aoe_NUR_dominion = { textured_emblem = { texture = "aoe/NUR_dominion.tga" } }
+aoe_NYE = { textured_emblem = { texture = "aoe/NYE.tga" } }
+aoe_NYE_monarchy = { textured_emblem = { texture = "aoe/NYE_monarchy.tga" } }
+aoe_NYE_republic = { textured_emblem = { texture = "aoe/NYE_republic.tga" } }
+aoe_NYE_dominion = { textured_emblem = { texture = "aoe/NYE_dominion.tga" } }
+aoe_OMA_monarchy = { textured_emblem = { texture = "aoe/OMA_monarchy.tga" } }
+aoe_OMA_republic = { textured_emblem = { texture = "aoe/OMA_republic.tga" } }
+aoe_OMA_dominion = { textured_emblem = { texture = "aoe/OMA_dominion.tga" } }
+aoe_ORI_monarchy = { textured_emblem = { texture = "aoe/ORI_monarchy.tga" } }
+aoe_ORI_dominion = { textured_emblem = { texture = "aoe/ORI_dominion.tga" } }
+aoe_OSG = { textured_emblem = { texture = "aoe/OSG.tga" } }
+aoe_OSG_monarchy = { textured_emblem = { texture = "aoe/OSG_monarchy.tga" } }
+aoe_OSG_republic = { textured_emblem = { texture = "aoe/OSG_republic.tga" } }
+aoe_OSG_dominion = { textured_emblem = { texture = "aoe/OSG_dominion.tga" } }
+aoe_OTT = { textured_emblem = { texture = "aoe/OTT.tga" } }
+aoe_OTT_monarchy = { textured_emblem = { texture = "aoe/OTT_monarchy.tga" } }
+aoe_OTT_republic = { textured_emblem = { texture = "aoe/OTT_republic.tga" } }
+aoe_OTT_dominion = { textured_emblem = { texture = "aoe/OTT_dominion.tga" } }
+aoe_OYO = { textured_emblem = { texture = "aoe/OYO.tga" } }
+aoe_OYO_monarchy = { textured_emblem = { texture = "aoe/OYO_monarchy.tga" } }
+aoe_OYO_republic = { textured_emblem = { texture = "aoe/OYO_republic.tga" } }
+aoe_OYO_dominion = { textured_emblem = { texture = "aoe/OYO_dominion.tga" } }
+aoe_PAL = { textured_emblem = { texture = "aoe/PAL.tga" } }
+aoe_PAL_monarchy = { textured_emblem = { texture = "aoe/PAL_monarchy.tga" } }
+aoe_PAL_republic = { textured_emblem = { texture = "aoe/PAL_republic.tga" } }
+aoe_PAL_dominion = { textured_emblem = { texture = "aoe/PAL_dominion.tga" } }
+aoe_PAP = { textured_emblem = { texture = "aoe/PAP.tga" } }
+aoe_PAP_monarchy = { textured_emblem = { texture = "aoe/PAP_monarchy.tga" } }
+aoe_PAP_republic = { textured_emblem = { texture = "aoe/PAP_republic.tga" } }
+aoe_PAP_dominion = { textured_emblem = { texture = "aoe/PAP_dominion.tga" } }
+aoe_PAR_monarchy = { textured_emblem = { texture = "aoe/PAR_monarchy.tga" } }
+aoe_PAR_dominion = { textured_emblem = { texture = "aoe/PAR_dominion.tga" } }
+aoe_PAT = { textured_emblem = { texture = "aoe/PAT.tga" } }
+aoe_PAT_monarchy = { textured_emblem = { texture = "aoe/PAT_monarchy.tga" } }
+aoe_PAT_republic = { textured_emblem = { texture = "aoe/PAT_republic.tga" } }
+aoe_PAT_dominion = { textured_emblem = { texture = "aoe/PAT_dominion.tga" } }
+aoe_PER = { textured_emblem = { texture = "aoe/PER.tga" } }
+aoe_PER_monarchy = { textured_emblem = { texture = "aoe/PER_monarchy.tga" } }
+aoe_PER_republic = { textured_emblem = { texture = "aoe/PER_republic.tga" } }
+aoe_PER_dominion = { textured_emblem = { texture = "aoe/PER_dominion.tga" } }
+aoe_PLC = { textured_emblem = { texture = "aoe/PLC.tga" } }
+aoe_PLC_monarchy = { textured_emblem = { texture = "aoe/PLC_monarchy.tga" } }
+aoe_PLC_republic = { textured_emblem = { texture = "aoe/PLC_republic.tga" } }
+aoe_PLC_dominion = { textured_emblem = { texture = "aoe/PLC_dominion.tga" } }
+aoe_PLM = { textured_emblem = { texture = "aoe/PLM.tga" } }
+aoe_PLM_monarchy = { textured_emblem = { texture = "aoe/PLM_monarchy.tga" } }
+aoe_PLM_republic = { textured_emblem = { texture = "aoe/PLM_republic.tga" } }
+aoe_PLM_dominion = { textured_emblem = { texture = "aoe/PLM_dominion.tga" } }
+aoe_PNJ = { textured_emblem = { texture = "aoe/PNJ.tga" } }
+aoe_PNJ_monarchy = { textured_emblem = { texture = "aoe/PNJ_monarchy.tga" } }
+aoe_PNJ_republic = { textured_emblem = { texture = "aoe/PNJ_republic.tga" } }
+aoe_PNJ_dominion = { textured_emblem = { texture = "aoe/PNJ_dominion.tga" } }
+aoe_POR_monarchy = { textured_emblem = { texture = "aoe/POR_monarchy.tga" } }
+aoe_POR_republic = { textured_emblem = { texture = "aoe/POR_republic.tga" } }
+aoe_POR_dominion = { textured_emblem = { texture = "aoe/POR_dominion.tga" } }
+aoe_PRK = { textured_emblem = { texture = "aoe/PRK.tga" } }
+aoe_PRK_monarchy = { textured_emblem = { texture = "aoe/PRK_monarchy.tga" } }
+aoe_PRK_republic = { textured_emblem = { texture = "aoe/PRK_republic.tga" } }
+aoe_PRK_dominion = { textured_emblem = { texture = "aoe/PRK_dominion.tga" } }
+aoe_PRL = { textured_emblem = { texture = "aoe/PRL.tga" } }
+aoe_PRL_monarchy = { textured_emblem = { texture = "aoe/PRL_monarchy.tga" } }
+aoe_PRL_republic = { textured_emblem = { texture = "aoe/PRL_republic.tga" } }
+aoe_PRL_dominion = { textured_emblem = { texture = "aoe/PRL_dominion.tga" } }
+aoe_PTK = { textured_emblem = { texture = "aoe/PTK.tga" } }
+aoe_PTK_monarchy = { textured_emblem = { texture = "aoe/PTK_monarchy.tga" } }
+aoe_PTK_republic = { textured_emblem = { texture = "aoe/PTK_republic.tga" } }
+aoe_PTK_dominion = { textured_emblem = { texture = "aoe/PTK_dominion.tga" } }
+aoe_PYG = { textured_emblem = { texture = "aoe/PYG.tga" } }
+aoe_PYG_monarchy = { textured_emblem = { texture = "aoe/PYG_monarchy.tga" } }
+aoe_PYG_republic = { textured_emblem = { texture = "aoe/PYG_republic.tga" } }
+aoe_PYG_dominion = { textured_emblem = { texture = "aoe/PYG_dominion.tga" } }
+aoe_QNG = { textured_emblem = { texture = "aoe/QNG.tga" } }
+aoe_QNG_monarchy = { textured_emblem = { texture = "aoe/QNG_monarchy.tga" } }
+aoe_QNG_republic = { textured_emblem = { texture = "aoe/QNG_republic.tga" } }
+aoe_QNG_dominion = { textured_emblem = { texture = "aoe/QNG_dominion.tga" } }
+aoe_QUA = { textured_emblem = { texture = "aoe/QUA.tga" } }
+aoe_QUA_monarchy = { textured_emblem = { texture = "aoe/QUA_monarchy.tga" } }
+aoe_QUA_republic = { textured_emblem = { texture = "aoe/QUA_republic.tga" } }
+aoe_QUA_dominion = { textured_emblem = { texture = "aoe/QUA_dominion.tga" } }
+aoe_RAJ = { textured_emblem = { texture = "aoe/RAJ.tga" } }
+aoe_RAJ_monarchy = { textured_emblem = { texture = "aoe/RAJ_monarchy.tga" } }
+aoe_RAJ_republic = { textured_emblem = { texture = "aoe/RAJ_republic.tga" } }
+aoe_RAJ_dominion = { textured_emblem = { texture = "aoe/RAJ_dominion.tga" } }
+aoe_RTP = { textured_emblem = { texture = "aoe/RTP.tga" } }
+aoe_RTP_monarchy = { textured_emblem = { texture = "aoe/RTP_monarchy.tga" } }
+aoe_RTP_republic = { textured_emblem = { texture = "aoe/RTP_republic.tga" } }
+aoe_RTP_dominion = { textured_emblem = { texture = "aoe/RTP_dominion.tga" } }
+aoe_RWA = { textured_emblem = { texture = "aoe/RWA.tga" } }
+aoe_RWA_monarchy = { textured_emblem = { texture = "aoe/RWA_monarchy.tga" } }
+aoe_RWA_republic = { textured_emblem = { texture = "aoe/RWA_republic.tga" } }
+aoe_RWA_dominion = { textured_emblem = { texture = "aoe/RWA_dominion.tga" } }
+aoe_RZV = { textured_emblem = { texture = "aoe/RZV.tga" } }
+aoe_RZV_monarchy = { textured_emblem = { texture = "aoe/RZV_monarchy.tga" } }
+aoe_RZV_republic = { textured_emblem = { texture = "aoe/RZV_republic.tga" } }
+aoe_RZV_dominion = { textured_emblem = { texture = "aoe/RZV_dominion.tga" } }
+aoe_SAA = { textured_emblem = { texture = "aoe/SAA.tga" } }
+aoe_SAA_monarchy = { textured_emblem = { texture = "aoe/SAA_monarchy.tga" } }
+aoe_SAA_republic = { textured_emblem = { texture = "aoe/SAA_republic.tga" } }
+aoe_SAA_dominion = { textured_emblem = { texture = "aoe/SAA_dominion.tga" } }
+aoe_SAL = { textured_emblem = { texture = "aoe/SAL.tga" } }
+aoe_SAL_monarchy = { textured_emblem = { texture = "aoe/SAL_monarchy.tga" } }
+aoe_SAL_republic = { textured_emblem = { texture = "aoe/SAL_republic.tga" } }
+aoe_SAL_dominion = { textured_emblem = { texture = "aoe/SAL_dominion.tga" } }
+aoe_SAT = { textured_emblem = { texture = "aoe/SAT.tga" } }
+aoe_SAT_monarchy = { textured_emblem = { texture = "aoe/SAT_monarchy.tga" } }
+aoe_SAT_republic = { textured_emblem = { texture = "aoe/SAT_republic.tga" } }
+aoe_SAT_dominion = { textured_emblem = { texture = "aoe/SAT_dominion.tga" } }
+aoe_SAX_monarchy = { textured_emblem = { texture = "aoe/SAX_monarchy.tga" } }
+aoe_SAX_republic = { textured_emblem = { texture = "aoe/SAX_republic.tga" } }
+aoe_SAX_dominion = { textured_emblem = { texture = "aoe/SAX_dominion.tga" } }
+aoe_SBP = { textured_emblem = { texture = "aoe/SBP.tga" } }
+aoe_SBP_monarchy = { textured_emblem = { texture = "aoe/SBP_monarchy.tga" } }
+aoe_SBP_republic = { textured_emblem = { texture = "aoe/SBP_republic.tga" } }
+aoe_SBP_dominion = { textured_emblem = { texture = "aoe/SBP_dominion.tga" } }
+aoe_SCO = { textured_emblem = { texture = "aoe/SCO.tga" } }
+aoe_SCO_monarchy = { textured_emblem = { texture = "aoe/SCO_monarchy.tga" } }
+aoe_SCO_republic = { textured_emblem = { texture = "aoe/SCO_republic.tga" } }
+aoe_SCO_dominion = { textured_emblem = { texture = "aoe/SCO_dominion.tga" } }
+aoe_SEG = { textured_emblem = { texture = "aoe/SEG.tga" } }
+aoe_SEG_monarchy = { textured_emblem = { texture = "aoe/SEG_monarchy.tga" } }
+aoe_SEG_republic = { textured_emblem = { texture = "aoe/SEG_republic.tga" } }
+aoe_SEG_dominion = { textured_emblem = { texture = "aoe/SEG_dominion.tga" } }
+aoe_SEN = { textured_emblem = { texture = "aoe/SEN.tga" } }
+aoe_SEN_monarchy = { textured_emblem = { texture = "aoe/SEN_monarchy.tga" } }
+aoe_SEN_republic = { textured_emblem = { texture = "aoe/SEN_republic.tga" } }
+aoe_SEN_dominion = { textured_emblem = { texture = "aoe/SEN_dominion.tga" } }
+aoe_SFL = { textured_emblem = { texture = "aoe/SFL.tga" } }
+aoe_SFL_monarchy = { textured_emblem = { texture = "aoe/SFL_monarchy.tga" } }
+aoe_SFL_republic = { textured_emblem = { texture = "aoe/SFL_republic.tga" } }
+aoe_SFL_dominion = { textured_emblem = { texture = "aoe/SFL_dominion.tga" } }
+aoe_SGJ = { textured_emblem = { texture = "aoe/SGJ.tga" } }
+aoe_SGJ_monarchy = { textured_emblem = { texture = "aoe/SGJ_monarchy.tga" } }
+aoe_SGJ_republic = { textured_emblem = { texture = "aoe/SGJ_republic.tga" } }
+aoe_SGJ_dominion = { textured_emblem = { texture = "aoe/SGJ_dominion.tga" } }
+aoe_SGM = { textured_emblem = { texture = "aoe/SGM.tga" } }
+aoe_SGM_monarchy = { textured_emblem = { texture = "aoe/SGM_monarchy.tga" } }
+aoe_SGM_republic = { textured_emblem = { texture = "aoe/SGM_republic.tga" } }
+aoe_SGM_dominion = { textured_emblem = { texture = "aoe/SGM_dominion.tga" } }
+aoe_SHE = { textured_emblem = { texture = "aoe/SHE.tga" } }
+aoe_SHE_monarchy = { textured_emblem = { texture = "aoe/SHE_monarchy.tga" } }
+aoe_SHE_republic = { textured_emblem = { texture = "aoe/SHE_republic.tga" } }
+aoe_SHE_dominion = { textured_emblem = { texture = "aoe/SHE_dominion.tga" } }
+aoe_SHK = { textured_emblem = { texture = "aoe/SHK.tga" } }
+aoe_SHK_monarchy = { textured_emblem = { texture = "aoe/SHK_monarchy.tga" } }
+aoe_SHK_republic = { textured_emblem = { texture = "aoe/SHK_republic.tga" } }
+aoe_SHK_dominion = { textured_emblem = { texture = "aoe/SHK_dominion.tga" } }
+aoe_SIK_dominion = { textured_emblem = { texture = "aoe/SIK_dominion.tga" } }
+aoe_SIN_dominion = { textured_emblem = { texture = "aoe/SIN_dominion.tga" } }
+aoe_SLW = { textured_emblem = { texture = "aoe/SLW.tga" } }
+aoe_SLW_monarchy = { textured_emblem = { texture = "aoe/SLW_monarchy.tga" } }
+aoe_SLW_republic = { textured_emblem = { texture = "aoe/SLW_republic.tga" } }
+aoe_SLW_dominion = { textured_emblem = { texture = "aoe/SLW_dominion.tga" } }
+aoe_SPA = { textured_emblem = { texture = "aoe/SPA.tga" } }
+aoe_SPA_monarchy = { textured_emblem = { texture = "aoe/SPA_monarchy.tga" } }
+aoe_SPA_republic = { textured_emblem = { texture = "aoe/SPA_republic.tga" } }
+aoe_SPA_dominion = { textured_emblem = { texture = "aoe/SPA_dominion.tga" } }
+aoe_SRN = { textured_emblem = { texture = "aoe/SRN.tga" } }
+aoe_SRN_monarchy = { textured_emblem = { texture = "aoe/SRN_monarchy.tga" } }
+aoe_SRN_republic = { textured_emblem = { texture = "aoe/SRN_republic.tga" } }
+aoe_SRN_dominion = { textured_emblem = { texture = "aoe/SRN_dominion.tga" } }
+aoe_SUA = { textured_emblem = { texture = "aoe/SUA.tga" } }
+aoe_SUA_monarchy = { textured_emblem = { texture = "aoe/SUA_monarchy.tga" } }
+aoe_SUA_republic = { textured_emblem = { texture = "aoe/SUA_republic.tga" } }
+aoe_SUA_dominion = { textured_emblem = { texture = "aoe/SUA_dominion.tga" } }
+aoe_SUD = { textured_emblem = { texture = "aoe/SUD.tga" } }
+aoe_SUD_monarchy = { textured_emblem = { texture = "aoe/SUD_monarchy.tga" } }
+aoe_SUD_republic = { textured_emblem = { texture = "aoe/SUD_republic.tga" } }
+aoe_SUD_dominion = { textured_emblem = { texture = "aoe/SUD_dominion.tga" } }
+aoe_SUL = { textured_emblem = { texture = "aoe/SUL.tga" } }
+aoe_SUL_monarchy = { textured_emblem = { texture = "aoe/SUL_monarchy.tga" } }
+aoe_SUL_republic = { textured_emblem = { texture = "aoe/SUL_republic.tga" } }
+aoe_SUL_dominion = { textured_emblem = { texture = "aoe/SUL_dominion.tga" } }
+aoe_SUX = { textured_emblem = { texture = "aoe/SUX.tga" } }
+aoe_SUX_monarchy = { textured_emblem = { texture = "aoe/SUX_monarchy.tga" } }
+aoe_SUX_republic = { textured_emblem = { texture = "aoe/SUX_republic.tga" } }
+aoe_SUX_dominion = { textured_emblem = { texture = "aoe/SUX_dominion.tga" } }
+aoe_SVA = { textured_emblem = { texture = "aoe/SVA.tga" } }
+aoe_SVA_monarchy = { textured_emblem = { texture = "aoe/SVA_monarchy.tga" } }
+aoe_SVA_republic = { textured_emblem = { texture = "aoe/SVA_republic.tga" } }
+aoe_SVA_dominion = { textured_emblem = { texture = "aoe/SVA_dominion.tga" } }
+aoe_SVY = { textured_emblem = { texture = "aoe/SVY.tga" } }
+aoe_SVY_monarchy = { textured_emblem = { texture = "aoe/SVY_monarchy.tga" } }
+aoe_SVY_republic = { textured_emblem = { texture = "aoe/SVY_republic.tga" } }
+aoe_SVY_dominion = { textured_emblem = { texture = "aoe/SVY_dominion.tga" } }
+aoe_SWE = { textured_emblem = { texture = "aoe/SWE.tga" } }
+aoe_SWE_monarchy = { textured_emblem = { texture = "aoe/SWE_monarchy.tga" } }
+aoe_SWE_republic = { textured_emblem = { texture = "aoe/SWE_republic.tga" } }
+aoe_SWE_dominion = { textured_emblem = { texture = "aoe/SWE_dominion.tga" } }
+aoe_SWH = { textured_emblem = { texture = "aoe/SWH.tga" } }
+aoe_SWH_monarchy = { textured_emblem = { texture = "aoe/SWH_monarchy.tga" } }
+aoe_SWH_republic = { textured_emblem = { texture = "aoe/SWH_republic.tga" } }
+aoe_SWH_dominion = { textured_emblem = { texture = "aoe/SWH_dominion.tga" } }
+aoe_SWI = { textured_emblem = { texture = "aoe/SWI.tga" } }
+aoe_SWI_monarchy = { textured_emblem = { texture = "aoe/SWI_monarchy.tga" } }
+aoe_SWI_republic = { textured_emblem = { texture = "aoe/SWI_republic.tga" } }
+aoe_SWI_dominion = { textured_emblem = { texture = "aoe/SWI_dominion.tga" } }
+aoe_TIB = { textured_emblem = { texture = "aoe/TIB.tga" } }
+aoe_TIB_monarchy = { textured_emblem = { texture = "aoe/TIB_monarchy.tga" } }
+aoe_TIB_republic = { textured_emblem = { texture = "aoe/TIB_republic.tga" } }
+aoe_TIB_dominion = { textured_emblem = { texture = "aoe/TIB_dominion.tga" } }
+aoe_TKG = { textured_emblem = { texture = "aoe/TKG.tga" } }
+aoe_TKG_monarchy = { textured_emblem = { texture = "aoe/TKG_monarchy.tga" } }
+aoe_TKG_republic = { textured_emblem = { texture = "aoe/TKG_republic.tga" } }
+aoe_TKG_dominion = { textured_emblem = { texture = "aoe/TKG_dominion.tga" } }
+aoe_TOR = { textured_emblem = { texture = "aoe/TOR.tga" } }
+aoe_TOR_monarchy = { textured_emblem = { texture = "aoe/TOR_monarchy.tga" } }
+aoe_TOR_republic = { textured_emblem = { texture = "aoe/TOR_republic.tga" } }
+aoe_TOR_dominion = { textured_emblem = { texture = "aoe/TOR_dominion.tga" } }
+aoe_TOS = { textured_emblem = { texture = "aoe/TOS.tga" } }
+aoe_TOS_monarchy = { textured_emblem = { texture = "aoe/TOS_monarchy.tga" } }
+aoe_TOS_republic = { textured_emblem = { texture = "aoe/TOS_republic.tga" } }
+aoe_TOS_dominion = { textured_emblem = { texture = "aoe/TOS_dominion.tga" } }
+aoe_TRA_monarchy = { textured_emblem = { texture = "aoe/TRA_monarchy.tga" } }
+aoe_TRA_dominion = { textured_emblem = { texture = "aoe/TRA_dominion.tga" } }
+aoe_TRH = { textured_emblem = { texture = "aoe/TRH.tga" } }
+aoe_TRH_monarchy = { textured_emblem = { texture = "aoe/TRH_monarchy.tga" } }
+aoe_TRH_republic = { textured_emblem = { texture = "aoe/TRH_republic.tga" } }
+aoe_TRH_dominion = { textured_emblem = { texture = "aoe/TRH_dominion.tga" } }
+aoe_TRK = { textured_emblem = { texture = "aoe/TRK.tga" } }
+aoe_TRK_monarchy = { textured_emblem = { texture = "aoe/TRK_monarchy.tga" } }
+aoe_TRK_republic = { textured_emblem = { texture = "aoe/TRK_republic.tga" } }
+aoe_TRK_dominion = { textured_emblem = { texture = "aoe/TRK_dominion.tga" } }
+aoe_TRP = { textured_emblem = { texture = "aoe/TRP.tga" } }
+aoe_TRP_monarchy = { textured_emblem = { texture = "aoe/TRP_monarchy.tga" } }
+aoe_TRP_republic = { textured_emblem = { texture = "aoe/TRP_republic.tga" } }
+aoe_TRP_dominion = { textured_emblem = { texture = "aoe/TRP_dominion.tga" } }
+aoe_TRR = { textured_emblem = { texture = "aoe/TRR.tga" } }
+aoe_TRR_monarchy = { textured_emblem = { texture = "aoe/TRR_monarchy.tga" } }
+aoe_TRR_republic = { textured_emblem = { texture = "aoe/TRR_republic.tga" } }
+aoe_TRR_dominion = { textured_emblem = { texture = "aoe/TRR_dominion.tga" } }
+aoe_TRZ = { textured_emblem = { texture = "aoe/TRZ.tga" } }
+aoe_TRZ_monarchy = { textured_emblem = { texture = "aoe/TRZ_monarchy.tga" } }
+aoe_TRZ_republic = { textured_emblem = { texture = "aoe/TRZ_republic.tga" } }
+aoe_TRZ_dominion = { textured_emblem = { texture = "aoe/TRZ_dominion.tga" } }
+aoe_TUR_monarchy = { textured_emblem = { texture = "aoe/TUR_monarchy.tga" } }
+aoe_TUR_republic = { textured_emblem = { texture = "aoe/TUR_republic.tga" } }
+aoe_TUR_dominion = { textured_emblem = { texture = "aoe/TUR_dominion.tga" } }
+aoe_TUS = { textured_emblem = { texture = "aoe/TUS.tga" } }
+aoe_TUS_monarchy = { textured_emblem = { texture = "aoe/TUS_monarchy.tga" } }
+aoe_TUS_republic = { textured_emblem = { texture = "aoe/TUS_republic.tga" } }
+aoe_TUS_dominion = { textured_emblem = { texture = "aoe/TUS_dominion.tga" } }
+aoe_ULM = { textured_emblem = { texture = "aoe/ULM.tga" } }
+aoe_ULM_monarchy = { textured_emblem = { texture = "aoe/ULM_monarchy.tga" } }
+aoe_ULM_republic = { textured_emblem = { texture = "aoe/ULM_republic.tga" } }
+aoe_ULM_dominion = { textured_emblem = { texture = "aoe/ULM_dominion.tga" } }
+aoe_URM = { textured_emblem = { texture = "aoe/URM.tga" } }
+aoe_URM_monarchy = { textured_emblem = { texture = "aoe/URM_monarchy.tga" } }
+aoe_URM_republic = { textured_emblem = { texture = "aoe/URM_republic.tga" } }
+aoe_URM_dominion = { textured_emblem = { texture = "aoe/URM_dominion.tga" } }
+aoe_VEN_monarchy = { textured_emblem = { texture = "aoe/VEN_monarchy.tga" } }
+aoe_VEN_republic = { textured_emblem = { texture = "aoe/VEN_republic.tga" } }
+aoe_VEN_dominion = { textured_emblem = { texture = "aoe/VEN_dominion.tga" } }
+aoe_VIJ = { textured_emblem = { texture = "aoe/VIJ.tga" } }
+aoe_VIJ_monarchy = { textured_emblem = { texture = "aoe/VIJ_monarchy.tga" } }
+aoe_VIJ_republic = { textured_emblem = { texture = "aoe/VIJ_republic.tga" } }
+aoe_VIJ_dominion = { textured_emblem = { texture = "aoe/VIJ_dominion.tga" } }
+aoe_WAD = { textured_emblem = { texture = "aoe/WAD.tga" } }
+aoe_WAD_monarchy = { textured_emblem = { texture = "aoe/WAD_monarchy.tga" } }
+aoe_WAD_republic = { textured_emblem = { texture = "aoe/WAD_republic.tga" } }
+aoe_WAD_dominion = { textured_emblem = { texture = "aoe/WAD_dominion.tga" } }
+aoe_WAL = { textured_emblem = { texture = "aoe/WAL.tga" } }
+aoe_WAL_monarchy = { textured_emblem = { texture = "aoe/WAL_monarchy.tga" } }
+aoe_WAL_republic = { textured_emblem = { texture = "aoe/WAL_republic.tga" } }
+aoe_WAL_dominion = { textured_emblem = { texture = "aoe/WAL_dominion.tga" } }
+aoe_WEI_monarchy = { textured_emblem = { texture = "aoe/WEI_monarchy.tga" } }
+aoe_WEI_dominion = { textured_emblem = { texture = "aoe/WEI_dominion.tga" } }
+aoe_WIC = { textured_emblem = { texture = "aoe/WIC.tga" } }
+aoe_WIC_monarchy = { textured_emblem = { texture = "aoe/WIC_monarchy.tga" } }
+aoe_WIC_republic = { textured_emblem = { texture = "aoe/WIC_republic.tga" } }
+aoe_WIC_dominion = { textured_emblem = { texture = "aoe/WIC_dominion.tga" } }
+aoe_WRI = { textured_emblem = { texture = "aoe/WRI.tga" } }
+aoe_WRI_monarchy = { textured_emblem = { texture = "aoe/WRI_monarchy.tga" } }
+aoe_WRI_republic = { textured_emblem = { texture = "aoe/WRI_republic.tga" } }
+aoe_WRI_dominion = { textured_emblem = { texture = "aoe/WRI_dominion.tga" } }
+aoe_WRL = { textured_emblem = { texture = "aoe/WRL.tga" } }
+aoe_WRL_monarchy = { textured_emblem = { texture = "aoe/WRL_monarchy.tga" } }
+aoe_WRL_republic = { textured_emblem = { texture = "aoe/WRL_republic.tga" } }
+aoe_WRL_dominion = { textured_emblem = { texture = "aoe/WRL_dominion.tga" } }
+aoe_WUL = { textured_emblem = { texture = "aoe/WUL.tga" } }
+aoe_WUL_monarchy = { textured_emblem = { texture = "aoe/WUL_monarchy.tga" } }
+aoe_WUL_republic = { textured_emblem = { texture = "aoe/WUL_republic.tga" } }
+aoe_WUL_dominion = { textured_emblem = { texture = "aoe/WUL_dominion.tga" } }
+aoe_WUR_monarchy = { textured_emblem = { texture = "aoe/WUR_monarchy.tga" } }
+aoe_WUR_dominion = { textured_emblem = { texture = "aoe/WUR_dominion.tga" } }
+aoe_XHO = { textured_emblem = { texture = "aoe/XHO.tga" } }
+aoe_XHO_monarchy = { textured_emblem = { texture = "aoe/XHO_monarchy.tga" } }
+aoe_XHO_republic = { textured_emblem = { texture = "aoe/XHO_republic.tga" } }
+aoe_XHO_dominion = { textured_emblem = { texture = "aoe/XHO_dominion.tga" } }
+aoe_XIN = { textured_emblem = { texture = "aoe/XIN.tga" } }
+aoe_XIN_monarchy = { textured_emblem = { texture = "aoe/XIN_monarchy.tga" } }
+aoe_XIN_republic = { textured_emblem = { texture = "aoe/XIN_republic.tga" } }
+aoe_XIN_dominion = { textured_emblem = { texture = "aoe/XIN_dominion.tga" } }
+aoe_YCH = { textured_emblem = { texture = "aoe/YCH.tga" } }
+aoe_YCH_monarchy = { textured_emblem = { texture = "aoe/YCH_monarchy.tga" } }
+aoe_YCH_republic = { textured_emblem = { texture = "aoe/YCH_republic.tga" } }
+aoe_YCH_dominion = { textured_emblem = { texture = "aoe/YCH_dominion.tga" } }
+aoe_YZW = { textured_emblem = { texture = "aoe/YZW.tga" } }
+aoe_YZW_monarchy = { textured_emblem = { texture = "aoe/YZW_monarchy.tga" } }
+aoe_YZW_republic = { textured_emblem = { texture = "aoe/YZW_republic.tga" } }
+aoe_YZW_dominion = { textured_emblem = { texture = "aoe/YZW_dominion.tga" } }
+aoe_ZAN = { textured_emblem = { texture = "aoe/ZAN.tga" } }
+aoe_ZAN_monarchy = { textured_emblem = { texture = "aoe/ZAN_monarchy.tga" } }
+aoe_ZAN_republic = { textured_emblem = { texture = "aoe/ZAN_republic.tga" } }
+aoe_ZAN_dominion = { textured_emblem = { texture = "aoe/ZAN_dominion.tga" } }
+aoe_ZAR = { textured_emblem = { texture = "aoe/ZAR.tga" } }
+aoe_ZAR_monarchy = { textured_emblem = { texture = "aoe/ZAR_monarchy.tga" } }
+aoe_ZAR_republic = { textured_emblem = { texture = "aoe/ZAR_republic.tga" } }
+aoe_ZAR_dominion = { textured_emblem = { texture = "aoe/ZAR_dominion.tga" } }
+aoe_ZUL_monarchy = { textured_emblem = { texture = "aoe/ZUL_monarchy.tga" } }
+aoe_ZUL_republic = { textured_emblem = { texture = "aoe/ZUL_republic.tga" } }
+aoe_ZUL_dominion = { textured_emblem = { texture = "aoe/ZUL_dominion.tga" } }
+aoe_ZZH = { textured_emblem = { texture = "aoe/ZZH.tga" } }
+aoe_ZZH_monarchy = { textured_emblem = { texture = "aoe/ZZH_monarchy.tga" } }
+aoe_ZZH_republic = { textured_emblem = { texture = "aoe/ZZH_republic.tga" } }
+aoe_ZZH_dominion = { textured_emblem = { texture = "aoe/ZZH_dominion.tga" } }

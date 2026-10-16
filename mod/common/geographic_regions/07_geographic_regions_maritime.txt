@@ -1,0 +1,9 @@
+﻿geographic_region_polar_seas = {
+	short_key = polar_seas
+	state_regions = { }
+}
+
+geographic_region_tropical_seas = {
+	short_key = tropical_seas
+	state_regions = { }
+}

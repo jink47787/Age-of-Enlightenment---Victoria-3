@@ -1,0 +1,8 @@
+# Downloaded inputs (re-fetch with tools/fetch_sources.py)
+sources/
+
+# Intermediate output and debug images
+build/
+
+__pycache__/
+*.pyc

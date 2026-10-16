@@ -1,0 +1,3013 @@
+﻿COUNTRIES = {
+	c:ABB ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:ABK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ACH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_liberal = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:AFG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:AGC ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ALD ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:ANH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:ANK ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ANS ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:APC ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:ARK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ARO ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ASH ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ASM ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ATJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:AUG ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:AUS ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:AWA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:AYO ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:BAD ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:BAL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BAS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BAV ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:BBG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BDK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BDN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BEN ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BHT ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BHU ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BIJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:BNB ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BNG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_colonial_resettlement
+	}
+	c:BNY ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BOR ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_colonial_exploitation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:BRA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:BRD ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BRG ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BRM ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BRN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:BRR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:BRS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BRU ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BSH ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BTL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BTN ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BUG ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BUK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:BUN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:BUR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:BXJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:CAM ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:CDD ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:CHE ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:CHG ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:CHP ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:CHS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:CHT ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:CIR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:CIT ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:CLA ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:CMG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:CMN ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:COB ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:COC ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:CRI ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:CRK ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:CRL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:DAH ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:DAR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:DGB ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:DJA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:DLM ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:DMS ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:DND ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:DNN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:DON ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:DOR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:DPR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:DZN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:EFR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:ENL ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:ETH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:FOX ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:FRM ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_liberal = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:FUL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:GAZ ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:GBU ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:GEL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:GEN ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:GEU ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:GFL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:GOB ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:GOL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:GRH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:GRJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:GUJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:GZK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:HAD ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:HAM ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:HAN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:HAR ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:HAW ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:HES ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:HET ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:HSA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:IGL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:ILL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:IMR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:IQS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:ISK ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:JAI ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:JAV ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:JEY ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:JOD ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:JOH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KAF ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KAK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KAL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KAT ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KAZ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KBO ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KBR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KED ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KHA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KHI ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KHJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KIW ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:KKH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KLD ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:KLM ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KMK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:KML ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KND ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:KNO ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KOL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:KON ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KOR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:KRN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KTH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KTI ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KUB ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KUR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:KWR ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:KZB ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:LAD ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:LAU ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:LBA ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:LIG ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:LIP ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:LNP ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:LOR ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:LOZ ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:LUB ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:LUC ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:LUN ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:LXA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MAD ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:MAH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:MAJ ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MAL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MAT ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MAW ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:MBU ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MEC ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MEI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MEW ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:MGL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:MGW ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MHR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MIA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:MIG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:MIS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:MKR ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:MLD ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:MLT ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MND ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MNE ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:MNT ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MNZ ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MOD ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MOL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MOR ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MOS ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MRV ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MSK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+	}
+	c:MTP ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:MUG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:MUL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+	}
+	c:MUN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:MYS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:N00 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N01 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N02 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N03 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N04 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N05 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N06 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N07 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N08 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N09 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0A ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0B ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0C ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0D ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0E ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0F ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0G ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0H ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0I ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0J ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0K ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0L ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0M ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0N ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0O ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0P ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0Q ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0R ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0S ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0T ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0U ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0V ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0W ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0X ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0Y ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N0Z ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N10 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N11 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N12 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N13 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N14 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N15 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N16 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N17 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N18 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N19 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1A ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1B ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1C ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1D ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1E ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1F ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1G ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1H ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1I ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1J ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1K ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1L ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1M ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1N ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1O ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1P ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1Q ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1R ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1S ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1T ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1U ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1V ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1W ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1X ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1Y ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N1Z ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N20 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N21 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N22 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N23 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:N24 ?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+	c:NAS ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:NEP ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:NET ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_colonial_exploitation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:NPE ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:NRI ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:NTC ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:NUG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:NUR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:NYE ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:OMA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:ORI ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:OSG ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:OTT ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:OYO ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:PAL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:PAP ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:PAR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:PAT ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:PER ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:PLC ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:PLM ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:PNJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+	}
+	c:POR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:PRK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:PRL ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:PTK ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:PYG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:QNG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+	}
+	c:QUA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:RAJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:RTP ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:RWA ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:RZV ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SAA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SAL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SAT ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SAX ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SBP ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SCO ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SEG ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SEN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SFL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SGJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SGM ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SHE ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:SHK ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SIK ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SIN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SLW ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SPA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SRN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SUA ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SUD ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SUL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:SUX ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:SVA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:SVY ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SWE ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SWH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:SWI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_liberal = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:TIB ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:TKG ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:TOR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:TOS ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:TRA ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:TRH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:TRK ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:TRP ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+	}
+	c:TRR ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:TRZ ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:TUR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:TUS ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:ULM ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:URM ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:VEN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:VIJ ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:WAD ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:WAL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:WEI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:WIC ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:WRI ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:WRL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:WUL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:WUR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:XHO ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:XIN ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+	}
+	c:YCH ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_elder_council
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+	}
+	c:YZW ?= {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:ZAN ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+	}
+	c:ZAR ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:ZUL ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+	}
+	c:ZZH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_liberal = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+}

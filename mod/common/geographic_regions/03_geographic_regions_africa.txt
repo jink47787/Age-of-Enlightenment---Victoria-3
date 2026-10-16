@@ -1,0 +1,36 @@
+﻿geographic_region_africa = {
+	short_key = africa
+	strategic_regions = { sr:region_nile_basin sr:region_north_africa sr:region_west_africa sr:region_equatorial_africa sr:region_southern_africa sr:region_east_africa }
+}
+
+geographic_region_subsaharan_africa = {
+	short_key = subsaharan_africa
+	strategic_regions = { sr:region_west_africa sr:region_equatorial_africa sr:region_southern_africa sr:region_east_africa }
+	state_regions = { STATE_HALAIB STATE_AL_FULA STATE_JUNAYNAH STATE_KHARTOUM STATE_WAW }
+}
+
+geographic_region_north_africa_egypt = {
+	short_key = north_africa_egypt
+	strategic_regions = { sr:region_north_africa }
+	state_regions = { STATE_MARSA_ALAM STATE_FARAFRA STATE_ASYUT STATE_QATTARA STATE_GIZA STATE_DUMYAT }
+}
+
+geographic_region_south_africa = {
+	short_key = south_africa
+	state_regions = { STATE_GQEBERHA STATE_CAPE_TOWN STATE_GAMKA STATE_ZULULAND STATE_BASUTOLAND STATE_TKY_GARIEP }
+}
+
+geographic_region_angola = {
+	short_key = angola
+	state_regions = { STATE_SAO_TOME STATE_BENGUELA STATE_KUITO }
+}
+
+geographic_region_mozambique = {
+	short_key = mozambique
+	state_regions = { STATE_GAZA STATE_MOCAMBIQUE STATE_SENA }
+}
+
+geographic_region_zambezi_basin = {
+	short_key = zambezi_basin
+	state_regions = { STATE_ZAMBIA STATE_MPIKA STATE_MASHONALAND }
+}

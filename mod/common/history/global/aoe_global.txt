@@ -1,0 +1,34 @@
+﻿GLOBAL = {
+	every_country = {
+		limit = { NOT = { has_law_or_variant = law_type:law_slavery_banned } }
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_colonial_slavery
+			}
+			ig:ig_landowners ?= { add_ideology = ideology_pro_slavery_colonial }
+		}
+		else = {
+			ig:ig_landowners ?= { add_ideology = ideology_pro_slavery }
+		}
+	}
+
+	every_country = {
+		limit = {
+			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_autocracy
+		}
+		set_variable = king_in_parliament_possible
+	}
+
+	every_country = { # Mercantile ideology
+		limit = {
+			OR = {
+				has_law_or_variant = law_type:law_traditionalism
+				has_law_or_variant = law_type:law_isolationism
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ideology = ideology_mercantile
+		}
+	}
+}
