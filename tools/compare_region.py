@@ -78,7 +78,7 @@ def main():
 
     # ---- Vic3 side
     rows = read_province_map()
-    v3 = read_vic3_map(config.VIC3)
+    v3 = read_vic3_map(config.VIC3, config.REDRAW)
     index = {p: i for i, p in enumerate(v3.provinces)}
     aoe_of = np.zeros(len(v3.provinces), np.int32)
     for row in rows:

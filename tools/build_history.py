@@ -239,7 +239,7 @@ class HistoryBuilder:
         culture_of = {s: top_culture(ps) for s, ps in units.items()}
 
         # Adjacency between AoE states, through Vic3 province borders.
-        v3 = read_vic3_map(config.VIC3)
+        v3 = read_vic3_map(config.VIC3, config.REDRAW)
         state_of_v3 = {}
         index = {p: i for i, p in enumerate(v3.provinces)}
         for r in self.rows:

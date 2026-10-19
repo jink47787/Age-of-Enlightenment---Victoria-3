@@ -1,4 +1,5 @@
 """Loaders for Vic2 (AoE / vanilla) and Vic3 map data."""
+import csv
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -121,13 +122,40 @@ def read_vic3_state_regions(vic3_game):
     return land, sea
 
 
-def read_vic3_map(vic3_game):
+def read_new_provinces(redraw_dir):
+    """Rows of redraw_provinces.py's new_provinces.csv ([] if there is none)."""
+    path = Path(redraw_dir) / "new_provinces.csv"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def add_new_provinces(land_states, rows):
+    """Put each new province in its parent's state region block: in `provinces`, and in `impassable` /
+    `prime_land` where the parent is listed there."""
+    norm = lambda p: p.upper().replace("X", "x", 1)
+    state_of = {norm(p): key for key, block in land_states.items() for p in block.get("provinces").values()}
+    for r in rows:
+        block = land_states[state_of[r["parent"]]]
+        for list_key in ("provinces", "impassable", "prime_land"):
+            ids = block.get(list_key)
+            if isinstance(ids, pdx.Block) and r["parent"] in {norm(p) for p in ids.values()}:
+                ids.append(r["province"])
+
+
+def read_vic3_map(vic3_game, redraw_dir=None):
+    """The vanilla Vic3 map; with redraw_dir (redraw_provinces.py's output, once it has a provinces.png), the
+    redrawn provinces.png, and the new provinces added to the vanilla state region blocks."""
     vic3_game = Path(vic3_game)
-    packed = load_packed_rgb(vic3_game / "map_data" / "provinces.png")
+    redrawn = redraw_dir is not None and (Path(redraw_dir) / "provinces.png").exists()
+    packed = load_packed_rgb((Path(redraw_dir) if redrawn else vic3_game / "map_data") / "provinces.png")
     colors, inverse = np.unique(packed, return_inverse=True)
     labels = inverse.reshape(packed.shape).astype(np.int32)
     provinces = [hex_id(int(c)) for c in colors]
     land, sea = read_vic3_state_regions(vic3_game)
+    if redrawn:
+        add_new_provinces(land, read_new_provinces(redraw_dir))
     default_map = pdx.read_text(vic3_game / "map_data" / "default.map")
     lakes_block = re.search(r"lakes\s*=\s*\{([^}]*)\}", default_map)
     lakes = {p.upper().replace("X", "x", 1) for p in _HEX.findall(lakes_block.group(1))} if lakes_block else set()

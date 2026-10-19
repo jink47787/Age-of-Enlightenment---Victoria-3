@@ -3,7 +3,7 @@
   "id": "aoe_vic3",
   "version": "0.1",
   "supported_game_version": "1.13.*",
-  "short_description": "Age of Enlightenment: the AoE Remake world of 1700, ported from Victoria 2.",
+  "short_description": "Age of Enlightenment: the AoE Remake (multiplayer) world of 1700, ported from Victoria 2.",
   "tags": [
     "Total Conversion",
     "Map",

@@ -194,6 +194,23 @@ bidayuh = {
 	graphics = east_asian
 }
 
+braj = {
+	color = { 155 165 170 }
+	religion = hindu
+	heritage = heritage_gangetic
+	language = language_hindustani
+	traditions = { }
+	male_common_first_names = { Aakash Bhanwari Dharmraj Govind Nitin Nikhil Nathuram Narendra Pawan Santosh }
+	female_common_first_names = { Alka Abhilasha Aruna Chandrama Hema Jaya Omvati Priyanka Subhashini Sucheta Uma }
+	noble_last_names = { Arkvanshi Bajpai Choudhary Chauhan Nehru Tiwari }
+	common_last_names = { Agrahari Bharti Gandhi Gautam Giri Gupta Joshi Kardam Katiyar Kumari Nayar Tandon Verma Varun Yadav }
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_indian.dds
+}
+
 cossack = {
 	color = { 120 110 70 }
 	religion = orthodox
@@ -227,6 +244,28 @@ dagestani = {
 	}
 	graphics = european
 	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_middle_east.dds
+}
+
+dakkhani = {
+	color = { 125 155 170 }
+	religion = sunni
+	heritage = heritage_deccani
+	language = language_southern_indic
+	obsessions = { tea }
+	traditions = { }
+	male_common_first_names = { Bajirao Balaji Madhava Narayan Pratapsinha Raghunath Rajaram Sawai Shahuji Shambhaji Shivaji Venkatji }
+	female_common_first_names = { Ahilyabai Anandibai Gangabai Gopikabai Radhabai Rani Soyarabai Umabai }
+	noble_last_names = { Baji_Rao Bhat Bhave Bhonsle Gaekwad Holkar Mehere Newalkar Nirban Patwardhan Pawar Scindia }
+	common_last_names = { Appa_Sahib Ballal Bhandari Bowa_Sahib Gujar Kalash Mohite Narayan Phadnis Rao }
+	male_regal_first_names = { Pratap_Singh Rajaram Shahaji Shambhaji Shivaji Shahuji }
+	female_common_first_names = { Aditi Amina Bilkees Fatima Khanum Sania Surayya Samina Shabana Tabassum Waheeda Zehra }
+	noble_last_names = { Ali Sultan }
+	common_last_names = { Areeb Azmi Baig Bajia Jung Hashmi Hydari Haji Latif Masdoosi Mohiuddin Mirza Qadri Qaisi Rehman Sayeed Zore }
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_indian.dds
 }
 
 ethiopian = {
@@ -298,40 +337,38 @@ frisian = {
 	}
 }
 
-gascon = {
-	color = { 150 120 40 }
-	religion = catholic
-	heritage = heritage_iberian
-	language = language_basque
-	obsessions = { wine }
-	traditions = { }
-	male_common_first_names = { Agustin Aitor Alberto Ander Andoni Andres Antonio Arturo Carlos Ceferino Cosme Cristobal Damian Endika Francisco_Javier Ignacio Imanol Inaki Jesus Jon_2 Joseba Josu Jose_Antonio Jose_Maria Juan Julen Koldobika Luis Manuel Marino Miguel Paulino Pedro Rafael_2 Ramiro Ramon Sabino Tomas Vicente Angel }
-	female_common_first_names = { Ana Bizenta Elbira Ernestina Luisa Maria Martina Mikaela Oneka }
-	noble_last_names = { Arana Arellano Imatz Irujo Iturmendi de_Lardizabal Leizaola de_Olazabal Pradera }
-	common_last_names = { Aguirre Ajuriaguerra Aldecoa Arana Aranzadi Arizmendiarrieta Armendariz Aznar Balenciaga Berasategui Bilbao Campion Churruca Echague Echave Echegaray Echevarria Elordi Elorza Gaztaneta Ibarrola Ibarruri Irujo Lazcano Mendizabal Moneo Nardiz Olano Olave Oyarzabal Rotaeche Uzcudun Zamarraga Zavala Zumalacarregui Zarate de_Amesquita de_Azpilicueta de_Erauso de_Renteria de_Ubisztongo }
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_iberia.dds
-}
-
 gypsy = {
 	color = { 16 102 163 }
 	religion = orthodox
-	heritage = heritage_east_slavic
-	language = language_east_slavic
-	obsessions = { liquor }
+	heritage = heritage_romanian
+	language = language_eastern_romance
+	obsessions = { wine }
 	traditions = { }
-	male_common_first_names = { Andriy Anton Arkadiy Adam Amvrosii Borys Bohdan Dmitro Danylo Evgeniy Fyodor Fedir Hryhoriy Ivan Ilarion Ippolit Isaak Ihnat Kiril Kostiantyn Lavr Leonid Lev Mikhail Mykola Markian Nikita Nykyfor Oleksandr Oleksiy Oleh Omelian Panteleimon Pavel Petro Pylyp Roman Semyon Sergiy Sylvester Teodosiy Tymofiy Valeriy Viktor Vladislav Volodimir Vasil Vsevolod Yevhen Yuriy Yulian Yakiv Viktor }
-	female_common_first_names = { Darya Dniprova Glafira Hanna Kolomba Lyubov Lyudmila Maria Nadazhda Nataliya Nina Olena Olha Polina Ruslana Slava Solomya Teklya Ulyana Valeriya Varvara Xenia Yevheniya }
-	noble_last_names = { Bezborodko Chubynsky Czajkowski Drahomanov Doroshenko Drahomanov Domontovych Drevchenko Gogol-Yanovsky Hnizdovsky Hrekov Hrushevsky Hertsyk Holovatsky Karaszewicz-Tokarzewski Kobyliansky Konysky Kropyvnytsky Kulish Kuilovskiy Kochubey Khanenko Levytsky Lototsky Lyzohub Lysenko Lypynsky Mazepa Ohonovsky Omelianovych-Pavlenko Ortynsky Petrushevych Rodzianko Sas-Kuilovsky Shakhovskoy Sheptytsky Skoropadskyi Tereshchenko Tishkevich Vakhnianyn Vitovsky Zubrytsky }
-	common_last_names = { Andriychyk Andrusenko Bezruchko Bulyno Bohoslov Bolbochan Boretz Chernyakhovsky Chmola Chernihivetz Chumak Dyachenko Doroshenko Fedorenko Gamula Grigoriev Hrekov Hladyshevsky Herasymenko Holovatskyi Holubovych Hlavatskyi Hrushevsky Hlushko Ivanenko Ivanov Ivanovskiy Kapustiansky Kondratenko Kovalchuk Kozytskiy Krushelnytskyi Kabachok Khotkevych Kopan Kornievsky Kucherenko Leshchenko Leshchinskiy Lukashevych Levchenko Lysenko Markevych Marchenko Morachevskyi Melnyk Melenevskyi Mykhailov Nesvit Nimchenko Ostapenko Opryshko Ovchinnikov Paskevich Petliura Pelesh Puchko Plyushch Potapenko Paplynsky Radchenko Rodionovych Rzhepetsky Rogulsky Shevchenko Skoropadskyi Stefaniv Sembratovych Shashkevych Stulginskiy Shelukhin Singalevych Syniavsky Tymoshenko Teliha Vitovsky Velykanovych Yatsenko Vahylevych Voskresenskiy Volodaretz Zorin Zhuk Zharko Zheplynsky }
+	male_common_first_names = { Adrian Alexandru Andrei Anton Artur Atanasie Bogdan Carol Cezar Constantin Constin Cosmin Cornel Coriolan Daniel Dumitru Emanuel Eremia Eugen Emilian Ferdinand Flaviu Florea Filimon Gheorghe Grigore Henric Horatiu Iacob Ilie Ioan Ion Ion_Emanuel Iosif Iulian Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Octav Petru Procop Radu Sergiu Silviu Simion Stefan Scarlat Teodor Toma Traian Tita Tarquiniu Ulise Valeriu Vasile Victor Vintila Vlad Virgil }
+	female_common_first_names = { Adela Ana Constanta Daria Dora Ecaterina Elena Elisa Elisabeta Eugenia Glicheria Iulia Iuliana Lucretia Maria Maritica }
+	noble_last_names = { Asachi Botez-ForA_scu BaS_otA_ BuS_ilA_ Cantemir Caradja Conachi Catacazi Callimachi de_Reuss-Mirza de_Hohenzollern Dinotto-Gusti Dragos Ghica Gane Greceanu GrA_diS_teanu Hasdeu Hurmuzachi Kogalniceanu Mocioni Moruzi Murgulet Miclescu MargA_rit Onciul Racovita RA_S_canu Russo Sturdza Sion Vacarescu Volcinschi Yarka Ionita }
+	common_last_names = { Angelescu Antonescu Argetoianu Averescu Anastasiade Apostol Angelescu Aurelian Baldescu Barozzi Berindei Berechet Borlovan Berlescu Bragadiru Baiulescu Bogdan Cernat Cazacu Christecu Cihoski Ciuperca Coanda Crainiceanu Critescu Culcer Cuza Cratunescu Covaci Coman Clompe Costache Cariadgi Cuteanu CrA_ciun Dona Dragalina Dumitrescu David Dolecsko Diamandescu Dobrovici Dobrescu DoboS_an DomA_S_nean Falcoianu Flechtenmacher Florescu Froza Firea Frimu Fleva Filipescu Gardescu Grigorescu Gantz Gheorghiu Gheorghian Garoiu GrofS_orean Harjeu Holban Hubert Iancovescu Iliasevici Iliescu Ionascu Ionescu Ionitiu Iliescu Iatropol Koslinski Kondorossy Kretzulescu Lahovary Lupescu Luchide Lupu Latciu LazA_r Mardarescu Murgescu Manu Marian Marinescu Man Mirea Manolescu Moga Nedelcovici Poenaru Prezan Plagino Panaitescu Petrovici Petrescu Popescu PA_rvu Roman Robescu Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Sfetescu Sterian Stroescu Socolescu Socaciu Stinghe Suciu Tatarascu Tenescu Tudoran Tautu Timcic Teodorescu Vaitoianu Vardala Volvoreanu Vartolomeu Vatamanu Verzea Voicu Vidrighin Zottu }
 	ethnicities = {
 		1 = slavic
 	}
-	graphics = european
-	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_russian.dds
+	graphics = balkan
+}
+
+haryanvi = {
+	color = { 165 135 140 }
+	religion = hindu
+	heritage = heritage_gangetic
+	language = language_hindustani
+	traditions = { }
+	male_common_first_names = { Aakash Bhanwari Dharmraj Govind Nitin Nikhil Nathuram Narendra Pawan Santosh }
+	female_common_first_names = { Alka Abhilasha Aruna Chandrama Hema Jaya Omvati Priyanka Subhashini Sucheta Uma }
+	noble_last_names = { Arkvanshi Bajpai Choudhary Chauhan Nehru Tiwari }
+	common_last_names = { Agrahari Bharti Gandhi Gautam Giri Gupta Joshi Kardam Katiyar Kumari Nayar Tandon Verma Varun Yadav }
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_indian.dds
 }
 
 iban = {
@@ -469,14 +506,14 @@ louisianan = {
 lurish = {
 	color = { 90 140 230 }
 	religion = shiite
-	heritage = heritage_iranian
-	language = language_persian
-	traditions = { tradition_persianate }
-	male_common_first_names = { Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad Ali Bahram Ebrahim Esmail Fath_Ali Fazlollah Hamzeh Hasan Hossein Kamran Karim Lotf_Ali Mahmoud Massoud Mohammad Moin_ed-Din Mozzafer_ed-Din Muhsin Murad Naser_ed-Din Nosret Reza Sadegh }
-	female_common_first_names = { Asieh Bibi_Khatoom Ghazaleh Marjane Marsha Maryam Sedigheh }
-	noble_last_names = { al-Saltaneh Alamir Astarabadi Ashtiani Bakhtiari Farmanfarma Hakimi Hedayat Khalatbari Pirnia Qajar }
-	common_last_names = { Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani Jahanbani Jamshidian Kashani Khan Khuzai Meshhedi Nakhchevani Pesyan Rokni Sadegh Shafaei Shahbakhti Shirazi Tabrizi Tahmasebi Zahedi }
-	male_regal_first_names = { Ahmad Fath_Ali Fereydoun Mahmoud Mohammad Mohammad_Ali Mohammad_Hassan Mozzafer_ed-Din Naser_ed-Din Sultan_Hamid }
+	heritage = heritage_arab
+	language = language_arabic
+	obsessions = { coffee }
+	traditions = { }
+	male_common_first_names = { Abd_Allah Abd_al-Karim Abd_al-Malik Abd_al-Qadir Abd_al-Rahman Ahmad Ali Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid Muhammad Mustafa Nur_al-Din Sa_d_al-Din Salim Shukri Tawfiq Umar Uthman Yahya Yusuf Zafir }
+	female_common_first_names = { Bahira Fayza Ghalia Nadia Noura Samira Sulafa Zeina Zuhur }
+	noble_last_names = { al-Ali al-Atassi al-Atrash al-Azma Al_Faiz al-Ghani_al-Nabulsi al-Hiraki Al-Rahman_Al-Gillani al-Zaydani Nuseibeh }
+	common_last_names = { al-Askari al-Baghdadi al-Basri al-Ghazzawi al-Halabi al-Hamawi al-Himsi al-Mawsili al-Nablusi al-Qudsi al-Shami ibm_Kamil ibn_Abd_Allah ibn_Abd_al-Qadir ibn_Abu_Bakr ibn_Ahmad ibn_Ali ibn_Fuad ibn_Halil ibn_Hasan ibn_Hisham ibn_Ishaq ibn_Ja_far ibn_Khalid ibn_Muhammad ibn_Mustafa ibn_Salim ibn_Umar ibn_Uthman ibn_Yusuf Asmar Mokarzel }
 	ethnicities = {
 		1 = arab
 	}
@@ -499,6 +536,24 @@ madurese = {
 		1 = asian
 	}
 	graphics = east_asian
+}
+
+malvi = {
+	color = { 125 135 155 }
+	religion = hindu
+	heritage = heritage_rajasthani
+	language = language_western_indic
+	obsessions = { tea }
+	traditions = { }
+	male_common_first_names = { Bhagwant Bhai Durga Fateh Harsha Hayat Hussain Jawapala Malik Mirza_Raja Muhammad Rai Rao Sardar Sawai Umar Veer }
+	female_common_first_names = { Gayatri Indira Kishore Maji Marudhar }
+	noble_last_names = { Gujar Jethwa Kunwar Raksel }
+	common_last_names = { Bachittar_Singh Bhatti Qaim Shekha Singh Tiwana ur_Rahman }
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_indian.dds
 }
 
 melanau = {
@@ -565,6 +620,28 @@ murut = {
 		1 = asian
 	}
 	graphics = east_asian
+}
+
+nagpuri = {
+	color = { 120 195 200 }
+	religion = hindu
+	heritage = heritage_deccani
+	language = language_southern_indic
+	obsessions = { tea }
+	traditions = { }
+	male_common_first_names = { Bajirao Balaji Madhava Narayan Pratapsinha Raghunath Rajaram Sawai Shahuji Shambhaji Shivaji Venkatji }
+	female_common_first_names = { Ahilyabai Anandibai Gangabai Gopikabai Radhabai Rani Soyarabai Umabai }
+	noble_last_names = { Baji_Rao Bhat Bhave Bhonsle Gaekwad Holkar Mehere Newalkar Nirban Patwardhan Pawar Scindia }
+	common_last_names = { Appa_Sahib Ballal Bhandari Bowa_Sahib Gujar Kalash Mohite Narayan Phadnis Rao }
+	male_regal_first_names = { Pratap_Singh Rajaram Shahaji Shambhaji Shivaji Shahuji }
+	female_common_first_names = { Aditi Amina Bilkees Fatima Khanum Sania Surayya Samina Shabana Tabassum Waheeda Zehra }
+	noble_last_names = { Ali Sultan }
+	common_last_names = { Areeb Azmi Baig Bajia Jung Hashmi Hydari Haji Latif Masdoosi Mohiuddin Mirza Qadri Qaisi Rehman Sayeed Zore }
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_indian.dds
 }
 
 nanfaren = {
@@ -641,20 +718,19 @@ nigerian = {
 oirat = {
 	color = { 200 255 0 }
 	religion = gelugpa
-	heritage = heritage_han
-	language = language_mandarin
+	heritage = heritage_mongolian
+	language = language_mongolian
 	name_format = last_first
-	obsessions = { opium }
-	traditions = { tradition_sinosphere }
-	male_common_first_names = { Chen Cheng Deng Dong Gao Hsia Hu Huang Kong Kwong Li Liang Liao Liu Luo Ma Mao Pan Tan Wang Xie Yang Yu Zhang Zhu }
-	female_common_first_names = { Akew Jin Jinhong Junying Qingtang Sanniang Shanziang Shih Taiqing Xiefen Xiugu Xuanjiao Yu Yunmei }
-	noble_last_names = { Cui Li Nie Zhang }
-	common_last_names = { Dong Fang Hu Jiang Jin Lu Ma Peng Qiu Shen Sun Tian Ting Wei Wu Ye Zhao }
+	traditions = { tradition_russosphere }
+	male_common_first_names = { Badamdorj Balingiin Batbayar Baterdene Chingis Dambyan Damdin Dogsomyn Gonchigjalzangiin Gonchigtseren Injinash Khorloogiin Kubilai Otgonbayar Peljidiin Sodnomyn }
+	female_common_first_names = { Bayartsetseg Dondogdulam Ider Khajidsuren Oyuungerel Sonomyn Tuyaa }
+	noble_last_names = { Gonchigjalzangiin Togs-Ochiryn }
+	common_last_names = { Amar Bodoo Chagdarjav Choibalsan Damdinbazar Genden Jamyan Murdorj Sukhbaatar Tomorbaatar Tserendorj Vanchinbalyn }
 	ethnicities = {
-		1 = asian
+		1 = central_asian
 	}
 	graphics = east_asian
-	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_chinese.dds
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_russian.dds
 }
 
 orang_ulu = {
@@ -693,7 +769,7 @@ pamiri = {
 }
 
 picard = {
-	color = { 100 110 135 }
+	color = { 100 110 136 }
 	religion = catholic
 	heritage = heritage_gallic
 	language = language_francophone
@@ -755,36 +831,18 @@ rhinelander = {
 romansh = {
 	color = { 120 140 110 }
 	religion = catholic
-	heritage = heritage_germanic
-	language = language_germanophone
-	obsessions = { meat }
-	traditions = { tradition_helvetic }
-	male_common_first_names = { Adolf Alexander Anton Augustus Albert Andreas Ambros Alois Benedicht Carl Christoph Christian Constant CA_sar Carl-Friedrich Dominik Damian Eduard Ernst Eugen Emil Ernst_August Friedrich Franz Florian Franz_Xaver Gall Gabriel Gustav Gottfried Georg Gottlieb Hermann Heinrich Imbert Johann Jakob Joseph Johann_Baptist Johann_Konrad Johann_Peter Jakob_Christoph Kaspar Klemens Kajetan Konrad Ludwig Leo Manfred Martin Moritz Nazar Nikolaus Otto Oswald Peter Placidus Philipp Rudolf Samuel Stephan Silvan Severin Theodor Ulrich Wolfgang Walter Wilhelm Xavier }
-	female_common_first_names = { Anna Barbara Emilie Gertrud Germaine Henriette Isabelle Johanna Julie Lydia Maria Rosalie }
-	noble_last_names = { von_Bonstetten von_BU_ren von_Bergmann von_Donatz Effinger von_Erlach von_Frisching von_Graffenried von_Hettlingen Lentulus Lombach von_Ligerz May von_Muelinen von_Muralt von_Reding-Biberegg von_RU_pplin von_Salis-Soglio von_Steiger von_Schorno von_Streng von_Tavel von_Thurn von_Wattenwyl von_Weber Zehender }
-	common_last_names = { Ador Anderwert Angehrn Altwegg Aepli Brenner BA_chtold Bacher BlO_sch Barblan Balmer Bodenheimer Bitzius Burren Benzinger BU_eler Bachmann Bamert Bettschart Binzegger Calonder Corrodi Castell Camenzind Deucher DA_hler Dieth Dinkelmann DU_rrenmatt DU_ggelin Dumelin Enderlin ElsA_sser Eggenschwyler Eggli Eberle Etter Egloff Fornerod Funk Fassbind Freyenmuth Haab Herzog Haller HU_gelberger Henggeler Hegglin Iten Jaggi Knusel Kuoni Kurz KlA_y KO_nitzer KU_ndig KA_lin Leinert Loosli Lindt Lienhard Lohner Litschi Loser Labhardt Leutenegger Motta Munzinger Meyer Morel Marti Minder Morgenthaler Moser Mettler Moos Merz MO_rikofer Naff Nussbaumer Oethiker Ochsner RA_z Ritschard Ruoss Rogenmoser Ruckstuhl Reutlinger Roth Schneider de_Staeel Siegwart-Muller Stutz Streiff StA_mpfli Stockmar Schneider Schurer SchA_r Simonin Stutzer Steinegger Styger Sidler Schwerzmann Sulzberger Scherb Tschudi Tschiemer Theiler Trinkler Usteri ValA_r Villiger Wille Wyss Wynistorf Willi Winet Wiss Zeni Zeerleder Ziltener ZU_rcher }
+	heritage = heritage_italic
+	language = language_italian
+	traditions = { }
+	obsessions = { wine }
+	male_common_first_names = { Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino Bernardino Bartolomeo Benedetto Bonaventura Bernardo Camillo Carlo Cesare Costanzo Casimiro Cristoforo Davide Domenico Damiano Enrico Enzo Ettore Efisio Emiliano Ernesto Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano Innocenzo Ignazio Ippolito Ilario Leopoldo Luigi Luca Lorenzo Marco Massimo Matteo Maurizio Massimo Nicola Oreste Ottavio Paolo Pasquale Pietro Prospero Raffaele Roberto Ruggiero Romualdo Scipione Silvio Simone Serafino Secondo Sebastiano Tancredi Tommaso Ugo Umberto Urbano Vincenzo Vittorio }
+	female_common_first_names = { Beatrice Camilla Cassandra Cristina Giovannella Livia Lucrezia Luisa Maddalena Maria Melania Metilde Sofia Teresa }
+	noble_last_names = { Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato Gebaix_de_Sonnaz Girod_De_Montfalcon d_Ittiri_LedA_ de_Launay Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi Odescalchi Orsini Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino Ricardi_di_Netro di_Robilant Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie Toesca Torelli Thaon_di_Revel }
+	common_last_names = { Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala Emo Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet Imperiali Isola Lachenal Lanza Louaraz Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso Naytana Niccolini Nino Notta Orengo Oytana Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni Quaglia Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis Tecchio Tegas Tola Torelli Tuveri Vaccari Valerio Valvassori Vicari Zupelli Zirio }
 	graphics = european
 	ethnicities = {
 		1 = caucasian
 	}
-}
-
-ruthenian = {
-	color = { 119 181 88 }
-	religion = orthodox
-	heritage = heritage_east_slavic
-	language = language_east_slavic
-	obsessions = { liquor }
-	traditions = { }
-	male_common_first_names = { Andriy Anton Arkadiy Adam Amvrosii Borys Bohdan Dmitro Danylo Evgeniy Fyodor Fedir Hryhoriy Ivan Ilarion Ippolit Isaak Ihnat Kiril Kostiantyn Lavr Leonid Lev Mikhail Mykola Markian Nikita Nykyfor Oleksandr Oleksiy Oleh Omelian Panteleimon Pavel Petro Pylyp Roman Semyon Sergiy Sylvester Teodosiy Tymofiy Valeriy Viktor Vladislav Volodimir Vasil Vsevolod Yevhen Yuriy Yulian Yakiv Viktor }
-	female_common_first_names = { Darya Dniprova Glafira Hanna Kolomba Lyubov Lyudmila Maria Nadazhda Nataliya Nina Olena Olha Polina Ruslana Slava Solomya Teklya Ulyana Valeriya Varvara Xenia Yevheniya }
-	noble_last_names = { Bezborodko Chubynsky Czajkowski Drahomanov Doroshenko Drahomanov Domontovych Drevchenko Gogol-Yanovsky Hnizdovsky Hrekov Hrushevsky Hertsyk Holovatsky Karaszewicz-Tokarzewski Kobyliansky Konysky Kropyvnytsky Kulish Kuilovskiy Kochubey Khanenko Levytsky Lototsky Lyzohub Lysenko Lypynsky Mazepa Ohonovsky Omelianovych-Pavlenko Ortynsky Petrushevych Rodzianko Sas-Kuilovsky Shakhovskoy Sheptytsky Skoropadskyi Tereshchenko Tishkevich Vakhnianyn Vitovsky Zubrytsky }
-	common_last_names = { Andriychyk Andrusenko Bezruchko Bulyno Bohoslov Bolbochan Boretz Chernyakhovsky Chmola Chernihivetz Chumak Dyachenko Doroshenko Fedorenko Gamula Grigoriev Hrekov Hladyshevsky Herasymenko Holovatskyi Holubovych Hlavatskyi Hrushevsky Hlushko Ivanenko Ivanov Ivanovskiy Kapustiansky Kondratenko Kovalchuk Kozytskiy Krushelnytskyi Kabachok Khotkevych Kopan Kornievsky Kucherenko Leshchenko Leshchinskiy Lukashevych Levchenko Lysenko Markevych Marchenko Morachevskyi Melnyk Melenevskyi Mykhailov Nesvit Nimchenko Ostapenko Opryshko Ovchinnikov Paskevich Petliura Pelesh Puchko Plyushch Potapenko Paplynsky Radchenko Rodionovych Rzhepetsky Rogulsky Shevchenko Skoropadskyi Stefaniv Sembratovych Shashkevych Stulginskiy Shelukhin Singalevych Syniavsky Tymoshenko Teliha Vitovsky Velykanovych Yatsenko Vahylevych Voskresenskiy Volodaretz Zorin Zhuk Zharko Zheplynsky }
-	ethnicities = {
-		1 = slavic
-	}
-	graphics = european
-	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_russian.dds
 }
 
 samah = {
@@ -837,6 +895,27 @@ sasak = {
 		1 = asian
 	}
 	graphics = east_asian
+}
+
+siberian_tatar = {
+	color = { 90 65 65 }
+	religion = sunni
+	heritage = heritage_east_slavic
+	language = language_east_slavic
+	obsessions = { liquor }
+	traditions = { tradition_russosphere }
+	male_common_first_names = { Aleksandr Alexei Andrei Anton Boris Dmitry Fyodor Gennady Giorgi Grigoriy Igor Ivan Kirill Konstantin Lavr Leonid Lev Maxim Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri }
+	female_common_first_names = { Aleksandra Anastasiya Anna Avdotya Daria Elena Elizabeta Evgenia Evlalia Kira Lydia Lyobov Maria Natalya Olga Sofia Tatiana Varvara Vera Yekaterina Yulia Xenia Zinaida }
+	noble_last_names = { Adlerberg Barclay_de_Tolly Bestuzhev-Ryumin Bulatovich Buturlin Dolgorukov Demidov Fikelmon Greig Gruzinsky Golitsyn Ignatiev Ivelich Kamensky Kelch Kern Kushelev-Bezborodko Kutaisov Kurakin Hoyningen-Huene Lopukhin Lobanov-Rostovsky Matveyev von_Mohrenheim Meshchersky Orlov Pistohlkors Putyatin Rostopchin Rumyantsev Romanov Saltykov Tolstoy Volkonsky Witte Yengalychev Yusupov Yuryevsky }
+	common_last_names = { Alexseyev Antonov Azarov Badanov Brusilov Budyonny Bolkhovitinov Chibisov Denikin Dragomirov Frolov Golovin Grishin Gurko Ivanov Kasso Kolchak Konev Konstantinov Kornilov Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov Nikolaevich Ostrovsky Pavlov Putyatin Rozhestvensky Shuvalov Skobelev Surkov Sorokin Tukhachevsky Vorontsov Voroshilov Yegorov Yudenich Zavoyko }
+	male_regal_first_names = { Aleksandr Alexei Ivan Kirill Konstantin Mikhail Nikolai Pavel Pyotr }
+	female_regal_first_names = { Anastasiya Anna Elena Elizabeta Evgenia Kira Maria Olga Xenia Yekaterina }
+	regal_last_names = { Belevsky-Zhukovsky Konstantinovich Mikhailovich Nikolaevich Pavlovich Paley Romanov Vladimirovich }
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_russian.dds
 }
 
 sinitic = {
@@ -907,6 +986,24 @@ sundanese = {
 		1 = asian
 	}
 	graphics = east_asian
+}
+
+syriac = {
+	color = { 255 100 255 }
+	religion = catholic
+	heritage = heritage_arab
+	language = language_arabic
+	obsessions = { coffee }
+	traditions = { }
+	male_common_first_names = { Abd_Allah Abd_al-Karim Abd_al-Malik Abd_al-Qadir Abd_al-Rahman Ahmad Ali Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid Muhammad Mustafa Nur_al-Din Sa_d_al-Din Salim Shukri Tawfiq Umar Uthman Yahya Yusuf Zafir }
+	female_common_first_names = { Bahira Fayza Ghalia Nadia Noura Samira Sulafa Zeina Zuhur }
+	noble_last_names = { al-Ali al-Atassi al-Atrash al-Azma Al_Faiz al-Ghani_al-Nabulsi al-Hiraki Al-Rahman_Al-Gillani al-Zaydani Nuseibeh }
+	common_last_names = { al-Askari al-Baghdadi al-Basri al-Ghazzawi al-Halabi al-Hamawi al-Himsi al-Mawsili al-Nablusi al-Qudsi al-Shami ibm_Kamil ibn_Abd_Allah ibn_Abd_al-Qadir ibn_Abu_Bakr ibn_Ahmad ibn_Ali ibn_Fuad ibn_Halil ibn_Hasan ibn_Hisham ibn_Ishaq ibn_Ja_far ibn_Khalid ibn_Muhammad ibn_Mustafa ibn_Salim ibn_Umar ibn_Uthman ibn_Yusuf Asmar Mokarzel }
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+	seal_and_signature_texture = gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_middle_east.dds
 }
 
 texan = {

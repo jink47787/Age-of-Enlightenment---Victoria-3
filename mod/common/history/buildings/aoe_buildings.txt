@@ -17,25 +17,25 @@
 			}
 		}
 	}
-	s:STATE_GEORGIA = {
-		region_state:ABK = {
+	s:STATE_TRUCIAL_COAST = {
+		region_state:ABU = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:ABK" levels = 1 }
+					country = { country = "c:ABU" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:ABK" levels = 1 }
+					country = { country = "c:ABU" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_NORTH_RHEINLAND = {
+	s:STATE_LOWER_RHINELAND = {
 		region_state:ACH = {
 			create_building = {
 				building = "building_government_administration"
@@ -53,7 +53,7 @@
 			}
 		}
 	}
-	s:STATE_GHAZNI = {
+	s:STATE_KABULISTAN = {
 		region_state:AFG = {
 			create_building = {
 				building = "building_government_administration"
@@ -65,7 +65,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:AFG" levels = 3 }
+					country = { country = "c:AFG" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -89,7 +89,7 @@
 			}
 		}
 	}
-	s:STATE_ALGIERS = {
+	s:STATE_ORAN = {
 		region_state:ALD = {
 			create_building = {
 				building = "building_government_administration"
@@ -101,7 +101,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:ALD" levels = 2 }
+					country = { country = "c:ALD" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -120,24 +120,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:ANH" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ENTEBBE = {
-		region_state:ANK = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:ANK" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:ANK" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -179,25 +161,43 @@
 			}
 		}
 	}
-	s:STATE_RANGOON = {
+	s:STATE_PEGU = {
 		region_state:ARK = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:ARK" levels = 2 }
+					country = { country = "c:ARK" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:ARK" levels = 6 }
+					country = { country = "c:ARK" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_WARRI = {
+	s:STATE_VALENCIA = {
+		region_state:ARN = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:ARN" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:ARN" levels = 3 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_NIGER_DELTA = {
 		region_state:ARO = {
 			create_building = {
 				building = "building_government_administration"
@@ -209,7 +209,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:ARO" levels = 1 }
+					country = { country = "c:ARO" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -251,7 +251,7 @@
 			}
 		}
 	}
-	s:STATE_BANDA_ACEH = {
+	s:STATE_ACEH = {
 		region_state:ATJ = {
 			create_building = {
 				building = "building_government_administration"
@@ -292,32 +292,50 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:AUS" levels = 9 }
+					country = { country = "c:AUS" levels = 4 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:AUS" levels = 27 }
+					country = { country = "c:AUS" levels = 11 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_DELHI = {
+	s:STATE_AWADH = {
 		region_state:AWA = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:AWA" levels = 5 }
+					country = { country = "c:AWA" levels = 4 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:AWA" levels = 14 }
+					country = { country = "c:AWA" levels = 11 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_ERITREA = {
+		region_state:AWS = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:AWS" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:AWS" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -377,7 +395,7 @@
 			}
 		}
 	}
-	s:STATE_EAST_BERAR = {
+	s:STATE_NAGPUR = {
 		region_state:BAS = {
 			create_building = {
 				building = "building_government_administration"
@@ -413,7 +431,7 @@
 			}
 		}
 	}
-	s:STATE_WEST_JAVA = {
+	s:STATE_YOGYAKARTA = {
 		region_state:BBG = {
 			create_building = {
 				building = "building_government_administration"
@@ -431,7 +449,7 @@
 			}
 		}
 	}
-	s:STATE_KULOB = {
+	s:STATE_TAJIKISTAN = {
 		region_state:BDK = {
 			create_building = {
 				building = "building_government_administration"
@@ -444,24 +462,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:BDK" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MALATYA = {
-		region_state:BDN = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BDN" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BDN" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -485,24 +485,6 @@
 			}
 		}
 	}
-	s:STATE_MALATYA = {
-		region_state:BHT = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BHT" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BHT" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_JUMLA = {
 		region_state:BHU = {
 			create_building = {
@@ -521,73 +503,55 @@
 			}
 		}
 	}
-	s:STATE_BOMBAY = {
+	s:STATE_BIHAR = {
+		region_state:BIH = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:BIH" levels = 3 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:BIH" levels = 10 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_BIJAPUR = {
 		region_state:BIJ = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:BIJ" levels = 1 }
+					country = { country = "c:BIJ" levels = 2 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:BIJ" levels = 4 }
+					country = { country = "c:BIJ" levels = 5 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_MOSUL = {
-		region_state:BNB = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BNB" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BNB" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_EAST_BENGAL = {
+	s:STATE_WEST_BENGAL = {
 		region_state:BNG = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:BNG" levels = 10 }
+					country = { country = "c:BNG" levels = 8 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:BNG" levels = 30 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ENTEBBE = {
-		region_state:BNY = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BNY" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BNY" levels = 1 }
+					country = { country = "c:BNG" levels = 25 }
 				}
 				reserves = 1
 			}
@@ -598,14 +562,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:BOR" levels = 10 }
+					country = { country = "c:BOR" levels = 7 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:BOR" levels = 30 }
+					country = { country = "c:BOR" levels = 22 }
 				}
 				reserves = 1
 			}
@@ -629,79 +593,7 @@
 			}
 		}
 	}
-	s:STATE_KIGALI = {
-		region_state:BRD = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BRD" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BRD" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_DAHOMEY = {
-		region_state:BRG = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BRG" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BRG" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_BONGOR = {
-		region_state:BRM = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BRM" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BRM" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_BRANDENBURG = {
-		region_state:BRN = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BRN" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BRN" levels = 4 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_HYDERABAD = {
+	s:STATE_DAULATABAD = {
 		region_state:BRR = {
 			create_building = {
 				building = "building_government_administration"
@@ -719,7 +611,7 @@
 			}
 		}
 	}
-	s:STATE_BANDA_ACEH = {
+	s:STATE_ACEH = {
 		region_state:BRS = {
 			create_building = {
 				building = "building_government_administration"
@@ -755,42 +647,6 @@
 			}
 		}
 	}
-	s:STATE_ZULULAND = {
-		region_state:BSH = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BSH" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BSH" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MALATYA = {
-		region_state:BTL = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BTL" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BTL" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_CELEBES = {
 		region_state:BTN = {
 			create_building = {
@@ -809,25 +665,7 @@
 			}
 		}
 	}
-	s:STATE_ENTEBBE = {
-		region_state:BUG = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BUG" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BUG" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_KHIVA = {
+	s:STATE_BUKHARA = {
 		region_state:BUK = {
 			create_building = {
 				building = "building_government_administration"
@@ -839,13 +677,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:BUK" levels = 3 }
+					country = { country = "c:BUK" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_JUBBULPORE = {
+	s:STATE_BUNDLEKHAND_CENTRAL_INDIA = {
 		region_state:BUN = {
 			create_building = {
 				building = "building_government_administration"
@@ -881,24 +719,6 @@
 			}
 		}
 	}
-	s:STATE_SIOUX_REGION = {
-		region_state:BXJ = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:BXJ" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:BXJ" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_CAMBODIA = {
 		region_state:CAM = {
 			create_building = {
@@ -912,42 +732,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:CAM" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_LOUISIANA = {
-		region_state:CDD = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:CDD" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:CDD" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_CHEROKEE_REGION = {
-		region_state:CHE = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:CHE" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:CHE" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -989,61 +773,7 @@
 			}
 		}
 	}
-	s:STATE_EAST_MISSISSIPI = {
-		region_state:CHS = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:CHS" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:CHS" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_EAST_MISSISSIPI = {
-		region_state:CHT = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:CHT" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:CHT" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_CIRCASSIA = {
-		region_state:CIR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:CIR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:CIR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_CALICUT = {
+	s:STATE_MAHE = {
 		region_state:CIT = {
 			create_building = {
 				building = "building_government_administration"
@@ -1055,13 +785,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:CIT" levels = 1 }
+					country = { country = "c:CIT" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_WARRI = {
+	s:STATE_NIGER_DELTA = {
 		region_state:CLA = {
 			create_building = {
 				building = "building_government_administration"
@@ -1097,7 +827,7 @@
 			}
 		}
 	}
-	s:STATE_CENTRAL_GREAT_PLAINS = {
+	s:STATE_TEXAS = {
 		region_state:CMN = {
 			create_building = {
 				building = "building_government_administration"
@@ -1133,7 +863,7 @@
 			}
 		}
 	}
-	s:STATE_CALICUT = {
+	s:STATE_KERALA = {
 		region_state:COC = {
 			create_building = {
 				building = "building_government_administration"
@@ -1163,31 +893,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:CRI" levels = 1 }
+					country = { country = "c:CRI" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_CREEK_REGION = {
-		region_state:CRK = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:CRK" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:CRK" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_LAHORE = {
+	s:STATE_PESHAWAR = {
 		region_state:CRL = {
 			create_building = {
 				building = "building_government_administration"
@@ -1205,7 +917,7 @@
 			}
 		}
 	}
-	s:STATE_DAHOMEY = {
+	s:STATE_YORUBA_STATES = {
 		region_state:DAH = {
 			create_building = {
 				building = "building_government_administration"
@@ -1223,43 +935,25 @@
 			}
 		}
 	}
-	s:STATE_JUNAYNAH = {
-		region_state:DAR = {
+	s:STATE_NAGPUR = {
+		region_state:DGH = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:DAR" levels = 1 }
+					country = { country = "c:DGH" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:DAR" levels = 1 }
+					country = { country = "c:DGH" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_GHANA = {
-		region_state:DGB = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:DGB" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:DGB" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_JAMBI = {
+	s:STATE_SIAK = {
 		region_state:DJA = {
 			create_building = {
 				building = "building_government_administration"
@@ -1295,6 +989,24 @@
 			}
 		}
 	}
+	s:STATE_AHMEDNAGAR = {
+		region_state:DLT = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:DLT" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:DLT" levels = 4 }
+				}
+				reserves = 1
+			}
+		}
+	}
 	s:STATE_ASSAM = {
 		region_state:DMS = {
 			create_building = {
@@ -1313,24 +1025,6 @@
 			}
 		}
 	}
-	s:STATE_NIAMEY = {
-		region_state:DND = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:DND" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:DND" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_SJAELLAND = {
 		region_state:DNN = {
 			create_building = {
@@ -1343,7 +1037,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:DNN" levels = 3 }
+					country = { country = "c:DNN" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -1385,24 +1079,6 @@
 			}
 		}
 	}
-	s:STATE_OSTPREUSSEN = {
-		region_state:DPR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:DPR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:DPR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_URUMQUI = {
 		region_state:DZN = {
 			create_building = {
@@ -1415,7 +1091,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:DZN" levels = 2 }
+					country = { country = "c:DZN" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -1439,25 +1115,43 @@
 			}
 		}
 	}
-	s:STATE_SOUTH_EAST_ENGLAND = {
-		region_state:ENL = {
+	s:STATE_KOLKATA = {
+		region_state:EIC = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:ENL" levels = 10 }
+					country = { country = "c:EIC" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:ENL" levels = 30 }
+					country = { country = "c:EIC" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_ANKOBER = {
+	s:STATE_SOUTH_EAST_ENGLAND = {
+		region_state:ENL = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:ENL" levels = 3 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:ENL" levels = 10 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_OROMIA = {
 		region_state:ETH = {
 			create_building = {
 				building = "building_government_administration"
@@ -1470,24 +1164,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:ETH" levels = 4 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MESKWAKI_REGION = {
-		region_state:FOX = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:FOX" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:FOX" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -1547,7 +1223,7 @@
 			}
 		}
 	}
-	s:STATE_BANJUL = {
+	s:STATE_GAMBIA = {
 		region_state:GBU = {
 			create_building = {
 				building = "building_government_administration"
@@ -1583,7 +1259,7 @@
 			}
 		}
 	}
-	s:STATE_PIEMONTE = {
+	s:STATE_LIGURIA = {
 		region_state:GEN = {
 			create_building = {
 				building = "building_government_administration"
@@ -1601,25 +1277,7 @@
 			}
 		}
 	}
-	s:STATE_LAGOS = {
-		region_state:GEU = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:GEU" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:GEU" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_DAKAR = {
+	s:STATE_SENEGAL = {
 		region_state:GFL = {
 			create_building = {
 				building = "building_government_administration"
@@ -1637,24 +1295,6 @@
 			}
 		}
 	}
-	s:STATE_ILORIN = {
-		region_state:GOB = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:GOB" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:GOB" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_HYDERABAD = {
 		region_state:GOL = {
 			create_building = {
@@ -1667,13 +1307,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:GOL" levels = 6 }
+					country = { country = "c:GOL" levels = 7 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_EAST_BERAR = {
+	s:STATE_BUNDLEKHAND_CENTRAL_INDIA = {
 		region_state:GRH = {
 			create_building = {
 				building = "building_government_administration"
@@ -1685,31 +1325,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:GRH" levels = 3 }
+					country = { country = "c:GRH" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_CUTTACK = {
-		region_state:GRJ = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:GRJ" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:GRJ" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_AHMEDABAD = {
+	s:STATE_GUJARAT = {
 		region_state:GUJ = {
 			create_building = {
 				building = "building_government_administration"
@@ -1721,13 +1343,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:GUJ" levels = 8 }
+					country = { country = "c:GUJ" levels = 9 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_NORTH_CAUCASIA = {
+	s:STATE_DAGESTAN = {
 		region_state:GZK = {
 			create_building = {
 				building = "building_government_administration"
@@ -1740,24 +1362,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:GZK" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ZARIA = {
-		region_state:HAD = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:HAD" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:HAD" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -1799,7 +1403,7 @@
 			}
 		}
 	}
-	s:STATE_ANKOBER = {
+	s:STATE_OROMIA = {
 		region_state:HAR = {
 			create_building = {
 				building = "building_government_administration"
@@ -1865,13 +1469,31 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:HET" levels = 3 }
+					country = { country = "c:HET" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_HA_IL = {
+	s:STATE_HOLSTEIN = {
+		region_state:HOL = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:HOL" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:HOL" levels = 1 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_TRUCIAL_COAST = {
 		region_state:HSA = {
 			create_building = {
 				building = "building_government_administration"
@@ -1889,55 +1511,19 @@
 			}
 		}
 	}
-	s:STATE_BENIN = {
-		region_state:IGL = {
+	s:STATE_OMAN = {
+		region_state:IMO = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:IGL" levels = 1 }
+					country = { country = "c:IMO" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:IGL" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_UPPER_MISSISSIPI = {
-		region_state:ILL = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:ILL" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:ILL" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_GEORGIA = {
-		region_state:IMR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:IMR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:IMR" levels = 1 }
+					country = { country = "c:IMO" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -1955,31 +1541,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:IQS" levels = 2 }
+					country = { country = "c:IQS" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_LOUISIANA = {
-		region_state:ISK = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:ISK" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:ISK" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_AJMER = {
+	s:STATE_MEWAR = {
 		region_state:JAI = {
 			create_building = {
 				building = "building_government_administration"
@@ -1991,13 +1559,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:JAI" levels = 1 }
+					country = { country = "c:JAI" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_WEST_JAVA = {
+	s:STATE_YOGYAKARTA = {
 		region_state:JAV = {
 			create_building = {
 				building = "building_government_administration"
@@ -2015,7 +1583,7 @@
 			}
 		}
 	}
-	s:STATE_SRIKAKULAM = {
+	s:STATE_CICARS = {
 		region_state:JEY = {
 			create_building = {
 				building = "building_government_administration"
@@ -2033,7 +1601,7 @@
 			}
 		}
 	}
-	s:STATE_AJMER = {
+	s:STATE_MEWAR = {
 		region_state:JOD = {
 			create_building = {
 				building = "building_government_administration"
@@ -2045,13 +1613,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:JOD" levels = 1 }
+					country = { country = "c:JOD" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_SOUTHERN_MALAYA = {
+	s:STATE_MALAYA = {
 		region_state:JOH = {
 			create_building = {
 				building = "building_government_administration"
@@ -2069,43 +1637,7 @@
 			}
 		}
 	}
-	s:STATE_HAWASSA = {
-		region_state:KAF = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KAF" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KAF" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_GEORGIA = {
-		region_state:KAK = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KAK" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KAK" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_KALAT = {
+	s:STATE_BALUCHISTAN = {
 		region_state:KAL = {
 			create_building = {
 				building = "building_government_administration"
@@ -2123,19 +1655,19 @@
 			}
 		}
 	}
-	s:STATE_ZARIA = {
-		region_state:KAT = {
+	s:STATE_KASHMIR = {
+		region_state:KAS = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:KAT" levels = 1 }
+					country = { country = "c:KAS" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:KAT" levels = 1 }
+					country = { country = "c:KAS" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -2159,43 +1691,7 @@
 			}
 		}
 	}
-	s:STATE_KUKA = {
-		region_state:KBO = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KBO" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KBO" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_CIRCASSIA = {
-		region_state:KBR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KBR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KBR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_SOUTHERN_MALAYA = {
+	s:STATE_PATTANI = {
 		region_state:KED = {
 			create_building = {
 				building = "building_government_administration"
@@ -2208,24 +1704,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:KED" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_KALAT = {
-		region_state:KHA = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KHA" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KHA" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -2249,61 +1727,7 @@
 			}
 		}
 	}
-	s:STATE_CUTTACK = {
-		region_state:KHJ = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KHJ" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KHJ" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_CENTRAL_GREAT_PLAINS = {
-		region_state:KIW = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KIW" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KIW" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_GEORGIA = {
-		region_state:KKH = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KKH" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KKH" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MYSORE = {
+	s:STATE_MANGALURU = {
 		region_state:KLD = {
 			create_building = {
 				building = "building_government_administration"
@@ -2315,13 +1739,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:KLD" levels = 1 }
+					country = { country = "c:KLD" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_EAST_BORNEO = {
+	s:STATE_SOUTH_BORNEO = {
 		region_state:KLM = {
 			create_building = {
 				building = "building_government_administration"
@@ -2393,25 +1817,7 @@
 			}
 		}
 	}
-	s:STATE_ZARIA = {
-		region_state:KNO = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KNO" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KNO" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_NORTH_RHEINLAND = {
+	s:STATE_LOWER_RHINELAND = {
 		region_state:KOL = {
 			create_building = {
 				building = "building_government_administration"
@@ -2429,7 +1835,7 @@
 			}
 		}
 	}
-	s:STATE_SAO_TOME = {
+	s:STATE_BAS_CONGO = {
 		region_state:KON = {
 			create_building = {
 				building = "building_government_administration"
@@ -2465,19 +1871,37 @@
 			}
 		}
 	}
-	s:STATE_MADRAS = {
-		region_state:KRN = {
+	s:STATE_VOLYN = {
+		region_state:KOS = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:KRN" levels = 1 }
+					country = { country = "c:KOS" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:KRN" levels = 4 }
+					country = { country = "c:KOS" levels = 1 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_MADRAS = {
+		region_state:KRN = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:KRN" levels = 2 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:KRN" levels = 7 }
 				}
 				reserves = 1
 			}
@@ -2519,24 +1943,6 @@
 			}
 		}
 	}
-	s:STATE_KANANGA = {
-		region_state:KUB = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KUB" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KUB" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_COURLAND = {
 		region_state:KUR = {
 			create_building = {
@@ -2555,43 +1961,7 @@
 			}
 		}
 	}
-	s:STATE_WUKARI = {
-		region_state:KWR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KWR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KWR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MPIKA = {
-		region_state:KZB = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:KZB" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:KZB" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_SRINAGAR = {
+	s:STATE_KASHMIR = {
 		region_state:LAD = {
 			create_building = {
 				building = "building_government_administration"
@@ -2627,25 +1997,7 @@
 			}
 		}
 	}
-	s:STATE_BUNKEYA = {
-		region_state:LBA = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:LBA" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:LBA" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_WALLONIE = {
+	s:STATE_LIEGE = {
 		region_state:LIG = {
 			create_building = {
 				building = "building_government_administration"
@@ -2699,7 +2051,7 @@
 			}
 		}
 	}
-	s:STATE_ALSACE_LORRAINE = {
+	s:STATE_LORRAINE = {
 		region_state:LOR = {
 			create_building = {
 				building = "building_government_administration"
@@ -2712,24 +2064,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:LOR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ZAMBIA = {
-		region_state:LOZ = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:LOZ" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:LOZ" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -2771,24 +2105,6 @@
 			}
 		}
 	}
-	s:STATE_BUNKEYA = {
-		region_state:LUN = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:LUN" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:LUN" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_LAOS = {
 		region_state:LXA = {
 			create_building = {
@@ -2807,7 +2123,7 @@
 			}
 		}
 	}
-	s:STATE_MAHAJANGA = {
+	s:STATE_NORTH_MADAGASCAR = {
 		region_state:MAD = {
 			create_building = {
 				building = "building_government_administration"
@@ -2830,14 +2146,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:MAH" levels = 2 }
+					country = { country = "c:MAH" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MAH" levels = 5 }
+					country = { country = "c:MAH" levels = 3 }
 				}
 				reserves = 1
 			}
@@ -2861,6 +2177,24 @@
 			}
 		}
 	}
+	s:STATE_BALUCHISTAN = {
+		region_state:MAK = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:MAK" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:MAK" levels = 1 }
+				}
+				reserves = 1
+			}
+		}
+	}
 	s:STATE_CELEBES = {
 		region_state:MAL = {
 			create_building = {
@@ -2879,55 +2213,37 @@
 			}
 		}
 	}
-	s:STATE_TKY_GARIEP = {
-		region_state:MAT = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MAT" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MAT" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_JUBBULPORE = {
+	s:STATE_MALWA = {
 		region_state:MAW = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:MAW" levels = 2 }
+					country = { country = "c:MAW" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MAW" levels = 6 }
+					country = { country = "c:MAW" levels = 4 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_KUITO = {
-		region_state:MBU = {
+	s:STATE_MADURAI = {
+		region_state:MDR = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:MBU" levels = 1 }
+					country = { country = "c:MDR" levels = 2 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MBU" levels = 1 }
+					country = { country = "c:MDR" levels = 5 }
 				}
 				reserves = 1
 			}
@@ -2969,7 +2285,7 @@
 			}
 		}
 	}
-	s:STATE_AJMER = {
+	s:STATE_MEWAR = {
 		region_state:MEW = {
 			create_building = {
 				building = "building_government_administration"
@@ -3041,78 +2357,6 @@
 			}
 		}
 	}
-	s:STATE_OTTAWA_REGION = {
-		region_state:MIA = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MIA" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MIA" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_GEORGIA = {
-		region_state:MIG = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MIG" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MIG" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_SIOUX_REGION = {
-		region_state:MIS = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MIS" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MIS" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_KALAT = {
-		region_state:MKR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MKR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MKR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_CEYLON = {
 		region_state:MLD = {
 			create_building = {
@@ -3149,37 +2393,19 @@
 			}
 		}
 	}
-	s:STATE_GUINEA = {
-		region_state:MND = {
+	s:STATE_IMPHAL = {
+		region_state:MNP = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:MND" levels = 1 }
+					country = { country = "c:MNP" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MND" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_KIGALI = {
-		region_state:MNE = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MNE" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MNE" levels = 1 }
+					country = { country = "c:MNP" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3203,7 +2429,7 @@
 			}
 		}
 	}
-	s:STATE_RHEINLAND = {
+	s:STATE_UPPER_RHINELAND = {
 		region_state:MNZ = {
 			create_building = {
 				building = "building_government_administration"
@@ -3251,13 +2477,13 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MOL" levels = 2 }
+					country = { country = "c:MOL" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_MARRAKESH = {
+	s:STATE_FEZ = {
 		region_state:MOR = {
 			create_building = {
 				building = "building_government_administration"
@@ -3269,43 +2495,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MOR" levels = 2 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_HOUET = {
-		region_state:MOS = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MOS" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MOS" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MPIKA = {
-		region_state:MRV = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MRV" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MRV" levels = 1 }
+					country = { country = "c:MOR" levels = 4 }
 				}
 				reserves = 1
 			}
@@ -3329,43 +2519,25 @@
 			}
 		}
 	}
-	s:STATE_MASHONALAND = {
-		region_state:MTP = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:MTP" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:MTP" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_DELHI = {
 		region_state:MUG = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:MUG" levels = 5 }
+					country = { country = "c:MUG" levels = 4 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MUG" levels = 14 }
+					country = { country = "c:MUG" levels = 13 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_LAHORE = {
+	s:STATE_MULTAN = {
 		region_state:MUL = {
 			create_building = {
 				building = "building_government_administration"
@@ -3377,7 +2549,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MUL" levels = 1 }
+					country = { country = "c:MUL" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -3395,7 +2567,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MUN" levels = 2 }
+					country = { country = "c:MUN" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3437,6 +2609,24 @@
 			}
 		}
 	}
+	s:STATE_NEJD = {
+		region_state:NEJ = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:NEJ" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:NEJ" levels = 1 }
+				}
+				reserves = 1
+			}
+		}
+	}
 	s:STATE_JUMLA = {
 		region_state:NEP = {
 			create_building = {
@@ -3449,7 +2639,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:NEP" levels = 1 }
+					country = { country = "c:NEP" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -3460,86 +2650,50 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:NET" levels = 3 }
+					country = { country = "c:NET" levels = 4 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:NET" levels = 10 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ILORIN = {
-		region_state:NPE = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:NPE" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:NPE" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_WARRI = {
-		region_state:NRI = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:NRI" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:NRI" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_LOUISIANA = {
-		region_state:NTC = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:NTC" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:NTC" levels = 1 }
+					country = { country = "c:NET" levels = 11 }
 				}
 				reserves = 1
 			}
 		}
 	}
 	s:STATE_THANH_HOA = {
-		region_state:NUG = {
+		region_state:NGU = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:NUG" levels = 1 }
+					country = { country = "c:NGU" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:NUG" levels = 2 }
+					country = { country = "c:NGU" levels = 2 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_NEJD = {
+		region_state:NJN = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:NJN" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:NJN" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3599,7 +2753,7 @@
 			}
 		}
 	}
-	s:STATE_EAST_BERAR = {
+	s:STATE_ORISSA = {
 		region_state:ORI = {
 			create_building = {
 				building = "building_government_administration"
@@ -3617,43 +2771,7 @@
 			}
 		}
 	}
-	s:STATE_WEST_MISSISSIPI = {
-		region_state:OSG = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:OSG" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:OSG" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_OTTAWA_REGION = {
-		region_state:OTT = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:OTT" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:OTT" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_LAGOS = {
+	s:STATE_YORUBA_STATES = {
 		region_state:OYO = {
 			create_building = {
 				building = "building_government_administration"
@@ -3683,7 +2801,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:PAL" levels = 2 }
+					country = { country = "c:PAL" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3701,7 +2819,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:PAP" levels = 3 }
+					country = { country = "c:PAP" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -3725,7 +2843,7 @@
 			}
 		}
 	}
-	s:STATE_AYUTTHAYA = {
+	s:STATE_PATTANI = {
 		region_state:PAT = {
 			create_building = {
 				building = "building_government_administration"
@@ -3761,25 +2879,7 @@
 			}
 		}
 	}
-	s:STATE_WEST_GALICIA = {
-		region_state:PLC = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:PLC" levels = 7 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:PLC" levels = 21 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_JAMBI = {
+	s:STATE_PALEMBANG = {
 		region_state:PLM = {
 			create_building = {
 				building = "building_government_administration"
@@ -3809,7 +2909,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:PNJ" levels = 8 }
+					country = { country = "c:PNJ" levels = 10 }
 				}
 				reserves = 1
 			}
@@ -3820,20 +2920,20 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:POR" levels = 4 }
+					country = { country = "c:POR" levels = 3 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:POR" levels = 11 }
+					country = { country = "c:POR" levels = 10 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_SOUTHERN_MALAYA = {
+	s:STATE_PATTANI = {
 		region_state:PRK = {
 			create_building = {
 				building = "building_government_administration"
@@ -3851,25 +2951,25 @@
 			}
 		}
 	}
-	s:STATE_CUTTACK = {
-		region_state:PRL = {
+	s:STATE_BRANDENBURG = {
+		region_state:PRU = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:PRL" levels = 1 }
+					country = { country = "c:PRU" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:PRL" levels = 1 }
+					country = { country = "c:PRU" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_EAST_BORNEO = {
+	s:STATE_SOUTH_BORNEO = {
 		region_state:PTK = {
 			create_building = {
 				building = "building_government_administration"
@@ -3887,7 +2987,7 @@
 			}
 		}
 	}
-	s:STATE_JAMBI = {
+	s:STATE_SIAK = {
 		region_state:PYG = {
 			create_building = {
 				building = "building_government_administration"
@@ -3923,25 +3023,25 @@
 			}
 		}
 	}
-	s:STATE_LOWER_MISSISSIPI = {
-		region_state:QUA = {
+	s:STATE_TRUCIAL_COAST = {
+		region_state:QSM = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:QUA" levels = 1 }
+					country = { country = "c:QSM" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:QUA" levels = 1 }
+					country = { country = "c:QSM" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_AJMER = {
+	s:STATE_RAJPUTANA = {
 		region_state:RAJ = {
 			create_building = {
 				building = "building_government_administration"
@@ -3953,13 +3053,31 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:RAJ" levels = 3 }
+					country = { country = "c:RAJ" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_EAST_BERAR = {
+	s:STATE_BUNDLEKHAND_CENTRAL_INDIA = {
+		region_state:REW = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:REW" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:REW" levels = 1 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_NAGPUR = {
 		region_state:RTP = {
 			create_building = {
 				building = "building_government_administration"
@@ -3977,43 +3095,7 @@
 			}
 		}
 	}
-	s:STATE_KIGALI = {
-		region_state:RWA = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:RWA" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:RWA" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_MASHONALAND = {
-		region_state:RZV = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:RZV" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:RZV" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_RHEINLAND = {
+	s:STATE_UPPER_RHINELAND = {
 		region_state:SAA = {
 			create_building = {
 				building = "building_government_administration"
@@ -4067,25 +3149,7 @@
 			}
 		}
 	}
-	s:STATE_SACHSEN = {
-		region_state:SAX = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:SAX" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:SAX" levels = 2 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_EAST_BERAR = {
+	s:STATE_ORISSA = {
 		region_state:SBP = {
 			create_building = {
 				building = "building_government_administration"
@@ -4103,25 +3167,7 @@
 			}
 		}
 	}
-	s:STATE_LOWLANDS = {
-		region_state:SCO = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:SCO" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:SCO" levels = 2 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_BOUGOUNI = {
+	s:STATE_EASTERN_MALI = {
 		region_state:SEG = {
 			create_building = {
 				building = "building_government_administration"
@@ -4175,7 +3221,7 @@
 			}
 		}
 	}
-	s:STATE_EAST_BERAR = {
+	s:STATE_CHATTISGARH = {
 		region_state:SGJ = {
 			create_building = {
 				building = "building_government_administration"
@@ -4211,37 +3257,37 @@
 			}
 		}
 	}
-	s:STATE_KENTUCKY = {
-		region_state:SHE = {
+	s:STATE_SIMLA = {
+		region_state:SHI = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:SHE" levels = 1 }
+					country = { country = "c:SHI" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SHE" levels = 1 }
+					country = { country = "c:SHI" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_KHARTOUM = {
-		region_state:SHK = {
+	s:STATE_EASTERN_TRANSYLVANIA = {
+		region_state:SIE = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:SHK" levels = 1 }
+					country = { country = "c:SIE" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SHK" levels = 1 }
+					country = { country = "c:SIE" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -4265,7 +3311,7 @@
 			}
 		}
 	}
-	s:STATE_KARACHI = {
+	s:STATE_SINDH = {
 		region_state:SIN = {
 			create_building = {
 				building = "building_government_administration"
@@ -4278,6 +3324,24 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:SIN" levels = 2 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_SIMLA = {
+		region_state:SKH = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:SKH" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:SKH" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -4306,56 +3370,38 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:SPA" levels = 10 }
+					country = { country = "c:SPA" levels = 6 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SPA" levels = 30 }
+					country = { country = "c:SPA" levels = 17 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_MOSUL = {
-		region_state:SRN = {
+	s:STATE_SACHSEN = {
+		region_state:SPL = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:SRN" levels = 1 }
+					country = { country = "c:SPL" levels = 4 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SRN" levels = 1 }
+					country = { country = "c:SPL" levels = 11 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_TKY_GARIEP = {
-		region_state:SUA = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:SUA" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:SUA" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_KHARTOUM = {
+	s:STATE_SUDAN = {
 		region_state:SUD = {
 			create_building = {
 				building = "building_government_administration"
@@ -4367,7 +3413,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SUD" levels = 1 }
+					country = { country = "c:SUD" levels = 2 }
 				}
 				reserves = 1
 			}
@@ -4386,42 +3432,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:SUL" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_SIOUX_REGION = {
-		region_state:SUX = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:SUX" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:SUX" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_GEORGIA = {
-		region_state:SVA = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:SVA" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:SVA" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -4450,32 +3460,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:SWE" levels = 3 }
+					country = { country = "c:SWE" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SWE" levels = 8 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_HOLSTEIN = {
-		region_state:SWH = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:SWH" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:SWH" levels = 1 }
+					country = { country = "c:SWE" levels = 4 }
 				}
 				reserves = 1
 			}
@@ -4494,6 +3486,24 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:SWI" levels = 2 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_MASSACHUSETTS = {
+		region_state:THC = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:THC" levels = 1 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:THC" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -4535,25 +3545,43 @@
 			}
 		}
 	}
-	s:STATE_MOSKVA = {
-		region_state:TOR = {
+	s:STATE_WESER_EMS = {
+		region_state:TKL = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:TOR" levels = 10 }
+					country = { country = "c:TKL" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:TOR" levels = 30 }
+					country = { country = "c:TKL" levels = 1 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_CHUGOKU = {
+	s:STATE_MOSKVA = {
+		region_state:TOR = {
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = { country = "c:TOR" levels = 4 }
+				}
+				reserves = 1
+			}
+			create_building = {
+				building = "building_barrack"
+				add_ownership = {
+					country = { country = "c:TOR" levels = 13 }
+				}
+				reserves = 1
+			}
+		}
+	}
+	s:STATE_SHIKOKU = {
 		region_state:TOS = {
 			create_building = {
 				building = "building_government_administration"
@@ -4571,7 +3599,7 @@
 			}
 		}
 	}
-	s:STATE_CALICUT = {
+	s:STATE_KERALA = {
 		region_state:TRA = {
 			create_building = {
 				building = "building_government_administration"
@@ -4607,7 +3635,7 @@
 			}
 		}
 	}
-	s:STATE_NORTH_CAUCASIA = {
+	s:STATE_DAGESTAN = {
 		region_state:TRK = {
 			create_building = {
 				building = "building_government_administration"
@@ -4625,7 +3653,7 @@
 			}
 		}
 	}
-	s:STATE_ASSAM = {
+	s:STATE_IMPHAL = {
 		region_state:TRP = {
 			create_building = {
 				building = "building_government_administration"
@@ -4643,7 +3671,7 @@
 			}
 		}
 	}
-	s:STATE_RHEINLAND = {
+	s:STATE_UPPER_RHINELAND = {
 		region_state:TRR = {
 			create_building = {
 				building = "building_government_administration"
@@ -4661,7 +3689,7 @@
 			}
 		}
 	}
-	s:STATE_NOUAKCHOTT = {
+	s:STATE_MAURITANIA = {
 		region_state:TRZ = {
 			create_building = {
 				building = "building_government_administration"
@@ -4684,14 +3712,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:TUR" levels = 10 }
+					country = { country = "c:TUR" levels = 9 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:TUR" levels = 30 }
+					country = { country = "c:TUR" levels = 27 }
 				}
 				reserves = 1
 			}
@@ -4709,7 +3737,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:TUS" levels = 2 }
+					country = { country = "c:TUS" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -4733,24 +3761,6 @@
 			}
 		}
 	}
-	s:STATE_TABRIZ = {
-		region_state:URM = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:URM" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:URM" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_VENETIA = {
 		region_state:VEN = {
 			create_building = {
@@ -4763,43 +3773,43 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:VEN" levels = 4 }
+					country = { country = "c:VEN" levels = 2 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_MADRAS = {
-		region_state:VIJ = {
+	s:STATE_MEXICO = {
+		region_state:VNS = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:VIJ" levels = 2 }
+					country = { country = "c:VNS" levels = 2 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:VIJ" levels = 7 }
+					country = { country = "c:VNS" levels = 5 }
 				}
 				reserves = 1
 			}
 		}
 	}
-	s:STATE_ABECHE = {
-		region_state:WAD = {
+	s:STATE_LIMA = {
+		region_state:VOP = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:WAD" levels = 1 }
+					country = { country = "c:VOP" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:WAD" levels = 1 }
+					country = { country = "c:VOP" levels = 3 }
 				}
 				reserves = 1
 			}
@@ -4841,25 +3851,7 @@
 			}
 		}
 	}
-	s:STATE_TEXAS = {
-		region_state:WIC = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:WIC" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:WIC" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_WARRI = {
+	s:STATE_NIGER_DELTA = {
 		region_state:WRI = {
 			create_building = {
 				building = "building_government_administration"
@@ -4931,24 +3923,6 @@
 			}
 		}
 	}
-	s:STATE_GQEBERHA = {
-		region_state:XHO = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:XHO" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:XHO" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
 	s:STATE_URUMQUI = {
 		region_state:XIN = {
 			create_building = {
@@ -4962,24 +3936,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:XIN" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_LOWER_MISSISSIPI = {
-		region_state:YCH = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:YCH" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:YCH" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -5003,7 +3959,7 @@
 			}
 		}
 	}
-	s:STATE_MOMBASA = {
+	s:STATE_ZANZIBAR = {
 		region_state:ZAN = {
 			create_building = {
 				building = "building_government_administration"
@@ -5016,42 +3972,6 @@
 				building = "building_barrack"
 				add_ownership = {
 					country = { country = "c:ZAN" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ZARIA = {
-		region_state:ZAR = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:ZAR" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:ZAR" levels = 1 }
-				}
-				reserves = 1
-			}
-		}
-	}
-	s:STATE_ZULULAND = {
-		region_state:ZUL = {
-			create_building = {
-				building = "building_government_administration"
-				add_ownership = {
-					country = { country = "c:ZUL" levels = 1 }
-				}
-				reserves = 1
-			}
-			create_building = {
-				building = "building_barrack"
-				add_ownership = {
-					country = { country = "c:ZUL" levels = 1 }
 				}
 				reserves = 1
 			}

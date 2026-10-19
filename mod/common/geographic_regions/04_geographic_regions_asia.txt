@@ -11,7 +11,7 @@ geographic_region_middle_east = {
 geographic_region_india = {
 	short_key = india
 	strategic_regions = { sr:region_north_india sr:region_south_india }
-	state_regions = { STATE_KALAT STATE_SRINAGAR }
+	state_regions = { STATE_BALUCHISTAN STATE_PESHAWAR STATE_KASHMIR }
 }
 
 geographic_region_east_asia = {
@@ -31,17 +31,17 @@ geographic_region_china = {
 
 geographic_region_greater_khorasan = {
 	short_key = greater_khorasan
-	state_regions = { STATE_KUNDUZ STATE_GHAZNI }
+	state_regions = { STATE_HERAT STATE_KABULISTAN }
 }
 
 geographic_region_chorasmia = {
 	short_key = chorasmia
-	state_regions = { STATE_GURGENCH }
+	state_regions = { STATE_KHIVA STATE_TURKMENIA }
 }
 
 geographic_region_transoxiana = {
 	short_key = transoxiana
-	state_regions = { STATE_KULOB }
+	state_regions = { STATE_BUKHARA STATE_TAJIKISTAN }
 }
 
 geographic_region_honshu = {
@@ -56,7 +56,7 @@ geographic_region_ezochi = {
 
 geographic_region_japan = {
 	short_key = japan
-	state_regions = { STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_CHUGOKU STATE_POGOBI }
+	state_regions = { STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_SHIKOKU STATE_CHUGOKU STATE_POGOBI }
 }
 
 geographic_region_philippines = {
@@ -66,7 +66,7 @@ geographic_region_philippines = {
 
 geographic_region_home_islands = {
 	short_key = home_islands
-	state_regions = { STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_CHUGOKU }
+	state_regions = { STATE_EZO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_BONIN_ISLANDS STATE_KYUSHU STATE_SHIKOKU STATE_CHUGOKU }
 }
 
 geographic_region_korea = {
@@ -81,27 +81,27 @@ geographic_region_han_homelands = {
 
 geographic_region_indian_frontier = {
 	short_key = indian_frontier
-	state_regions = { STATE_KALAT STATE_KARACHI STATE_LAHORE STATE_SRINAGAR STATE_HAKA STATE_MANDALAY STATE_RANGOON }
+	state_regions = { STATE_BALUCHISTAN STATE_PESHAWAR STATE_SINDH STATE_LAHORE STATE_MULTAN STATE_ARMRITSAR STATE_SIMLA STATE_KASHMIR STATE_KACHIN STATE_MANDALAY STATE_PEGU }
 }
 
 geographic_region_turkestan = {
 	short_key = turkestan
-	state_regions = { STATE_KHIVA STATE_KULOB STATE_ALAY STATE_USTYURT STATE_GURGENCH STATE_AKMOLINSK }
+	state_regions = { STATE_BUKHARA STATE_KHIVA STATE_TAJIKISTAN STATE_ALAY STATE_URALSK STATE_TURKMENIA STATE_AKMOLINSK }
 }
 
 geographic_region_burma = {
 	short_key = burma
-	state_regions = { STATE_HAKA STATE_MANDALAY STATE_RANGOON }
+	state_regions = { STATE_KACHIN STATE_MANDALAY STATE_PEGU }
 }
 
 geographic_region_afghanistan = {
 	short_key = afghanistan
-	state_regions = { STATE_KUNDUZ STATE_GHAZNI }
+	state_regions = { STATE_HERAT STATE_KABULISTAN }
 }
 
 geographic_region_greater_afghanistan = {
 	short_key = greater_afghanistan
-	state_regions = { STATE_KALAT STATE_KUNDUZ STATE_GHAZNI }
+	state_regions = { STATE_BALUCHISTAN STATE_PESHAWAR STATE_HERAT STATE_KABULISTAN }
 }
 
 geographic_region_great_game_region = {
@@ -126,20 +126,20 @@ geographic_region_australasia = {
 
 geographic_region_delhi_calcutta_line = {
 	short_key = delhi_calcutta_line
-	state_regions = { STATE_PATNA STATE_DELHI }
+	state_regions = { STATE_BIHAR STATE_CHOTANAGPUR STATE_KOLKATA STATE_WEST_BENGAL STATE_DELHI STATE_AGRA STATE_AWADH STATE_BHOJPUR }
 }
 
 geographic_region_allahabad_bombay_line = {
 	short_key = allahabad_bombay_line
-	state_regions = { STATE_EAST_BERAR STATE_JUBBULPORE STATE_BOMBAY STATE_DELHI STATE_BASSEIN STATE_GOA }
+	state_regions = { STATE_NAGPUR STATE_CHATTISGARH STATE_AHMEDNAGAR STATE_BUNDLEKHAND_CENTRAL_INDIA STATE_MALWA STATE_BOMBAY STATE_BIJAPUR STATE_DAULATABAD STATE_AGRA STATE_BASSEIN STATE_GOA STATE_MUMBAI }
 }
 
 geographic_region_bombay_madras_line = {
 	short_key = bombay_madras_line
-	state_regions = { STATE_SRIKAKULAM STATE_MADRAS STATE_HYDERABAD STATE_BOMBAY STATE_NAGAPATAM STATE_TRANQUEBAR STATE_BASSEIN STATE_PONDICHIERRY STATE_GOA }
+	state_regions = { STATE_MYSORE STATE_MADRAS STATE_MADURAI STATE_HYDERABAD STATE_BIDAR STATE_AHMEDNAGAR STATE_BOMBAY STATE_BIJAPUR STATE_NAGAPATAM STATE_TRANQUEBAR STATE_BASSEIN STATE_PONDICHIERRY STATE_GOA STATE_TUTTUKKUDI STATE_MUMBAI STATE_KARAIKAL STATE_CHENNAI }
 }
 
 geographic_region_gujarat_bombay_line = {
 	short_key = gujarat_bombay_line
-	state_regions = { STATE_AHMEDABAD STATE_BOMBAY STATE_DIU STATE_SURAT STATE_BASSEIN STATE_GOA }
+	state_regions = { STATE_AHMEDNAGAR STATE_GUJARAT STATE_BARODA STATE_BOMBAY STATE_BIJAPUR STATE_DIU STATE_SURAT STATE_BASSEIN STATE_GOA STATE_MUMBAI STATE_DAMAN }
 }

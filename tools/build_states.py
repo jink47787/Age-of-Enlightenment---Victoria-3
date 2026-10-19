@@ -1,6 +1,7 @@
 """Generate Vic3 state regions from AoE's Vic2 states.
 
-Reads build/province_map.csv (from build_province_map.py) and writes:
+Reads build/province_map.csv and the redrawn province map (build_province_map.py, redraw_provinces.py)
+and writes:
   mod/map_data/state_regions/*.txt          one file per vanilla file name, replacing vanilla
   mod/common/strategic_regions/*.txt        land strategic regions listing the new states
   mod/gfx/map/map_object_data/generated_map_object_locators_*.txt   hub locators
@@ -90,8 +91,9 @@ def wrap_dist(x1, y1, x2, y2, width):
 class StateBuilder:
     def __init__(self):
         self.rows = read_province_map()
-        self.v3 = read_vic3_map(config.VIC3)
-        self.land, self.sea, self.file_of, self.regions, self.vanilla_hub_names = read_vanilla()
+        self.v3 = read_vic3_map(config.VIC3, config.REDRAW)
+        _, self.sea, self.file_of, self.regions, self.vanilla_hub_names = read_vanilla()
+        self.land = self.v3.land_states     # vanilla blocks, with the redrawn map's new provinces added
         self.loc = read_localisation()
         self.region_names = read_region_comments()
         self.positions = read_positions()

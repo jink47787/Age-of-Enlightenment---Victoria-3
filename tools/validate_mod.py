@@ -2,15 +2,21 @@
 
 Checks that every culture, religion, state, country tag, law, scripted effect,
 building and flag texture the mod refers to is defined, either by the mod or by
-the vanilla files the mod doesn't replace.
+the vanilla files the mod doesn't replace, and that provinces.png,
+province_terrains.txt, the state region lists and owned_provinces agree.
 """
 import json
 import re
 import sys
 from collections import Counter
 
+import numpy as np
+
 import config
 import pdx
+from mapdata import load_packed_rgb
+
+HUB_TYPES = ["city", "port", "farm", "mine", "wood"]
 
 
 def keys_in(folder, mod_first=True, replaced=False):
@@ -21,6 +27,57 @@ def keys_in(folder, mod_first=True, replaced=False):
         for path in d.glob("*.txt"):
             out |= {k for k, _, v in pdx.parse_file(path).pairs() if isinstance(v, pdx.Block) or folder == "scripted_effects"}
     return out
+
+
+def norm_hex(p):
+    return "x" + p[1:].upper()
+
+
+def map_problems(mod):
+    """Every province on provinces.png has a terrain and is in one state region (land) or is sea / lake; state
+    lists only hold provinces of the image; every land province is owned once, in its own state."""
+    problems = []
+    png = mod / "map_data" / "provinces.png"
+    png = png if png.exists() else config.VIC3 / "map_data" / "provinces.png"
+    colours = {f"x{int(c):06X}" for c in np.unique(load_packed_rgb(png))}
+    terrains = mod / "map_data" / "province_terrains.txt"
+    terrains = terrains if terrains.exists() else config.VIC3 / "map_data" / "province_terrains.txt"
+    listed = Counter(norm_hex(p) for p in re.findall(r"^(x[0-9A-Fa-f]{6})\s*=", pdx.read_text(terrains), re.MULTILINE))
+    problems += [f"province_terrains: {p} listed {n} times" for p, n in sorted(listed.items()) if n > 1]
+    problems += [f"province_terrains: no terrain for {p}" for p in sorted(colours - set(listed))]
+
+    water = set()
+    for path in (config.VIC3 / "map_data" / "state_regions").glob("99_*.txt"):
+        for _, _, b in pdx.parse_file(path).pairs():
+            water |= {norm_hex(p) for p in b.get("provinces", pdx.Block()).values()}
+    lakes = re.search(r"lakes\s*=\s*\{([^}]*)\}", pdx.read_text(config.VIC3 / "map_data" / "default.map"))
+    water |= {norm_hex(p) for p in re.findall(r"x[0-9A-Fa-f]{6}", lakes.group(1))} if lakes else set()
+    in_states, state_of = Counter(), {}
+    for path in (mod / "map_data" / "state_regions").glob("*.txt"):
+        for key, _, b in pdx.parse_file(path).pairs():
+            provs = [norm_hex(p) for p in b.get("provinces", pdx.Block()).values()]
+            in_states.update(provs)
+            state_of.update((p, key) for p in provs)
+            for list_key in ("impassable", "prime_land"):
+                problems += [f"state regions: {key} {list_key} {p} is not one of its provinces"
+                             for p in b.get(list_key, pdx.Block()).values() if norm_hex(p) not in provs]
+            problems += [f"state regions: {key} {t} hub {b.get(t)} is not one of its provinces"
+                         for t in HUB_TYPES if b.get(t) and norm_hex(b.get(t)) not in provs]
+    problems += [f"state regions: {p} is in {n} states" for p, n in sorted(in_states.items()) if n > 1]
+    problems += [f"state regions: {p} is not on provinces.png" for p in sorted(set(in_states) - colours)]
+    problems += [f"state regions: {p} on provinces.png is in no state" for p in sorted(colours - set(in_states) - water)]
+
+    owned = Counter()
+    for _, _, root in pdx.parse_file(mod / "common" / "history" / "states" / "aoe_states.txt").pairs():
+        for skey, _, sb in root.pairs():
+            for cs in sb.get_all("create_state"):
+                for p in cs.get("owned_provinces", pdx.Block()).values():
+                    owned[norm_hex(p)] += 1
+                    if state_of.get(norm_hex(p)) != skey.removeprefix("s:"):
+                        problems.append(f"owned_provinces: {p} is owned in {skey} but lies in {state_of.get(norm_hex(p))}")
+    problems += [f"owned_provinces: {p} is owned {n} times" for p, n in sorted(owned.items()) if n > 1]
+    problems += [f"owned_provinces: {p} has no owner" for p in sorted(set(in_states) - set(owned))]
+    return problems
 
 
 def main():
@@ -113,6 +170,8 @@ def main():
     loc += (mod / "localization" / "english" / "replace" / "aoe_states_l_english.yml").read_text(encoding="utf-8-sig")
     loc_keys = set(re.findall(r"^\s*([\w.]+):\d*\s", loc, re.MULTILINE))
     problems += [f"no localisation for {k}" for k in sorted(states | tags) if k not in loc_keys]
+
+    problems += map_problems(mod)
 
     counts = Counter(p.split(":")[0] for p in problems)
     for p in problems[:60]:

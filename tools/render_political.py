@@ -13,7 +13,7 @@ from mapdata import read_vic3_map
 
 
 def main():
-    v3 = read_vic3_map(config.VIC3)
+    v3 = read_vic3_map(config.VIC3, config.REDRAW)
     index = {p: i for i, p in enumerate(v3.provinces)}
     colors = {}
     for tag, _, b in pdx.parse_file(config.MOD / "common" / "country_definitions" / "aoe_countries.txt").pairs():

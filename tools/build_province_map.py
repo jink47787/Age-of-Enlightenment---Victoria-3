@@ -23,6 +23,8 @@ Outputs (build/):
   warp_points.csv       alignment points with cross-validated residuals
   debug_states.png      Vic3 map coloured by AoE state
   debug_coast.png       land/sea agreement between the warped AoE map and Vic3
+redraw_provinces.py then redraws the province borders and rewrites province_map.csv and debug_states.png for
+the redrawn map.
 """
 import csv
 import time
@@ -314,7 +316,9 @@ def aoe_under_vic3(warp, aoe, w3, h3):
     return out
 
 
-def assign(v3, aoe, aoe_at, warp, land3):
+def assign(v3, aoe, aoe_at, warp, land3, owner=None):
+    """owner (optional): {AoE province: owner}. When given, the coverage and topology steps keep every Vic3
+    province with an AoE province of its majority owner (see cover_and_balance)."""
     n3 = len(v3.provinces)
     state_of = aoe.state_of()
     k = int(aoe.labels.max()) + 1
@@ -372,7 +376,7 @@ def assign(v3, aoe, aoe_at, warp, land3):
     vanilla_state = v3.province_state()
     vanilla_of = {i: vanilla_state.get(p) for i, p in enumerate(v3.provinces) if i in best}
     covered, switched = cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
-                                          neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of)
+                                          neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of, owner)
 
     # Small AoE states (enclaves, trading posts) can lose every vote. Give each
     # one the Vic3 province where it has the largest share of pixels, or failing
@@ -409,7 +413,7 @@ def assign(v3, aoe, aoe_at, warp, land3):
 
 
 def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
-                      neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of):
+                      neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of, owner=None):
     """Adjust the majority vote so AoE provinces keep their size and topology.
 
     Majority voting drops AoE provinces narrower than a Vic3 province (Lorraine's
@@ -420,6 +424,10 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
     and topology violations against AoE's own province adjacency. Near-ties are
     broken toward Vic3's own historical borders: when one AoE state holds most of
     a vanilla Vic3 state, that vanilla state's provinces lean toward it.
+
+    With owner ({AoE province: owner}), a Vic3 province only moves between AoE provinces of one owner, except to
+    give an owner with no Vic3 province its first one. That is for a map whose province borders were already
+    drawn along the owners' borders (redraw_provinces.py), so the search can't undo them.
     """
     votes = defaultdict(dict)
     target = Counter()
@@ -430,6 +438,10 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
     area = Counter()
     for i, a in best.items():
         area[a] += int(pixel_count[i])
+    holdings = Counter(owner.get(a) for a in best.values()) if owner else None
+
+    def same_owner(a, b):
+        return owner is None or owner.get(a) == owner.get(b)
 
     def move(i, b, how):
         a = best[i]
@@ -437,6 +449,9 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
         area[a] -= int(pixel_count[i])
         owned[b] += 1
         area[b] += int(pixel_count[i])
+        if owner:
+            holdings[owner.get(a)] -= 1
+            holdings[owner.get(b)] += 1
         best[i], best_count[i], method[i] = b, votes[i].get(b, 0), how
 
     candidates = defaultdict(list)
@@ -451,11 +466,12 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
         ... until someone with a province to spare gives one up."""
         parent = {start: None}
         queue = [start]
+        first = owner is not None and not holdings[owner.get(start)]   # start's owner has no Vic3 province yet
         while queue and len(parent) < COVER_SEARCH_LIMIT:
             a = queue.pop(0)
             for _, i in candidates[a]:
                 b = best[i]
-                if b in parent:
+                if b in parent or not (same_owner(a, b) or (a == start and first)):
                     continue
                 parent[b] = (a, i)
                 if owned[b] > 1:
@@ -551,7 +567,8 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
             a, p = best[i], int(pixel_count[i])
             if owned[a] <= 1 or all(best[j] == a for j, _ in neighbours[i]):
                 continue
-            options = [(move_cost(i, b), b) for b, n in votes[i].items() if b != a and n >= MOVE_MIN_SHARE * p]
+            options = [(move_cost(i, b), b) for b, n in votes[i].items()
+                       if b != a and n >= MOVE_MIN_SHARE * p and same_owner(a, b)]
             if not options:
                 continue
             (cost, change), b = min(options, key=lambda o: o[0][0])
@@ -629,15 +646,10 @@ def main(reuse_warp=False):
             w.writerow([" ".join(map(str, p[5])), f"{s[0]:.1f}", f"{s[1]:.1f}", f"{d[0]:.1f}", f"{d[1]:.1f}",
                         f"{p[4]:.2f}", int(k), "" if np.isnan(r) else f"{r:.2f}"])
 
-    v3_index = {p: i for i, p in enumerate(v3.provinces)}
-    land3 = np.zeros(len(v3.provinces), bool)
-    for block in v3.land_states.values():
-        land3[[v3_index[norm_hex(p)] for p in block.get("provinces").values()]] = True
-    cached = config.BUILD / "warp_grid.npz"
-    if reuse_warp and cached.exists():
+    land3 = land_provinces(v3)
+    if reuse_warp and (config.BUILD / "warp_grid.npz").exists():
         log("reusing the warp from the previous run")
-        g = np.load(cached)
-        warp = GridWarp(g["x"], g["y"], float(g["step"]), float(g["origin"]), v3.width, aoe.width)
+        warp = load_warp(v3, aoe)
     else:
         log("refining warp by matching converter regions")
         base = spline_grid(spline, v3.width, v3.height, aoe.width)
@@ -651,7 +663,28 @@ def main(reuse_warp=False):
     aoe_at = aoe_under_vic3(warp, aoe, v3.width, v3.height)
     np.save(config.BUILD / "aoe_at_vic3.npy", aoe_at)
 
-    best, best_count, pixel_count, method, state_of, (cx, cy, wx, wy) = assign(v3, aoe, aoe_at, warp, land3)
+    result = assign(v3, aoe, aoe_at, warp, land3)
+    write_province_map(v3, aoe, *result)
+    write_debug_images(v3, aoe, aoe_at, land3, result[0], result[4])
+
+
+def land_provinces(v3):
+    """Per Vic3 province: listed in a land state region."""
+    index = {p: i for i, p in enumerate(v3.provinces)}
+    land3 = np.zeros(len(v3.provinces), bool)
+    for block in v3.land_states.values():
+        land3[[index[norm_hex(p)] for p in block.get("provinces").values()]] = True
+    return land3
+
+
+def load_warp(v3, aoe):
+    g = np.load(config.BUILD / "warp_grid.npz")
+    return GridWarp(g["x"], g["y"], float(g["step"]), float(g["origin"]), v3.width, aoe.width)
+
+
+def write_province_map(v3, aoe, best, best_count, pixel_count, method, state_of, centroids):
+    """build/province_map.csv from assign()'s result."""
+    cx, cy, wx, wy = centroids
     vanilla_state = v3.province_state()
     with open(config.BUILD / "province_map.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
@@ -668,7 +701,6 @@ def main(reuse_warp=False):
     log(f"AoE states with Vic3 land: {len(used_states)} of {sum(1 for p in aoe.states.values() if p)} non-empty")
     if lost:
         log(f"non-empty AoE states with no Vic3 province: {' '.join(lost)}")
-    write_debug_images(v3, aoe, aoe_at, land3, best, state_of)
 
 
 if __name__ == "__main__":

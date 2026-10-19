@@ -18,7 +18,7 @@ from mapdata import province_borders, read_vic2_map, read_vic3_map
 def main(provinces):
     aoe = read_vic2_map(config.AOE / "map")
     rows = read_province_map()
-    v3 = read_vic3_map(config.VIC3)
+    v3 = read_vic3_map(config.VIC3, config.REDRAW)
     index = {p: i for i, p in enumerate(v3.provinces)}
     aoe_of = {index[r["vic3_province"]]: r["aoe_province"] for r in rows}
 

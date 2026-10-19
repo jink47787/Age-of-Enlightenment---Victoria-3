@@ -1,9 +1,9 @@
 """Build the whole mod into mod/.
 
     python build_mod.py              run every step
-    python build_mod.py --skip-map   reuse build/province_map.csv (the slow alignment step)
+    python build_mod.py --skip-map   reuse build/province_map.csv and build/redraw/ (alignment and redraw)
 
-Steps: province alignment -> state regions -> history -> flags -> static files.
+Steps: province alignment -> province redraw -> state regions -> history -> flags -> static files.
 """
 import json
 import shutil
@@ -14,6 +14,7 @@ import build_flags
 import build_history
 import build_province_map
 import build_states
+import redraw_provinces
 
 MOD_NAME = "Age of Enlightenment"
 MOD_VERSION = "0.1"
@@ -82,7 +83,7 @@ def write_static_files():
         "id": "aoe_vic3",
         "version": MOD_VERSION,
         "supported_game_version": GAME_VERSION,
-        "short_description": "Age of Enlightenment: the AoE Remake world of 1700, ported from Victoria 2.",
+        "short_description": "Age of Enlightenment: the AoE Remake (multiplayer) world of 1700, ported from Victoria 2.",
         "tags": ["Total Conversion", "Map", "Historical"],
         "relationships": [],
         "game_custom_data": {"multiplayer_synchronized": True, "replace_paths": REPLACE_PATHS},
@@ -100,6 +101,8 @@ def main():
         shutil.rmtree(config.MOD)
     if "--skip-map" not in sys.argv:
         build_province_map.main()
+        redraw_provinces.main()
+    redraw_provinces.write_mod_files()
     builder = build_states.StateBuilder()
     builder.write(builder.build())
     build_history.HistoryBuilder().run()

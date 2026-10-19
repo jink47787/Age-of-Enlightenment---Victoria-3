@@ -9,12 +9,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "sources"
 BUILD = ROOT / "build"
+REDRAW = BUILD / "redraw"          # redrawn provinces (redraw_provinces.py)
 MOD = ROOT / "mod"
 
 AOE_REPO_URL = "https://github.com/MaTi5893/AoE-remake"
-AOE_BRANCH = "SP-version"
-AOE_REPO = SOURCES / "AoE-remake"
-AOE = AOE_REPO / "AoE Remake"
+AOE_BRANCH = "main"                          # the multiplayer version
+AOE_REPO = SOURCES / "AoE-main"
+AOE = AOE_REPO / "AoE Multiplayer Remake"
 
 CONVERTER_MAPPINGS = SOURCES / "converter_mappings"
 EU4_TO_VIC2 = CONVERTER_MAPPINGS / "eu4_to_vic2_province_mappings.txt"
