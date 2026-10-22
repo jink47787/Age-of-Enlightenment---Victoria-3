@@ -11,6 +11,9 @@ and writes:
 Arable land, resources, traits and subsistence buildings come from the vanilla
 Vic3 states each new state overlaps, split in proportion to overlap so world
 totals stay the same.
+
+Hub names and places are period-corrected (1700-1821) by hub_names.py: global renames
+in PERIOD_NAMES and per-state renames and moves in HUB_OVERRIDES.
 """
 import csv
 import re
@@ -20,8 +23,11 @@ from collections import Counter, defaultdict
 import numpy as np
 
 import config
+import hub_names
 import pdx
 from aoedata import read_localisation, read_positions, read_province_map, read_region_comments
+from aoehistory import read_pops
+from build_province_map import GridWarp
 from mapdata import province_borders, read_definition, read_vic3_map
 
 HUB_TYPES = ["city", "port", "farm", "mine", "wood"]
@@ -83,6 +89,24 @@ def read_vanilla():
     return land, sea, file_of, regions, hub_names
 
 
+def read_vanilla_locators(land):
+    """{(vanilla state key, hub type): (x, z, rotation text)}: vanilla's hand-placed hub locators."""
+    key_of = {int(b.get("id")): k for k, b in land.items()}
+    out = {}
+    for t in HUB_TYPES:
+        text = pdx.read_text(config.VIC3 / "gfx" / "map" / "map_object_data" / f"generated_map_object_locators_{t}.txt")
+        for m in re.finditer(r"id=(\d+)\s*position=\{\s*([-\d.]+)\s+[-\d.]+\s+([-\d.]+)\s*\}\s*rotation=\{([^}]*)\}", text):
+            if int(m.group(1)) in key_of:
+                out[(key_of[int(m.group(1))], t)] = (float(m.group(2)), float(m.group(3)), m.group(4).strip())
+    return out
+
+
+def place_key(name):
+    """Name normalised for matching: no accents, case, punctuation or Saint/St difference."""
+    ascii_name = unicodedata.normalize("NFKD", name.translate(_TRANSLIT)).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]", "", re.sub(r"\b(saint|sankt|san|sao|santo|santa)\b", "st", ascii_name))
+
+
 def wrap_dist(x1, y1, x2, y2, width):
     dx = (x1 - x2 + width / 2) % width - width / 2
     return np.hypot(dx, y1 - y2)
@@ -111,6 +135,11 @@ class StateBuilder:
         self.sea_state_of = {self.index[norm_hex(p)]: k for k, b in self.sea.items()
                              for p in b.get("provinces").values()}
         self.vanilla_region = {s: r for r, (_, b) in self.regions.items() for s in b.get("states", pdx.Block()).values()}
+        self.vanilla_locators = read_vanilla_locators(self.land)
+        self.warnings = []
+        self.population = {p: sum(pop.size for pop in pops) for p, pops in read_pops().items()}
+        g = np.load(config.BUILD / "warp_grid.npz")
+        self.warp = GridWarp(g["x"], g["y"], float(g["step"]), float(g["origin"]), self.v3.width, int(g["w2"]))
 
         print("computing province borders")
         self.sea_borders = defaultdict(list)  # land province -> [(sea state, length, (x, y))]
@@ -170,8 +199,11 @@ class StateBuilder:
         self.area_v = area_v
 
         self.assign_resources(states)
+        print("choosing hubs")
         for s in states:
             self.choose_hubs(s)
+        for w in self.warnings:
+            print("warning:", w)
         self.assign_strategic_regions(states)
         return states
 
@@ -224,66 +256,194 @@ class StateBuilder:
             s["impassable"] = [i for i in s["provs"] if i in self.impassable]
             s["prime_land"] = [i for i in s["provs"] if i in self.prime_land]
 
+    def aoe_town_point(self, aoe_prov, provs):
+        """(province, x, y): where the warp puts AoE's city position of aoe_prov, searched in the provinces of
+        provs that belong to aoe_prov (all of provs if none does). None if AoE has no position for it."""
+        if aoe_prov not in self.positions or not provs:
+            return None
+        own = [i for i in provs if self.row_of[i]["aoe_province"] == aoe_prov] or list(provs)
+        flat = np.concatenate([self.pixel_order[self.pixel_starts[i]:self.pixel_starts[i + 1]] for i in own])
+        ys, xs = np.divmod(flat, self.v3.width)
+        x2, y2 = self.warp(xs.astype(float), ys.astype(float))
+        tx, ty = self.positions[aoe_prov]
+        w2 = self.warp.w2
+        k = int(np.argmin(np.hypot((x2 - tx + w2 / 2) % w2 - w2 / 2, y2 - ty)))
+        return int(self.v3.labels[ys[k], xs[k]]), float(xs[k]), float(ys[k])
+
+    def vanilla_point(self, vkey, t, provs):
+        """(province, x, y, rotation) of vanilla's locator for that hub, if it lies in one of provs."""
+        loc = self.vanilla_locators.get((vkey, t))
+        if not loc:
+            return None
+        x, z, rot = loc
+        px, py = int(x) % self.v3.width, min(max(int(self.v3.height - z), 0), self.v3.height - 1)
+        i = int(self.v3.labels[py, px])
+        return (i, x - 0.5, self.v3.height - z - 0.5, rot) if i in provs else None
+
+    def gazetteer(self, s, provs):
+        """{place key: (province, x, y, rotation, hub type)} for places this state's provinces hold: vanilla hubs
+        (any vanilla state) whose locator lies in provs, then AoE towns, under every name they go by."""
+        out = {}
+        for (vkey, t), name in self.vanilla_hub_names.items():
+            pt = self.vanilla_point(vkey, t, provs)
+            if pt:
+                for n in hub_names.names_of(name):
+                    out.setdefault(place_key(n), (*pt, t))
+        for p in {self.row_of[i]["aoe_province"] for i in provs}:
+            for n in hub_names.names_of(self.province_name(p)):
+                k = place_key(n)
+                if k not in out:
+                    pt = self.aoe_town_point(p, provs)
+                    if pt:
+                        out[k] = (*pt, None, None)
+        return out
+
+    def set_port(self, s, i, vanilla_state=None):
+        """Make province i the port, with vanilla_state's naval exit if given, else the sea it borders most."""
+        borders = self.sea_borders[i]
+        if vanilla_state:
+            s["naval_exit"] = int(self.land[vanilla_state].get("naval_exit_id"))
+            exit_key = next((k for k, b in self.sea.items() if int(b.get("id")) == s["naval_exit"]), None)
+            borders = [b for b in borders if b[0] == exit_key] or borders
+        else:
+            s["naval_exit"] = int(self.sea[max(borders, key=lambda b: b[1])[0]].get("id"))
+        s["hubs"]["port"] = i
+        s["hub_pos"]["port"] = max(borders, key=lambda b: b[1])[2]
+
     def choose_hubs(self, s):
+        """Hub provinces, names and locator positions. A hub at a vanilla hub keeps vanilla's name for it (in its
+        1700-1821 form) and vanilla's locator; any other hub is an AoE town, placed where the warp puts AoE's city
+        position. hub_names.HUB_OVERRIDES then renames and moves hubs by hand."""
         provs = set(s["provs"])
         passable = [i for i in s["provs"] if i not in self.impassable] or s["provs"]
+        coastal = [i for i in s["provs"] if self.sea_borders.get(i)]
         ranked = [v for v, _ in s["overlap"].most_common()]
         vanilla_hub = {t: [(v, norm_hex(self.land[v].get(t))) for v in ranked if self.land[v].get(t)
                            and self.index.get(norm_hex(self.land[v].get(t))) in provs]
                        for t in HUB_TYPES}
-        hubs, hub_source, used = {}, {}, set()
+        order = {p: n for n, p in enumerate(s["aoe_provs"])}
+        towns = sorted({self.row_of[i]["aoe_province"] for i in passable},
+                       key=lambda p: (-self.population.get(p, 0), order.get(p, len(order))))
+        gaz = self.gazetteer(s, set(passable))
+        s["hubs"], s["hub_pos"], s["hub_rot"], s["hub_names"] = {}, {}, {}, {}
+        hubs, pos, names = s["hubs"], s["hub_pos"], s["hub_names"]
+        used, used_towns = set(), set()
 
-        # City: a vanilla city inside AoE's capital province, else the province nearest AoE's city position.
-        for v, h in vanilla_hub["city"]:
-            if self.row_of[self.index[h]]["aoe_province"] == s["capital"]:
-                hubs["city"], hub_source["city"] = self.index[h], v
-                break
-        else:
-            in_capital = [i for i in passable if self.row_of[i]["aoe_province"] == s["capital"]] or passable
-            if s["capital"] in self.positions:
-                tx, ty = self.positions[s["capital"]]
-            else:
-                tx = np.mean([self.row_of[i]["vic2_x"] for i in in_capital])
-                ty = np.mean([self.row_of[i]["vic2_y"] for i in in_capital])
-            d = [wrap_dist(self.row_of[i]["vic2_x"], self.row_of[i]["vic2_y"], tx, ty, 5616) for i in in_capital]
-            hubs["city"] = in_capital[int(np.argmin(d))]
-        used.add(hubs["city"])
+        def put(t, name, pt):
+            hubs[t], pos[t], names[t] = pt[0], (pt[1], pt[2]), name
+            if len(pt) > 3 and pt[3]:
+                s["hub_rot"][t] = pt[3]
+            used.add(pt[0])
+
+        def town(t, candidates):
+            """The most populous AoE town not yet named, placed in candidates; None if there is none."""
+            for p in towns:
+                if p in used_towns or hub_names.period_name(self.province_name(p)) in names.values():
+                    continue
+                pt = self.aoe_town_point(p, [i for i in candidates if self.row_of[i]["aoe_province"] == p])
+                if pt:
+                    used_towns.add(p)
+                    return hub_names.period_name(self.province_name(p)), pt
+            return None
+
+        # City: AoE's first-listed province of the state (usually its main town), at vanilla's locator for that
+        # town if it has one. Other hubs without a vanilla hub take the most populous towns left.
+        main = s["capital"]
+        name = hub_names.period_name(self.province_name(main))
+        pt = gaz.get(place_key(name)) or self.aoe_town_point(main, passable) or \
+            (passable[0], *self.inside_point(passable[0]))
+        used_towns.add(main)
+        put("city", name, pt)
 
         for t in ("farm", "mine", "wood"):
             pick = next(((v, self.index[h]) for v, h in vanilla_hub[t] if self.index[h] not in used), None)
-            if pick:
-                hub_source[t], hubs[t] = pick
+            vname = hub_names.period_name(self.vanilla_hub_names.get((pick[0], t), "")) if pick else ""
+            if pick and vname and vname not in names.values():
+                put(t, vname, self.vanilla_point(pick[0], t, provs) or (pick[1], *self.inside_point(pick[1])))
+                continue
+            found = town(t, [i for i in passable if i not in used]) or town(t, passable)
+            if found:
+                put(t, *found)
             else:
-                spare = [i for i in passable if i not in used]
-                hubs[t] = max(spare, key=lambda i: self.row_of[i]["pixels"]) if spare else hubs["city"]
-            used.add(hubs[t])
+                spare = [i for i in passable if i not in used] or [hubs["city"]]
+                i = max(spare, key=lambda i: self.row_of[i]["pixels"])
+                put(t, hub_names.period_name(self.province_name(self.row_of[i]["aoe_province"])),
+                    (i, *self.inside_point(i)))
 
-        if s["coastal"]:
-            coastal = [i for i in s["provs"] if self.sea_borders.get(i)]
+        if coastal:
             pick = next(((v, self.index[h]) for v, h in vanilla_hub["port"] if self.index[h] in coastal), None)
+            vname = hub_names.period_name(self.vanilla_hub_names.get((pick[0], "port"), "")) if pick else ""
             if pick:
-                hub_source["port"], hubs["port"] = pick
-                s["naval_exit"] = int(self.land[pick[0]].get("naval_exit_id"))
-                exit_key = next((k for k, b in self.sea.items() if int(b.get("id")) == s["naval_exit"]), None)
-                borders = [b for b in self.sea_borders[hubs["port"]] if b[0] == exit_key] or self.sea_borders[hubs["port"]]
+                self.set_port(s, pick[1], pick[0])
+                pt = self.vanilla_point(pick[0], "port", provs)
+                if pt and pt[0] == pick[1]:
+                    pos["port"], s["hub_rot"]["port"] = (pt[1], pt[2]), pt[3]
+                names["port"] = vname if vname and vname not in names.values() else hub_names.period_name(
+                    self.province_name(self.row_of[pick[1]]["aoe_province"]))
             else:
-                c = self.row_of[hubs["city"]]
-                hubs["port"] = min(coastal, key=lambda i: wrap_dist(self.row_of[i]["vic3_x"], self.row_of[i]["vic3_y"],
-                                                                    c["vic3_x"], c["vic3_y"], self.v3.width))
-                borders = self.sea_borders[hubs["port"]]
-                best = max(borders, key=lambda b: b[1])
-                s["naval_exit"] = int(self.sea[best[0]].get("id"))
-            s["port_point"] = max(borders, key=lambda b: b[1])[2]
+                found = town("port", coastal)
+                c = pos["city"]
+                i = found[1][0] if found else min(coastal, key=lambda i: wrap_dist(
+                    self.row_of[i]["vic3_x"], self.row_of[i]["vic3_y"], c[0], c[1], self.v3.width))
+                self.set_port(s, i)
+                names["port"] = found[0] if found else hub_names.period_name(
+                    self.province_name(self.row_of[i]["aoe_province"]))
 
-        s["hubs"], s["hub_source"] = hubs, hub_source
-        s["hub_names"] = {}
-        for t, i in hubs.items():
-            aoe_name = self.province_name(self.row_of[i]["aoe_province"])
-            vanilla_name = self.vanilla_hub_names.get((hub_source.get(t), t))
-            if t == "city" or not vanilla_name or aoe_name not in s["hub_names"].values():
-                s["hub_names"][t] = aoe_name
+        self.apply_overrides(s, gaz, passable, coastal)
+        dups = [n for n, c in Counter(place_key(n) for n in names.values()).items() if c > 1]
+        if dups and len(towns) > 1:
+            self.warnings.append(f"{s['aoe']} {s['key']}: hub names repeat: "
+                                 + ", ".join(f"{t}={n}" for t, n in names.items()))
+
+    def apply_overrides(self, s, gaz, passable, coastal):
+        """hub_names.HUB_OVERRIDES: (AoE state, hub type) -> name, or (name, place). The hub moves to place (an AoE
+        province id, another name to look up, or (name, name, f): f of the way from one to the other) or else to
+        the place its new name is found at in this state."""
+        for t in HUB_TYPES:
+            spec = hub_names.HUB_OVERRIDES.get((s["aoe"], t))
+            if spec is None or (t == "port" and not coastal):
+                if spec is not None:
+                    self.warnings.append(f"{s['aoe']}: port override for an inland state")
+                continue
+            name, place = (spec, None) if isinstance(spec, str) else spec
+            pool = coastal if t == "port" else passable
+            if isinstance(place, int):
+                own = [i for i in pool if self.row_of[i]["aoe_province"] == place]
+                pt = self.aoe_town_point(place, own)
+                # several hubs in one AoE province: the city keeps the town, the others take its other provinces
+                others = {i for u, i in s["hubs"].items() if u != t}
+                free = [i for i in own if i not in others]
+                if pt and pt[0] in others and free and t not in ("city", "port"):
+                    i = max(free, key=lambda i: self.row_of[i]["pixels"])
+                    pt = (i, *self.inside_point(i))
+                pt = pt and (*pt, None, None)
+            elif isinstance(place, tuple):
+                a, b, f = gaz.get(place_key(place[0])), gaz.get(place_key(place[1])), place[2]
+                pt = None
+                if a and b:
+                    x, y = a[1] + f * (b[1] - a[1]), a[2] + f * (b[2] - a[2])
+                    i = int(self.v3.labels[int(y), int(x)])
+                    pt = (i, x, y, None, None) if i in pool else None
             else:
-                s["hub_names"][t] = vanilla_name
+                pt = gaz.get(place_key(place or name))
+            s["hub_names"][t] = name
+            if not pt:
+                if place is not None:
+                    self.warnings.append(f"{s['aoe']} {t}: place {place!r} not found in the state")
+                continue
+            if t == "port":
+                if pt[0] not in coastal:
+                    self.warnings.append(f"{s['aoe']} port: {place or name} is not coastal")
+                    continue
+                self.set_port(s, pt[0])
+                s["hub_rot"].pop("port", None)
+                if pt[4] == "port":
+                    s["hub_pos"]["port"], s["hub_rot"]["port"] = (pt[1], pt[2]), pt[3]
+            else:
+                s["hubs"][t], s["hub_pos"][t] = pt[0], (pt[1], pt[2])
+                s["hub_rot"].pop(t, None)
+                if pt[3] and pt[4] == t:
+                    s["hub_rot"][t] = pt[3]
 
     def assign_strategic_regions(self, states):
         for s in states:
@@ -426,10 +586,11 @@ class StateBuilder:
             for s in states:
                 if t not in s["hubs"]:
                     continue
-                x, y = s["port_point"] if t == "port" else self.inside_point(s["hubs"][t])
+                x, y = s["hub_pos"][t]
+                rot = s["hub_rot"].get(t, "-0.000000 0.000000 -0.000000 1.000000")
                 lines += ["\t\t{", f"\t\t\tid={s['id']}",
                           f"\t\t\tposition={{ {x + 0.5:.6f} 0.000000 {h - (y + 0.5):.6f} }}",
-                          "\t\t\trotation={ -0.000000 0.000000 -0.000000 1.000000 }",
+                          f"\t\t\trotation={{ {rot} }}",
                           "\t\t\tscale={ 1.000000 1.000000 1.000000 }", "\t\t}"]
             lines += ["\t}", "}"]
             (out_dir / f"generated_map_object_locators_{t}.txt").write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
