@@ -1,4 +1,4 @@
-"""Build the whole mod into mod/.
+"""Build the whole mod into config.MOD (the game's mod folder).
 
     python build_mod.py              run every step
     python build_mod.py --skip-map   reuse build/province_map.csv and build/redraw/ (alignment and redraw)
@@ -21,6 +21,7 @@ MOD_VERSION = "0.1"
 GAME_VERSION = "1.13.*"
 START_DATE = "1700.1.1"
 END_DATE = "1821.12.31"
+GENERATED = [".metadata", "common", "gfx", "localization", "map_data"]  # top-level folders the build writes
 
 # Vanilla folders the mod replaces wholesale: everything that sets up the
 # 1836 world for specific countries and states.
@@ -96,9 +97,11 @@ def write_static_files():
 
 
 def main():
-    if config.MOD.exists():
-        # Start clean so files from earlier runs can't linger.
-        shutil.rmtree(config.MOD)
+    # Start clean so files from earlier runs can't linger. Only the folders the
+    # build writes: the mod folder can hold other things, like a checkout of this repo.
+    for name in GENERATED:
+        if (config.MOD / name).exists():
+            shutil.rmtree(config.MOD / name)
     if "--skip-map" not in sys.argv:
         build_province_map.main()
         redraw_provinces.main()

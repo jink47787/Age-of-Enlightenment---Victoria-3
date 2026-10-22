@@ -2,7 +2,8 @@
 
 A Victoria 3 total conversion of [AoE Remake](https://github.com/MaTi5893/AoE-remake) (multiplayer version, `main` branch),
 a Victoria 2 mod set in 1700. The map, states, countries, cultures, religions, pops and flags are generated
-from the AoE source by the scripts in `tools/`; the result is in `mod/`.
+from the AoE source by the scripts in `tools/`; the result is written to
+`Documents/Paradox Interactive/Victoria 3/mod/Age of Enlightenment/` (set `MOD_DIR` to build elsewhere).
 
 ## Building
 
@@ -12,7 +13,7 @@ of Victoria 2 and Victoria 3 (paths in `tools/config.py`, or set `VIC2_DIR` / `V
 ```
 cd tools
 python fetch_sources.py          # AoE Remake + converter province mappings -> sources/
-python build_mod.py              # everything -> mod/ (about 5 minutes)
+python build_mod.py              # everything -> the game's mod folder (about 5 minutes)
 python build_mod.py --skip-map   # reuse the province alignment and redraw (about 1 minute)
 python validate_mod.py           # check references before launching the game
 python render_political.py       # build/political_1700.png
@@ -24,7 +25,8 @@ python check_topology.py AOE_PROVINCE...        # which provinces border which, 
 `redraw_provinces.py` after it, since the redraw rewrites `build/province_map.csv` for the redrawn map.
 `fetch_sources.py --checkout` re-applies the sparse checkout of `sources/AoE-main` without fetching.
 
-To play, link `mod/` into `Documents/Paradox Interactive/Victoria 3/mod/` (a directory junction works).
+The build writes straight into the game's mod folder, so the mod is ready to enable in the launcher. It only
+replaces the folders it generates (`.metadata`, `common`, `gfx`, `localization`, `map_data`).
 
 ## How the conversion works
 

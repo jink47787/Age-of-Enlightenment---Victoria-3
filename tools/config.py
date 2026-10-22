@@ -1,7 +1,7 @@
 """Paths shared by the conversion tools.
 
 Game install locations can be overridden with the VIC2_DIR / VIC3_DIR
-environment variables.
+environment variables, and the mod's output folder with MOD_DIR.
 """
 import os
 from pathlib import Path
@@ -10,7 +10,9 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "sources"
 BUILD = ROOT / "build"
 REDRAW = BUILD / "redraw"          # redrawn provinces (redraw_provinces.py)
-MOD = ROOT / "mod"
+# Built straight into the game's mod folder.
+MOD = Path(os.environ.get("MOD_DIR", Path.home() / "Documents" / "Paradox Interactive" / "Victoria 3" / "mod"
+                          / "Age of Enlightenment"))
 
 AOE_REPO_URL = "https://github.com/MaTi5893/AoE-remake"
 AOE_BRANCH = "main"                          # the multiplayer version

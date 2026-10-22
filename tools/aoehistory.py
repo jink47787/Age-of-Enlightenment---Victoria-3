@@ -15,6 +15,21 @@ import pdx
 # (French Canada, Thirteen Colonies, ...) that Vic2 does not apply at this start.
 START_DATE = (1700, 1, 1)
 
+# Changes to AoE's setup at START_DATE. Ownership: (old owner, new owner, AoE
+# provinces, or None for all the old owner has left), in order. The new owner
+# takes over the old one's cores there too, so neither claims the other's land.
+OWNER_CHANGES = [
+    ("ENL", "SCO", [266, 267, 268, 269, 270, 271, 272]),       # Scotland, out of England
+    ("SPL", "SAX", [554, 556, 558, 559, 560, 687, 3250]),      # Saxony, out of Saxe-Poland-Lithuania
+    ("SPL", "PLC", None),                                      # the rest is the Commonwealth
+    ("KOS", "PLC", None),                                      # Cossackia annexed
+    ("PRU", "BRN", [549, 550, 551, 552, 553, 557, 577, 582, 583, 679, 680, 681, 1738, 1743, 2414]),  # all but Ducal Prussia
+]
+CAPITAL_CHANGES = {"PRU": 695}  # Königsberg; Berlin goes to Brandenburg
+# Diplomacy (kind, first, second): AoE's SAX-over-PLC vassalage would contradict the union.
+DIPLOMACY_REMOVED = [("vassal", "SAX", "PLC")]
+DIPLOMACY_ADDED = [("union", "ENL", "SCO"), ("union", "PLC", "SAX"), ("union", "BRN", "PRU")]
+
 _DATE = re.compile(r"^(\d{1,4})\.(\d{1,2})\.(\d{1,2})$")
 
 
@@ -120,6 +135,20 @@ def read_provinces(date=START_DATE):
             elif k == "state_building" and isinstance(v, pdx.Block):
                 p.factories.append((v.get("building"), int(num(v.get("level", 1)))))
         out[p.id] = p
+    if date == START_DATE:
+        for old, new, ids in OWNER_CHANGES:
+            if ids is None:
+                ids = [i for i, p in out.items() if p.owner == old]
+            for i in ids:
+                p = out[i]
+                if p.owner != old:
+                    raise ValueError(f"OWNER_CHANGES: province {i} is owned by {p.owner}, not {old}")
+                p.owner = new
+                if p.controller == old:
+                    p.controller = new
+                if old in p.cores:
+                    p.cores.discard(old)
+                    p.cores.add(new)
     return out
 
 
@@ -178,6 +207,9 @@ def read_countries(date=START_DATE):
                 c.reforms[k] = v
             elif k not in NON_TECH_KEYS and v in ("1", "yes"):
                 c.techs.add(k)
+    if date == START_DATE:
+        for tag, capital in CAPITAL_CHANGES.items():
+            out[tag].capital = capital
     return out
 
 
@@ -205,6 +237,8 @@ def read_diplomacy(date=START_DATE):
             end = parse_date(block.get("end_date", "9999.1.1")) or (9999, 1, 1)
             if start <= date < end and block.get("first") and block.get("second"):
                 out.append((kind, block.get("first"), block.get("second")))
+    if date == START_DATE:
+        out = [d for d in out if d not in DIPLOMACY_REMOVED] + DIPLOMACY_ADDED
     return out
 
 
