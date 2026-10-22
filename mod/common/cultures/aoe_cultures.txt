@@ -1029,12 +1029,12 @@ volta = {
 	color = { 88 68 147 }
 	religion = animist
 	heritage = heritage_guinean
-	language = language_yoruba
+	language = language_igbo
 	traditions = { }
-	male_common_first_names = { Abisi Adebo Adelu Ademufekun Adeyemi Agidigbo Ajikin Amodo Atiba Bello Gbadegesin Kase Ladopo Lauru Lawani Majotu Makua Oluewu Onikepe Siyanbola }
-	female_common_first_names = { Abibatu Adebumi Adesemi Folashade Funke Idowu Mulikat Oluremi Opo_Olu Tejumade }
-	noble_last_names = { Adelana Ademola Akinsuroju Aladesanmi Alakija Dosunmu Jadesimi Mogaji Ojulari Ologbenla Tinubu }
-	common_last_names = { Adeniran Agogoja Alowolodu Atobatele Bezon Bucknor Dudu Hungbo Oladigbolu Oyo Tofa Tonyon Zumaw }
+	male_common_first_names = { Anene Azuka Chiemeka Dibia Dumaka Elechi Enweleana Ewenetem Ikenna Jideofor Jiofo Mgbawa Nnaemeka Nnamdi Nnanna Nonyelum Obalike Obijiaku Oji Onyeka Orji Olaudah Rapuluchukwu Taabansi Udoka Zebenjo Zinachukwudi }
+	female_common_first_names = { Ahebi Awkusaku Chima Nwaoluchi Nwaozichi Nwanyieze Ugboaku }
+	noble_last_names = { Nnofo Nri Onuorah Ugbabe Wachuku }
+	common_last_names = { Achebe Equiano Onyeso Opobo Ohuhu Udene }
 	ethnicities = {
 		1 = african
 	}

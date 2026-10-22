@@ -27,7 +27,7 @@ import config
 import pdx
 from aoedata import read_localisation, read_province_map
 from aoehistory import read_countries, read_cultures, read_diplomacy, read_pops, read_provinces, read_religions
-from mapdata import province_borders, read_vic3_map
+from mapdata import province_borders, read_definition, read_vic3_map
 
 POP_SCALE = 4            # Vic2 pop sizes count roughly a quarter of the real population
 NATIVE_MAX_STATES = 4    # largest native nation, in AoE states
@@ -347,12 +347,23 @@ class HistoryBuilder:
                 a, v = int(k // 100000), int(k % 100000)
                 if v in owner_of_v3 and n > best.get(a, (0, None))[0]:
                     best[a] = (n, owner_of_v3[v])
+            # Failing that (an island the warp puts in open sea), to their own state and owner's land, if it has
+            # any. Provinces missing from AoE's definition.csv aren't on its map, so the game never uses their pops.
+            on_map = read_definition(config.AOE / "map" / "definition.csv")[1]
+            state_of = {int(v): s for s, _, provs in pdx.parse_file(config.AOE / "map" / "region.txt").pairs()
+                        if isinstance(provs, pdx.Block) for v in provs.values() if v.isdigit()}
+            native_of = {s: tag for tag, n in self.natives.items() for s in n["states"]}
             for p in lost:
                 if p in best:
                     target[p] = best[p][1]
+                elif p in on_map and state_of.get(p) in self.vic3_state:
+                    key = (self.vic3_state[state_of[p]], self.owner(p) or native_of.get(state_of[p]))
+                    if key[1] in parts.get(key[0], {}):
+                        target[p] = key
             missing = [p for p in lost if p not in target]
             if missing:
-                self.warnings.append(f"pops of {len(missing)} AoE provinces dropped (no Vic3 land nearby): {missing[:10]}")
+                self.warnings.append(f"pops of {len(missing)} AoE provinces dropped (not on AoE's map, or no Vic3 "
+                                     f"land nearby or in their state under their owner): {missing[:10]}")
 
         pops = defaultdict(Counter)  # (state, owner) -> Counter((culture, religion, slave) -> size)
         for p, plist in self.pops.items():

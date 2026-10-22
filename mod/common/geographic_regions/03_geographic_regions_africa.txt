@@ -6,7 +6,7 @@
 geographic_region_subsaharan_africa = {
 	short_key = subsaharan_africa
 	strategic_regions = { sr:region_west_africa sr:region_equatorial_africa sr:region_southern_africa sr:region_east_africa }
-	state_regions = { STATE_DONGOLA STATE_SUDAN STATE_EQUATORIA STATE_DARFUR }
+	state_regions = { STATE_DONGOLA STATE_SUDAN STATE_DARFUR }
 }
 
 geographic_region_north_africa_egypt = {

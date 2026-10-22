@@ -26,7 +26,7 @@ geographic_region_bolivia = {
 geographic_region_colonial_new_spain = {
 	short_key = colonial_new_spain
 	strategic_regions = { sr:region_central_america }
-	state_regions = { STATE_COLORADO STATE_TEXAS STATE_NEVADA STATE_ARIZONA STATE_NEW_MEXICO STATE_CALIFORNIA STATE_SONORA STATE_YUCATAN STATE_GUATEMALA STATE_NICARAGUA }
+	state_regions = { STATE_CENTRAL_GREAT_PLAINS STATE_COLORADO STATE_TEXAS STATE_NEVADA STATE_ARIZONA STATE_NEW_MEXICO STATE_CALIFORNIA STATE_SONORA STATE_YUCATAN STATE_GUATEMALA STATE_NICARAGUA }
 }
 
 geographic_region_colonial_new_grenada = {
@@ -52,12 +52,12 @@ geographic_region_andean_federation = {
 
 geographic_region_amazon = {
 	short_key = amazon
-	state_regions = { STATE_GUAYANA STATE_ECUADOR STATE_AMAZONAS STATE_MATO_GROSSO STATE_MARANHAO STATE_GRAO_PARA STATE_SANTA_CRUZ }
+	state_regions = { STATE_GUAYANA STATE_ANTIOQUIA STATE_ECUADOR STATE_AMAZONAS STATE_MATO_GROSSO STATE_MARANHAO STATE_GRAO_PARA STATE_SANTA_CRUZ }
 }
 
 geographic_region_northern_mexico = {
 	short_key = northern_mexico
-	state_regions = { STATE_COLORADO STATE_TEXAS STATE_NEVADA STATE_ARIZONA STATE_NEW_MEXICO STATE_CALIFORNIA }
+	state_regions = { STATE_CENTRAL_GREAT_PLAINS STATE_COLORADO STATE_TEXAS STATE_NEVADA STATE_ARIZONA STATE_NEW_MEXICO STATE_CALIFORNIA }
 }
 
 geographic_region_latin_america = {

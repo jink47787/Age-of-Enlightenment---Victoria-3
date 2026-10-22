@@ -8,17 +8,22 @@ Vic3 pixel space to Vic2 pixel space in two steps:
    licensed): a group of EU4 provinces that both converters map as a unit
    gives one matching point on each map. Vanilla Vic2 and AoE share a pixel
    grid, so a warp fitted on vanilla Vic2 applies to AoE unchanged.
-2. A region refinement: every group of Vic2 provinces the converters map as a
-   unit is nudged onto the matching group of Vic3 provinces, so interior
-   borders line up as well as coastlines.
+2. A coastline refinement: warped Vic2 land and sea are nudged onto Vic3's,
+   fixing coasts the spline misses while the interior stays as the spline
+   put it.
+
+AoE land the warp lays on another landmass than its own (Alaska over the tip
+of Chukotka, which AoE's map cuts at 180°) is dropped, so each Vic3 landmass
+only takes AoE land from the Vic2 landmass it pairs with (see Landmasses).
 
 Each Vic3 land province then takes the AoE state province covering most of
-its pixels, or the nearest one if it lands in AoE sea or wasteland. Every
-non-empty AoE state is guaranteed at least one Vic3 province.
+its pixels, or if it lands in AoE sea or wasteland the one its land is
+nearest, on its own landmass and across the map's x seam. Every non-empty
+AoE state is guaranteed at least one Vic3 province.
 
 Outputs (build/):
   province_map.csv      Vic3 province -> AoE province and state
-  aoe_at_vic3.npy       AoE province id under every Vic3 pixel (0 = none)
+  aoe_at_vic3.npy       AoE province id under every Vic3 pixel (0 = none, or AoE land of another landmass)
   warp_grid.npz         the final warp sampled on a grid of Vic3 pixels
   warp_points.csv       alignment points with cross-validated residuals
   debug_states.png      Vic3 map coloured by AoE state
@@ -33,7 +38,7 @@ from collections import Counter, defaultdict
 import numpy as np
 from PIL import Image
 from scipy.interpolate import RBFInterpolator
-from scipy.ndimage import distance_transform_edt, gaussian_filter, map_coordinates
+from scipy.ndimage import distance_transform_edt, gaussian_filter, label, map_coordinates
 
 import config
 import pdx
@@ -208,28 +213,18 @@ def spline_grid(spline, w3, h3, w2):
 
 
 def region_labels(v2_vanilla, v3, land3):
-    """Label every Vic2 and Vic3 province by converter group.
+    """Label every Vic2 and Vic3 province 1 (land) or 0 (sea); -1 (Vic3 lakes, unknown colours) is ignored.
 
-    Groups shared by both converter mappings get ids >= 1, sea is 0, and
-    anything else (unmapped land, Vic3 lakes) is -1 and ignored.
+    Only coastlines are matched. Matching the converters' province groups as well dragged land out of place
+    wherever a group's two sides cover different ground (EU4 Kharkov is Kharkov and Luhansk in Vic2 but a
+    few provinces by Poltava in Vic3), and the warp fitted Vic3's rivers and coasts worse for it.
     """
-    v2_links = read_converter_links(config.EU4_TO_VIC2, "v2")
-    v3_links = read_converter_links(config.EU4_TO_VIC3, "vic3")
-    shared = sorted((k for k in v2_links if k in v3_links), key=sorted)
     n2 = int(v2_vanilla.labels.max()) + 1
-    g2 = np.full(n2, -1, np.int32)
-    g3 = np.full(len(v3.provinces), -1, np.int32)
-    v3_index = {p: i for i, p in enumerate(v3.provinces)}
-    for gid, key in enumerate(shared, start=1):
-        for p in v2_links[key]:
-            if p.isdigit() and int(p) < n2 and int(p) not in v2_vanilla.sea:
-                g2[int(p)] = gid
-        for p in v3_links[key]:
-            i = v3_index.get(norm_hex(p))
-            if i is not None and land3[i]:
-                g3[i] = gid
+    g2 = np.ones(n2, np.int32)
     g2[[p for p in v2_vanilla.sea if p < n2]] = 0
     g2[0] = -1
+    g3 = np.where(land3, 1, -1).astype(np.int32)
+    v3_index = {p: i for i, p in enumerate(v3.provinces)}
     sea3 = [v3_index[norm_hex(p)] for b in v3.sea_states.values() for p in b.get("provinces").values()]
     g3[sea3] = 0
     return g2, g3
@@ -259,8 +254,8 @@ def region_agreement(fixed, moving):
 
 
 def refine_with_regions(base, fixed, g2_img, w2, h2):
-    """Displace Vic3 sample positions so warped Vic2 converter regions line up with
-    the matching Vic3 regions.
+    """Displace Vic3 sample positions so warped Vic2 region labels (region_labels: land and sea) line up
+    with Vic3's.
 
     Each iteration, every cell whose warped label is wrong looks for the nearest
     nearby displacement that would give it the right label; cells already right
@@ -316,9 +311,119 @@ def aoe_under_vic3(warp, aoe, w3, h3):
     return out
 
 
-def assign(v3, aoe, aoe_at, warp, land3, owner=None):
-    """owner (optional): {AoE province: owner}. When given, the coverage and topology steps keep every Vic3
-    province with an AoE province of its majority owner (see cover_and_balance)."""
+def landmasses(mask):
+    """Connected components of mask (4-connected), joined across the x seam; 0 outside mask."""
+    lab, n = label(mask)
+    parent = np.arange(n + 1)
+
+    def root(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    a, b = lab[:, 0], lab[:, -1]
+    both = (a > 0) & (b > 0)
+    for x, y in set(zip(a[both].tolist(), b[both].tolist())):
+        rx, ry = root(x), root(y)
+        if rx != ry:
+            parent[max(rx, ry)] = min(rx, ry)
+    return np.array([root(x) for x in range(n + 1)], np.int32)[lab]
+
+
+def top_pairs(of, to, n_to):
+    """{x: the value of `to` most often paired with x} over the pairs (of[i], to[i]); values below n_to."""
+    uniq, counts = np.unique(of * n_to + to, return_counts=True)
+    x, y = uniq // n_to, uniq % n_to
+    order = np.lexsort((-counts, x))
+    first = np.r_[True, x[order][1:] != x[order][:-1]]
+    return dict(zip(x[order][first].tolist(), y[order][first].tolist()))
+
+
+class Landmasses:
+    """Vic3 landmasses paired with AoE's. A Vic2 landmass pairs with the Vic3 landmass most of it is warped onto,
+    when that Vic3 landmass gets most of its AoE land from it. A Vic2 island that Vic3 joins to another landmass
+    (Kutch, Baffin Island) pairs with nothing.
+      mass    Vic3 landmass per Vic3 pixel (0 = sea)
+      home    per AoE province: the Vic3 landmass its Vic2 landmass pairs with (0 = none)
+      paired  per Vic3 landmass: whether it pairs with a Vic2 landmass"""
+
+    def __init__(self, v3, land3, aoe, aoe_at):
+        k = int(aoe.labels.max()) + 1
+        valid = np.zeros(k, bool)
+        valid[[p for p in aoe.state_of() if p < k and p not in aoe.sea]] = True
+        self.mass = landmasses(land3[v3.labels])
+        mass2 = landmasses(valid[aoe.labels])
+        n2, n3 = int(mass2.max()) + 1, int(self.mass.max()) + 1
+        sel = mass2 > 0
+        of2 = np.zeros(k, np.int64)                    # each AoE province's Vic2 landmass (most of its pixels)
+        main2 = top_pairs(aoe.labels[sel].astype(np.int64), mass2[sel].astype(np.int64), n2)
+        of2[list(main2)] = list(main2.values())
+        a = aoe_at.astype(np.int64)
+        on = (self.mass > 0) & valid[a]
+        x2, x3 = of2[a[on]], self.mass[on].astype(np.int64)
+        to3, to2 = top_pairs(x2, x3, n3), top_pairs(x3, x2, n2)
+        pairs = {m2: m3 for m2, m3 in to3.items() if to2.get(m3) == m2}
+        self.paired = np.zeros(n3, bool)
+        self.paired[list(pairs.values())] = True
+        lut = np.zeros(int(mass2.max()) + 1, np.int32)
+        lut[list(pairs)] = list(pairs.values())
+        self.home = lut[of2]
+
+    def foreign(self, ids, mass):
+        """Where AoE provinces ids lie on Vic3 landmasses mass that pair with another Vic2 landmass than theirs."""
+        h = self.home[ids]
+        return self.paired[mass] & (h > 0) & (h != mass)
+
+
+def keep_to_landmass(aoe_at, lm):
+    """aoe_at without AoE land warped onto a Vic3 landmass paired with another (Alaska over Chukotka's tip, which
+    AoE's map cuts at 180°); those pixels count as AoE sea, so they take the nearest AoE land of their own."""
+    out = aoe_at.copy()
+    out[lm.foreign(aoe_at, lm.mass)] = 0
+    return out
+
+
+def fill_nearest(ids, known, need, lm, band=512, margin=256):
+    """ids (AoE province per Vic3 pixel) with every need pixel set to the id of the nearest known pixel, across
+    the x seam too. Where that comes from a landmass paired with another than the pixel's own, the nearest id
+    at home there (or of no landmass's pair) within margin is taken instead: the warp puts Chukotka's tip in the
+    Bering Sea, nearer Alaska than Navarin."""
+    h, w = ids.shape
+    out = ids.copy()
+    cols = np.r_[w - margin:w, 0:w, 0:margin]
+    for y0 in range(0, h, band):
+        y1 = min(h, y0 + band)
+        n = need[y0:y1]
+        if not n.any():
+            continue
+        a, b = max(0, y0 - margin), min(h, y1 + margin)
+        k = known[a:b][:, cols]
+        if not k.any():
+            continue
+        v = ids[a:b][:, cols]
+        iy, ix = distance_transform_edt(~k, return_distances=False, return_indices=True)
+        got = v[iy[y0 - a:y1 - a, margin:margin + w], ix[y0 - a:y1 - a, margin:margin + w]]
+        mass = lm.mass[y0:y1]
+        wrong = n & lm.foreign(got, mass)
+        hv = lm.home[v]
+        for m in np.unique(mass[wrong]).tolist():
+            ys, xs = np.nonzero(wrong & (mass == m))
+            r0, r1 = max(0, ys.min() + y0 - a - margin), min(b - a, ys.max() + y0 - a + margin + 1)
+            c0, c1 = xs.min(), xs.max() + 2 * margin + 1
+            seeds = k[r0:r1, c0:c1] & ((hv[r0:r1, c0:c1] == 0) | (hv[r0:r1, c0:c1] == m))
+            if seeds.any():
+                jy, jx = distance_transform_edt(~seeds, return_distances=False, return_indices=True)
+                py, px = ys + y0 - a - r0, xs + margin - c0
+                got[ys, xs] = v[r0:r1, c0:c1][jy[py, px], jx[py, px]]
+        out[y0:y1][n] = got[n]
+    return out
+
+
+def assign(v3, aoe, aoe_at, warp, land3, group=None, fixed=None):
+    """group (optional): {AoE province: group key}, such as redraw_provinces.py's (state, owner) units. When given,
+    the coverage and topology steps keep every Vic3 province with an AoE province of its majority group (see
+    cover_and_balance). fixed (optional): {Vic3 province index: AoE province} that skip the vote, such as the
+    provinces the redraw carved for a trading post."""
     n3 = len(v3.provinces)
     state_of = aoe.state_of()
     k = int(aoe.labels.max()) + 1
@@ -345,16 +450,24 @@ def assign(v3, aoe, aoe_at, warp, land3, owner=None):
     wx, wy = warp(cx, cy)
     wx %= aoe.width
 
-    # Vic3 provinces that land in AoE sea/wasteland: nearest AoE state pixel.
+    # Vic3 provinces that land in AoE sea/wasteland: the AoE province most of their land gets from the nearest
+    # AoE land (fill_nearest, as the redraw fills it), else the AoE state pixel nearest their warped centroid.
     dist, (ny, nx) = distance_transform_edt(~valid[aoe.labels], return_indices=True)
     missing = [i for i in np.flatnonzero(land3) if i not in best]
     if missing:
+        need = np.zeros(n3, bool)
+        need[missing] = True
+        need = need[v3.labels]
+        got = fill_nearest(aoe_at, valid[aoe_at], need, Landmasses(v3, land3, aoe, aoe_at))[need].astype(np.int64)
+        near = top_pairs(v3.labels[need][valid[got]].astype(np.int64), got[valid[got]], k)
         xi = np.rint(wx[missing]).astype(int) % aoe.width
         yi = np.clip(np.rint(wy[missing]).astype(int), 0, aoe.height - 1)
         for i, y, x in zip(missing, yi, xi):
-            best[i] = int(aoe.labels[ny[y, x], nx[y, x]])
+            best[i] = near.get(i, int(aoe.labels[ny[y, x], nx[y, x]]))
             best_count[i] = 0
             method[i] = "nearest"
+    for i, a in (fixed or {}).items():
+        best[i], best_count[i], method[i] = a, int(counts[(v3i == i) & (aid == a)].sum()), "redraw"
 
     # Province adjacency on both maps. AoE's is taken across water up to
     # AOE_BRIDGE pixels wide, so rivers drawn as water (the Danube) don't count
@@ -376,7 +489,7 @@ def assign(v3, aoe, aoe_at, warp, land3, owner=None):
     vanilla_state = v3.province_state()
     vanilla_of = {i: vanilla_state.get(p) for i, p in enumerate(v3.provinces) if i in best}
     covered, switched = cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
-                                          neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of, owner)
+                                          neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of, group)
 
     # Small AoE states (enclaves, trading posts) can lose every vote. Give each
     # one the Vic3 province where it has the largest share of pixels, or failing
@@ -413,7 +526,7 @@ def assign(v3, aoe, aoe_at, warp, land3, owner=None):
 
 
 def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
-                      neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of, owner=None):
+                      neighbours, aoe_adjacent, aoe_adjacent_strong, vanilla_of, state_of, group=None):
     """Adjust the majority vote so AoE provinces keep their size and topology.
 
     Majority voting drops AoE provinces narrower than a Vic3 province (Lorraine's
@@ -425,9 +538,10 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
     broken toward Vic3's own historical borders: when one AoE state holds most of
     a vanilla Vic3 state, that vanilla state's provinces lean toward it.
 
-    With owner ({AoE province: owner}), a Vic3 province only moves between AoE provinces of one owner, except to
-    give an owner with no Vic3 province its first one. That is for a map whose province borders were already
-    drawn along the owners' borders (redraw_provinces.py), so the search can't undo them.
+    With group ({AoE province: group key}), a Vic3 province only moves between AoE provinces of one group, except
+    to give a group with no Vic3 province its first one. That is for a map whose province borders were already
+    drawn along the groups' borders (redraw_provinces.py: AoE states under one owner), so the search can't undo
+    them.
     """
     votes = defaultdict(dict)
     target = Counter()
@@ -438,10 +552,10 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
     area = Counter()
     for i, a in best.items():
         area[a] += int(pixel_count[i])
-    holdings = Counter(owner.get(a) for a in best.values()) if owner else None
+    holdings = Counter(group.get(a) for a in best.values()) if group else None
 
-    def same_owner(a, b):
-        return owner is None or owner.get(a) == owner.get(b)
+    def same_group(a, b):
+        return group is None or group.get(a) == group.get(b)
 
     def move(i, b, how):
         a = best[i]
@@ -449,9 +563,9 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
         area[a] -= int(pixel_count[i])
         owned[b] += 1
         area[b] += int(pixel_count[i])
-        if owner:
-            holdings[owner.get(a)] -= 1
-            holdings[owner.get(b)] += 1
+        if group:
+            holdings[group.get(a)] -= 1
+            holdings[group.get(b)] += 1
         best[i], best_count[i], method[i] = b, votes[i].get(b, 0), how
 
     candidates = defaultdict(list)
@@ -466,12 +580,12 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
         ... until someone with a province to spare gives one up."""
         parent = {start: None}
         queue = [start]
-        first = owner is not None and not holdings[owner.get(start)]   # start's owner has no Vic3 province yet
+        first = group is not None and not holdings[group.get(start)]   # start's group has no Vic3 province yet
         while queue and len(parent) < COVER_SEARCH_LIMIT:
             a = queue.pop(0)
             for _, i in candidates[a]:
                 b = best[i]
-                if b in parent or not (same_owner(a, b) or (a == start and first)):
+                if b in parent or not (same_group(a, b) or (a == start and first)):
                     continue
                 parent[b] = (a, i)
                 if owned[b] > 1:
@@ -568,7 +682,7 @@ def cover_and_balance(best, best_count, method, v3i, aid, counts, pixel_count,
             if owned[a] <= 1 or all(best[j] == a for j, _ in neighbours[i]):
                 continue
             options = [(move_cost(i, b), b) for b, n in votes[i].items()
-                       if b != a and n >= MOVE_MIN_SHARE * p and same_owner(a, b)]
+                       if b != a and n >= MOVE_MIN_SHARE * p and same_group(a, b)]
             if not options:
                 continue
             (cost, change), b = min(options, key=lambda o: o[0][0])
@@ -651,7 +765,7 @@ def main(reuse_warp=False):
         log("reusing the warp from the previous run")
         warp = load_warp(v3, aoe)
     else:
-        log("refining warp by matching converter regions")
+        log("refining warp by matching coastlines")
         base = spline_grid(spline, v3.width, v3.height, aoe.width)
         g2, g3 = region_labels(vanilla, v3, land3)
         warp = refine_with_regions(base, region_cells(v3, g3, REFINE_STEP), g2[vanilla.labels],
@@ -661,6 +775,7 @@ def main(reuse_warp=False):
 
     log("warping AoE map onto Vic3 pixels")
     aoe_at = aoe_under_vic3(warp, aoe, v3.width, v3.height)
+    aoe_at = keep_to_landmass(aoe_at, Landmasses(v3, land3, aoe, aoe_at))
     np.save(config.BUILD / "aoe_at_vic3.npy", aoe_at)
 
     result = assign(v3, aoe, aoe_at, warp, land3)

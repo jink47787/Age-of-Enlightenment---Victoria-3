@@ -1,35 +1,49 @@
-"""Redraw Vic3 province borders so country borders follow the AoE map.
+"""Redraw Vic3 province borders so state and country borders follow the AoE map.
 
 Runs after build_province_map.py and uses its warp (build/aoe_at_vic3.npy: the AoE province under every Vic3
 pixel), so the two projections are compared through the same fitted warp, never pixel for pixel. Coastlines never
 change: only land pixels of land provinces are repainted. Sea, lakes and the provinces adjacencies.csv uses are
-left as they are, and land never moves between passable and impassable provinces.
+left as they are (but for step 6), and land never moves between passable and impassable provinces.
 
-1. Target: the 1700 owner under each Vic3 land pixel. Unowned land and wasteland count as one owner, so borders
-   between native nations stay on vanilla lines. Vic3 land under AoE sea takes the nearest owner.
-2. Smoothing: Gaussian-blurred owner indicators, argmax, so province lines don't copy the warp's pixel noise.
-3. Snapping: in each province that straddles a border, land not under its main owner is opened with a disk
-   (judged across province lines, so a strip of one owner through several provinces counts as a whole). Strips
-   narrower than about 2 * OPEN_R + 1 px and pieces under MIN_PIECE px go back to the main owner: they are within
-   the warp's error, and moving them would only make vanilla lines ragged.
-4. Leftover pieces of one owner that touch form a region. A small one joins a neighbouring province of that owner
-   (the border moves, no new id); anything else of MIN_NEW px or more becomes a new province with a fresh colour,
-   cut along the old province lines if it is large. Provinces named in vanilla scripts (events, releasables...)
+1. Target: the AoE unit under each Vic3 land pixel, a unit being an AoE state's land under one 1700 owner (unowned
+   land counts as one owner). Those are the borders Vic3 shows: state regions and countries. AoE province borders
+   inside a unit have no counterpart in Vic3 (pops and buildings are per state), so they are not drawn. Vic3 land
+   under AoE sea or wasteland takes the unit of the nearest AoE land, on its own landmass and across the map's
+   x seam (build_province_map.fill_nearest, which the assignment uses too).
+2. Smoothing: Gaussian-blurred unit indicators, argmax, so province lines don't copy the warp's pixel noise.
+3. Snapping: in each province that straddles a border, land not under its main unit is opened with a disk
+   (judged across province lines, so a strip of one unit through several provinces counts as a whole). Pieces
+   under MIN_PIECE px go back to the main unit, and so do strips narrower than 2 * OPEN_R + 1 px when OPEN_R > 0:
+   moving them would only make vanilla lines ragged. The rest moves, so Vic3 lines end up on AoE's.
+4. Leftover pieces of one unit that touch form a region. Existing borders move first: the region joins a
+   neighbouring province of its unit, or else each source province's piece of it joins one, as long as no
+   province grows past GROW_MAX times its size. Only what can't join becomes a new province (MIN_NEW px or more,
+   cut along the old province lines if it is large). Provinces named in vanilla scripts (events, releasables...)
    are never split, since the mod doesn't replace those files: their pieces can only join a neighbour.
-5. Every piece of an owner of MIN_PIECE_KEEP px or more (an exclave, a trading post) gets a province of its own.
+5. Every piece of a unit of MIN_PIECE_KEEP px or more (an exclave, a trading post) gets a province of its own.
+6. A unit still without a province of its own (a trading post the smoothing cut below MIN_PIECE_KEEP px, or one
+   inside a province scripts name, like Bombay or Madras) gets one carved where the warp puts it, as large as its
+   warped area and at least MIN_PIECE_KEEP px, and on the coast if it is on AoE's and Vic3's is within COAST_R px
+   (the warp puts these few-px posts a pixel or two inland). This is the one place provinces scripts name are
+   cut, and provinces only sea crossings use, more than CROSSING_R px from the crossing's ends (Nagapattinam's
+   coast is the Palk Strait crossing's): they keep their id and all but the post's few pixels. The assignment
+   then gives that province to the unit.
 
 New provinces go into their parent's vanilla state region (mapdata.read_vic3_map with config.REDRAW), with its
 terrain, and in its impassable / prime land lists when the parent is listed there.
 
 Outputs (build/redraw/):
   provinces.png        the redrawn province image (vanilla colours plus one new colour per new province)
-  new_provinces.csv    new province -> parent, terrain, impassable, prime land, owner, pixels, source provinces
+  new_provinces.csv    new province -> parent, terrain, impassable, prime land, AoE state, owner, pixels, source
+                       provinces, and the AoE province a step-6 province is reserved for
   reason.npy           why each pixel moved: 0 it didn't, 1 snapped back, 2 kept (too small, a sliver or a
-                       province scripts name), 3 joined a neighbour, 4 new province, 5 carved for an owner piece
+                       province scripts name), 3 joined a neighbour, 4 new province, 5 carved for a unit piece,
+                       6 carved for a unit left without a province
 and build/province_map.csv again, assigned on the redrawn map. write_mod_files() puts provinces.png and
 province_terrains.txt into mod/map_data.
 """
 import csv
+import heapq
 import re
 import shutil
 import time
@@ -44,25 +58,30 @@ from scipy.sparse.csgraph import connected_components
 import config
 import pdx
 from aoehistory import read_provinces
-from build_province_map import assign, land_provinces, load_warp, norm_hex, write_debug_images, write_province_map
+from build_province_map import (Landmasses, assign, fill_nearest, land_provinces, load_warp, norm_hex,
+                                write_debug_images, write_province_map)
 from mapdata import read_new_provinces, read_vic2_map, read_vic3_map
 
-SIGMA = 1.5          # px, smoothing of the warped owner field
-OPEN_R = 2           # px, opening radius for a province's minor pieces
-MIN_PIECE = 20       # px, smaller minor pieces go back to the province's main owner
+SIGMA = 1.5          # px, smoothing of the warped unit field
+OPEN_R = 0           # px, opening radius for a province's minor pieces (0: no opening, every strip moves)
+MIN_PIECE = 10       # px, smaller minor pieces go back to the province's main unit
 SNAP_MAX = 0.15      # ...but a band over this share of its province is a real border and moves
-MERGE_FRAC = 0.5     # a leftover region up to this share of its source province joins a same-owner neighbour...
-GROW_MAX = 2.0       # ...unless that neighbour would grow past this multiple of its original size
+GROW_MAX = 2.0       # a leftover piece joins a same-unit neighbour unless that grows past this multiple of its size
 SPLIT_FRAC = 1.75    # a new region bigger than this multiple of its source provinces' median size is cut along them
 MIN_NEW = 60         # px, smallest new province (vanilla: 5% of European provinces are under ~80 px)...
-MIN_PIECE_KEEP = 20  # px, ...except the only land of an owner piece (a country, exclave or trading post)
+MIN_PIECE_KEEP = 20  # px, ...except the only land of a unit piece (a state, exclave or trading post)
+PLACE_R = 32         # px, how far from its warped pixels a unit without a province may get its land
+COAST_R = 6          # px, ...and how far a unit on AoE's coast may move to start on Vic3's (the warp's coastal error)
+CROSSING_R = 12      # px around a sea crossing's end (adjacencies.csv) that its province always keeps
+SLIVER_R = 2         # px, radius of DISK
 SLIVER = 0.5         # a new or cut-down province keeps at least this share under an opening with DISK (vanilla:
                      # 98% of provinces keep 0.74 or more); thinner ones are bands within the warp's error
-UNOWNED = "~"        # owner of native land and wasteland
+UNOWNED = "~"        # owner of native land
 COLOUR_STEP = 0x0B0705   # new colours: the parent's colour plus steps of this until unused
 
 FOUR = ndimage.generate_binary_structure(2, 1)
-DISK = np.add.outer(np.arange(-OPEN_R, OPEN_R + 1) ** 2, np.arange(-OPEN_R, OPEN_R + 1) ** 2) <= OPEN_R ** 2 + 1
+DISK = (np.add.outer(np.arange(-SLIVER_R, SLIVER_R + 1) ** 2, np.arange(-SLIVER_R, SLIVER_R + 1) ** 2)
+        <= SLIVER_R ** 2 + 1)
 
 
 def log(msg, _t0=time.time()):
@@ -80,9 +99,14 @@ class VanillaMap:
         self.n3 = len(v3.provinces)
         self.pixels = np.bincount(v3.labels.ravel(), minlength=self.n3)
         self.land = land_provinces(v3)
+        self.sea = np.zeros(self.n3, bool)         # in a sea state region (lakes aren't)
+        self.sea[[self.index[norm_hex(p)] for b in v3.sea_states.values() for p in b.get("provinces").values()]] = True
+        sea2 = np.isin(self.aoe.labels, list(self.aoe.sea))
+        self.aoe_coast = np.zeros(int(self.aoe.labels.max()) + 1, bool)   # per AoE province: land touching its sea
+        self.aoe_coast[self.aoe.labels[~sea2 & ndimage.binary_dilation(sea2, structure=FOUR)]] = True
         self.impassable = self.listed("impassable")
         self.prime_land = self.listed("prime_land")
-        self.frozen, self.pieces = self.frozen_provinces()
+        self.frozen, self.post_ok, self.crossing_ends, self.pieces = self.frozen_provinces()
         self.scripted = np.zeros(self.n3, bool)
         self.scripted[[self.index[p] for p in script_references() if p in self.index]] = True
         self.scripted &= self.land
@@ -96,19 +120,30 @@ class VanillaMap:
         return out
 
     def frozen_provinces(self):
-        """Land provinces never repainted (the ones adjacencies.csv uses), and vanilla's piece count per province."""
-        frozen = np.zeros(self.n3, bool)
-        for row in pdx.read_text(config.VIC3 / "map_data" / "adjacencies.csv").splitlines()[1:]:
-            for p in row.split(";")[:2]:
-                p = p.strip()
-                if p.lower().startswith("x") and norm_hex(p) in self.index:
-                    frozen[self.index[norm_hex(p)]] = True
-        pieces = np.zeros(self.n3, np.int32)
+        """Land provinces never repainted (the ones adjacencies.csv uses); which of those a trading post may still
+        take land from (used only by sea crossings with set ends), and the pixels it may not take (within
+        CROSSING_R of an end); and vanilla's piece count per province."""
         labels = self.v3.labels
+        frozen = np.zeros(self.n3, bool)
+        post_ok = np.ones(self.n3, bool)
+        ends = np.zeros(labels.shape, bool)
+        for row in pdx.read_text(config.VIC3 / "map_data" / "adjacencies.csv").splitlines()[1:]:
+            cells = [c.strip() for c in row.split(";")]
+            xy = [int(c) if c.lstrip("-").isdigit() else -1 for c in (cells + [""] * 8)[4:8]]
+            for p, (x, y) in zip(cells[:2], (xy[:2], xy[2:])):
+                if p.lower().startswith("x") and norm_hex(p) in self.index:
+                    i = self.index[norm_hex(p)]
+                    frozen[i] = True
+                    if cells[2] == "sea" and x >= 0 and y >= 0:
+                        ends[self.v3.height - 1 - y, x] = True     # y counts from the bottom
+                    else:
+                        post_ok[i] = False
+        ends = ndimage.distance_transform_edt(~ends) <= CROSSING_R
+        pieces = np.zeros(self.n3, np.int32)
         for i, sl in enumerate(ndimage.find_objects(labels + 1)):
             if sl is not None and self.land[i]:
                 pieces[i] = ndimage.label(labels[sl] == i, structure=FOUR)[1]
-        return frozen & self.land, pieces
+        return frozen & self.land, post_ok, ends, pieces
 
 
 def script_references():
@@ -121,52 +156,26 @@ def script_references():
     return refs
 
 
-def aoe_owners(aoe):
-    """{AoE province in a state: 1700 owner tag, or UNOWNED}."""
+def aoe_units(aoe):
+    """{AoE province in a state: (state, 1700 owner tag or UNOWNED)}."""
     provs = read_provinces()
-    return {a: (provs[a].owner if a in provs and provs[a].owner else UNOWNED) for a in aoe.state_of()}
-
-
-def aoe_wasteland(aoe):
-    """AoE land provinces outside every state."""
-    state_of = aoe.state_of()
-    return {a for a in range(1, int(aoe.labels.max()) + 1) if a not in state_of and a not in aoe.sea}
+    return {a: (s, provs[a].owner if a in provs and provs[a].owner else UNOWNED) for a, s in aoe.state_of().items()}
 
 
 # ---------------------------------------------------------------- target ----
 
-def owner_codes(vm, owner, wasteland):
-    """(names, lut): owner code per AoE province; 0 = UNOWNED, -1 = sea or none."""
-    names = [UNOWNED] + sorted({o for o in owner.values() if o != UNOWNED})
+def unit_codes(vm, unit):
+    """(names, lut): unit code per AoE province, names[code] = (state, owner); -1 = sea, wasteland or none."""
+    names = sorted(set(unit.values()))
     idx = {n: k for k, n in enumerate(names)}
     lut = np.full(max(int(vm.aoe.labels.max()), int(vm.aoe_at.max())) + 1, -1, np.int16)
-    for a, o in owner.items():
-        lut[a] = idx[o]
-    lut[[a for a in wasteland if a < len(lut)]] = 0
+    for a, u in unit.items():
+        lut[a] = idx[u]
     return names, lut
 
 
-def fill_nearest(t, need, band=512, margin=256):
-    """Pixels in `need` take the code of the nearest pixel with a code (t >= 0)."""
-    out = t.copy()
-    h = t.shape[0]
-    for y0 in range(0, h, band):
-        y1 = min(h, y0 + band)
-        if not need[y0:y1].any():
-            continue
-        a, b = max(0, y0 - margin), min(h, y1 + margin)
-        sub = t[a:b]
-        if not (sub >= 0).any():
-            continue
-        iy, ix = ndimage.distance_transform_edt(sub < 0, return_distances=False, return_indices=True)
-        filled = sub[iy, ix]
-        n = need[y0:y1]
-        out[y0:y1][n] = filled[y0 - a:y1 - a][n]
-    return out
-
-
 def smooth_field(t, land, sigma, tile=512):
-    """Argmax of Gaussian-blurred owner indicators over land; sea keeps t."""
+    """Argmax of Gaussian-blurred unit indicators over land; sea keeps t."""
     h, w = t.shape
     m = int(4 * sigma) + 1
     out = t.copy()
@@ -214,8 +223,8 @@ def components_same_value(mask, value):
 
 
 def open_labels(field, mask, r, band=512):
-    """Morphological opening of every owner's part of `mask` with a disk of radius r, all owners at once:
-    a pixel survives if some disk inside mask, all of one owner, covers it."""
+    """Morphological opening of every unit's part of `mask` with a disk of radius r, all units at once:
+    a pixel survives if some disk inside mask, all of one unit, covers it."""
     h, w = field.shape
     offs = [(dy, dx) for dy in range(-r, r + 1) for dx in range(-r, r + 1) if dy * dy + dx * dx <= r * r + 1]
     out = np.zeros((h, w), bool)
@@ -241,8 +250,8 @@ def open_labels(field, mask, r, band=512):
 
 
 def sliver(mask):
-    """Under SLIVER of the mask survives an opening with DISK: mostly parts under 2 * OPEN_R + 1 px wide."""
-    m = np.pad(mask, OPEN_R + 1)
+    """Under SLIVER of the mask survives an opening with DISK: mostly parts under 2 * SLIVER_R + 1 px wide."""
+    m = np.pad(mask, SLIVER_R + 1)
     return ndimage.binary_opening(m, structure=DISK).sum() < SLIVER * m.sum()
 
 
@@ -272,9 +281,9 @@ def restore_slivered(vm, new_labels, new_rows, affected, reason):
     return restored
 
 
-def keep_owner_pieces(vm, field, land_px, new_labels, new_rows, main_of, splittable, cls, reason, names):
-    """Every piece of an owner in the target (a country, an exclave like Avignon, a trading post) gets a province
-    of its own owner: a piece of MIN_PIECE_KEEP px or more that no province of that owner covers becomes a new
+def keep_unit_pieces(vm, field, land_px, new_labels, new_rows, main_of, splittable, cls, reason, names):
+    """Every piece of a unit in the target (a state, an exclave like Avignon, a trading post) gets a province
+    of its own unit: a piece of MIN_PIECE_KEEP px or more that no province of that unit covers becomes a new
     province (its land in splittable provinces of one class, never cutting a province below MIN_NEW px)."""
     n = vm.n3 + len(new_rows)
     main = np.r_[main_of, [row[2] for row in new_rows]].astype(np.int64)
@@ -284,7 +293,7 @@ def keep_owner_pieces(vm, field, land_px, new_labels, new_rows, main_of, splitta
     fl = np.where(land_px, field.astype(np.int32), -1)
     boxes = ndimage.find_objects(fl + 1)
     carved = 0
-    for v in range(1, min(len(names), len(boxes))):
+    for v in range(min(len(names), len(boxes))):
         if boxes[v] is None:
             continue
         sl = tuple(slice(max(0, b.start - 1), b.stop + 1) for b in boxes[v])
@@ -334,12 +343,110 @@ def keep_owner_pieces(vm, field, land_px, new_labels, new_rows, main_of, splitta
     return carved
 
 
-def redraw(vm, owner, wasteland):
-    """Returns (new labels, new rows, owner names, per-province class incl. new ones, receiving-ok incl. new ones,
-    reason per pixel). New rows are (index, Counter of vanilla source provinces, owner code, class)."""
+def place_lost_units(vm, lut, land_px, new_labels, new_rows, main_of, cls, reason):
+    """A unit no province belongs to after the steps above gets one where the warp puts it: the land nearest its
+    warped pixels, grown nearest-first to as many px as those (at least MIN_PIECE_KEEP), from provinces of one
+    class that keep MIN_NEW px. A unit on AoE's coast starts on Vic3's coast when that is within COAST_R px, so a
+    trading post keeps its port. Unlike the other steps it also cuts provinces scripts name (their id stays on the
+    rest) and frozen ones that only sea crossings use, away from the crossings' ends. A rest of a source province that the cut leaves smaller than the new province
+    and touching it (the end of an island, say) goes with it. Returns {new row index: the unit's AoE province with
+    the most warped pixels}, for the assignment."""
+    h, w = new_labels.shape
+    n = vm.n3 + len(new_rows)
+    main = np.r_[main_of, [row[2] for row in new_rows]].astype(np.int64)
+    area = np.bincount(new_labels.ravel(), minlength=n).astype(np.int64)
+    is_land = np.r_[vm.land, np.ones(len(new_rows), bool)]
+    held = np.zeros(int(lut.max()) + 1, bool)
+    held[main[(area > 0) & is_land & (main >= 0)]] = True
+    t = lut[vm.aoe_at]
+    a_count = np.bincount(vm.aoe_at.ravel().astype(np.int64), minlength=len(lut))
+    boxes = ndimage.find_objects(t.astype(np.int32) + 1)
+    ok = np.r_[vm.land & (~vm.frozen | vm.post_ok), np.ones(len(new_rows), bool)]
+    cl = np.r_[cls, [row[3] for row in new_rows]].astype(np.int64)
+    codes = lut[np.flatnonzero(vm.aoe_coast)]
+    coastal = np.zeros(len(lut), bool)                   # per unit code: has land on AoE's coast
+    coastal[codes[codes >= 0]] = True
+    shore = land_px & ndimage.binary_dilation(vm.sea[vm.v3.labels], structure=FOUR)
+    posts, skipped = {}, 0
+    for v in np.flatnonzero(~held[:len(boxes)]).tolist():
+        if boxes[v] is None:
+            continue
+        ys0, xs0 = boxes[v]
+        y0, y1 = max(0, ys0.start - PLACE_R), min(h, ys0.stop + PLACE_R)
+        x0, x1 = max(0, xs0.start - PLACE_R), min(w, xs0.stop + PLACE_R)
+        sub = new_labels[y0:y1, x0:x1]
+        seed = t[y0:y1, x0:x1] == v
+        spare = area - MIN_NEW
+        free = (land_px[y0:y1, x0:x1] & ok[sub] & (spare[sub] > 0) & ~np.isin(sub, list(posts))
+                & ~vm.crossing_ends[y0:y1, x0:x1])
+        d = ndimage.distance_transform_edt(~seed)
+        start_at = free & (d <= PLACE_R)
+        on_coast = free & shore[y0:y1, x0:x1] & (d <= COAST_R)
+        if coastal[v] and on_coast.any():
+            start_at = on_coast
+        fy, fx = np.nonzero(start_at)
+        if not len(fy):
+            skipped += 1
+            continue
+        j = int(np.argmin(d[fy, fx]))
+        start = (int(fy[j]), int(fx[j]))
+        c0 = int(cl[sub[start]])
+        free &= cl[sub] == c0
+        want = max(MIN_PIECE_KEEP, int(seed.sum()))
+        heap, seen, take, given = [(d[start], start)], {start}, [], Counter()
+        while heap and len(take) < want:
+            _, (y, x) = heapq.heappop(heap)
+            q = int(sub[y, x])
+            if given[q] >= spare[q]:
+                continue
+            given[q] += 1
+            take.append((y, x))
+            for ny, nx in ((y, x + 1), (y, x - 1), (y + 1, x), (y - 1, x)):
+                if 0 <= ny < y1 - y0 and 0 <= nx < x1 - x0 and free[ny, nx] and (ny, nx) not in seen:
+                    seen.add((ny, nx))
+                    heapq.heappush(heap, (d[ny, nx], (ny, nx)))
+        if len(take) < min(want, MIN_PIECE_KEEP):
+            skipped += 1
+            continue
+        part = np.zeros(sub.shape, bool)
+        part[tuple(np.array(take).T)] = True
+        near = ndimage.binary_dilation(part, structure=FOUR)
+        inner = np.zeros(sub.shape, bool)
+        inner[1:-1, 1:-1] = True
+        for q in list(given):
+            cc, k = ndimage.label((sub == q) & ~part, structure=FOUR)
+            sizes = np.bincount(cc.ravel())
+            sizes[0] = 0
+            for p_ in range(1, k + 1):
+                piece = cc == p_
+                if (p_ != sizes.argmax() and sizes[p_] < part.sum() and (piece & near).any()
+                        and not (piece & ~inner).any()):
+                    part |= piece
+                    given[q] += int(sizes[p_])
+        idx = vm.n3 + len(new_rows)
+        srcs = Counter(sub[part].tolist())
+        area[list(srcs)] -= np.array(list(srcs.values()))
+        sub[part] = idx
+        reason[y0:y1, x0:x1][part] = 6
+        vsrc = Counter()
+        for q, c in srcs.items():
+            vsrc[q if q < vm.n3 else new_rows[q - vm.n3][1].most_common(1)[0][0]] += c
+        new_rows.append((idx, vsrc, int(v), c0))
+        main = np.r_[main, v]
+        ok = np.r_[ok, True]
+        cl = np.r_[cl, c0]
+        area = np.r_[area, int(part.sum())]
+        units = np.flatnonzero(lut == v)
+        posts[idx] = int(units[np.argmax(a_count[units])])
+    return posts, skipped
+
+
+def redraw(vm, unit):
+    """Returns (new labels, new rows, unit names, per-province class incl. new ones, receiving-ok incl. new ones,
+    reason per pixel). New rows are (index, Counter of vanilla source provinces, unit code, class)."""
     labels = vm.v3.labels
     h, w = labels.shape
-    names, lut = owner_codes(vm, owner, wasteland)
+    names, lut = unit_codes(vm, unit)
     land_px = vm.land[labels]
     editable = vm.land & ~vm.frozen
     locked = vm.scripted.astype(np.int64)            # never split: its leftover pieces can only join a neighbour
@@ -347,8 +454,8 @@ def redraw(vm, owner, wasteland):
     log(f"{int(vm.land.sum())} land provinces ({int((vm.land & vm.impassable).sum())} impassable), "
         f"{int(vm.frozen.sum())} frozen (adjacencies.csv), {int(vm.scripted.sum())} named in vanilla scripts")
 
-    t = lut[vm.aoe_at]
-    t = fill_nearest(t, land_px & (t < 0))
+    known = lut[vm.aoe_at] >= 0
+    t = lut[fill_nearest(vm.aoe_at, known, land_px & ~known, Landmasses(vm.v3, vm.land, vm.aoe, vm.aoe_at))]
     t[land_px & (t < 0)] = 0
     field = smooth_field(t, land_px, SIGMA)
     log("target field smoothed")
@@ -357,14 +464,14 @@ def redraw(vm, owner, wasteland):
     key = labels[land_px].astype(np.int64) * nl + field[land_px]
     uk, cnt = np.unique(key, return_counts=True)
     prov_of, code_of = uk // nl, uk % nl
-    main_of = np.full(vm.n3, -1, np.int64)       # majority owner code; the main piece's for redrawn provinces
+    main_of = np.full(vm.n3, -1, np.int64)       # majority unit code; the main piece's for redrawn provinces
     order = np.lexsort((-cnt, prov_of))
     first = np.r_[True, prov_of[order][1:] != prov_of[order][:-1]]
     main_of[prov_of[order][first]] = code_of[order][first]
     affected = np.flatnonzero((np.bincount(prov_of, minlength=vm.n3) > 1) & editable)
-    log(f"{len(affected)} provinces straddle an owner border")
+    log(f"{len(affected)} provinces straddle a state or country border")
 
-    # main piece per province; snapping of the land not under its province's main owner
+    # main piece per province; snapping of the land not under its province's main unit
     slices = ndimage.find_objects(labels + 1)
     main_seed = {}
     for i in affected.tolist():
@@ -380,7 +487,7 @@ def redraw(vm, owner, wasteland):
                 best = (int(sizes[j]), v, np.argwhere(cc == j + 1)[0])
         _, main_of[i], main_seed[i] = best
     minor = land_px & editable[labels] & (field != main_of[labels])
-    keep = open_labels(field, minor, OPEN_R)
+    keep = open_labels(field, minor, OPEN_R) if OPEN_R else minor.copy()
     k, comp, ys, xs = components_same_value(keep, field)
     small = np.bincount(comp, minlength=k) < MIN_PIECE
     keep[ys[small[comp]], xs[small[comp]]] = False
@@ -392,9 +499,9 @@ def redraw(vm, owner, wasteland):
     back &= ~np.isin(labels.astype(np.int64) * nl + field, big)
     f_all = np.where(back, main_of[labels], field)
     reason = np.where(back, 1, 0).astype(np.uint8)
-    log(f"snapping returned {int(back.sum())} px to their province's main owner")
+    log(f"snapping returned {int(back.sum())} px to their province's main unit")
 
-    orphan = np.full((h, w), -1, np.int32)        # owner code of each leftover pixel
+    orphan = np.full((h, w), -1, np.int32)        # unit code of each leftover pixel
     stayed = 0
     for i in affected.tolist():
         sl = slices[i]
@@ -405,10 +512,10 @@ def redraw(vm, owner, wasteland):
         cc, _ = ndimage.label(m & (f == mv), structure=FOUR)
         sy, sx = main_seed[i]
         own = m & (cc == cc[sy, sx])
-        # main-owner land in another vanilla piece of the province (an island, say) stays with it
+        # main-unit land in another vanilla piece of the province (an island, say) stays with it
         own |= m & (f == mv) & (vanilla_piece != vanilla_piece[sy, sx])
         left = m & ~own
-        # a province is never cut below MIN_NEW px or down to a sliver: then it stays whole, and the owner smoothing
+        # a province is never cut below MIN_NEW px or down to a sliver: then it stays whole, and the unit smoothing
         # gives it to one side
         if own.sum() < MIN_NEW or (sliver(own) and not sliver(m)):
             reason[sl][left] = 2
@@ -417,7 +524,7 @@ def redraw(vm, owner, wasteland):
         orphan[sl][left] = f[left]
     log(f"{stayed} provinces too small to cut stay whole")
 
-    # leftover regions: same owner, same class, touching; pieces of provinces scripts name stay apart
+    # leftover regions: same unit, same class, touching; pieces of provinces scripts name stay apart
     is_orphan = orphan >= 0
     k, comp, ys, xs = components_same_value(is_orphan, (orphan.astype(np.int64) * 2 + cls[labels]) * 2
                                             + locked[labels])
@@ -430,19 +537,6 @@ def redraw(vm, owner, wasteland):
     region_locked = np.zeros(k, bool)
     region_locked[comp] = locked[src].astype(bool)
     area0 = vm.pixels.astype(np.int64)
-    pairs = []
-    for dy, dx in ((0, 1), (0, -1), (1, 0), (-1, 0)):
-        ny, nx = ys + dy, (xs + dx) % w
-        ok = (ny >= 0) & (ny < h)
-        ny, nx, cy = ny[ok], nx[ok], comp[ok]
-        q = labels[ny, nx]
-        good = (~is_orphan[ny, nx] & editable[q] & (main_of[q] == region_code[cy]) & (cls[q] == region_cls[cy])
-                & land_px[ny, nx])
-        pairs.append(cy[good] * vm.n3 + q[good])
-    pk, pc = np.unique(np.concatenate(pairs), return_counts=True)
-    contact = defaultdict(list)
-    for kk, c in zip(pk.tolist(), pc.tolist()):
-        contact[kk // vm.n3].append((c, kk % vm.n3))
     src_area = np.zeros(k)
     per = defaultdict(set)
     rs = np.unique(comp * vm.n3 + src)
@@ -452,63 +546,116 @@ def redraw(vm, owner, wasteland):
         src_area[r_] = np.median([area0[s] for s in ss])
 
     new_labels = labels.copy()
-    grown = area0.copy()
+    grown = np.bincount(labels[~is_orphan], minlength=vm.n3).astype(np.int64)  # size without its leftovers, so far
     new_rows = []
+
+    def join_target(part, code, c):
+        """The vanilla province a piece (indices into ys, xs) joins: of unit `code` and class c, touching the piece
+        most, and not growing past GROW_MAX times its size (a piece under MIN_NEW px may always join). None if none."""
+        hits = []
+        for dy, dx in ((0, 1), (0, -1), (1, 0), (-1, 0)):
+            ny, nx = ys[part] + dy, (xs[part] + dx) % w
+            ok = (ny >= 0) & (ny < h)
+            ny, nx = ny[ok], nx[ok]
+            q = new_labels[ny, nx]
+            ok = q < vm.n3
+            ny, nx, q = ny[ok], nx[ok], q[ok]
+            # the neighbour's own land: never a leftover still waiting to move, but land that already joined it is
+            good = ((~is_orphan[ny, nx] | (reason[ny, nx] == 3)) & editable[q] & (main_of[q] == code) & (cls[q] == c)
+                    & land_px[ny, nx])
+            hits.append(q[good])
+        qs, cnt = np.unique(np.concatenate(hits), return_counts=True)
+        for j in np.argsort(-cnt, kind="stable").tolist():
+            if grown[qs[j]] + len(part) <= GROW_MAX * area0[qs[j]] or len(part) < MIN_NEW:
+                return int(qs[j])
+        return None
+
+    def join(part, q):
+        new_labels[ys[part], xs[part]] = q
+        reason[ys[part], xs[part]] = 3
+        grown[q] += len(part)
+
+    def stay(part):
+        reason[ys[part], xs[part]] = 2
+        np.add.at(grown, src[part], 1)
+
     pix_of = np.split(np.argsort(comp, kind="stable"), np.cumsum(size)[:-1])
-    merged = slivers = tiny = kept_locked = kept_locked_px = 0
+    joined = joined_pieces = slivers = tiny = kept_locked = kept_locked_px = 0
     for r_ in np.argsort(-size).tolist():
         px = pix_of[r_]
-        target = None
-        if size[r_] <= MERGE_FRAC * src_area[r_] or size[r_] < MIN_NEW or region_locked[r_]:
-            for c, q in sorted(contact.get(r_, []), reverse=True):
-                if grown[q] + size[r_] <= GROW_MAX * area0[q] or size[r_] < MIN_NEW:
-                    target = q
-                    break
-        if target is not None:
-            new_labels[ys[px], xs[px]] = target
-            reason[ys[px], xs[px]] = 3
-            grown[target] += size[r_]
-            merged += 1
+        code, c = int(region_code[r_]), int(region_cls[r_])
+        # existing borders move first: the region joins a neighbouring province of its unit, or else each source
+        # province's piece of it joins one on its own
+        q = join_target(px, code, c)
+        if q is not None:
+            join(px, q)
+            joined += 1
             continue
-        if region_locked[r_] and size[r_] >= MIN_NEW:
-            reason[ys[px], xs[px]] = 2
-            kept_locked += 1
-            kept_locked_px += int(size[r_])
-            continue
-        if size[r_] < MIN_NEW:
-            reason[ys[px], xs[px]] = 2
-            tiny += 1
-            continue
-        parts = [px]
-        if size[r_] > SPLIT_FRAC * src_area[r_] and len(per[r_]) > 1:
-            parts = split_by_source(px, ys, xs, src)
-        for part in parts:
-            py, pxx = ys[part], xs[part]
-            box = np.zeros((py.max() - py.min() + 1, pxx.max() - pxx.min() + 1), bool)
-            box[py - py.min(), pxx - pxx.min()] = True
-            if sliver(box):                      # a band along a border moved within the warp's error: no province
-                reason[py, pxx] = 2
-                slivers += 1
+        rest = [px]
+        if len(per[r_]) > 1:
+            rest = []
+            for part in sorted(split_by_source(px, ys, xs, src, min_size=0), key=len, reverse=True):
+                q = join_target(part, code, c)
+                if q is None:
+                    rest.append(part)
+                else:
+                    join(part, q)
+                    joined_pieces += 1
+        # only what can't join becomes a new province
+        for piece in (connected_parts(np.concatenate(rest), ys, xs) if rest else []):
+            if region_locked[r_]:
+                stay(piece)
+                kept_locked += 1
+                kept_locked_px += len(piece)
                 continue
-            idx = vm.n3 + len(new_rows)
-            new_labels[py, pxx] = idx
-            reason[py, pxx] = 4
-            new_rows.append((idx, Counter(src[part].tolist()), int(region_code[r_]), int(region_cls[r_])))
-    log(f"{k} leftover regions: {merged} joined a same-owner neighbour, {len(new_rows)} new provinces; "
-        f"{tiny} too small for a province of their own and {slivers} slivers stay where they were")
+            if len(piece) < MIN_NEW:
+                stay(piece)
+                tiny += 1
+                continue
+            parts = [piece]
+            if len(piece) > SPLIT_FRAC * src_area[r_] and len(np.unique(src[piece])) > 1:
+                parts = split_by_source(piece, ys, xs, src)
+            for part in parts:
+                py, pxx = ys[part], xs[part]
+                box = np.zeros((py.max() - py.min() + 1, pxx.max() - pxx.min() + 1), bool)
+                box[py - py.min(), pxx - pxx.min()] = True
+                if sliver(box):                      # a band along a border moved within the warp's error: no province
+                    stay(part)
+                    slivers += 1
+                    continue
+                idx = vm.n3 + len(new_rows)
+                new_labels[py, pxx] = idx
+                reason[py, pxx] = 4
+                new_rows.append((idx, Counter(src[part].tolist()), code, c))
+    log(f"{k} leftover regions: {joined} joined a neighbouring province of their unit, {joined_pieces} more pieces "
+        f"joined one separately; {len(new_rows)} new provinces; {tiny} pieces too small for a province of their own "
+        f"and {slivers} slivers stay where they were")
     log(f"{kept_locked} pieces ({kept_locked_px} px) of provinces named in vanilla scripts stay unsplit")
     log(f"{restore_slivered(vm, new_labels, new_rows, affected, reason)} provinces left as slivers took their "
         f"land back")
-    carved = keep_owner_pieces(vm, field, land_px, new_labels, new_rows, main_of, editable & ~vm.scripted, cls,
-                               reason, names)
-    log(f"{carved} owner pieces left without a province got one carved from their own land")
+    carved = keep_unit_pieces(vm, field, land_px, new_labels, new_rows, main_of, editable & ~vm.scripted, cls,
+                              reason, names)
+    log(f"{carved} unit pieces left without a province got one carved from their own land")
+    posts, skipped = place_lost_units(vm, lut, land_px, new_labels, new_rows, main_of, cls, reason)
+    log(f"{len(posts)} units with no province of their own got one where the warp puts them"
+        + (f" ({skipped} with no land to take nearby)" if skipped else ""))
     cls_all = np.r_[cls, [row[3] for row in new_rows]].astype(np.int64)
     ok_all = np.r_[editable, np.ones(len(new_rows), bool)]
-    return new_labels, new_rows, names, cls_all, ok_all, reason
+    return new_labels, new_rows, names, cls_all, ok_all, reason, posts
 
 
-def split_by_source(px, ys, xs, src):
-    """Cut a region along the old province lines; parts under MIN_NEW px join the neighbouring part they touch most."""
+def connected_parts(px, ys, xs):
+    """4-connected components of a set of region pixels (indices into ys, xs)."""
+    sy, sx = ys[px], xs[px]
+    box = np.zeros((sy.max() - sy.min() + 1, sx.max() - sx.min() + 1), bool)
+    box[sy - sy.min(), sx - sx.min()] = True
+    cc, _ = ndimage.label(box, structure=FOUR)
+    which = cc[sy - sy.min(), sx - sx.min()]
+    return [px[which == p] for p in np.unique(which).tolist()]
+
+
+def split_by_source(px, ys, xs, src, min_size=MIN_NEW):
+    """Cut a region along the old province lines; parts under min_size px join the neighbouring part they touch most."""
     sy, sx, ss = ys[px], xs[px], src[px]
     y0, x0 = sy.min(), sx.min()
     box = np.full((sy.max() - y0 + 3, sx.max() - x0 + 3), -1, np.int64)
@@ -519,7 +666,7 @@ def split_by_source(px, ys, xs, src):
     while True:
         sizes = np.bincount(part[part >= 0], minlength=k)
         live = np.flatnonzero(sizes)
-        small = [p for p in live.tolist() if sizes[p] < MIN_NEW]
+        small = [p for p in live.tolist() if sizes[p] < min_size]
         if not small or len(live) == 1:
             break
         p = min(small, key=lambda q: sizes[q])
@@ -536,16 +683,18 @@ def split_by_source(px, ys, xs, src):
 # ------------------------------------------------------------ validation ----
 
 def validate(vm, new_labels, cls_all):
-    """Coastline, frozen provinces and the impassable area unchanged; no province lost; no province in more pieces
-    than in vanilla (new ones: one piece). Returns (problems, provinces in too many pieces)."""
+    """Coastline, frozen provinces (but for posts away from sea crossings' ends) and the impassable area unchanged;
+    no province lost; no province in more pieces than in vanilla (new ones: one piece). Returns (problems,
+    provinces in too many pieces)."""
     labels = vm.v3.labels
     changed = new_labels != labels
     problems = []
     land_px = vm.land[labels]
     if (changed & ~land_px).any():
         problems.append(f"{int((changed & ~land_px).sum())} sea/lake pixels changed")
-    if (changed & vm.frozen[labels]).any():
-        problems.append(f"{int((changed & vm.frozen[labels]).sum())} pixels of frozen provinces changed")
+    frozen = changed & vm.frozen[labels] & (~vm.post_ok[labels] | vm.crossing_ends | (new_labels < vm.n3))
+    if frozen.any():
+        problems.append(f"{int(frozen.sum())} pixels of frozen provinces changed")
     moved = changed & (cls_all[new_labels] != cls_all[labels])
     if moved.any():
         problems.append(f"{int(moved.sum())} px moved between passable and impassable provinces")
@@ -605,7 +754,7 @@ def unused_colours(vm, rows):
 
 # ---------------------------------------------------------------- output ----
 
-def write_redraw(vm, new_labels, rows, names, reason):
+def write_redraw(vm, new_labels, rows, names, reason, posts):
     """build/redraw/provinces.png, new_provinces.csv and reason.npy."""
     ids = unused_colours(vm, rows)
     provinces = vm.v3.provinces + ids
@@ -615,12 +764,13 @@ def write_redraw(vm, new_labels, rows, names, reason):
     present = np.bincount(new_labels.ravel(), minlength=len(provinces))
     with open(config.REDRAW / "new_provinces.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["province", "parent", "terrain", "impassable", "prime_land", "owner", "pixels", "sources"])
+        w.writerow(["province", "parent", "terrain", "impassable", "prime_land", "aoe_state", "owner", "pixels",
+                    "sources", "aoe_province"])
         for (idx, srcs, code, c), pid in zip(rows, ids):
             parent = srcs.most_common(1)[0][0]
             w.writerow([pid, vm.v3.provinces[parent], terrain.get(vm.v3.provinces[parent], "plains"), c,
-                        int(vm.prime_land[parent]), names[code], int(present[idx]),
-                        " ".join(vm.v3.provinces[s] for s in srcs)])
+                        int(vm.prime_land[parent]), *names[code], int(present[idx]),
+                        " ".join(vm.v3.provinces[s] for s in srcs), posts.get(idx, "")])
     colours = np.array([int(p[1:], 16) for p in provinces], np.uint32)
     packed = colours[new_labels]
     rgb = np.stack([(packed >> 16) & 255, (packed >> 8) & 255, packed & 255], axis=-1).astype(np.uint8)
@@ -649,8 +799,8 @@ def write_mod_files():
 def main():
     log("reading maps")
     vm = VanillaMap()
-    owner = aoe_owners(vm.aoe)
-    new_labels, rows, names, cls_all, ok_all, reason = redraw(vm, owner, aoe_wasteland(vm.aoe))
+    unit = aoe_units(vm.aoe)
+    new_labels, rows, names, cls_all, ok_all, reason, posts = redraw(vm, unit)
     for _ in range(3):
         problems, split = validate(vm, new_labels, cls_all)
         if not split:
@@ -661,12 +811,15 @@ def main():
         raise SystemExit("redrawn map failed its checks: " + "; ".join(problems))
     log("checks passed: coastline, frozen provinces and passable/impassable land unchanged, no province lost "
         "or in more pieces than in vanilla")
-    write_redraw(vm, new_labels, rows, names, reason)
+    write_redraw(vm, new_labels, rows, names, reason, posts)
 
     log("assigning the redrawn provinces to AoE provinces")
     v3 = read_vic3_map(config.VIC3, config.REDRAW)
     land3 = land_provinces(v3)
-    result = assign(v3, vm.aoe, vm.aoe_at, load_warp(v3, vm.aoe), land3, owner)
+    index = {p: i for i, p in enumerate(v3.provinces)}
+    fixed = {index[r["province"]]: int(r["aoe_province"])
+             for r in read_new_provinces(config.REDRAW) if r["aoe_province"]}
+    result = assign(v3, vm.aoe, vm.aoe_at, load_warp(v3, vm.aoe), land3, unit, fixed)
     write_province_map(v3, vm.aoe, *result)
     write_debug_images(v3, vm.aoe, vm.aoe_at, land3, result[0], result[4])
 

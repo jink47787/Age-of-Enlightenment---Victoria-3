@@ -773,7 +773,7 @@
 			}
 		}
 	}
-	s:STATE_MAHE = {
+	s:STATE_KERALA = {
 		region_state:CIT = {
 			create_building = {
 				building = "building_government_administration"
@@ -1727,7 +1727,7 @@
 			}
 		}
 	}
-	s:STATE_MANGALURU = {
+	s:STATE_KELADI = {
 		region_state:KLD = {
 			create_building = {
 				building = "building_government_administration"
@@ -2146,14 +2146,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:MAH" levels = 1 }
+					country = { country = "c:MAH" levels = 3 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:MAH" levels = 3 }
+					country = { country = "c:MAH" levels = 8 }
 				}
 				reserves = 1
 			}
@@ -2650,14 +2650,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:NET" levels = 4 }
+					country = { country = "c:NET" levels = 3 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:NET" levels = 11 }
+					country = { country = "c:NET" levels = 10 }
 				}
 				reserves = 1
 			}
@@ -2920,14 +2920,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:POR" levels = 3 }
+					country = { country = "c:POR" levels = 2 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:POR" levels = 10 }
+					country = { country = "c:POR" levels = 6 }
 				}
 				reserves = 1
 			}
