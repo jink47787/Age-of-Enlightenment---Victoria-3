@@ -6,6 +6,7 @@ from pathlib import Path
 import pdx
 
 import config
+from aoehistory import TAG_RENAMES
 
 
 def read_localisation(loc_dir=None):
@@ -18,6 +19,12 @@ def read_localisation(loc_dir=None):
             parts = line.split(";")
             if len(parts) > 1 and parts[0] and parts[1].strip() and parts[0] not in out:
                 out[parts[0]] = parts[1].strip()
+    # Country names follow aoehistory.TAG_RENAMES; the dropped AoE countries' names go.
+    for old, new in TAG_RENAMES.items():
+        for suffix in ("", "_ADJ"):
+            out.pop(new + suffix, None)
+            if old + suffix in out:
+                out[new + suffix] = out.pop(old + suffix)
     return out
 
 

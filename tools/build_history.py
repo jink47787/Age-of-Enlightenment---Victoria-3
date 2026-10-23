@@ -12,7 +12,7 @@ and build_states.py first). Writes into mod/:
   common/history/pops/aoe_pops.txt
   common/history/buildings/aoe_buildings.txt  capital administration and barracks
   common/history/diplomacy/aoe_diplomacy.txt  subjects and alliances
-  localization/<lang>/aoe_countries_l_<lang>.yml
+  localization/<lang>/replace/aoe_countries_l_<lang>.yml
 
 Unowned AoE land becomes decentralized native nations, grouped by the
 dominant culture of their pops.
@@ -543,7 +543,7 @@ class HistoryBuilder:
         all_loc = {**loc, **culture_loc, **religion_loc}
         for lang in LANGUAGES:
             body = "\n".join(f' {k}:0 "{loc_escape(v)}"' for k, v in all_loc.items())
-            write_text(mod / "localization" / lang / f"aoe_countries_l_{lang}.yml", f"l_{lang}:\n{body}\n")
+            write_text(mod / "localization" / lang / "replace" / f"aoe_countries_l_{lang}.yml", f"l_{lang}:\n{body}\n")
         return owners
 
     def write_states(self):

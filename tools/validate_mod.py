@@ -166,7 +166,7 @@ def main():
             problems.append(f"missing flag texture {m.group(1)}")
 
     # Localisation keys for every state and country.
-    loc = (mod / "localization" / "english" / "aoe_countries_l_english.yml").read_text(encoding="utf-8-sig")
+    loc = (mod / "localization" / "english" / "replace" / "aoe_countries_l_english.yml").read_text(encoding="utf-8-sig")
     loc += (mod / "localization" / "english" / "replace" / "aoe_states_l_english.yml").read_text(encoding="utf-8-sig")
     loc_keys = set(re.findall(r"^\s*([\w.]+):\d*\s", loc, re.MULTILINE))
     problems += [f"no localisation for {k}" for k in sorted(states | tags) if k not in loc_keys]

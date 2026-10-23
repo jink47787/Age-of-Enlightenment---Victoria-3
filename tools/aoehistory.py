@@ -15,11 +15,22 @@ import pdx
 # (French Canada, Thirteen Colonies, ...) that Vic2 does not apply at this start.
 START_DATE = (1700, 1, 1)
 
+# AoE tags that become Victoria 3's, so vanilla content written for those countries applies.
+# AoE's own countries with the new tags (later formables, none of which exist at START_DATE) are
+# dropped. Every reader renames, so later code and the tables below only see the new tags.
+TAG_RENAMES = {"ENL": "GBR", "BOR": "FRA", "TOR": "RUS"}
+SOURCE_TAGS = {new: old for old, new in TAG_RENAMES.items()}
+
+
+def rename(tag):
+    return TAG_RENAMES.get(tag, tag)
+
+
 # Changes to AoE's setup at START_DATE. Ownership: (old owner, new owner, AoE
 # provinces, or None for all the old owner has left), in order. The new owner
 # takes over the old one's cores there too, so neither claims the other's land.
 OWNER_CHANGES = [
-    ("ENL", "SCO", [266, 267, 268, 269, 270, 271, 272]),       # Scotland, out of England
+    ("GBR", "SCO", [266, 267, 268, 269, 270, 271, 272]),       # Scotland, out of England
     ("SPL", "SAX", [554, 556, 558, 559, 560, 687, 3250]),      # Saxony, out of Saxe-Poland-Lithuania
     ("SPL", "PLC", None),                                      # the rest is the Commonwealth
     ("KOS", "PLC", None),                                      # Cossackia annexed
@@ -28,7 +39,7 @@ OWNER_CHANGES = [
 CAPITAL_CHANGES = {"PRU": 695}  # Königsberg; Berlin goes to Brandenburg
 # Diplomacy (kind, first, second): AoE's SAX-over-PLC vassalage would contradict the union.
 DIPLOMACY_REMOVED = [("vassal", "SAX", "PLC")]
-DIPLOMACY_ADDED = [("union", "ENL", "SCO"), ("union", "PLC", "SAX"), ("union", "BRN", "PRU")]
+DIPLOMACY_ADDED = [("union", "GBR", "SCO"), ("union", "PLC", "SAX"), ("union", "BRN", "PRU")]
 
 _DATE = re.compile(r"^(\d{1,4})\.(\d{1,2})\.(\d{1,2})$")
 
@@ -117,13 +128,13 @@ def read_provinces(date=START_DATE):
         p = Province(int(m.group(1)))
         for k, v in flatten(pdx.parse_file(path), date):
             if k == "owner":
-                p.owner = v
+                p.owner = rename(v)
             elif k == "controller":
-                p.controller = v
+                p.controller = rename(v)
             elif k == "add_core":
-                p.cores.add(v)
+                p.cores.add(rename(v))
             elif k == "remove_core":
-                p.cores.discard(v)
+                p.cores.discard(rename(v))
             elif k == "trade_goods":
                 p.trade_goods = v
             elif k == "life_rating":
@@ -153,11 +164,11 @@ def read_provinces(date=START_DATE):
 
 
 def read_country_files():
-    """{tag: path of common/countries/*.txt} from common/countries.txt, in file order."""
+    """{tag: path of common/countries/*.txt} from common/countries.txt, in file order, with TAG_RENAMES."""
     out = {}
     for tag, _, path in pdx.parse_file(config.AOE / "common" / "countries.txt").pairs():
-        if isinstance(path, str) and re.fullmatch(r"[A-Z][A-Z0-9]{2}", tag):
-            out[tag] = config.AOE / "common" / path
+        if isinstance(path, str) and re.fullmatch(r"[A-Z][A-Z0-9]{2}", tag) and tag not in SOURCE_TAGS:
+            out[rename(tag)] = config.AOE / "common" / path
     return out
 
 
@@ -175,7 +186,8 @@ def read_countries(date=START_DATE):
 
     history = defaultdict(list)
     for path in sorted((config.AOE / "history" / "countries").glob("*.txt"), key=lambda p: p.name.lower()):
-        history[path.name[:3].upper()].append(path)
+        if path.name[:3].upper() not in SOURCE_TAGS:
+            history[rename(path.name[:3].upper())].append(path)
     for tag, c in out.items():
         if not history.get(tag):
             continue
@@ -236,7 +248,7 @@ def read_diplomacy(date=START_DATE):
             start = parse_date(block.get("start_date", "1.1.1")) or (1, 1, 1)
             end = parse_date(block.get("end_date", "9999.1.1")) or (9999, 1, 1)
             if start <= date < end and block.get("first") and block.get("second"):
-                out.append((kind, block.get("first"), block.get("second")))
+                out.append((kind, rename(block.get("first")), rename(block.get("second"))))
     if date == START_DATE:
         out = [d for d in out if d not in DIPLOMACY_REMOVED] + DIPLOMACY_ADDED
     return out

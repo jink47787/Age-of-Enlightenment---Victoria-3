@@ -17,6 +17,7 @@ import numpy as np
 
 import config
 import pdx
+from aoehistory import SOURCE_TAGS
 
 FLAG_DIR = "aoe"
 VARIANTS = [  # (file suffix, priority, trigger)
@@ -41,7 +42,7 @@ def main():
     for tag, _, block in defs.pairs():
         variants = []
         for suffix, priority, trigger in VARIANTS:
-            src = flags.get(f"{tag}{suffix}".lower())
+            src = flags.get(f"{SOURCE_TAGS.get(tag, tag)}{suffix}".lower())
             if src is None:
                 continue
             name = f"aoe_{tag}{suffix}"
