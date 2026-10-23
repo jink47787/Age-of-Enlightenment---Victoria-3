@@ -12,7 +12,9 @@ and build_states.py first). Writes into mod/:
   common/history/pops/aoe_pops.txt
   common/history/buildings/aoe_buildings.txt  capital administration and barracks
   common/history/diplomacy/aoe_diplomacy.txt  subjects and alliances
+  common/history/characters/aoe_characters.txt  1700 rulers (rulers.py)
   localization/<lang>/replace/aoe_countries_l_<lang>.yml
+  localization/<lang>/aoe_characters_l_<lang>.yml
 
 Unowned AoE land becomes decentralized native nations, grouped by the
 dominant culture of their pops.
@@ -28,6 +30,7 @@ import pdx
 from aoedata import read_localisation, read_province_map
 from aoehistory import read_countries, read_cultures, read_diplomacy, read_pops, read_provinces, read_religions
 from mapdata import province_borders, read_definition, read_vic3_map
+from rulers import RULERS
 
 POP_SCALE = 4            # Vic2 pop sizes count roughly a quarter of the real population
 NATIVE_MAX_STATES = 4    # largest native nation, in AoE states
@@ -65,6 +68,17 @@ COLONIAL = {"settlement": "law_colonial_resettlement", "exploitation": "law_colo
 SCHOOLS = {"low_schools": "law_religious_schools", "acceptable_schools": "law_private_schools",
            "good_schools": "law_private_schools"}
 SUBJECTS = {"vassal": "vassal", "substate": "puppet", "union": "personal_union"}
+# AoE government -> (interest group, ideology) of its ruler, unless rulers.py says otherwise.
+RULER_POLITICS = {
+    "theocracy": ("ig_devout", "ideology_theocrat"),
+    "elective_monarchy_oligarchy": ("ig_landowners", "ideology_moderate"),
+    "hms_government": ("ig_landowners", "ideology_moderate"),
+    "oligarchic_republic": ("ig_industrialists", "ideology_moderate"),
+    "democracy": ("ig_petty_bourgeoisie", "ideology_moderate"),
+    "tribal_democracy": ("ig_rural_folk", "ideology_traditionalist"),
+    "colonial_company": ("ig_armed_forces", "ideology_authoritarian"),
+}
+DEFAULT_RULER_POLITICS = ("ig_landowners", "ideology_traditionalist")
 
 
 def write_text(path, text):
@@ -539,6 +553,7 @@ class HistoryBuilder:
         self.write_pops()
         self.write_buildings(owners)
         self.write_diplomacy(owners)
+        self.write_characters(owners)
 
         all_loc = {**loc, **culture_loc, **religion_loc}
         for lang in LANGUAGES:
@@ -631,6 +646,53 @@ class HistoryBuilder:
             out += [f"\tc:{tag} ?= {{", *pacts[tag], *relations[tag], "\t}"]
         out.append("}")
         write_text(config.MOD / "common" / "history" / "diplomacy" / "aoe_diplomacy.txt", "\n".join(out) + "\n")
+
+    def write_characters(self, owners):
+        """Each country's ruler from rulers.py. Personal-union juniors get none: Vic3 shows the overlord's."""
+        juniors = {second for kind, first, second in self.diplomacy
+                   if kind == "union" and first in owners and second in owners}
+        traits = set(self.read_vic3_blocks("character_traits"))
+        out, loc, count = ["CHARACTERS = {"], {}, 0
+        for tag in sorted(owners):
+            if tag in self.natives or tag in juniors:
+                continue
+            r = RULERS.get(tag)
+            if r is None:
+                self.warnings.append(f"{tag}: no ruler in rulers.py")
+                continue
+            ig, ideology = RULER_POLITICS.get(self.countries[tag].government, DEFAULT_RULER_POLITICS)
+            lines = []
+            if r["first"]:
+                for part in ("first", "last"):
+                    loc[f"aoe_ruler_{tag}_{part}"] = r[part]
+                    lines.append(f"{part}_name = aoe_ruler_{tag}_{part}")
+                lines.append("historical = yes")
+            lines.append("ruler = yes")
+            if r.get("female"):
+                lines.append("female = yes")
+            born = r["born"]
+            if born:
+                lines.append(f"birth_date = {born if isinstance(born, str) else f'{born}.1.1'}")
+            if r.get("culture"):
+                if self.culture(r["culture"]):
+                    lines.append(f"culture = cu:{r['culture']}")
+                else:
+                    self.warnings.append(f"{tag}: unknown ruler culture {r['culture']!r}")
+            lines += [f"interest_group = {r.get('interest_group', ig)}", f"ideology = {r.get('ideology', ideology)}"]
+            for t in r["traits"]:
+                if t not in traits:
+                    self.warnings.append(f"{tag}: unknown ruler trait {t!r}")
+            lines.append(f"traits = {{ {' '.join(t for t in r['traits'] if t in traits)} }}")
+            out += [f"\tc:{tag} ?= {{", "\t\tcreate_character = {", *(f"\t\t\t{x}" for x in lines), "\t\t}", "\t}"]
+            count += 1
+        out.append("}")
+        for tag in sorted(set(RULERS) - set(owners)):
+            self.warnings.append(f"{tag}: has a ruler in rulers.py but owns no land")
+        write_text(config.MOD / "common" / "history" / "characters" / "aoe_characters.txt", "\n".join(out) + "\n")
+        for lang in LANGUAGES:
+            body = "\n".join(f' {k}:0 "{loc_escape(v)}"' for k, v in loc.items())
+            write_text(config.MOD / "localization" / lang / f"aoe_characters_l_{lang}.yml", f"l_{lang}:\n{body}\n")
+        print(f"{count} rulers ({len(loc) // 2} historical); personal unions share their overlord's: {sorted(juniors)}")
 
     # ------------------------------------------------------------- run ----
 

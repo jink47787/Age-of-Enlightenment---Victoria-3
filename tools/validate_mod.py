@@ -117,7 +117,7 @@ def main():
         for m in re.finditer(r"\bs:(STATE_\w+)", t):
             if m.group(1) not in states:
                 problems.append(f"{path.name}: unknown state {m.group(1)}")
-        for m in re.finditer(r"\bcu:(\w+)|\bculture = (\w+)", t):
+        for m in re.finditer(r"\bcu:(\w+)|\bculture = (?!cu:)(\w+)", t):
             c = m.group(1) or m.group(2)
             if c not in cultures:
                 problems.append(f"{path.name}: unknown culture {c}")
