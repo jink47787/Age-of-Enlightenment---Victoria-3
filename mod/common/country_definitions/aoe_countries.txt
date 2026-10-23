@@ -88,15 +88,6 @@ ARK = {
 	capital = STATE_PEGU
 }
 
-ARN = {
-	color = { 166 68 72 }
-	country_type = recognized
-	tier = grand_principality
-	cultures = { catalan spanish }
-	religion = catholic
-	capital = STATE_VALENCIA
-}
-
 ARO = {
 	color = { 88 27 192 }
 	country_type = unrecognized
@@ -457,6 +448,15 @@ CRL = {
 	capital = STATE_PESHAWAR
 }
 
+CUB = {
+	color = { 191 141 12 }
+	country_type = colonial
+	tier = grand_principality
+	cultures = { spanish_american spanish }
+	religion = catholic
+	capital = STATE_GREATER_ANTILLES
+}
+
 DAH = {
 	color = { 188 92 47 }
 	country_type = unrecognized
@@ -572,6 +572,15 @@ ETH = {
 	cultures = { ethiopian }
 	religion = oriental_orthodox
 	capital = STATE_OROMIA
+}
+
+FCA = {
+	color = { 0 34 255 }
+	country_type = colonial
+	tier = kingdom
+	cultures = { french_canadian louisianan }
+	religion = catholic
+	capital = STATE_QUEBEC
 }
 
 FRA = {
@@ -727,6 +736,15 @@ HAW = {
 	capital = STATE_HAWAIIAN_ISLANDS
 }
 
+HBC = {
+	color = { 99 91 69 }
+	country_type = company
+	tier = principality
+	cultures = { british }
+	religion = protestant
+	capital = STATE_ONTARIO
+}
+
 HES = {
 	color = { 114 171 184 }
 	country_type = recognized
@@ -793,7 +811,7 @@ JAI = {
 JAV = {
 	color = { 235 16 93 }
 	country_type = unrecognized
-	tier = kingdom
+	tier = grand_principality
 	cultures = { javan sundanese madurese }
 	religion = sunni
 	capital = STATE_YOGYAKARTA
@@ -2113,6 +2131,15 @@ PAT = {
 	capital = STATE_PATTANI
 }
 
+PBZ = {
+	color = { 0 112 66 }
+	country_type = colonial
+	tier = kingdom
+	cultures = { brazilian afro_brazilian }
+	religion = catholic
+	capital = STATE_BAHIA
+}
+
 PER = {
 	color = { 240 130 21 }
 	country_type = recognized
@@ -2152,7 +2179,7 @@ PNJ = {
 POR = {
 	color = { 40 110 140 }
 	country_type = recognized
-	tier = empire
+	tier = kingdom
 	cultures = { portuguese galician brazilian }
 	religion = catholic
 	capital = STATE_ESTREMADURA
@@ -2296,7 +2323,7 @@ SBP = {
 SCO = {
 	color = { 0 70 180 }
 	country_type = recognized
-	tier = principality
+	tier = grand_principality
 	cultures = { scottish }
 	religion = protestant
 	capital = STATE_LOWLANDS
@@ -2476,7 +2503,7 @@ TIB = {
 TKG = {
 	color = { 33 33 33 }
 	country_type = unrecognized
-	tier = kingdom
+	tier = empire
 	cultures = { japanese }
 	religion = mahayana
 	capital = STATE_KANTO
@@ -2512,7 +2539,7 @@ TRA = {
 TRH = {
 	color = { 81 144 126 }
 	country_type = unrecognized
-	tier = grand_principality
+	tier = kingdom
 	cultures = { vietnamese }
 	religion = mahayana
 	capital = STATE_CAO_BANG

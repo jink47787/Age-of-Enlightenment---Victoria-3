@@ -38,10 +38,6 @@ aoe_ARK = { textured_emblem = { texture = "aoe/ARK.tga" } }
 aoe_ARK_monarchy = { textured_emblem = { texture = "aoe/ARK_monarchy.tga" } }
 aoe_ARK_republic = { textured_emblem = { texture = "aoe/ARK_republic.tga" } }
 aoe_ARK_dominion = { textured_emblem = { texture = "aoe/ARK_dominion.tga" } }
-aoe_ARN = { textured_emblem = { texture = "aoe/ARN.tga" } }
-aoe_ARN_monarchy = { textured_emblem = { texture = "aoe/ARN_monarchy.tga" } }
-aoe_ARN_republic = { textured_emblem = { texture = "aoe/ARN_republic.tga" } }
-aoe_ARN_dominion = { textured_emblem = { texture = "aoe/ARN_dominion.tga" } }
 aoe_ARO = { textured_emblem = { texture = "aoe/ARO.tga" } }
 aoe_ARO_monarchy = { textured_emblem = { texture = "aoe/ARO_monarchy.tga" } }
 aoe_ARO_republic = { textured_emblem = { texture = "aoe/ARO_republic.tga" } }
@@ -189,6 +185,10 @@ aoe_CRL = { textured_emblem = { texture = "aoe/CRL.tga" } }
 aoe_CRL_monarchy = { textured_emblem = { texture = "aoe/CRL_monarchy.tga" } }
 aoe_CRL_republic = { textured_emblem = { texture = "aoe/CRL_republic.tga" } }
 aoe_CRL_dominion = { textured_emblem = { texture = "aoe/CRL_dominion.tga" } }
+aoe_CUB = { textured_emblem = { texture = "aoe/CUB.tga" } }
+aoe_CUB_monarchy = { textured_emblem = { texture = "aoe/CUB_monarchy.tga" } }
+aoe_CUB_republic = { textured_emblem = { texture = "aoe/CUB_republic.tga" } }
+aoe_CUB_dominion = { textured_emblem = { texture = "aoe/CUB_dominion.tga" } }
 aoe_DAH = { textured_emblem = { texture = "aoe/DAH.tga" } }
 aoe_DAH_monarchy = { textured_emblem = { texture = "aoe/DAH_monarchy.tga" } }
 aoe_DAH_republic = { textured_emblem = { texture = "aoe/DAH_republic.tga" } }
@@ -241,6 +241,10 @@ aoe_ETH = { textured_emblem = { texture = "aoe/ETH.tga" } }
 aoe_ETH_monarchy = { textured_emblem = { texture = "aoe/ETH_monarchy.tga" } }
 aoe_ETH_republic = { textured_emblem = { texture = "aoe/ETH_republic.tga" } }
 aoe_ETH_dominion = { textured_emblem = { texture = "aoe/ETH_dominion.tga" } }
+aoe_FCA = { textured_emblem = { texture = "aoe/FCA.tga" } }
+aoe_FCA_monarchy = { textured_emblem = { texture = "aoe/FCA_monarchy.tga" } }
+aoe_FCA_republic = { textured_emblem = { texture = "aoe/FCA_republic.tga" } }
+aoe_FCA_dominion = { textured_emblem = { texture = "aoe/FCA_dominion.tga" } }
 aoe_FRA = { textured_emblem = { texture = "aoe/FRA.tga" } }
 aoe_FRA_monarchy = { textured_emblem = { texture = "aoe/FRA_monarchy.tga" } }
 aoe_FRA_republic = { textured_emblem = { texture = "aoe/FRA_republic.tga" } }
@@ -1412,6 +1416,10 @@ aoe_PAT = { textured_emblem = { texture = "aoe/PAT.tga" } }
 aoe_PAT_monarchy = { textured_emblem = { texture = "aoe/PAT_monarchy.tga" } }
 aoe_PAT_republic = { textured_emblem = { texture = "aoe/PAT_republic.tga" } }
 aoe_PAT_dominion = { textured_emblem = { texture = "aoe/PAT_dominion.tga" } }
+aoe_PBZ = { textured_emblem = { texture = "aoe/PBZ.tga" } }
+aoe_PBZ_monarchy = { textured_emblem = { texture = "aoe/PBZ_monarchy.tga" } }
+aoe_PBZ_republic = { textured_emblem = { texture = "aoe/PBZ_republic.tga" } }
+aoe_PBZ_dominion = { textured_emblem = { texture = "aoe/PBZ_dominion.tga" } }
 aoe_PER = { textured_emblem = { texture = "aoe/PER.tga" } }
 aoe_PER_monarchy = { textured_emblem = { texture = "aoe/PER_monarchy.tga" } }
 aoe_PER_republic = { textured_emblem = { texture = "aoe/PER_republic.tga" } }

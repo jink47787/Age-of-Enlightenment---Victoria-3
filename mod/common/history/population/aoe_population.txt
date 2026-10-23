@@ -39,10 +39,6 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
-	c:ARN ?= {
-		effect_starting_pop_wealth_low = yes
-		effect_starting_pop_literacy_low = yes
-	}
 	c:ARO ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
@@ -203,6 +199,10 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:CUB ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
 	c:DAH ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
@@ -254,6 +254,10 @@
 	c:ETH ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_low = yes
+	}
+	c:FCA ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_high = yes
 	}
 	c:FRA ?= {
 		effect_starting_pop_wealth_medium = yes
@@ -322,6 +326,10 @@
 	c:HAW ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
+	}
+	c:HBC ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_high = yes
 	}
 	c:HES ?= {
 		effect_starting_pop_wealth_low = yes
@@ -938,6 +946,10 @@
 	c:PAT ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
+	}
+	c:PBZ ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
 	}
 	c:PER ?= {
 		effect_starting_pop_wealth_low = yes

@@ -97,19 +97,6 @@
 			traits = { reckless }
 		}
 	}
-	c:ARN ?= {
-		create_character = {
-			first_name = aoe_ruler_ARN_first
-			last_name = aoe_ruler_ARN_last
-			historical = yes
-			ruler = yes
-			birth_date = 1669.4.25
-			culture = cu:north_german
-			interest_group = ig_armed_forces
-			ideology = ideology_royalist
-			traits = { brave }
-		}
-	}
 	c:ARO ?= {
 		create_character = {
 			ruler = yes
@@ -530,6 +517,18 @@
 			traits = { brave }
 		}
 	}
+	c:CUB ?= {
+		create_character = {
+			first_name = aoe_ruler_CUB_first
+			last_name = aoe_ruler_CUB_last
+			historical = yes
+			ruler = yes
+			culture = cu:spanish
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { cautious }
+		}
+	}
 	c:DAH ?= {
 		create_character = {
 			first_name = aoe_ruler_DAH_first
@@ -663,6 +662,19 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { honorable }
+		}
+	}
+	c:FCA ?= {
+		create_character = {
+			first_name = aoe_ruler_FCA_first
+			last_name = aoe_ruler_FCA_last
+			historical = yes
+			ruler = yes
+			birth_date = 1648.11.12
+			culture = cu:french
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = { brave }
 		}
 	}
 	c:FRA ?= {
@@ -838,6 +850,18 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { ambitious }
+		}
+	}
+	c:HBC ?= {
+		create_character = {
+			first_name = aoe_ruler_HBC_first
+			last_name = aoe_ruler_HBC_last
+			historical = yes
+			ruler = yes
+			birth_date = 1639.1.1
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { reserved }
 		}
 	}
 	c:HES ?= {
@@ -1701,6 +1725,18 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { reserved }
+		}
+	}
+	c:PBZ ?= {
+		create_character = {
+			first_name = aoe_ruler_PBZ_first
+			last_name = aoe_ruler_PBZ_last
+			historical = yes
+			ruler = yes
+			culture = cu:portuguese
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { imperious }
 		}
 	}
 	c:PER ?= {

@@ -13,6 +13,7 @@
 		set_relations = { country = c:PLC value = 50 }
 	}
 	c:FRA ?= {
+		create_diplomatic_pact = { country = c:FCA type = colony }
 		set_relations = { country = c:SPA value = 50 }
 		set_relations = { country = c:LIG value = 50 }
 		set_relations = { country = c:KOL value = 50 }
@@ -23,6 +24,7 @@
 		create_diplomatic_pact = { country = c:NET type = puppet }
 		create_diplomatic_pact = { country = c:NET type = vassal }
 		create_diplomatic_pact = { country = c:SCO type = personal_union }
+		create_diplomatic_pact = { country = c:HBC type = chartered_company }
 		set_relations = { country = c:POR value = 50 }
 		set_relations = { country = c:SCO value = 50 }
 		set_relations = { country = c:NET value = 50 }
@@ -52,6 +54,9 @@
 		create_diplomatic_pact = { country = c:SAX type = personal_union }
 		set_relations = { country = c:RUS value = 50 }
 	}
+	c:POR ?= {
+		create_diplomatic_pact = { country = c:PBZ type = colony }
+	}
 	c:QNG ?= {
 		create_diplomatic_pact = { country = c:KOR type = vassal }
 		create_diplomatic_pact = { country = c:MGL type = puppet }
@@ -64,7 +69,7 @@
 	c:SPA ?= {
 		create_diplomatic_pact = { country = c:VNS type = puppet }
 		create_diplomatic_pact = { country = c:VOP type = puppet }
-		create_diplomatic_pact = { country = c:ARN type = puppet }
+		create_diplomatic_pact = { country = c:CUB type = colony }
 	}
 	c:TKG ?= {
 		create_diplomatic_pact = { country = c:SEN type = puppet }
