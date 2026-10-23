@@ -294,17 +294,6 @@
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_colonial_resettlement
 	}
-	c:BOR ?= {
-		effect_starting_technology_tier_3_tech = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_tenant_farmers
-		activate_law = law_type:law_frontier_colonization
-		activate_law = law_type:law_religious_schools
-		activate_law = law_type:law_mercantilism
-		activate_law = law_type:law_professional_army
-	}
 	c:BRA ?= {
 		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_traditional = yes
@@ -313,6 +302,18 @@
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
+	c:BRN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_professional_army
 	}
@@ -598,17 +599,6 @@
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_professional_army
 	}
-	c:ENL ?= {
-		effect_starting_technology_tier_3_tech = yes
-		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_tenant_farmers
-		activate_law = law_type:law_frontier_colonization
-		activate_law = law_type:law_mercantilism
-		activate_law = law_type:law_professional_army
-	}
 	c:ETH ?= {
 		effect_starting_technology_tier_5_tech = yes
 		effect_starting_politics_traditional = yes
@@ -617,6 +607,17 @@
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_tenant_farmers
+	}
+	c:FRA ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
 	}
 	c:FRM ?= {
 		effect_starting_technology_tier_4_tech = yes
@@ -648,6 +649,17 @@
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_serfdom
+	}
+	c:GBR ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
 	}
 	c:GBU ?= {
 		effect_starting_technology_tier_6_tech = yes
@@ -982,17 +994,6 @@
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_serfdom
-	}
-	c:KOS ?= {
-		effect_starting_technology_tier_4_tech = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_colonial_administration
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_private_schools
-		activate_law = law_type:law_mercantilism
-		activate_law = law_type:law_professional_army
 	}
 	c:KRN ?= {
 		effect_starting_technology_tier_5_tech = yes
@@ -1839,6 +1840,17 @@
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_professional_army
 	}
+	c:PLC ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
 	c:PLM ?= {
 		effect_starting_technology_tier_5_tech = yes
 		effect_starting_politics_traditional = yes
@@ -1883,7 +1895,6 @@
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_type:law_frontier_colonization
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_professional_army
 	}
@@ -1950,6 +1961,18 @@
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_serfdom
 	}
+	c:RUS ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_slavery
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
 	c:SAA ?= {
 		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_traditional = yes
@@ -1981,6 +2004,17 @@
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_tenant_farmers
 	}
+	c:SAX ?= {
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
+	}
 	c:SBP ?= {
 		effect_starting_technology_tier_5_tech = yes
 		effect_starting_politics_traditional = yes
@@ -1989,6 +2023,18 @@
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_serfdom
+	}
+	c:SCO ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_army
 	}
 	c:SEG ?= {
 		effect_starting_technology_tier_6_tech = yes
@@ -2102,17 +2148,6 @@
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_professional_army
 	}
-	c:SPL ?= {
-		effect_starting_technology_tier_4_tech = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_mercantilism
-		activate_law = law_type:law_professional_army
-	}
 	c:SUD ?= {
 		effect_starting_technology_tier_6_tech = yes
 		effect_starting_politics_traditional = yes
@@ -2201,18 +2236,6 @@
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_mercantilism
-		activate_law = law_type:law_professional_army
-	}
-	c:TOR ?= {
-		effect_starting_technology_tier_4_tech = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_colonial_slavery
-		activate_law = law_type:law_outlawed_dissent
-		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_colonial_resettlement
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_professional_army
 	}

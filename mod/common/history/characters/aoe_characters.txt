@@ -1,0 +1,2398 @@
+﻿CHARACTERS = {
+	c:ABB ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:ABU ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:ACH ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = { reserved }
+		}
+	}
+	c:AFG ?= {
+		create_character = {
+			first_name = aoe_ruler_AFG_first
+			last_name = aoe_ruler_AFG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1643.10.14
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { cautious }
+		}
+	}
+	c:AGC ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:ALD ?= {
+		create_character = {
+			first_name = aoe_ruler_ALD_first
+			last_name = aoe_ruler_ALD_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:ANH ?= {
+		create_character = {
+			first_name = aoe_ruler_ANH_first
+			last_name = aoe_ruler_ANH_last
+			historical = yes
+			ruler = yes
+			birth_date = 1676.7.3
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+	c:ANS ?= {
+		create_character = {
+			first_name = aoe_ruler_ANS_first
+			last_name = aoe_ruler_ANS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1678.5.3
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reckless }
+		}
+	}
+	c:APC ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:ARK ?= {
+		create_character = {
+			first_name = aoe_ruler_ARK_first
+			last_name = aoe_ruler_ARK_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reckless }
+		}
+	}
+	c:ARN ?= {
+		create_character = {
+			first_name = aoe_ruler_ARN_first
+			last_name = aoe_ruler_ARN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1669.4.25
+			culture = cu:north_german
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = { brave }
+		}
+	}
+	c:ARO ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:ASH ?= {
+		create_character = {
+			first_name = aoe_ruler_ASH_first
+			last_name = aoe_ruler_ASH_last
+			historical = yes
+			ruler = yes
+			birth_date = 1660.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:ASM ?= {
+		create_character = {
+			first_name = aoe_ruler_ASM_first
+			last_name = aoe_ruler_ASM_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:ATJ ?= {
+		create_character = {
+			first_name = aoe_ruler_ATJ_first
+			last_name = aoe_ruler_ATJ_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:AUG ?= {
+		create_character = {
+			first_name = aoe_ruler_AUG_first
+			last_name = aoe_ruler_AUG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1663.4.16
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { reserved }
+		}
+	}
+	c:AUS ?= {
+		create_character = {
+			first_name = aoe_ruler_AUS_first
+			last_name = aoe_ruler_AUS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1640.6.9
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:AWA ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { reserved }
+		}
+	}
+	c:AWS ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:AYO ?= {
+		create_character = {
+			first_name = aoe_ruler_AYO_first
+			last_name = aoe_ruler_AYO_last
+			historical = yes
+			ruler = yes
+			birth_date = 1632.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ruthless }
+		}
+	}
+	c:BAD ?= {
+		create_character = {
+			first_name = aoe_ruler_BAD_first
+			last_name = aoe_ruler_BAD_last
+			historical = yes
+			ruler = yes
+			birth_date = 1655.4.8
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:BAL ?= {
+		create_character = {
+			first_name = aoe_ruler_BAL_first
+			last_name = aoe_ruler_BAL_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:BAS ?= {
+		create_character = {
+			first_name = aoe_ruler_BAS_first
+			last_name = aoe_ruler_BAS_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:BAV ?= {
+		create_character = {
+			first_name = aoe_ruler_BAV_first
+			last_name = aoe_ruler_BAV_last
+			historical = yes
+			ruler = yes
+			birth_date = 1662.7.11
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:BBG ?= {
+		create_character = {
+			first_name = aoe_ruler_BBG_first
+			last_name = aoe_ruler_BBG_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:BDK ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:BEN ?= {
+		create_character = {
+			first_name = aoe_ruler_BEN_first
+			last_name = aoe_ruler_BEN_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:BHU ?= {
+		create_character = {
+			first_name = aoe_ruler_BHU_first
+			last_name = aoe_ruler_BHU_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { reserved }
+		}
+	}
+	c:BIH ?= {
+		create_character = {
+			first_name = aoe_ruler_BIH_first
+			last_name = aoe_ruler_BIH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { direct }
+		}
+	}
+	c:BIJ ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { direct }
+		}
+	}
+	c:BNG ?= {
+		create_character = {
+			first_name = aoe_ruler_BNG_first
+			last_name = aoe_ruler_BNG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1664.12.15
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { ambitious }
+		}
+	}
+	c:BRA ?= {
+		create_character = {
+			first_name = aoe_ruler_BRA_first
+			last_name = aoe_ruler_BRA_last
+			historical = yes
+			ruler = yes
+			birth_date = 1627.5.16
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:BRN ?= {
+		create_character = {
+			first_name = aoe_ruler_BRN_first
+			last_name = aoe_ruler_BRN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1657.7.11
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:BRR ?= {
+		create_character = {
+			first_name = aoe_ruler_BRR_first
+			last_name = aoe_ruler_BRR_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { brave }
+		}
+	}
+	c:BRS ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:BRU ?= {
+		create_character = {
+			first_name = aoe_ruler_BRU_first
+			last_name = aoe_ruler_BRU_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:BTN ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:BUK ?= {
+		create_character = {
+			first_name = aoe_ruler_BUK_first
+			last_name = aoe_ruler_BUK_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:BUN ?= {
+		create_character = {
+			first_name = aoe_ruler_BUN_first
+			last_name = aoe_ruler_BUN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1649.5.4
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:BUR ?= {
+		create_character = {
+			first_name = aoe_ruler_BUR_first
+			last_name = aoe_ruler_BUR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1673.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:CAM ?= {
+		create_character = {
+			first_name = aoe_ruler_CAM_first
+			last_name = aoe_ruler_CAM_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { persistent }
+		}
+	}
+	c:CHG ?= {
+		create_character = {
+			first_name = aoe_ruler_CHG_first
+			last_name = aoe_ruler_CHG_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:CHP ?= {
+		create_character = {
+			first_name = aoe_ruler_CHP_first
+			last_name = aoe_ruler_CHP_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:CIT ?= {
+		create_character = {
+			first_name = aoe_ruler_CIT_first
+			last_name = aoe_ruler_CIT_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:CLA ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:CMG ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:CMN ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = { reckless }
+		}
+	}
+	c:COB ?= {
+		create_character = {
+			first_name = aoe_ruler_COB_first
+			last_name = aoe_ruler_COB_last
+			historical = yes
+			ruler = yes
+			birth_date = 1676.7.28
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:COC ?= {
+		create_character = {
+			first_name = aoe_ruler_COC_first
+			last_name = aoe_ruler_COC_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:CRI ?= {
+		create_character = {
+			first_name = aoe_ruler_CRI_first
+			last_name = aoe_ruler_CRI_last
+			historical = yes
+			ruler = yes
+			birth_date = 1648.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:CRL ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:DAH ?= {
+		create_character = {
+			first_name = aoe_ruler_DAH_first
+			last_name = aoe_ruler_DAH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:DGH ?= {
+		create_character = {
+			first_name = aoe_ruler_DGH_first
+			last_name = aoe_ruler_DGH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:DJA ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:DLM ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { tactful }
+		}
+	}
+	c:DLT ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { persistent }
+		}
+	}
+	c:DMS ?= {
+		create_character = {
+			first_name = aoe_ruler_DMS_first
+			last_name = aoe_ruler_DMS_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:DNN ?= {
+		create_character = {
+			first_name = aoe_ruler_DNN_first
+			last_name = aoe_ruler_DNN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1671.10.11
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { romantic }
+		}
+	}
+	c:DON ?= {
+		create_character = {
+			first_name = aoe_ruler_DON_first
+			last_name = aoe_ruler_DON_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { cautious }
+		}
+	}
+	c:DOR ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { persistent }
+		}
+	}
+	c:DZN ?= {
+		create_character = {
+			first_name = aoe_ruler_DZN_first
+			last_name = aoe_ruler_DZN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1663.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:EFR ?= {
+		create_character = {
+			first_name = aoe_ruler_EFR_first
+			last_name = aoe_ruler_EFR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1665.10.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:EIC ?= {
+		create_character = {
+			first_name = aoe_ruler_EIC_first
+			last_name = aoe_ruler_EIC_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { meticulous }
+		}
+	}
+	c:ETH ?= {
+		create_character = {
+			first_name = aoe_ruler_ETH_first
+			last_name = aoe_ruler_ETH_last
+			historical = yes
+			ruler = yes
+			birth_date = 1654.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { honorable }
+		}
+	}
+	c:FRA ?= {
+		create_character = {
+			first_name = aoe_ruler_FRA_first
+			last_name = aoe_ruler_FRA_last
+			historical = yes
+			ruler = yes
+			birth_date = 1638.9.5
+			interest_group = ig_landowners
+			ideology = ideology_legitimist
+			traits = { imperious }
+		}
+	}
+	c:FRM ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = { tactful }
+		}
+	}
+	c:FUL ?= {
+		create_character = {
+			first_name = aoe_ruler_FUL_first
+			last_name = aoe_ruler_FUL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1641.1.1
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:GAZ ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:GBR ?= {
+		create_character = {
+			first_name = aoe_ruler_GBR_first
+			last_name = aoe_ruler_GBR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1650.11.14
+			culture = cu:dutch
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { reserved }
+		}
+	}
+	c:GBU ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:GEL ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:GEN ?= {
+		create_character = {
+			first_name = aoe_ruler_GEN_first
+			last_name = aoe_ruler_GEN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1644.1.1
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { meticulous }
+		}
+	}
+	c:GFL ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:GOL ?= {
+		create_character = {
+			first_name = aoe_ruler_GOL_first
+			last_name = aoe_ruler_GOL_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { honorable }
+		}
+	}
+	c:GRH ?= {
+		create_character = {
+			first_name = aoe_ruler_GRH_first
+			last_name = aoe_ruler_GRH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:GUJ ?= {
+		create_character = {
+			first_name = aoe_ruler_GUJ_first
+			last_name = aoe_ruler_GUJ_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { persistent }
+		}
+	}
+	c:GZK ?= {
+		create_character = {
+			first_name = aoe_ruler_GZK_first
+			last_name = aoe_ruler_GZK_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { wrathful }
+		}
+	}
+	c:HAM ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { meticulous }
+		}
+	}
+	c:HAN ?= {
+		create_character = {
+			first_name = aoe_ruler_HAN_first
+			last_name = aoe_ruler_HAN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1660.6.7
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:HAR ?= {
+		create_character = {
+			first_name = aoe_ruler_HAR_first
+			last_name = aoe_ruler_HAR_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:HAW ?= {
+		create_character = {
+			first_name = aoe_ruler_HAW_first
+			last_name = aoe_ruler_HAW_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:HES ?= {
+		create_character = {
+			first_name = aoe_ruler_HES_first
+			last_name = aoe_ruler_HES_last
+			historical = yes
+			ruler = yes
+			birth_date = 1667.12.15
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { hedonist }
+		}
+	}
+	c:HET ?= {
+		create_character = {
+			first_name = aoe_ruler_HET_first
+			last_name = aoe_ruler_HET_last
+			historical = yes
+			ruler = yes
+			birth_date = 1639.3.30
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { ambitious }
+		}
+	}
+	c:HOL ?= {
+		create_character = {
+			first_name = aoe_ruler_HOL_first
+			last_name = aoe_ruler_HOL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1671.10.18
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:HSA ?= {
+		create_character = {
+			first_name = aoe_ruler_HSA_first
+			last_name = aoe_ruler_HSA_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:IMO ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:IQS ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:JAI ?= {
+		create_character = {
+			first_name = aoe_ruler_JAI_first
+			last_name = aoe_ruler_JAI_last
+			historical = yes
+			ruler = yes
+			birth_date = 1688.11.3
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { innovative }
+		}
+	}
+	c:JAV ?= {
+		create_character = {
+			first_name = aoe_ruler_JAV_first
+			last_name = aoe_ruler_JAV_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:JEY ?= {
+		create_character = {
+			first_name = aoe_ruler_JEY_first
+			last_name = aoe_ruler_JEY_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:JOD ?= {
+		create_character = {
+			first_name = aoe_ruler_JOD_first
+			last_name = aoe_ruler_JOD_last
+			historical = yes
+			ruler = yes
+			birth_date = 1679.2.19
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:JOH ?= {
+		create_character = {
+			first_name = aoe_ruler_JOH_first
+			last_name = aoe_ruler_JOH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:KAL ?= {
+		create_character = {
+			first_name = aoe_ruler_KAL_first
+			last_name = aoe_ruler_KAL_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:KAS ?= {
+		create_character = {
+			first_name = aoe_ruler_KAS_first
+			last_name = aoe_ruler_KAS_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { meticulous }
+		}
+	}
+	c:KAZ ?= {
+		create_character = {
+			first_name = aoe_ruler_KAZ_first
+			last_name = aoe_ruler_KAZ_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { meticulous }
+		}
+	}
+	c:KED ?= {
+		create_character = {
+			first_name = aoe_ruler_KED_first
+			last_name = aoe_ruler_KED_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:KHI ?= {
+		create_character = {
+			first_name = aoe_ruler_KHI_first
+			last_name = aoe_ruler_KHI_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+	c:KLD ?= {
+		create_character = {
+			first_name = aoe_ruler_KLD_first
+			last_name = aoe_ruler_KLD_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:KLM ?= {
+		create_character = {
+			first_name = aoe_ruler_KLM_first
+			last_name = aoe_ruler_KLM_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:KMK ?= {
+		create_character = {
+			first_name = aoe_ruler_KMK_first
+			last_name = aoe_ruler_KMK_last
+			historical = yes
+			ruler = yes
+			birth_date = 1642.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:KML ?= {
+		create_character = {
+			first_name = aoe_ruler_KML_first
+			last_name = aoe_ruler_KML_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:KND ?= {
+		create_character = {
+			first_name = aoe_ruler_KND_first
+			last_name = aoe_ruler_KND_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:KOL ?= {
+		create_character = {
+			first_name = aoe_ruler_KOL_first
+			last_name = aoe_ruler_KOL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1671.12.5
+			culture = cu:south_german
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { hedonist }
+		}
+	}
+	c:KON ?= {
+		create_character = {
+			first_name = aoe_ruler_KON_first
+			last_name = aoe_ruler_KON_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:KOR ?= {
+		create_character = {
+			first_name = aoe_ruler_KOR_first
+			last_name = aoe_ruler_KOR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1661.10.7
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { imperious }
+		}
+	}
+	c:KRN ?= {
+		create_character = {
+			first_name = aoe_ruler_KRN_first
+			last_name = aoe_ruler_KRN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1657.1.1
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { ruthless }
+		}
+	}
+	c:KTH ?= {
+		create_character = {
+			first_name = aoe_ruler_KTH_first
+			last_name = aoe_ruler_KTH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:KTI ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:KUR ?= {
+		create_character = {
+			first_name = aoe_ruler_KUR_first
+			last_name = aoe_ruler_KUR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1692.7.19
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:LAD ?= {
+		create_character = {
+			first_name = aoe_ruler_LAD_first
+			last_name = aoe_ruler_LAD_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:LAU ?= {
+		create_character = {
+			first_name = aoe_ruler_LAU_first
+			last_name = aoe_ruler_LAU_last
+			historical = yes
+			ruler = yes
+			birth_date = 1624.1.26
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { romantic }
+		}
+	}
+	c:LIG ?= {
+		create_character = {
+			first_name = aoe_ruler_LIG_first
+			last_name = aoe_ruler_LIG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1671.12.5
+			culture = cu:south_german
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { hedonist }
+		}
+	}
+	c:LIP ?= {
+		create_character = {
+			first_name = aoe_ruler_LIP_first
+			last_name = aoe_ruler_LIP_last
+			historical = yes
+			ruler = yes
+			birth_date = 1667.9.2
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:LNP ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:LOR ?= {
+		create_character = {
+			first_name = aoe_ruler_LOR_first
+			last_name = aoe_ruler_LOR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1679.9.11
+			culture = cu:french
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { honorable }
+		}
+	}
+	c:LUB ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { cautious }
+		}
+	}
+	c:LUC ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { cautious }
+		}
+	}
+	c:LXA ?= {
+		create_character = {
+			first_name = aoe_ruler_LXA_first
+			last_name = aoe_ruler_LXA_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:MAD ?= {
+		create_character = {
+			first_name = aoe_ruler_MAD_first
+			last_name = aoe_ruler_MAD_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:MAH ?= {
+		create_character = {
+			first_name = aoe_ruler_MAH_first
+			last_name = aoe_ruler_MAH_last
+			historical = yes
+			ruler = yes
+			birth_date = 1670.2.24
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { persistent }
+		}
+	}
+	c:MAJ ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:MAK ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:MAL ?= {
+		create_character = {
+			first_name = aoe_ruler_MAL_first
+			last_name = aoe_ruler_MAL_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:MAW ?= {
+		create_character = {
+			first_name = aoe_ruler_MAW_first
+			last_name = aoe_ruler_MAW_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { cautious }
+		}
+	}
+	c:MDR ?= {
+		create_character = {
+			first_name = aoe_ruler_MDR_first
+			last_name = aoe_ruler_MDR_last
+			historical = yes
+			ruler = yes
+			female = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:MEC ?= {
+		create_character = {
+			first_name = aoe_ruler_MEC_first
+			last_name = aoe_ruler_MEC_last
+			historical = yes
+			ruler = yes
+			birth_date = 1675.3.28
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { persistent }
+		}
+	}
+	c:MEI ?= {
+		create_character = {
+			first_name = aoe_ruler_MEI_first
+			last_name = aoe_ruler_MEI_last
+			historical = yes
+			ruler = yes
+			birth_date = 1649.9.10
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:MEW ?= {
+		create_character = {
+			first_name = aoe_ruler_MEW_first
+			last_name = aoe_ruler_MEW_last
+			historical = yes
+			ruler = yes
+			birth_date = 1672.10.3
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:MGL ?= {
+		create_character = {
+			first_name = aoe_ruler_MGL_first
+			last_name = aoe_ruler_MGL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1635.1.1
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:MGW ?= {
+		create_character = {
+			first_name = aoe_ruler_MGW_first
+			last_name = aoe_ruler_MGW_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:MHR ?= {
+		create_character = {
+			first_name = aoe_ruler_MHR_first
+			last_name = aoe_ruler_MHR_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+	c:MLD ?= {
+		create_character = {
+			first_name = aoe_ruler_MLD_first
+			last_name = aoe_ruler_MLD_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:MLT ?= {
+		create_character = {
+			first_name = aoe_ruler_MLT_first
+			last_name = aoe_ruler_MLT_last
+			historical = yes
+			ruler = yes
+			birth_date = 1637.1.1
+			culture = cu:catalan
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:MNP ?= {
+		create_character = {
+			first_name = aoe_ruler_MNP_first
+			last_name = aoe_ruler_MNP_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:MNT ?= {
+		create_character = {
+			first_name = aoe_ruler_MNT_first
+			last_name = aoe_ruler_MNT_last
+			historical = yes
+			ruler = yes
+			birth_date = 1652.8.31
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { hedonist }
+		}
+	}
+	c:MNZ ?= {
+		create_character = {
+			first_name = aoe_ruler_MNZ_first
+			last_name = aoe_ruler_MNZ_last
+			historical = yes
+			ruler = yes
+			birth_date = 1655.10.4
+			culture = cu:south_german
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { aesthete }
+		}
+	}
+	c:MOD ?= {
+		create_character = {
+			first_name = aoe_ruler_MOD_first
+			last_name = aoe_ruler_MOD_last
+			historical = yes
+			ruler = yes
+			birth_date = 1655.4.26
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:MOL ?= {
+		create_character = {
+			first_name = aoe_ruler_MOL_first
+			last_name = aoe_ruler_MOL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1670.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:MOR ?= {
+		create_character = {
+			first_name = aoe_ruler_MOR_first
+			last_name = aoe_ruler_MOR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1645.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cruel }
+		}
+	}
+	c:MSK ?= {
+		create_character = {
+			first_name = aoe_ruler_MSK_first
+			last_name = aoe_ruler_MSK_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:MUG ?= {
+		create_character = {
+			first_name = aoe_ruler_MUG_first
+			last_name = aoe_ruler_MUG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1618.11.3
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:MUL ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { cautious }
+		}
+	}
+	c:MUN ?= {
+		create_character = {
+			first_name = aoe_ruler_MUN_first
+			last_name = aoe_ruler_MUN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1644.8.8
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { meticulous }
+		}
+	}
+	c:MYS ?= {
+		create_character = {
+			first_name = aoe_ruler_MYS_first
+			last_name = aoe_ruler_MYS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1645.9.22
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { meticulous }
+		}
+	}
+	c:NAS ?= {
+		create_character = {
+			first_name = aoe_ruler_NAS_first
+			last_name = aoe_ruler_NAS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1664.6.13
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+	c:NEJ ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:NEP ?= {
+		create_character = {
+			first_name = aoe_ruler_NEP_first
+			last_name = aoe_ruler_NEP_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reckless }
+		}
+	}
+	c:NET ?= {
+		create_character = {
+			first_name = aoe_ruler_NET_first
+			last_name = aoe_ruler_NET_last
+			historical = yes
+			ruler = yes
+			birth_date = 1641.11.23
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { tactful basic_diplomat }
+		}
+	}
+	c:NGU ?= {
+		create_character = {
+			first_name = aoe_ruler_NGU_first
+			last_name = aoe_ruler_NGU_last
+			historical = yes
+			ruler = yes
+			birth_date = 1675.6.11
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:NJN ?= {
+		create_character = {
+			first_name = aoe_ruler_NJN_first
+			last_name = aoe_ruler_NJN_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:NUR ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:NYE ?= {
+		create_character = {
+			first_name = aoe_ruler_NYE_first
+			last_name = aoe_ruler_NYE_last
+			historical = yes
+			ruler = yes
+			birth_date = 1638.1.1
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { imperious }
+		}
+	}
+	c:OMA ?= {
+		create_character = {
+			first_name = aoe_ruler_OMA_first
+			last_name = aoe_ruler_OMA_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:ORI ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { cautious }
+		}
+	}
+	c:OYO ?= {
+		create_character = {
+			first_name = aoe_ruler_OYO_first
+			last_name = aoe_ruler_OYO_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { imperious }
+		}
+	}
+	c:PAL ?= {
+		create_character = {
+			first_name = aoe_ruler_PAL_first
+			last_name = aoe_ruler_PAL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1658.4.19
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { aesthete }
+		}
+	}
+	c:PAP ?= {
+		create_character = {
+			first_name = aoe_ruler_PAP_first
+			last_name = aoe_ruler_PAP_last
+			historical = yes
+			ruler = yes
+			birth_date = 1615.3.13
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { honorable }
+		}
+	}
+	c:PAR ?= {
+		create_character = {
+			first_name = aoe_ruler_PAR_first
+			last_name = aoe_ruler_PAR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1678.5.19
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:PAT ?= {
+		create_character = {
+			first_name = aoe_ruler_PAT_first
+			last_name = aoe_ruler_PAT_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:PER ?= {
+		create_character = {
+			first_name = aoe_ruler_PER_first
+			last_name = aoe_ruler_PER_last
+			historical = yes
+			ruler = yes
+			birth_date = 1668.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:PLC ?= {
+		create_character = {
+			first_name = aoe_ruler_PLC_first
+			last_name = aoe_ruler_PLC_last
+			historical = yes
+			ruler = yes
+			birth_date = 1670.5.12
+			culture = cu:north_german
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { hedonist }
+		}
+	}
+	c:PLM ?= {
+		create_character = {
+			first_name = aoe_ruler_PLM_first
+			last_name = aoe_ruler_PLM_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:PNJ ?= {
+		create_character = {
+			first_name = aoe_ruler_PNJ_first
+			last_name = aoe_ruler_PNJ_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { cautious }
+		}
+	}
+	c:POR ?= {
+		create_character = {
+			first_name = aoe_ruler_POR_first
+			last_name = aoe_ruler_POR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1648.4.26
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:PRK ?= {
+		create_character = {
+			first_name = aoe_ruler_PRK_first
+			last_name = aoe_ruler_PRK_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { persistent }
+		}
+	}
+	c:PTK ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:PYG ?= {
+		create_character = {
+			first_name = aoe_ruler_PYG_first
+			last_name = aoe_ruler_PYG_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:QNG ?= {
+		create_character = {
+			first_name = aoe_ruler_QNG_first
+			last_name = aoe_ruler_QNG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1654.5.4
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { meticulous }
+		}
+	}
+	c:QSM ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:RAJ ?= {
+		create_character = {
+			first_name = aoe_ruler_RAJ_first
+			last_name = aoe_ruler_RAJ_last
+			historical = yes
+			ruler = yes
+			birth_date = 1689.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:REW ?= {
+		create_character = {
+			first_name = aoe_ruler_REW_first
+			last_name = aoe_ruler_REW_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:RTP ?= {
+		create_character = {
+			first_name = aoe_ruler_RTP_first
+			last_name = aoe_ruler_RTP_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:RUS ?= {
+		create_character = {
+			first_name = aoe_ruler_RUS_first
+			last_name = aoe_ruler_RUS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1672.6.9
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { innovative }
+		}
+	}
+	c:SAA ?= {
+		create_character = {
+			first_name = aoe_ruler_SAA_first
+			last_name = aoe_ruler_SAA_last
+			historical = yes
+			ruler = yes
+			birth_date = 1663.3.28
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:SAL ?= {
+		create_character = {
+			first_name = aoe_ruler_SAL_first
+			last_name = aoe_ruler_SAL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1643.7.3
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:SAT ?= {
+		create_character = {
+			first_name = aoe_ruler_SAT_first
+			last_name = aoe_ruler_SAT_last
+			historical = yes
+			ruler = yes
+			birth_date = 1675.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { meticulous }
+		}
+	}
+	c:SBP ?= {
+		create_character = {
+			first_name = aoe_ruler_SBP_first
+			last_name = aoe_ruler_SBP_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+	c:SEG ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:SEN ?= {
+		create_character = {
+			first_name = aoe_ruler_SEN_first
+			last_name = aoe_ruler_SEN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1659.4.29
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:SFL ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:SGJ ?= {
+		create_character = {
+			first_name = aoe_ruler_SGJ_first
+			last_name = aoe_ruler_SGJ_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { reserved }
+		}
+	}
+	c:SGM ?= {
+		create_character = {
+			first_name = aoe_ruler_SGM_first
+			last_name = aoe_ruler_SGM_last
+			historical = yes
+			ruler = yes
+			birth_date = 1673.11.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { honorable }
+		}
+	}
+	c:SHI ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:SIE ?= {
+		create_character = {
+			first_name = aoe_ruler_SIE_first
+			last_name = aoe_ruler_SIE_last
+			historical = yes
+			ruler = yes
+			birth_date = 1661.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:SIK ?= {
+		create_character = {
+			first_name = aoe_ruler_SIK_first
+			last_name = aoe_ruler_SIK_last
+			historical = yes
+			ruler = yes
+			birth_date = 1686.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { innovative }
+		}
+	}
+	c:SIN ?= {
+		create_character = {
+			first_name = aoe_ruler_SIN_first
+			last_name = aoe_ruler_SIN_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { persistent }
+		}
+	}
+	c:SKH ?= {
+		create_character = {
+			first_name = aoe_ruler_SKH_first
+			last_name = aoe_ruler_SKH_last
+			historical = yes
+			ruler = yes
+			birth_date = 1666.12.22
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { brave }
+		}
+	}
+	c:SLW ?= {
+		create_character = {
+			first_name = aoe_ruler_SLW_first
+			last_name = aoe_ruler_SLW_last
+			historical = yes
+			ruler = yes
+			birth_date = 1672.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { tactful }
+		}
+	}
+	c:SPA ?= {
+		create_character = {
+			first_name = aoe_ruler_SPA_first
+			last_name = aoe_ruler_SPA_last
+			historical = yes
+			ruler = yes
+			birth_date = 1661.11.6
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant sickly }
+		}
+	}
+	c:SUD ?= {
+		create_character = {
+			first_name = aoe_ruler_SUD_first
+			last_name = aoe_ruler_SUD_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:SUL ?= {
+		create_character = {
+			first_name = aoe_ruler_SUL_first
+			last_name = aoe_ruler_SUL_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:SVY ?= {
+		create_character = {
+			first_name = aoe_ruler_SVY_first
+			last_name = aoe_ruler_SVY_last
+			historical = yes
+			ruler = yes
+			birth_date = 1666.5.14
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:SWE ?= {
+		create_character = {
+			first_name = aoe_ruler_SWE_first
+			last_name = aoe_ruler_SWE_last
+			historical = yes
+			ruler = yes
+			birth_date = 1682.6.17
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:SWI ?= {
+		create_character = {
+			first_name = aoe_ruler_SWI_first
+			last_name = aoe_ruler_SWI_last
+			historical = yes
+			ruler = yes
+			birth_date = 1626.1.1
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = { tactful }
+		}
+	}
+	c:THC ?= {
+		create_character = {
+			first_name = aoe_ruler_THC_first
+			last_name = aoe_ruler_THC_last
+			historical = yes
+			ruler = yes
+			birth_date = 1636.1.1
+			culture = cu:british
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { honorable }
+		}
+	}
+	c:TIB ?= {
+		create_character = {
+			first_name = aoe_ruler_TIB_first
+			last_name = aoe_ruler_TIB_last
+			historical = yes
+			ruler = yes
+			culture = cu:oirat
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { ambitious }
+		}
+	}
+	c:TKG ?= {
+		create_character = {
+			first_name = aoe_ruler_TKG_first
+			last_name = aoe_ruler_TKG_last
+			historical = yes
+			ruler = yes
+			birth_date = 1646.2.23
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { pious }
+		}
+	}
+	c:TKL ?= {
+		create_character = {
+			first_name = aoe_ruler_TKL_first
+			last_name = aoe_ruler_TKL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1637.9.22
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { persistent }
+		}
+	}
+	c:TOS ?= {
+		create_character = {
+			first_name = aoe_ruler_TOS_first
+			last_name = aoe_ruler_TOS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1641.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:TRA ?= {
+		create_character = {
+			first_name = aoe_ruler_TRA_first
+			last_name = aoe_ruler_TRA_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:TRH ?= {
+		create_character = {
+			first_name = aoe_ruler_TRH_first
+			last_name = aoe_ruler_TRH_last
+			historical = yes
+			ruler = yes
+			birth_date = 1633.1.1
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:TRK ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = { brave }
+		}
+	}
+	c:TRP ?= {
+		create_character = {
+			first_name = aoe_ruler_TRP_first
+			last_name = aoe_ruler_TRP_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:TRR ?= {
+		create_character = {
+			first_name = aoe_ruler_TRR_first
+			last_name = aoe_ruler_TRR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1634.1.13
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { pious }
+		}
+	}
+	c:TRZ ?= {
+		create_character = {
+			first_name = aoe_ruler_TRZ_first
+			last_name = aoe_ruler_TRZ_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:TUR ?= {
+		create_character = {
+			first_name = aoe_ruler_TUR_first
+			last_name = aoe_ruler_TUR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1664.2.6
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { brave }
+		}
+	}
+	c:TUS ?= {
+		create_character = {
+			first_name = aoe_ruler_TUS_first
+			last_name = aoe_ruler_TUS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1642.8.14
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { bigoted }
+		}
+	}
+	c:ULM ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { meticulous }
+		}
+	}
+	c:VEN ?= {
+		create_character = {
+			first_name = aoe_ruler_VEN_first
+			last_name = aoe_ruler_VEN_last
+			historical = yes
+			ruler = yes
+			birth_date = 1630.3.28
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = { tactful }
+		}
+	}
+	c:VNS ?= {
+		create_character = {
+			first_name = aoe_ruler_VNS_first
+			last_name = aoe_ruler_VNS_last
+			historical = yes
+			ruler = yes
+			birth_date = 1643.1.1
+			culture = cu:spanish
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { cautious }
+		}
+	}
+	c:VOP ?= {
+		create_character = {
+			first_name = aoe_ruler_VOP_first
+			last_name = aoe_ruler_VOP_last
+			historical = yes
+			ruler = yes
+			birth_date = 1636.1.1
+			culture = cu:spanish
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { brave }
+		}
+	}
+	c:WAL ?= {
+		create_character = {
+			first_name = aoe_ruler_WAL_first
+			last_name = aoe_ruler_WAL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1654.8.15
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { aesthete }
+		}
+	}
+	c:WEI ?= {
+		create_character = {
+			first_name = aoe_ruler_WEI_first
+			last_name = aoe_ruler_WEI_last
+			historical = yes
+			ruler = yes
+			birth_date = 1662.10.19
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { imperious }
+		}
+	}
+	c:WRI ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:WRL ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+	c:WUL ?= {
+		create_character = {
+			first_name = aoe_ruler_WUL_first
+			last_name = aoe_ruler_WUL_last
+			historical = yes
+			ruler = yes
+			birth_date = 1652.2.13
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = { cautious }
+		}
+	}
+	c:WUR ?= {
+		create_character = {
+			first_name = aoe_ruler_WUR_first
+			last_name = aoe_ruler_WUR_last
+			historical = yes
+			ruler = yes
+			birth_date = 1676.9.18
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { hedonist }
+		}
+	}
+	c:XIN ?= {
+		create_character = {
+			first_name = aoe_ruler_XIN_first
+			last_name = aoe_ruler_XIN_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { compliant }
+		}
+	}
+	c:YZW ?= {
+		create_character = {
+			first_name = aoe_ruler_YZW_first
+			last_name = aoe_ruler_YZW_last
+			historical = yes
+			ruler = yes
+			birth_date = 1663.11.27
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { hedonist }
+		}
+	}
+	c:ZAN ?= {
+		create_character = {
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { cautious }
+		}
+	}
+	c:ZZH ?= {
+		create_character = {
+			first_name = aoe_ruler_ZZH_first
+			last_name = aoe_ruler_ZZH_last
+			historical = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = { direct }
+		}
+	}
+}

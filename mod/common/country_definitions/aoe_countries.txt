@@ -277,15 +277,6 @@ BNG = {
 	capital = STATE_WEST_BENGAL
 }
 
-BOR = {
-	color = { 20 50 210 }
-	country_type = recognized
-	tier = empire
-	cultures = { french french_canadian breton }
-	religion = catholic
-	capital = STATE_ILE_DE_FRANCE
-}
-
 BRA = {
 	color = { 116 92 39 }
 	country_type = recognized
@@ -293,6 +284,15 @@ BRA = {
 	cultures = { north_german }
 	religion = protestant
 	capital = STATE_HANNOVER
+}
+
+BRN = {
+	color = { 47 15 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }
+	religion = protestant
+	capital = STATE_BRANDENBURG
 }
 
 BRR = {
@@ -565,15 +565,6 @@ EIC = {
 	capital = STATE_KOLKATA
 }
 
-ENL = {
-	color = { 195 0 0 }
-	country_type = recognized
-	tier = empire
-	cultures = { british welsh yankee }
-	religion = protestant
-	capital = STATE_SOUTH_EAST_ENGLAND
-}
-
 ETH = {
 	color = { 56 120 191 }
 	country_type = unrecognized
@@ -581,6 +572,15 @@ ETH = {
 	cultures = { ethiopian }
 	religion = oriental_orthodox
 	capital = STATE_OROMIA
+}
+
+FRA = {
+	color = { 20 50 210 }
+	country_type = recognized
+	tier = empire
+	cultures = { french french_canadian breton }
+	religion = catholic
+	capital = STATE_ILE_DE_FRANCE
 }
 
 FRM = {
@@ -608,6 +608,15 @@ GAZ = {
 	cultures = { bantu }
 	religion = animist
 	capital = STATE_GAZA
+}
+
+GBR = {
+	color = { 195 0 0 }
+	country_type = recognized
+	tier = empire
+	cultures = { british welsh yankee }
+	religion = protestant
+	capital = STATE_SOUTH_EAST_ENGLAND
 }
 
 GBU = {
@@ -932,15 +941,6 @@ KOR = {
 	cultures = { korean }
 	religion = mahayana
 	capital = STATE_HANSEONG
-}
-
-KOS = {
-	color = { 140 140 140 }
-	country_type = recognized
-	tier = principality
-	cultures = { cossack ukrainian }
-	religion = orthodox
-	capital = STATE_VOLYN
 }
 
 KRN = {
@@ -2122,6 +2122,15 @@ PER = {
 	capital = STATE_ISFAHAN
 }
 
+PLC = {
+	color = { 222 107 165 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish lithuanian }
+	religion = catholic
+	capital = STATE_WEST_GALICIA
+}
+
 PLM = {
 	color = { 232 232 158 }
 	country_type = unrecognized
@@ -2161,10 +2170,10 @@ PRK = {
 PRU = {
 	color = { 0 49 83 }
 	country_type = recognized
-	tier = kingdom
+	tier = principality
 	cultures = { north_german }
 	religion = protestant
-	capital = STATE_BRANDENBURG
+	capital = STATE_OSTPREUSSEN
 }
 
 PTK = {
@@ -2230,6 +2239,15 @@ RTP = {
 	capital = STATE_NAGPUR
 }
 
+RUS = {
+	color = { 119 181 88 }
+	country_type = recognized
+	tier = empire
+	cultures = { russian cossack }
+	religion = orthodox
+	capital = STATE_MOSKVA
+}
+
 SAA = {
 	color = { 0 32 159 }
 	country_type = recognized
@@ -2257,6 +2275,15 @@ SAT = {
 	capital = STATE_KYUSHU
 }
 
+SAX = {
+	color = { 155 147 180 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { north_german }
+	religion = protestant
+	capital = STATE_SACHSEN
+}
+
 SBP = {
 	color = { 116 207 75 }
 	country_type = unrecognized
@@ -2264,6 +2291,15 @@ SBP = {
 	cultures = { telegu asian_minor }
 	religion = hindu
 	capital = STATE_ORISSA
+}
+
+SCO = {
+	color = { 0 70 180 }
+	country_type = recognized
+	tier = principality
+	cultures = { scottish }
+	religion = protestant
+	capital = STATE_LOWLANDS
 }
 
 SEG = {
@@ -2374,15 +2410,6 @@ SPA = {
 	capital = STATE_CASTILLA_LA_NUEVA
 }
 
-SPL = {
-	color = { 222 107 165 }
-	country_type = recognized
-	tier = kingdom
-	cultures = { north_german south_german }
-	religion = protestant
-	capital = STATE_SACHSEN
-}
-
 SUD = {
 	color = { 121 175 235 }
 	country_type = unrecognized
@@ -2462,15 +2489,6 @@ TKL = {
 	cultures = { north_german }
 	religion = catholic
 	capital = STATE_WESER_EMS
-}
-
-TOR = {
-	color = { 119 181 88 }
-	country_type = recognized
-	tier = empire
-	cultures = { russian cossack }
-	religion = orthodox
-	capital = STATE_MOSKVA
 }
 
 TOS = {
