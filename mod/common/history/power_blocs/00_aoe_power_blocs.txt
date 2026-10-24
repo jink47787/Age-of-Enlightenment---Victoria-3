@@ -1,0 +1,93 @@
+﻿POWER_BLOCS = {
+
+	c:FRA ?= {
+		create_power_bloc = {
+			name = PACTE_DE_FAMILIE
+	
+			map_color = { 165 185 240 }
+	
+			founding_date = 1638.1.1 # Ascension of Louis XIV
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+	
+			# subjects are automatically part of the bloc
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}
+	
+	c:AUS ?= {
+		create_power_bloc = {
+			name = HABSBURG_MONARCHY
+	
+			map_color = { 219 211 157 }
+	
+			founding_date = 1556.10.25 # Charles V abdication date
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+	
+	
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}
+	
+	c:SWE ?= {
+		create_power_bloc = {
+			name = SVENSKA_RIKET
+	
+			map_color = { 0 106 167 }
+	
+			founding_date = 1611.1.1 # Ascension of Gustavus Adolphus
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+	
+			# subjects are automatically part of the bloc
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}
+
+	# America gets no power bloc because it's 1836
+
+	## Ottomans: "Exhalted State", Devlet-i 'Aliye. Using an irregular character for ', ʿ, in loc.
+	#c:TUR ?= {
+	#	create_power_bloc = {
+	#		name = DEVLET_I__ALIYE
+	#
+	#		map_color = { 170 206 162 }
+	#
+	#		founding_date = 1453.5.29
+	#		identity = identity_sovereign_empire
+	#		principle = principle_vassalization_1
+	#
+	#		member = c:JAB
+	#	}
+	#	if = {
+	#		limit = {
+	#			has_dlc_feature = power_bloc_features
+	#		}
+	#		power_bloc = {
+	#			add_principle = principle_external_trade_1
+	#		}
+	#	}
+	#}
+}
