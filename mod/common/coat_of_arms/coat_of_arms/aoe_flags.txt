@@ -115,7 +115,26 @@ aoe_BNG_dominion = { textured_emblem = { texture = "aoe/BNG_dominion.tga" } }
 aoe_BRA_monarchy = { textured_emblem = { texture = "aoe/BRA_monarchy.tga" } }
 aoe_BRA_dominion = { textured_emblem = { texture = "aoe/BRA_dominion.tga" } }
 aoe_BRN = { textured_emblem = { texture = "aoe/BRN.tga" } }
-aoe_BRN_monarchy = { textured_emblem = { texture = "aoe/BRN_monarchy.tga" } }
+aoe_BRN_monarchy = { # Brandenburg - Crowned & attributes for a Kingdom (so minus the inescutcheon)
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_crowned_wide_brandenburg.dds"
+		color1 = color2
+		color2 = color3
+		color3 = "white"
+		instance = { position = { 0.5 0.51 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_bones_trefly.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.51 } scale = { 1.0 1.0 } }
+	}
+}
 aoe_BRN_republic = { textured_emblem = { texture = "aoe/BRN_republic.tga" } }
 aoe_BRN_dominion = { textured_emblem = { texture = "aoe/BRN_dominion.tga" } }
 aoe_BRR = { textured_emblem = { texture = "aoe/BRR.tga" } }
@@ -245,8 +264,103 @@ aoe_FCA = { textured_emblem = { texture = "aoe/FCA.tga" } }
 aoe_FCA_monarchy = { textured_emblem = { texture = "aoe/FCA_monarchy.tga" } }
 aoe_FCA_republic = { textured_emblem = { texture = "aoe/FCA_republic.tga" } }
 aoe_FCA_dominion = { textured_emblem = { texture = "aoe/FCA_dominion.tga" } }
-aoe_FRA = { textured_emblem = { texture = "aoe/FRA.tga" } }
-aoe_FRA_monarchy = { textured_emblem = { texture = "aoe/FRA_monarchy.tga" } }
+aoe_FRA = {# France - White semy, greater coa, cherubs - Absolute monarchy 17th-18th c.
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = hsv360 	{	42	80	70	}
+	color3 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_fleur_de_lis.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.10 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.10 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.10 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 1.00 } scale = { 0.24 0.24 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_france_absolute.dds"	# TODO improve cherub colour	
+	}		
+}
+aoe_FRA_monarchy = {# France - White semy, greater coa, cherubs - Absolute monarchy 17th-18th c.
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = hsv360 	{	42	80	70	}
+	color3 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_fleur_de_lis.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.10 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.10 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.10 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 1.00 } scale = { 0.24 0.24 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_france_absolute.dds"	# TODO improve cherub colour
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
 aoe_FRA_republic = { textured_emblem = { texture = "aoe/FRA_republic.tga" } }
 aoe_FRA_dominion = { textured_emblem = { texture = "aoe/FRA_dominion.tga" } }
 aoe_FRM = { textured_emblem = { texture = "aoe/FRM.tga" } }
@@ -313,10 +427,74 @@ aoe_HAW_republic = { textured_emblem = { texture = "aoe/HAW_republic.tga" } }
 aoe_HAW_dominion = { textured_emblem = { texture = "aoe/HAW_dominion.tga" } }
 aoe_HES_monarchy = { textured_emblem = { texture = "aoe/HES_monarchy.tga" } }
 aoe_HES_dominion = { textured_emblem = { texture = "aoe/HES_dominion.tga" } }
-aoe_HET = { textured_emblem = { texture = "aoe/HET.tga" } }
-aoe_HET_monarchy = { textured_emblem = { texture = "aoe/HET_monarchy.tga" } }
-aoe_HET_republic = { textured_emblem = { texture = "aoe/HET_republic.tga" } }
-aoe_HET_dominion = { textured_emblem = { texture = "aoe/HET_dominion.tga" } }
+aoe_HET = { # Cossack Hetmanate
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }				
+	}
+	
+	textured_emblem = {
+		texture = "te_border_het.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
+	}
+}
+aoe_HET_monarchy = { # Cossack Hetmanate
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.75 0.75  } }				
+	}
+	
+	textured_emblem = {
+		texture = "te_border_het.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
+	}
+}
+aoe_HET_republic = { # Cossack Hetmanate
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }				
+	}
+	
+	textured_emblem = {
+		texture = "te_border_het.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
+	}
+}
+aoe_HET_dominion = { # Cossack Hetmanate
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle_border_mississippi_09.dds"
+		color1 = hsv360 	{	32	70	60	}
+		color2 = "yellow"
+		color3 = hsv360 	{	42	80	70	}
+		instance = { position = { 0.42 0.5 } scale = { 0.65 0.65 } }				
+	}
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.42 0.5 } scale = { 0.6 0.6 } }				
+	}
+	
+	textured_emblem = {
+		texture = "te_border_het.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
+	}
+}
 aoe_HOL = { textured_emblem = { texture = "aoe/HOL.tga" } }
 aoe_HOL_monarchy = { textured_emblem = { texture = "aoe/HOL_monarchy.tga" } }
 aoe_HOL_dominion = { textured_emblem = { texture = "aoe/HOL_dominion.tga" } }
@@ -391,10 +569,6 @@ aoe_KON = { textured_emblem = { texture = "aoe/KON.tga" } }
 aoe_KON_monarchy = { textured_emblem = { texture = "aoe/KON_monarchy.tga" } }
 aoe_KON_republic = { textured_emblem = { texture = "aoe/KON_republic.tga" } }
 aoe_KON_dominion = { textured_emblem = { texture = "aoe/KON_dominion.tga" } }
-aoe_KOR = { textured_emblem = { texture = "aoe/KOR.tga" } }
-aoe_KOR_monarchy = { textured_emblem = { texture = "aoe/KOR_monarchy.tga" } }
-aoe_KOR_republic = { textured_emblem = { texture = "aoe/KOR_republic.tga" } }
-aoe_KOR_dominion = { textured_emblem = { texture = "aoe/KOR_dominion.tga" } }
 aoe_KRN = { textured_emblem = { texture = "aoe/KRN.tga" } }
 aoe_KRN_monarchy = { textured_emblem = { texture = "aoe/KRN_monarchy.tga" } }
 aoe_KRN_republic = { textured_emblem = { texture = "aoe/KRN_republic.tga" } }
@@ -504,10 +678,6 @@ aoe_MNZ_republic = { textured_emblem = { texture = "aoe/MNZ_republic.tga" } }
 aoe_MNZ_dominion = { textured_emblem = { texture = "aoe/MNZ_dominion.tga" } }
 aoe_MOD_monarchy = { textured_emblem = { texture = "aoe/MOD_monarchy.tga" } }
 aoe_MOD_dominion = { textured_emblem = { texture = "aoe/MOD_dominion.tga" } }
-aoe_MOL = { textured_emblem = { texture = "aoe/MOL.tga" } }
-aoe_MOL_monarchy = { textured_emblem = { texture = "aoe/MOL_monarchy.tga" } }
-aoe_MOL_republic = { textured_emblem = { texture = "aoe/MOL_republic.tga" } }
-aoe_MOL_dominion = { textured_emblem = { texture = "aoe/MOL_dominion.tga" } }
 aoe_MOR = { textured_emblem = { texture = "aoe/MOR.tga" } }
 aoe_MOR_monarchy = { textured_emblem = { texture = "aoe/MOR_monarchy.tga" } }
 aoe_MOR_republic = { textured_emblem = { texture = "aoe/MOR_republic.tga" } }
@@ -517,7 +687,46 @@ aoe_MSK_monarchy = { textured_emblem = { texture = "aoe/MSK_monarchy.tga" } }
 aoe_MSK_republic = { textured_emblem = { texture = "aoe/MSK_republic.tga" } }
 aoe_MSK_dominion = { textured_emblem = { texture = "aoe/MSK_dominion.tga" } }
 aoe_MUG = { textured_emblem = { texture = "aoe/MUG.tga" } }
-aoe_MUG_monarchy = { textured_emblem = { texture = "aoe/MUG_monarchy.tga" } }
+aoe_MUG_monarchy = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.375 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.305 } scale = { 0.06 0.06 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_lion_turco_persian.dds"
+		color1 = color3
+		color2 = color2
+		color3 = "green"
+		instance = { position = { 0.5 0.58 } scale = { 0.9 0.9 } }			
+	}
+	colored_emblem = {
+		texture = "ce_border_thin.dds"
+		color1 = "red"
+		instance = { position = { 0.5 0.50 } scale = { 1.0 1.0 } }			
+	}
+}
+
 aoe_MUG_republic = { textured_emblem = { texture = "aoe/MUG_republic.tga" } }
 aoe_MUG_dominion = { textured_emblem = { texture = "aoe/MUG_dominion.tga" } }
 aoe_MUL = { textured_emblem = { texture = "aoe/MUL.tga" } }
@@ -1421,11 +1630,51 @@ aoe_PBZ_monarchy = { textured_emblem = { texture = "aoe/PBZ_monarchy.tga" } }
 aoe_PBZ_republic = { textured_emblem = { texture = "aoe/PBZ_republic.tga" } }
 aoe_PBZ_dominion = { textured_emblem = { texture = "aoe/PBZ_dominion.tga" } }
 aoe_PER = { textured_emblem = { texture = "aoe/PER.tga" } }
-aoe_PER_monarchy = { textured_emblem = { texture = "aoe/PER_monarchy.tga" } }
+aoe_PER_monarchy = { # Persia
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_persia.dds" # TODO
+		color1 = color2
+		color2 = hsv360 	{	42	70	90	}
+		color3 = "white"
+		instance = { position = { 0.49 0.48 } scale = { 0.95 0.95 } }
+	}
+}
 aoe_PER_republic = { textured_emblem = { texture = "aoe/PER_republic.tga" } }
 aoe_PER_dominion = { textured_emblem = { texture = "aoe/PER_dominion.tga" } }
-aoe_PLC = { textured_emblem = { texture = "aoe/PLC.tga" } }
-aoe_PLC_monarchy = { textured_emblem = { texture = "aoe/PLC_monarchy.tga" } }
+aoe_PLC = { # Poland Lithuania - Tricolor & greater arms
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_poland_lithuania.dds"
+		instance = { position = { 0.42 0.5 } scale = { 0.95 0.95 } }
+	}
+}
+aoe_PLC_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_poland_lithuania.dds"
+		instance = { position = { 0.42 0.5 } scale = { 0.95 0.95 } }
+	}
+}
 aoe_PLC_republic = { textured_emblem = { texture = "aoe/PLC_republic.tga" } }
 aoe_PLC_dominion = { textured_emblem = { texture = "aoe/PLC_dominion.tga" } }
 aoe_PLM = { textured_emblem = { texture = "aoe/PLM.tga" } }
@@ -1455,10 +1704,148 @@ aoe_PYG = { textured_emblem = { texture = "aoe/PYG.tga" } }
 aoe_PYG_monarchy = { textured_emblem = { texture = "aoe/PYG_monarchy.tga" } }
 aoe_PYG_republic = { textured_emblem = { texture = "aoe/PYG_republic.tga" } }
 aoe_PYG_dominion = { textured_emblem = { texture = "aoe/PYG_dominion.tga" } }
-aoe_QNG = { textured_emblem = { texture = "aoe/QNG.tga" } }
-aoe_QNG_monarchy = { textured_emblem = { texture = "aoe/QNG_monarchy.tga" } }
-aoe_QNG_republic = { textured_emblem = { texture = "aoe/QNG_republic.tga" } }
-aoe_QNG_dominion = { textured_emblem = { texture = "aoe/QNG_dominion.tga" } }
+aoe_QNG = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.16 0.16 } position = { 0.10 0.155 } }
+	}
+	colored_emblem = {
+		texture = "ce_clouds_china_02.dds"
+		color1 = "azure"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.59 0.45 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_dragon_china.dds"
+		color1 = "blue"
+		color2 = "white"
+		color3 = "blue_light"
+		instance = { scale = { 1.4 1.4 } position = { 0.5 0.49 } }
+	}
+	colored_emblem = {
+		texture = "ce_clouds_china_01.dds"
+		color1 = "azure"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.76 0.76 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_clouds_china_03.dds"
+		color1 = "white"
+		color2 = "blue"
+		color3 = "azure"
+		instance = { scale = { 0.4 0.4 } position = { 0.39 0.81 } }
+	}
+}
+aoe_QNG_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.16 0.16 } position = { 0.10 0.155 } }
+	}
+	colored_emblem = {
+		texture = "ce_clouds_china_02.dds"
+		color1 = "azure"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.59 0.45 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_dragon_china.dds"
+		color1 = "blue"
+		color2 = "white"
+		color3 = "blue_light"
+		instance = { scale = { 1.4 1.4 } position = { 0.5 0.49 } }
+	}
+	colored_emblem = {
+		texture = "ce_clouds_china_01.dds"
+		color1 = "azure"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.76 0.76 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_clouds_china_03.dds"
+		color1 = "white"
+		color2 = "blue"
+		color3 = "azure"
+		instance = { scale = { 0.4 0.4 } position = { 0.39 0.81 } }
+	}
+}
+aoe_QNG_republic = { # Han Imperial China
+
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 1.0 1.0 } position = { 1 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+aoe_QNG_dominion = { # Han Imperial China
+
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 1.0 1.0 } position = { 1 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
 aoe_QSM = { textured_emblem = { texture = "aoe/QSM.tga" } }
 aoe_QSM_monarchy = { textured_emblem = { texture = "aoe/QSM_monarchy.tga" } }
 aoe_QSM_republic = { textured_emblem = { texture = "aoe/QSM_republic.tga" } }
@@ -1476,7 +1863,21 @@ aoe_RTP_monarchy = { textured_emblem = { texture = "aoe/RTP_monarchy.tga" } }
 aoe_RTP_republic = { textured_emblem = { texture = "aoe/RTP_republic.tga" } }
 aoe_RTP_dominion = { textured_emblem = { texture = "aoe/RTP_dominion.tga" } }
 aoe_RUS = { textured_emblem = { texture = "aoe/RUS.tga" } }
-aoe_RUS_monarchy = { textured_emblem = { texture = "aoe/RUS_monarchy.tga" } }
+aoe_RUS_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "blue"
+		color2 = "red"
+	}
+	
+	textured_emblem = {
+		texture = "te_rus_tsar_banner.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+	}
+}
 aoe_RUS_republic = { textured_emblem = { texture = "aoe/RUS_republic.tga" } }
 aoe_RUS_dominion = { textured_emblem = { texture = "aoe/RUS_dominion.tga" } }
 aoe_SAA = { textured_emblem = { texture = "aoe/SAA.tga" } }
@@ -1498,10 +1899,26 @@ aoe_SBP = { textured_emblem = { texture = "aoe/SBP.tga" } }
 aoe_SBP_monarchy = { textured_emblem = { texture = "aoe/SBP_monarchy.tga" } }
 aoe_SBP_republic = { textured_emblem = { texture = "aoe/SBP_republic.tga" } }
 aoe_SBP_dominion = { textured_emblem = { texture = "aoe/SBP_dominion.tga" } }
-aoe_SCO = { textured_emblem = { texture = "aoe/SCO.tga" } }
-aoe_SCO_monarchy = { textured_emblem = { texture = "aoe/SCO_monarchy.tga" } }
-aoe_SCO_republic = { textured_emblem = { texture = "aoe/SCO_republic.tga" } }
-aoe_SCO_dominion = { textured_emblem = { texture = "aoe/SCO_dominion.tga" } }
+aoe_SCO = {
+    sub = {
+        parent = "sub_SCO"
+    }
+}
+aoe_SCO_monarchy = {
+    sub = {
+        parent = "sub_SCO"
+    }
+}
+aoe_SCO_republic = {
+    sub = {
+        parent = "sub_SCO"
+    }
+}
+aoe_SCO_dominion = {
+    sub = {
+        parent = "sub_SCO"
+    }
+}
 aoe_SEG = { textured_emblem = { texture = "aoe/SEG.tga" } }
 aoe_SEG_monarchy = { textured_emblem = { texture = "aoe/SEG_monarchy.tga" } }
 aoe_SEG_republic = { textured_emblem = { texture = "aoe/SEG_republic.tga" } }
@@ -1538,10 +1955,40 @@ aoe_SLW = { textured_emblem = { texture = "aoe/SLW.tga" } }
 aoe_SLW_monarchy = { textured_emblem = { texture = "aoe/SLW_monarchy.tga" } }
 aoe_SLW_republic = { textured_emblem = { texture = "aoe/SLW_republic.tga" } }
 aoe_SLW_dominion = { textured_emblem = { texture = "aoe/SLW_dominion.tga" } }
-aoe_SPA = { textured_emblem = { texture = "aoe/SPA.tga" } }
-aoe_SPA_monarchy = { textured_emblem = { texture = "aoe/SPA_monarchy.tga" } }
+aoe_SPA = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+aoe_SPA_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
 aoe_SPA_republic = { textured_emblem = { texture = "aoe/SPA_republic.tga" } }
-aoe_SPA_dominion = { textured_emblem = { texture = "aoe/SPA_dominion.tga" } }
+aoe_SPA_dominion = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
 aoe_SUD = { textured_emblem = { texture = "aoe/SUD.tga" } }
 aoe_SUD_monarchy = { textured_emblem = { texture = "aoe/SUD_monarchy.tga" } }
 aoe_SUD_republic = { textured_emblem = { texture = "aoe/SUD_republic.tga" } }
@@ -1604,7 +2051,20 @@ aoe_TRZ = { textured_emblem = { texture = "aoe/TRZ.tga" } }
 aoe_TRZ_monarchy = { textured_emblem = { texture = "aoe/TRZ_monarchy.tga" } }
 aoe_TRZ_republic = { textured_emblem = { texture = "aoe/TRZ_republic.tga" } }
 aoe_TRZ_dominion = { textured_emblem = { texture = "aoe/TRZ_dominion.tga" } }
-aoe_TUR_monarchy = { textured_emblem = { texture = "aoe/TUR_monarchy.tga" } }
+aoe_TUR_monarchy = { # Ottomans (Later variant)
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	358 	85	55	}
+	color2 = "yellow_light"
+	color3 = hsv360 	{	90	80	35	} 
+	
+	colored_emblem = {
+		texture = "ce_crescent_triple_roundel.dds"
+		color1 = color3
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }				
+	}
+}
 aoe_TUR_republic = { textured_emblem = { texture = "aoe/TUR_republic.tga" } }
 aoe_TUR_dominion = { textured_emblem = { texture = "aoe/TUR_dominion.tga" } }
 aoe_TUS = { textured_emblem = { texture = "aoe/TUS.tga" } }
@@ -1626,10 +2086,6 @@ aoe_VOP = { textured_emblem = { texture = "aoe/VOP.tga" } }
 aoe_VOP_monarchy = { textured_emblem = { texture = "aoe/VOP_monarchy.tga" } }
 aoe_VOP_republic = { textured_emblem = { texture = "aoe/VOP_republic.tga" } }
 aoe_VOP_dominion = { textured_emblem = { texture = "aoe/VOP_dominion.tga" } }
-aoe_WAL = { textured_emblem = { texture = "aoe/WAL.tga" } }
-aoe_WAL_monarchy = { textured_emblem = { texture = "aoe/WAL_monarchy.tga" } }
-aoe_WAL_republic = { textured_emblem = { texture = "aoe/WAL_republic.tga" } }
-aoe_WAL_dominion = { textured_emblem = { texture = "aoe/WAL_dominion.tga" } }
 aoe_WEI_monarchy = { textured_emblem = { texture = "aoe/WEI_monarchy.tga" } }
 aoe_WEI_dominion = { textured_emblem = { texture = "aoe/WEI_dominion.tga" } }
 aoe_WRI = { textured_emblem = { texture = "aoe/WRI.tga" } }

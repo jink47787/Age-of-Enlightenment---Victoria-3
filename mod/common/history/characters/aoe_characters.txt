@@ -1751,7 +1751,7 @@
 			traits = { pious }
 		}
 	}
-	c:PLC ?= {
+	c:SAX ?= {
 		create_character = {
 			first_name = aoe_ruler_PLC_first
 			last_name = aoe_ruler_PLC_last
