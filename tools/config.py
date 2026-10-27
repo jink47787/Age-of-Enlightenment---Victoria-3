@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "sources"
 BUILD = ROOT / "build"
 REDRAW = BUILD / "redraw"          # redrawn provinces (redraw_provinces.py)
+ASSETS = ROOT / "assets"           # hand-made inputs copied into the mod (main menu image)
 # Built straight into the game's mod folder.
 MOD = Path(os.environ.get("MOD_DIR", Path.home() / "Documents" / "Paradox Interactive" / "Victoria 3" / "mod"
                           / "Age of Enlightenment"))

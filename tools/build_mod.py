@@ -3,13 +3,16 @@
     python build_mod.py              run every step
     python build_mod.py --skip-map   reuse build/province_map.csv and build/redraw/ (alignment and redraw)
 
-Steps: province alignment -> province redraw -> state regions -> history -> flags -> static files.
+Steps: province alignment -> province redraw -> state regions -> history -> flags -> static files -> main menu.
 """
 import json
 import shutil
 import sys
 
+from PIL import Image
+
 import config
+import pdx
 import build_flags
 import build_history
 import build_province_map
@@ -21,7 +24,7 @@ MOD_VERSION = "0.1"
 GAME_VERSION = "1.13.*"
 START_DATE = "1700.1.1"
 END_DATE = "1821.12.31"
-GENERATED = [".metadata", "common", "gfx", "localization", "map_data"]  # top-level folders the build writes
+GENERATED = [".metadata", "common", "gfx", "gui", "localization", "map_data"]  # top-level folders the build writes
 
 # Vanilla folders the mod replaces wholesale: everything that sets up the
 # 1836 world for specific countries and states.
@@ -72,6 +75,23 @@ GLOBAL_HISTORY = """GLOBAL = {
 """
 
 
+# Vanilla's main menu plays the selected theme's video; the mod shows a still image instead.
+MENU_IMAGE = "gfx/interface/illustrations/frontend/aoe_main_menu.png"
+MENU_VIDEO = """		video_icon = {
+			video = "[FrontEndMainView.GetMainMenuImage]"
+			size = { 100% 100% }
+			alwaystransparent = yes
+			loop = yes
+		}
+"""
+MENU_STILL = f"""		icon = {{
+			texture = "{MENU_IMAGE}"
+			size = {{ 100% 100% }}
+			alwaystransparent = yes
+		}}
+"""
+
+
 def write(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8-sig")
@@ -96,6 +116,23 @@ def write_static_files():
     write(mod / "common" / "history" / "global" / "aoe_global.txt", GLOBAL_HISTORY)
 
 
+def write_main_menu():
+    # Crop to 16:9 so the full-screen frame doesn't stretch it, then fill the 1920x1080 frame.
+    img = Image.open(config.ASSETS / "main_menu_background.jpg").convert("RGB")
+    w, h = img.size
+    cw, ch = min(w, round(h * 16 / 9)), min(h, round(w * 9 / 16))
+    left, top = (w - cw) // 2, (h - ch) // 2
+    img = img.crop((left, top, left + cw, top + ch)).resize((1920, 1080), Image.LANCZOS)
+    out = config.MOD / MENU_IMAGE
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out, optimize=True)
+
+    gui = pdx.read_text(config.VIC3 / "gui" / "frontend" / "frontend_main.gui")
+    if MENU_VIDEO not in gui:
+        raise RuntimeError("main menu video block not found in vanilla frontend_main.gui; update MENU_VIDEO")
+    write(config.MOD / "gui" / "frontend" / "frontend_main.gui", gui.replace(MENU_VIDEO, MENU_STILL))
+
+
 def main():
     # Start clean so files from earlier runs can't linger. Only the folders the
     # build writes: the mod folder can hold other things, like a checkout of this repo.
@@ -111,6 +148,7 @@ def main():
     build_history.HistoryBuilder().run()
     build_flags.main()
     write_static_files()
+    write_main_menu()
     print(f"mod written to {config.MOD}")
 
 
