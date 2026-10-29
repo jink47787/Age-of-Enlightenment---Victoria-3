@@ -1419,36 +1419,6 @@ CRL = {
 	}
 }
 
-CUB = {
-	flag_definition = {
-		coa = aoe_CUB
-		subject_canton = aoe_CUB
-		allow_overlord_canton = yes
-		priority = 1
-	}
-	flag_definition = {
-		coa = aoe_CUB_monarchy
-		subject_canton = aoe_CUB_monarchy
-		allow_overlord_canton = yes
-		priority = 10
-		trigger = { coa_def_monarchy_flag_trigger = yes }
-	}
-	flag_definition = {
-		coa = aoe_CUB_republic
-		subject_canton = aoe_CUB_republic
-		allow_overlord_canton = yes
-		priority = 10
-		trigger = { coa_def_republic_flag_trigger = yes }
-	}
-	flag_definition = {
-		coa = aoe_CUB_dominion
-		subject_canton = aoe_CUB_dominion
-		allow_overlord_canton = yes
-		priority = 20
-		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
-	}
-}
-
 DAH = {
 	flag_definition = {
 		coa = aoe_DAH

@@ -517,18 +517,6 @@
 			traits = { brave }
 		}
 	}
-	c:CUB ?= {
-		create_character = {
-			first_name = aoe_ruler_CUB_first
-			last_name = aoe_ruler_CUB_last
-			historical = yes
-			ruler = yes
-			culture = cu:spanish
-			interest_group = ig_landowners
-			ideology = ideology_moderate
-			traits = { cautious }
-		}
-	}
 	c:DAH ?= {
 		create_character = {
 			first_name = aoe_ruler_DAH_first

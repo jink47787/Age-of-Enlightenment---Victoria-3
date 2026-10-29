@@ -448,15 +448,6 @@ CRL = {
 	capital = STATE_PESHAWAR
 }
 
-CUB = {
-	color = { 191 141 12 }
-	country_type = colonial
-	tier = grand_principality
-	cultures = { spanish_american spanish }
-	religion = catholic
-	capital = STATE_GREATER_ANTILLES
-}
-
 DAH = {
 	color = { 188 92 47 }
 	country_type = unrecognized

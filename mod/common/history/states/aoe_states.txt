@@ -1109,17 +1109,17 @@
 	}
 	s:STATE_CREEK_TERRITORY = {
 		create_state = {
-			country = c:CUB
-			owned_provinces = { x40F040 x56DBDA xBE8916 xC07040 xE2E34A }
-			state_type = unincorporated
-		}
-		create_state = {
 			country = c:N10
 			owned_provinces = { x14A138 x19EFC6 x20B000 x3837AA x391CFA x3D2D7D x407040 x40A911 x476DE4 x489DF2 x492B79 x4EA3CA x53C044 x6510ED x6D8A9F x7B295A x8E9218 x913125 x98A030 x98A56F x9DD556 xA496A6 xA50BE3 xA86682 xBD9F23 xC2859C xCD4C42 xCDE01B xE933F3 xEE9129 xEE9338 xFD85D7 }
 		}
 		create_state = {
 			country = c:THC
 			owned_provinces = { x13B302 x21E256 x39E367 x69FAA9 x802080 x9BEA44 xABCC5E xBDB2BA xCB1A53 xD66E1C xF0CB48 xFCECD3 }
+		}
+		create_state = {
+			country = c:VNS
+			owned_provinces = { x40F040 x56DBDA xBE8916 xC07040 xE2E34A }
+			state_type = unincorporated
 		}
 		add_homeland = cu:native_american_minor
 	}
@@ -1600,7 +1600,7 @@
 	}
 	s:STATE_FLORIDA = {
 		create_state = {
-			country = c:CUB
+			country = c:VNS
 			owned_provinces = { x0C1D7F x1714EE x23B4D0 x2E5E47 x3126CA x31C481 x3556E5 x3CDD1A x4070C0 x4407A0 x552AD8 x5B1199 x5CD014 x65ECBE x6E31DE x7BCB55 x7FA347 x807000 x88BDEA x8C16F9 x9088D5 x976584 xA03000 xAAF2AF xB06E20 xC000F0 xC60D66 xD0761D xDAE3CC xE3533E xE58A3D xE740E5 xED77FB xF0B481 xF41CC0 xFE627B }
 		}
 		add_homeland = cu:native_american_minor
@@ -1860,7 +1860,7 @@
 	}
 	s:STATE_GREATER_ANTILLES = {
 		create_state = {
-			country = c:CUB
+			country = c:VNS
 			owned_provinces = { x0DA38C x152D1C x20EFEA x30B001 x4DD008 x519343 x58C211 x61FC10 x69C041 x9957D8 xA70607 xB325C7 xB48FF1 xC3EB7D xC464AE xD810EC xDCAB5D xE70FA4 xEBE1C7 xF3F2C9 xFCDEED xFE4123 }
 			state_type = unincorporated
 		}
@@ -2063,7 +2063,7 @@
 			state_type = unincorporated
 		}
 		create_state = {
-			country = c:SPA
+			country = c:VNS
 			owned_provinces = { x1785E8 x317080 x41A862 x7252EC x877F90 x907A0C x961483 xACBDD9 xB0B001 }
 			state_type = unincorporated
 		}
@@ -5632,7 +5632,7 @@
 			state_type = unincorporated
 		}
 		create_state = {
-			country = c:SPA
+			country = c:VNS
 			owned_provinces = { x2160B9 xB07080 }
 			state_type = unincorporated
 		}

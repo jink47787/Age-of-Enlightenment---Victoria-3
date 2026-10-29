@@ -75,7 +75,6 @@
 	c:SPA ?= {
 		create_diplomatic_pact = { country = c:VNS type = colony }
 		create_diplomatic_pact = { country = c:VOP type = colony }
-		create_diplomatic_pact = { country = c:CUB type = colony }
 	}
 	c:TKG ?= {
 		create_diplomatic_pact = { country = c:SEN type = puppet }

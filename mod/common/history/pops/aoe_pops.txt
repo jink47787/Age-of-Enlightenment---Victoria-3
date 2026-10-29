@@ -1145,14 +1145,14 @@
 		}
 	}
 	s:STATE_CREEK_TERRITORY = {
-		region_state:CUB = {
-			create_pop = { culture = native_american_minor religion = animist size = 1500 }
-		}
 		region_state:N10 = {
 			create_pop = { culture = native_american_minor religion = animist size = 11000 }
 		}
 		region_state:THC = {
 			create_pop = { culture = native_american_minor religion = animist size = 2000 }
+		}
+		region_state:VNS = {
+			create_pop = { culture = native_american_minor religion = animist size = 1500 }
 		}
 	}
 	s:STATE_CRIMEA = {
@@ -1651,7 +1651,7 @@
 		}
 	}
 	s:STATE_FLORIDA = {
-		region_state:CUB = {
+		region_state:VNS = {
 			create_pop = { culture = native_american_minor religion = animist size = 12000 }
 			create_pop = { culture = spanish_american religion = catholic size = 1800 }
 		}
@@ -1885,7 +1885,7 @@
 		}
 	}
 	s:STATE_GREATER_ANTILLES = {
-		region_state:CUB = {
+		region_state:VNS = {
 			create_pop = { pop_type = slaves culture = afro_caribbean religion = catholic size = 21785 }
 			create_pop = { culture = spanish_american religion = catholic size = 21380 }
 			create_pop = { culture = afro_caribbean religion = catholic size = 6835 }
@@ -2080,7 +2080,7 @@
 			create_pop = { culture = afro_antillean religion = catholic size = 2131 }
 			create_pop = { culture = french religion = catholic size = 1751 }
 		}
-		region_state:SPA = {
+		region_state:VNS = {
 			create_pop = { culture = spanish_american religion = catholic size = 4823 }
 			create_pop = { pop_type = slaves culture = afro_caribbean religion = catholic size = 3248 }
 			create_pop = { culture = afro_caribbean religion = catholic size = 1929 }
@@ -5606,7 +5606,7 @@
 			create_pop = { culture = afro_caribbean religion = protestant size = 472 }
 			create_pop = { culture = dutch religion = protestant size = 236 }
 		}
-		region_state:SPA = {
+		region_state:VNS = {
 			create_pop = { culture = spanish_american religion = catholic size = 4092 }
 			create_pop = { culture = afro_caribbean religion = catholic size = 2876 }
 			create_pop = { pop_type = slaves culture = afro_caribbean religion = catholic size = 896 }
