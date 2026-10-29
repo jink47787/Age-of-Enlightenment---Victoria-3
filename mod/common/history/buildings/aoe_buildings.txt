@@ -274,14 +274,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:AUS" levels = 4 }
+					country = { country = "c:AUS" levels = 3 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:AUS" levels = 11 }
+					country = { country = "c:AUS" levels = 10 }
 				}
 				reserves = 1
 			}
@@ -875,7 +875,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:CRI" levels = 2 }
+					country = { country = "c:CRI" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3024,18 +3024,18 @@
 		}
 	}
 	s:STATE_OSTPREUSSEN = {
-		region_state:PRU = {
+		region_state:DPR = {
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:PRU" levels = 1 }
+					country = { country = "c:DPR" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:PRU" levels = 1 }
+					country = { country = "c:DPR" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3496,14 +3496,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:SPA" levels = 6 }
+					country = { country = "c:SPA" levels = 5 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:SPA" levels = 17 }
+					country = { country = "c:SPA" levels = 15 }
 				}
 				reserves = 1
 			}
@@ -3629,7 +3629,7 @@
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:TIB" levels = 4 }
+					country = { country = "c:TIB" levels = 1 }
 				}
 				reserves = 1
 			}
@@ -3802,14 +3802,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:TUR" levels = 9 }
+					country = { country = "c:TUR" levels = 8 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:TUR" levels = 27 }
+					country = { country = "c:TUR" levels = 24 }
 				}
 				reserves = 1
 			}
@@ -3874,14 +3874,14 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					country = { country = "c:VNS" levels = 2 }
+					country = { country = "c:VNS" levels = 1 }
 				}
 				reserves = 1
 			}
 			create_building = {
 				building = "building_barrack"
 				add_ownership = {
-					country = { country = "c:VNS" levels = 5 }
+					country = { country = "c:VNS" levels = 4 }
 				}
 				reserves = 1
 			}

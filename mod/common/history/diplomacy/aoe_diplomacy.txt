@@ -6,7 +6,7 @@
 		create_diplomatic_pact = { country = c:SIE type = crown_land }
 	}
 	c:BRN ?= {
-		create_diplomatic_pact = { country = c:PRU type = personal_union }
+		create_diplomatic_pact = { country = c:DPR type = personal_union }
 	}
 	c:DNN ?= {
 		create_diplomatic_pact = { country = c:HOL type = puppet }

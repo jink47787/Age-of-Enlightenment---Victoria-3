@@ -1692,10 +1692,10 @@ aoe_PRK = { textured_emblem = { texture = "aoe/PRK.tga" } }
 aoe_PRK_monarchy = { textured_emblem = { texture = "aoe/PRK_monarchy.tga" } }
 aoe_PRK_republic = { textured_emblem = { texture = "aoe/PRK_republic.tga" } }
 aoe_PRK_dominion = { textured_emblem = { texture = "aoe/PRK_dominion.tga" } }
-aoe_PRU = { textured_emblem = { texture = "aoe/PRU.tga" } }
-aoe_PRU_monarchy = { textured_emblem = { texture = "aoe/PRU_monarchy.tga" } }
-aoe_PRU_republic = { textured_emblem = { texture = "aoe/PRU_republic.tga" } }
-aoe_PRU_dominion = { textured_emblem = { texture = "aoe/PRU_dominion.tga" } }
+aoe_DPR = { textured_emblem = { texture = "aoe/DPR.tga" } }
+aoe_DPR_monarchy = { textured_emblem = { texture = "aoe/DPR_monarchy.tga" } }
+aoe_DPR_republic = { textured_emblem = { texture = "aoe/DPR_republic.tga" } }
+aoe_DPR_dominion = { textured_emblem = { texture = "aoe/DPR_dominion.tga" } }
 aoe_PTK = { textured_emblem = { texture = "aoe/PTK.tga" } }
 aoe_PTK_monarchy = { textured_emblem = { texture = "aoe/PTK_monarchy.tga" } }
 aoe_PTK_republic = { textured_emblem = { texture = "aoe/PTK_republic.tga" } }

@@ -975,9 +975,9 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
-	c:PRU ?= {
+	c:DPR ?= {
 		effect_starting_pop_wealth_low = yes
-		effect_starting_pop_literacy_middling = yes
+		effect_starting_pop_literacy_high = yes
 	}
 	c:PTK ?= {
 		effect_starting_pop_wealth_low = yes
