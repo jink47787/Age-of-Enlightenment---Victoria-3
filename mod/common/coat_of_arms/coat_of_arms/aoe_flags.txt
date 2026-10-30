@@ -13,7 +13,33 @@ aoe_ACH_dominion = { textured_emblem = { texture = "aoe/ACH_dominion.tga" } }
 aoe_AFG = { textured_emblem = { texture = "aoe/AFG.tga" } }
 aoe_AFG_monarchy = { textured_emblem = { texture = "aoe/AFG_monarchy.tga" } }
 aoe_AFG_republic = { textured_emblem = { texture = "aoe/AFG_republic.tga" } }
-aoe_AFG_dominion = { textured_emblem = { texture = "aoe/AFG_dominion.tga" } }
+aoe_AFG_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_AGC = { textured_emblem = { texture = "aoe/AGC.tga" } }
 aoe_AGC_monarchy = { textured_emblem = { texture = "aoe/AGC_monarchy.tga" } }
 aoe_AGC_republic = { textured_emblem = { texture = "aoe/AGC_republic.tga" } }
@@ -65,7 +91,33 @@ aoe_AUS_dominion = { textured_emblem = { texture = "aoe/AUS_dominion.tga" } }
 aoe_AWA = { textured_emblem = { texture = "aoe/AWA.tga" } }
 aoe_AWA_monarchy = { textured_emblem = { texture = "aoe/AWA_monarchy.tga" } }
 aoe_AWA_republic = { textured_emblem = { texture = "aoe/AWA_republic.tga" } }
-aoe_AWA_dominion = { textured_emblem = { texture = "aoe/AWA_dominion.tga" } }
+aoe_AWA_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_AWS = { textured_emblem = { texture = "aoe/AWS.tga" } }
 aoe_AWS_monarchy = { textured_emblem = { texture = "aoe/AWS_monarchy.tga" } }
 aoe_AWS_republic = { textured_emblem = { texture = "aoe/AWS_republic.tga" } }
@@ -83,7 +135,57 @@ aoe_BAL_monarchy = { textured_emblem = { texture = "aoe/BAL_monarchy.tga" } }
 aoe_BAL_republic = { textured_emblem = { texture = "aoe/BAL_republic.tga" } }
 aoe_BAL_dominion = { textured_emblem = { texture = "aoe/BAL_dominion.tga" } }
 aoe_BAS_dominion = { textured_emblem = { texture = "aoe/BAS_dominion.tga" } }
-aoe_BAV_monarchy = { textured_emblem = { texture = "aoe/BAV_monarchy.tga" } }
+aoe_BAV_monarchy = {
+	pattern = "pattern_lozengy_bend.dds"
+	color1 = "white"
+	color2 = "light_blue"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "black"
+		instance = { position = { 0 1 } scale = { 1.5 1 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "black"
+		instance = { position = { 1 0 } scale = { 1.5 1 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_lion_rampant.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_lion_rampant.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_shield_accolade.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.50 } scale = { 0.5 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_shield_accolade.dds"
+		color1 = color3
+		instance = { position = { 0.5 0.50 } scale = { 0.45 0.45 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_globus_cruciger_02.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.50 } scale = { 0.35 0.35 } }
+	}
+}
 aoe_BAV_republic = { textured_emblem = { texture = "aoe/BAV_republic.tga" } }
 aoe_BAV_dominion = { textured_emblem = { texture = "aoe/BAV_dominion.tga" } }
 aoe_BBG = { textured_emblem = { texture = "aoe/BBG.tga" } }
@@ -103,15 +205,93 @@ aoe_BHU_dominion = { textured_emblem = { texture = "aoe/BHU_dominion.tga" } }
 aoe_BIH = { textured_emblem = { texture = "aoe/BIH.tga" } }
 aoe_BIH_monarchy = { textured_emblem = { texture = "aoe/BIH_monarchy.tga" } }
 aoe_BIH_republic = { textured_emblem = { texture = "aoe/BIH_republic.tga" } }
-aoe_BIH_dominion = { textured_emblem = { texture = "aoe/BIH_dominion.tga" } }
+aoe_BIH_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_BIJ = { textured_emblem = { texture = "aoe/BIJ.tga" } }
 aoe_BIJ_monarchy = { textured_emblem = { texture = "aoe/BIJ_monarchy.tga" } }
 aoe_BIJ_republic = { textured_emblem = { texture = "aoe/BIJ_republic.tga" } }
-aoe_BIJ_dominion = { textured_emblem = { texture = "aoe/BIJ_dominion.tga" } }
+aoe_BIJ_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_BNG = { textured_emblem = { texture = "aoe/BNG.tga" } }
 aoe_BNG_monarchy = { textured_emblem = { texture = "aoe/BNG_monarchy.tga" } }
 aoe_BNG_republic = { textured_emblem = { texture = "aoe/BNG_republic.tga" } }
-aoe_BNG_dominion = { textured_emblem = { texture = "aoe/BNG_dominion.tga" } }
+aoe_BNG_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_BRA_monarchy = { textured_emblem = { texture = "aoe/BRA_monarchy.tga" } }
 aoe_BRA_dominion = { textured_emblem = { texture = "aoe/BRA_dominion.tga" } }
 aoe_BRN = { textured_emblem = { texture = "aoe/BRN.tga" } }
@@ -134,13 +314,52 @@ aoe_BRN_monarchy = { # Brandenburg - Crowned & attributes for a Kingdom (so minu
 		color2 = color3
 		instance = { position = { 0.5 0.51 } scale = { 1.0 1.0 } }
 	}
+	colored_emblem = {
+		texture = "ce_shield_heater_border.dds"
+		color1 = "light_blue"
+		color2 = "black"
+		instance = { position = { 0.5 0.46 } scale = { 0.35 0.35 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_scepters_flory_saltire_shield.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.46 } scale = { 0.25 0.25 } }
+	}
 }
 aoe_BRN_republic = { textured_emblem = { texture = "aoe/BRN_republic.tga" } }
 aoe_BRN_dominion = { textured_emblem = { texture = "aoe/BRN_dominion.tga" } }
 aoe_BRR = { textured_emblem = { texture = "aoe/BRR.tga" } }
 aoe_BRR_monarchy = { textured_emblem = { texture = "aoe/BRR_monarchy.tga" } }
 aoe_BRR_republic = { textured_emblem = { texture = "aoe/BRR_republic.tga" } }
-aoe_BRR_dominion = { textured_emblem = { texture = "aoe/BRR_dominion.tga" } }
+aoe_BRR_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_BRS = { textured_emblem = { texture = "aoe/BRS.tga" } }
 aoe_BRS_monarchy = { textured_emblem = { texture = "aoe/BRS_monarchy.tga" } }
 aoe_BRS_republic = { textured_emblem = { texture = "aoe/BRS_republic.tga" } }
@@ -157,8 +376,45 @@ aoe_BUK = { textured_emblem = { texture = "aoe/BUK.tga" } }
 aoe_BUK_monarchy = { textured_emblem = { texture = "aoe/BUK_monarchy.tga" } }
 aoe_BUK_republic = { textured_emblem = { texture = "aoe/BUK_republic.tga" } }
 aoe_BUK_dominion = { textured_emblem = { texture = "aoe/BUK_dominion.tga" } }
-aoe_BUN = { textured_emblem = { texture = "aoe/BUN.tga" } }
-aoe_BUN_dominion = { textured_emblem = { texture = "aoe/BUN_dominion.tga" } }
+aoe_BUN = { # Bundelkhand
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_bends_03.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }				
+	}			
+}
+aoe_BUN_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_BUR = { textured_emblem = { texture = "aoe/BUR.tga" } }
 aoe_BUR_monarchy = { textured_emblem = { texture = "aoe/BUR_monarchy.tga" } }
 aoe_BUR_republic = { textured_emblem = { texture = "aoe/BUR_republic.tga" } }
@@ -211,7 +467,33 @@ aoe_DAH_dominion = { textured_emblem = { texture = "aoe/DAH_dominion.tga" } }
 aoe_DGH = { textured_emblem = { texture = "aoe/DGH.tga" } }
 aoe_DGH_monarchy = { textured_emblem = { texture = "aoe/DGH_monarchy.tga" } }
 aoe_DGH_republic = { textured_emblem = { texture = "aoe/DGH_republic.tga" } }
-aoe_DGH_dominion = { textured_emblem = { texture = "aoe/DGH_dominion.tga" } }
+aoe_DGH_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_DJA = { textured_emblem = { texture = "aoe/DJA.tga" } }
 aoe_DJA_monarchy = { textured_emblem = { texture = "aoe/DJA_monarchy.tga" } }
 aoe_DJA_republic = { textured_emblem = { texture = "aoe/DJA_republic.tga" } }
@@ -223,13 +505,59 @@ aoe_DLM_dominion = { textured_emblem = { texture = "aoe/DLM_dominion.tga" } }
 aoe_DLT = { textured_emblem = { texture = "aoe/DLT.tga" } }
 aoe_DLT_monarchy = { textured_emblem = { texture = "aoe/DLT_monarchy.tga" } }
 aoe_DLT_republic = { textured_emblem = { texture = "aoe/DLT_republic.tga" } }
-aoe_DLT_dominion = { textured_emblem = { texture = "aoe/DLT_dominion.tga" } }
+aoe_DLT_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_DMS = { textured_emblem = { texture = "aoe/DMS.tga" } }
 aoe_DMS_monarchy = { textured_emblem = { texture = "aoe/DMS_monarchy.tga" } }
 aoe_DMS_republic = { textured_emblem = { texture = "aoe/DMS_republic.tga" } }
 aoe_DMS_dominion = { textured_emblem = { texture = "aoe/DMS_dominion.tga" } }
-aoe_DNN = { textured_emblem = { texture = "aoe/DNN.tga" } }
-aoe_DNN_monarchy = { textured_emblem = { texture = "aoe/DNN_monarchy.tga" } }
+aoe_DNN = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_denmark.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+aoe_DNN_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_denmark.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
 aoe_DNN_republic = { textured_emblem = { texture = "aoe/DNN_republic.tga" } }
 aoe_DNN_dominion = { textured_emblem = { texture = "aoe/DNN_dominion.tga" } }
 aoe_DON = { textured_emblem = { texture = "aoe/DON.tga" } }
@@ -382,10 +710,50 @@ aoe_GEL = { textured_emblem = { texture = "aoe/GEL.tga" } }
 aoe_GEL_monarchy = { textured_emblem = { texture = "aoe/GEL_monarchy.tga" } }
 aoe_GEL_republic = { textured_emblem = { texture = "aoe/GEL_republic.tga" } }
 aoe_GEL_dominion = { textured_emblem = { texture = "aoe/GEL_dominion.tga" } }
-aoe_GEN = { textured_emblem = { texture = "aoe/GEN.tga" } }
-aoe_GEN_monarchy = { textured_emblem = { texture = "aoe/GEN_monarchy.tga" } }
-aoe_GEN_republic = { textured_emblem = { texture = "aoe/GEN_republic.tga" } }
-aoe_GEN_dominion = { textured_emblem = { texture = "aoe/GEN_dominion.tga" } }
+aoe_GEN = { # Genoa
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
+aoe_GEN_monarchy = { # Genoa
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
+aoe_GEN_republic = { # Genoa
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
+aoe_GEN_dominion = { # Genoa
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
 aoe_GFL = { textured_emblem = { texture = "aoe/GFL.tga" } }
 aoe_GFL_monarchy = { textured_emblem = { texture = "aoe/GFL_monarchy.tga" } }
 aoe_GFL_republic = { textured_emblem = { texture = "aoe/GFL_republic.tga" } }
@@ -393,15 +761,93 @@ aoe_GFL_dominion = { textured_emblem = { texture = "aoe/GFL_dominion.tga" } }
 aoe_GOL = { textured_emblem = { texture = "aoe/GOL.tga" } }
 aoe_GOL_monarchy = { textured_emblem = { texture = "aoe/GOL_monarchy.tga" } }
 aoe_GOL_republic = { textured_emblem = { texture = "aoe/GOL_republic.tga" } }
-aoe_GOL_dominion = { textured_emblem = { texture = "aoe/GOL_dominion.tga" } }
+aoe_GOL_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_GRH = { textured_emblem = { texture = "aoe/GRH.tga" } }
 aoe_GRH_monarchy = { textured_emblem = { texture = "aoe/GRH_monarchy.tga" } }
 aoe_GRH_republic = { textured_emblem = { texture = "aoe/GRH_republic.tga" } }
-aoe_GRH_dominion = { textured_emblem = { texture = "aoe/GRH_dominion.tga" } }
+aoe_GRH_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_GUJ = { textured_emblem = { texture = "aoe/GUJ.tga" } }
 aoe_GUJ_monarchy = { textured_emblem = { texture = "aoe/GUJ_monarchy.tga" } }
 aoe_GUJ_republic = { textured_emblem = { texture = "aoe/GUJ_republic.tga" } }
-aoe_GUJ_dominion = { textured_emblem = { texture = "aoe/GUJ_dominion.tga" } }
+aoe_GUJ_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_GZK = { textured_emblem = { texture = "aoe/GZK.tga" } }
 aoe_GZK_monarchy = { textured_emblem = { texture = "aoe/GZK_monarchy.tga" } }
 aoe_GZK_republic = { textured_emblem = { texture = "aoe/GZK_republic.tga" } }
@@ -524,7 +970,33 @@ aoe_JOH_dominion = { textured_emblem = { texture = "aoe/JOH_dominion.tga" } }
 aoe_KAL_monarchy = { textured_emblem = { texture = "aoe/KAL_monarchy.tga" } }
 aoe_KAL_dominion = { textured_emblem = { texture = "aoe/KAL_dominion.tga" } }
 aoe_KAS_monarchy = { textured_emblem = { texture = "aoe/KAS_monarchy.tga" } }
-aoe_KAS_dominion = { textured_emblem = { texture = "aoe/KAS_dominion.tga" } }
+aoe_KAS_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_KAZ = { textured_emblem = { texture = "aoe/KAZ.tga" } }
 aoe_KAZ_monarchy = { textured_emblem = { texture = "aoe/KAZ_monarchy.tga" } }
 aoe_KAZ_republic = { textured_emblem = { texture = "aoe/KAZ_republic.tga" } }
@@ -568,7 +1040,33 @@ aoe_KON_dominion = { textured_emblem = { texture = "aoe/KON_dominion.tga" } }
 aoe_KRN = { textured_emblem = { texture = "aoe/KRN.tga" } }
 aoe_KRN_monarchy = { textured_emblem = { texture = "aoe/KRN_monarchy.tga" } }
 aoe_KRN_republic = { textured_emblem = { texture = "aoe/KRN_republic.tga" } }
-aoe_KRN_dominion = { textured_emblem = { texture = "aoe/KRN_dominion.tga" } }
+aoe_KRN_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_KTH = { textured_emblem = { texture = "aoe/KTH.tga" } }
 aoe_KTH_monarchy = { textured_emblem = { texture = "aoe/KTH_monarchy.tga" } }
 aoe_KTH_republic = { textured_emblem = { texture = "aoe/KTH_republic.tga" } }
@@ -578,10 +1076,40 @@ aoe_KTI_monarchy = { textured_emblem = { texture = "aoe/KTI_monarchy.tga" } }
 aoe_KTI_republic = { textured_emblem = { texture = "aoe/KTI_republic.tga" } }
 aoe_KTI_dominion = { textured_emblem = { texture = "aoe/KTI_dominion.tga" } }
 aoe_KUR = { textured_emblem = { texture = "aoe/KUR.tga" } }
-aoe_KUR_monarchy = { textured_emblem = { texture = "aoe/KUR_monarchy.tga" } }
+aoe_KUR_monarchy = { # Kurland (Bishopric)
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "red"
+	color2 = "white"
+}
 aoe_KUR_republic = { textured_emblem = { texture = "aoe/KUR_republic.tga" } }
 aoe_KUR_dominion = { textured_emblem = { texture = "aoe/KUR_dominion.tga" } }
-aoe_LAD_dominion = { textured_emblem = { texture = "aoe/LAD_dominion.tga" } }
+aoe_LAD_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_LAU = { textured_emblem = { texture = "aoe/LAU.tga" } }
 aoe_LAU_monarchy = { textured_emblem = { texture = "aoe/LAU_monarchy.tga" } }
 aoe_LAU_republic = { textured_emblem = { texture = "aoe/LAU_republic.tga" } }
@@ -629,7 +1157,33 @@ aoe_MAL_dominion = { textured_emblem = { texture = "aoe/MAL_dominion.tga" } }
 aoe_MAW = { textured_emblem = { texture = "aoe/MAW.tga" } }
 aoe_MAW_monarchy = { textured_emblem = { texture = "aoe/MAW_monarchy.tga" } }
 aoe_MAW_republic = { textured_emblem = { texture = "aoe/MAW_republic.tga" } }
-aoe_MAW_dominion = { textured_emblem = { texture = "aoe/MAW_dominion.tga" } }
+aoe_MAW_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_MDR = { textured_emblem = { texture = "aoe/MDR.tga" } }
 aoe_MDR_monarchy = { textured_emblem = { texture = "aoe/MDR_monarchy.tga" } }
 aoe_MDR_republic = { textured_emblem = { texture = "aoe/MDR_republic.tga" } }
@@ -674,6 +1228,138 @@ aoe_MNZ_republic = { textured_emblem = { texture = "aoe/MNZ_republic.tga" } }
 aoe_MNZ_dominion = { textured_emblem = { texture = "aoe/MNZ_dominion.tga" } }
 aoe_MOD_monarchy = { textured_emblem = { texture = "aoe/MOD_monarchy.tga" } }
 aoe_MOD_dominion = { textured_emblem = { texture = "aoe/MOD_dominion.tga" } }
+aoe_MOL = { # Moldavia
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bull_head_moldavia.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.51 } scale = { 0.95 0.95 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.18 } scale = { 0.3 0.3 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crescent_decrescent.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.81 0.65 } scale = { 0.35 0.35 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_rose_shield.dds"
+		color1 = color2
+		color2 = "red_light"
+		color3 = color1
+		instance = { position = { 0.18 0.657 } scale = { 0.42 0.42 } }			
+	}			
+}
+aoe_MOL_monarchy = { # Moldavia
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bull_head_moldavia.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.51 } scale = { 0.95 0.95 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.18 } scale = { 0.3 0.3 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crescent_decrescent.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.81 0.65 } scale = { 0.35 0.35 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_rose_shield.dds"
+		color1 = color2
+		color2 = "red_light"
+		color3 = color1
+		instance = { position = { 0.18 0.657 } scale = { 0.42 0.42 } }			
+	}			
+}
+aoe_MOL_republic = { # Moldavia
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bull_head_moldavia.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.51 } scale = { 0.95 0.95 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.18 } scale = { 0.3 0.3 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crescent_decrescent.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.81 0.65 } scale = { 0.35 0.35 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_rose_shield.dds"
+		color1 = color2
+		color2 = "red_light"
+		color3 = color1
+		instance = { position = { 0.18 0.657 } scale = { 0.42 0.42 } }			
+	}			
+}
+aoe_MOL_dominion = { # Moldavia
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bull_head_moldavia.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.51 } scale = { 0.95 0.95 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.18 } scale = { 0.3 0.3 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crescent_decrescent.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.81 0.65 } scale = { 0.35 0.35 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_rose_shield.dds"
+		color1 = color2
+		color2 = "red_light"
+		color3 = color1
+		instance = { position = { 0.18 0.657 } scale = { 0.42 0.42 } }			
+	}			
+}
 aoe_MOR = { textured_emblem = { texture = "aoe/MOR.tga" } }
 aoe_MOR_monarchy = { textured_emblem = { texture = "aoe/MOR_monarchy.tga" } }
 aoe_MOR_republic = { textured_emblem = { texture = "aoe/MOR_republic.tga" } }
@@ -728,7 +1414,33 @@ aoe_MUG_dominion = { textured_emblem = { texture = "aoe/MUG_dominion.tga" } }
 aoe_MUL = { textured_emblem = { texture = "aoe/MUL.tga" } }
 aoe_MUL_monarchy = { textured_emblem = { texture = "aoe/MUL_monarchy.tga" } }
 aoe_MUL_republic = { textured_emblem = { texture = "aoe/MUL_republic.tga" } }
-aoe_MUL_dominion = { textured_emblem = { texture = "aoe/MUL_dominion.tga" } }
+aoe_MUL_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_MUN = { textured_emblem = { texture = "aoe/MUN.tga" } }
 aoe_MUN_monarchy = { textured_emblem = { texture = "aoe/MUN_monarchy.tga" } }
 aoe_MUN_republic = { textured_emblem = { texture = "aoe/MUN_republic.tga" } }
@@ -1577,10 +2289,54 @@ aoe_NEJ_monarchy = { textured_emblem = { texture = "aoe/NEJ_monarchy.tga" } }
 aoe_NEJ_dominion = { textured_emblem = { texture = "aoe/NEJ_dominion.tga" } }
 aoe_NEP_monarchy = { textured_emblem = { texture = "aoe/NEP_monarchy.tga" } }
 aoe_NEP_dominion = { textured_emblem = { texture = "aoe/NEP_dominion.tga" } }
-aoe_NET = { textured_emblem = { texture = "aoe/NET.tga" } }
-aoe_NET_monarchy = { textured_emblem = { texture = "aoe/NET_monarchy.tga" } }
-aoe_NET_republic = { textured_emblem = { texture = "aoe/NET_republic.tga" } }
-aoe_NET_dominion = { textured_emblem = { texture = "aoe/NET_dominion.tga" } }
+aoe_NET = {
+	pattern = "pattern_solid.tga"
+	color1 = "oragne"
+	color2 = "white"
+	color3 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+aoe_NET_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+aoe_NET_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+aoe_NET_dominion = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
 aoe_NGU = { textured_emblem = { texture = "aoe/NGU.tga" } }
 aoe_NGU_monarchy = { textured_emblem = { texture = "aoe/NGU_monarchy.tga" } }
 aoe_NGU_republic = { textured_emblem = { texture = "aoe/NGU_republic.tga" } }
@@ -1611,7 +2367,15 @@ aoe_PAL = { textured_emblem = { texture = "aoe/PAL.tga" } }
 aoe_PAL_monarchy = { textured_emblem = { texture = "aoe/PAL_monarchy.tga" } }
 aoe_PAL_republic = { textured_emblem = { texture = "aoe/PAL_republic.tga" } }
 aoe_PAL_dominion = { textured_emblem = { texture = "aoe/PAL_dominion.tga" } }
-aoe_PAP = { textured_emblem = { texture = "aoe/PAP.tga" } }
+aoe_PAP = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "yellow"
+	color2 = "white"
+	textured_emblem = {
+		texture = "te_coa_papal_states_tiara.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.75 0.49 } }
+	}
+}
 aoe_PAP_monarchy = { textured_emblem = { texture = "aoe/PAP_monarchy.tga" } }
 aoe_PAP_republic = { textured_emblem = { texture = "aoe/PAP_republic.tga" } }
 aoe_PAP_dominion = { textured_emblem = { texture = "aoe/PAP_dominion.tga" } }
@@ -1680,8 +2444,52 @@ aoe_PLM_dominion = { textured_emblem = { texture = "aoe/PLM_dominion.tga" } }
 aoe_PNJ = { textured_emblem = { texture = "aoe/PNJ.tga" } }
 aoe_PNJ_monarchy = { textured_emblem = { texture = "aoe/PNJ_monarchy.tga" } }
 aoe_PNJ_republic = { textured_emblem = { texture = "aoe/PNJ_republic.tga" } }
-aoe_PNJ_dominion = { textured_emblem = { texture = "aoe/PNJ_dominion.tga" } }
-aoe_POR_monarchy = { textured_emblem = { texture = "aoe/POR_monarchy.tga" } }
+aoe_PNJ_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
+aoe_POR_monarchy = { # Portugal 17th c. (early version centered without armillary sphere)
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+	color3 = "yellow"
+
+	textured_emblem = {
+		texture = "te_crown_royal_cut_open.dds"
+		instance = { position = { 0.5 0.30 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_crown_royal_cut_open.dds"
+		instance = { position = { 0.5 0.30 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portugal.dds"
+		instance = { position = { 0.5 0.65 } scale = { 0.8 0.8 } }
+	}
+}
 aoe_POR_republic = { textured_emblem = { texture = "aoe/POR_republic.tga" } }
 aoe_POR_dominion = { textured_emblem = { texture = "aoe/POR_dominion.tga" } }
 aoe_PRK = { textured_emblem = { texture = "aoe/PRK.tga" } }
@@ -1849,7 +2657,33 @@ aoe_QSM_dominion = { textured_emblem = { texture = "aoe/QSM_dominion.tga" } }
 aoe_RAJ = { textured_emblem = { texture = "aoe/RAJ.tga" } }
 aoe_RAJ_monarchy = { textured_emblem = { texture = "aoe/RAJ_monarchy.tga" } }
 aoe_RAJ_republic = { textured_emblem = { texture = "aoe/RAJ_republic.tga" } }
-aoe_RAJ_dominion = { textured_emblem = { texture = "aoe/RAJ_dominion.tga" } }
+aoe_RAJ_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_REW = { textured_emblem = { texture = "aoe/REW.tga" } }
 aoe_REW_monarchy = { textured_emblem = { texture = "aoe/REW_monarchy.tga" } }
 aoe_REW_republic = { textured_emblem = { texture = "aoe/REW_republic.tga" } }
@@ -1880,15 +2714,164 @@ aoe_SAA = { textured_emblem = { texture = "aoe/SAA.tga" } }
 aoe_SAA_monarchy = { textured_emblem = { texture = "aoe/SAA_monarchy.tga" } }
 aoe_SAA_republic = { textured_emblem = { texture = "aoe/SAA_republic.tga" } }
 aoe_SAA_dominion = { textured_emblem = { texture = "aoe/SAA_dominion.tga" } }
-aoe_SAL = { textured_emblem = { texture = "aoe/SAL.tga" } }
-aoe_SAL_monarchy = { textured_emblem = { texture = "aoe/SAL_monarchy.tga" } }
-aoe_SAL_republic = { textured_emblem = { texture = "aoe/SAL_republic.tga" } }
-aoe_SAL_dominion = { textured_emblem = { texture = "aoe/SAL_dominion.tga" } }
+aoe_SAL = { # Salzburg
+	pattern = "pattern_vertical_split_02.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	color4 = "white"
+	color5 = "red_mid"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_fess.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.5 } scale = { 1.0 1.0 } }
+		mask = { 1 }
+	}
+	colored_emblem = {
+		texture = "ce_lion_wide.dds"
+		color1 = color2
+		color2 = color5
+		color3 = color4
+		instance = { position = { 0.25 0.5 } scale = { 0.85 1.0 } }	
+	
+	}
+}
+aoe_SAL_monarchy = { # Salzburg
+	pattern = "pattern_vertical_split_02.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	color4 = "white"
+	color5 = "red_mid"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_fess.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.5 } scale = { 1.0 1.0 } }
+		mask = { 1 }
+	}
+	colored_emblem = {
+		texture = "ce_lion_wide.dds"
+		color1 = color2
+		color2 = color5
+		color3 = color4
+		instance = { position = { 0.25 0.5 } scale = { 0.85 1.0 } }	
+	
+	}
+}
+aoe_SAL_republic = { # Salzburg
+	pattern = "pattern_vertical_split_02.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	color4 = "white"
+	color5 = "red_mid"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_fess.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.5 } scale = { 1.0 1.0 } }
+		mask = { 1 }
+	}
+	colored_emblem = {
+		texture = "ce_lion_wide.dds"
+		color1 = color2
+		color2 = color5
+		color3 = color4
+		instance = { position = { 0.25 0.5 } scale = { 0.85 1.0 } }	
+	
+	}
+}
+aoe_SAL_dominion = { # Salzburg
+	pattern = "pattern_vertical_split_02.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	color4 = "white"
+	color5 = "red_mid"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_fess.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.5 } scale = { 1.0 1.0 } }
+		mask = { 1 }
+	}
+	colored_emblem = {
+		texture = "ce_lion_wide.dds"
+		color1 = color2
+		color2 = color5
+		color3 = color4
+		instance = { position = { 0.25 0.5 } scale = { 0.85 1.0 } }	
+	
+	}
+}
 aoe_SAT = { textured_emblem = { texture = "aoe/SAT.tga" } }
 aoe_SAT_monarchy = { textured_emblem = { texture = "aoe/SAT_monarchy.tga" } }
 aoe_SAT_republic = { textured_emblem = { texture = "aoe/SAT_republic.tga" } }
 aoe_SAT_dominion = { textured_emblem = { texture = "aoe/SAT_dominion.tga" } }
-aoe_SAX_monarchy = { textured_emblem = { texture = "aoe/SAX_monarchy.tga" } }
+aoe_SAX_monarchy = {
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "black"
+	color2 = "yellow"
+	
+	textured_emblem = {
+		texture = "te_sax_coa.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.85 0.85 } }
+	}
+}
 aoe_SAX_republic = { textured_emblem = { texture = "aoe/SAX_republic.tga" } }
 aoe_SAX_dominion = { textured_emblem = { texture = "aoe/SAX_dominion.tga" } }
 aoe_SBP = { textured_emblem = { texture = "aoe/SBP.tga" } }
@@ -1896,24 +2879,48 @@ aoe_SBP_monarchy = { textured_emblem = { texture = "aoe/SBP_monarchy.tga" } }
 aoe_SBP_republic = { textured_emblem = { texture = "aoe/SBP_republic.tga" } }
 aoe_SBP_dominion = { textured_emblem = { texture = "aoe/SBP_dominion.tga" } }
 aoe_SCO = {
-    sub = {
-        parent = "sub_SCO"
-    }
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 { 209 100 72 }
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color3
+	}
 }
 aoe_SCO_monarchy = {
-    sub = {
-        parent = "sub_SCO"
-    }
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 { 209 100 72 }
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color3
+	}
 }
 aoe_SCO_republic = {
-    sub = {
-        parent = "sub_SCO"
-    }
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color3
+	}
 }
 aoe_SCO_dominion = {
-    sub = {
-        parent = "sub_SCO"
-    }
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color3
+	}
 }
 aoe_SEG = { textured_emblem = { texture = "aoe/SEG.tga" } }
 aoe_SEG_monarchy = { textured_emblem = { texture = "aoe/SEG_monarchy.tga" } }
@@ -1938,11 +2945,96 @@ aoe_SGM_dominion = { textured_emblem = { texture = "aoe/SGM_dominion.tga" } }
 aoe_SHI_monarchy = { textured_emblem = { texture = "aoe/SHI_monarchy.tga" } }
 aoe_SHI_dominion = { textured_emblem = { texture = "aoe/SHI_dominion.tga" } }
 aoe_SIE = { textured_emblem = { texture = "aoe/SIE.tga" } }
-aoe_SIE_monarchy = { textured_emblem = { texture = "aoe/SIE_monarchy.tga" } }
+aoe_SIE_monarchy = { # Transylvania - 17th c.
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = hsv360 	{	216	65	55	}
+	color2 = "yellow"
+	color3 = "red"
+	color4 = "black"
+	color5 = "white"
+
+	colored_emblem = {
+		texture = "ce_eagle_canton.dds"
+		color1 = color4
+		color2 = color2
+		color3 = color5
+		instance = { position = { 0.5 0.5 } scale = { 1.05 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_wide_beak_detail.dds"
+		color1 = color2
+		color2 = "red_secondary"
+		instance = { position = { 0.5 0.488 } scale = { 0.98 0.98 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		color3= color1
+		instance = { position = { 0.11 0.18 }  scale = { 0.35 0.35 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_increscent_shield_charge.dds"
+		color1 = color5
+		color2 = color5
+		instance = { position = { 0.89 0.175 } scale = { 0.3 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.74 }  scale = { 1.0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.80 }  scale = { 1.0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tower_random_small.dds"
+		color1 = color3
+		color2 = color3
+		color3 = hsv360 	{	10 	72	70	}
+		instance = { position = { 0.16 0.70 }  scale = { 0.3 0.3 } }
+		instance = { position = { 0.386 0.70 }  scale = { 0.3 0.3 } }
+		instance = { position = { 0.613 0.70 }  scale = { 0.3 0.3 } }
+		instance = { position = { 0.84 0.70 }  scale = { 00.3 0.3 } }
+		instance = { position = { 0.5 0.85 }  scale = { 0.3 0.3 } }
+		instance = { position = { 0.273 0.85 }  scale = { 0.3 0.3 } }
+		instance = { position = { 0.727 0.85 }  scale = { 0.3 0.3 } }
+	}
+}
 aoe_SIE_republic = { textured_emblem = { texture = "aoe/SIE_republic.tga" } }
 aoe_SIE_dominion = { textured_emblem = { texture = "aoe/SIE_dominion.tga" } }
 aoe_SIK_dominion = { textured_emblem = { texture = "aoe/SIK_dominion.tga" } }
-aoe_SIN_dominion = { textured_emblem = { texture = "aoe/SIN_dominion.tga" } }
+aoe_SIN_dominion = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.5 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.5 } scale = { 0.06 0.06 } }			
+	}	
+}
 aoe_SKH = { textured_emblem = { texture = "aoe/SKH.tga" } }
 aoe_SKH_monarchy = { textured_emblem = { texture = "aoe/SKH_monarchy.tga" } }
 aoe_SKH_republic = { textured_emblem = { texture = "aoe/SKH_republic.tga" } }
@@ -1994,11 +3086,31 @@ aoe_SUL_monarchy = { textured_emblem = { texture = "aoe/SUL_monarchy.tga" } }
 aoe_SUL_republic = { textured_emblem = { texture = "aoe/SUL_republic.tga" } }
 aoe_SUL_dominion = { textured_emblem = { texture = "aoe/SUL_dominion.tga" } }
 aoe_SVY = { textured_emblem = { texture = "aoe/SVY.tga" } }
-aoe_SVY_monarchy = { textured_emblem = { texture = "aoe/SVY_monarchy.tga" } }
+aoe_SVY_monarchy = { # Savoy
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
 aoe_SVY_republic = { textured_emblem = { texture = "aoe/SVY_republic.tga" } }
 aoe_SVY_dominion = { textured_emblem = { texture = "aoe/SVY_dominion.tga" } }
 aoe_SWE = { textured_emblem = { texture = "aoe/SWE.tga" } }
-aoe_SWE_monarchy = { textured_emblem = { texture = "aoe/SWE_monarchy.tga" } }
+aoe_SWE_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 { 204 100 60 }
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_cross_sweden.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
 aoe_SWE_republic = { textured_emblem = { texture = "aoe/SWE_republic.tga" } }
 aoe_SWE_dominion = { textured_emblem = { texture = "aoe/SWE_dominion.tga" } }
 aoe_SWI = { textured_emblem = { texture = "aoe/SWI.tga" } }
@@ -2072,16 +3184,194 @@ aoe_ULM_monarchy = { textured_emblem = { texture = "aoe/ULM_monarchy.tga" } }
 aoe_ULM_republic = { textured_emblem = { texture = "aoe/ULM_republic.tga" } }
 aoe_ULM_dominion = { textured_emblem = { texture = "aoe/ULM_dominion.tga" } }
 aoe_VEN_monarchy = { textured_emblem = { texture = "aoe/VEN_monarchy.tga" } }
-aoe_VEN_republic = { textured_emblem = { texture = "aoe/VEN_republic.tga" } }
+aoe_VEN_republic = { # Venice
+	pattern = "pattern_border_venice.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_venice_lion_st_mark_sword.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.82 0.78 } }
+	}
+}
+
 aoe_VEN_dominion = { textured_emblem = { texture = "aoe/VEN_dominion.tga" } }
 aoe_VNS = { textured_emblem = { texture = "aoe/VNS.tga" } }
 aoe_VNS_monarchy = { textured_emblem = { texture = "aoe/VNS_monarchy.tga" } }
 aoe_VNS_republic = { textured_emblem = { texture = "aoe/VNS_republic.tga" } }
-aoe_VNS_dominion = { textured_emblem = { texture = "aoe/VNS_dominion.tga" } }
+aoe_VNS_dominion = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1 0.1 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.1 1 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+	
+	textured_emblem = {
+		texture = "te_crown_royal.dds"
+		instance = { position = { 0.5 0.23 } scale = { 0.35 0.35 } }			
+	}	
+	textured_emblem = {
+		texture = "te_collar_golden_fleece.dds"	
+		instance = { position = { 0.5 0.58 } scale = { 0.8 0.8 } }				
+	}		
+	textured_emblem = {
+		texture = "te_coa_spain_accolade.dds"
+		instance = { position = { 0.5 0.51 } scale = { 0.525 0.525 } }			
+	}
+}
 aoe_VOP = { textured_emblem = { texture = "aoe/VOP.tga" } }
 aoe_VOP_monarchy = { textured_emblem = { texture = "aoe/VOP_monarchy.tga" } }
 aoe_VOP_republic = { textured_emblem = { texture = "aoe/VOP_republic.tga" } }
-aoe_VOP_dominion = { textured_emblem = { texture = "aoe/VOP_dominion.tga" } }
+aoe_VOP_dominion = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_border_thin.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.50 } scale = { 1.0 1.0 } }			
+	}
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+	
+	textured_emblem = {
+		texture = "te_lima.dds"
+		instance = { position = { 0.5 0.51 } scale = { 0.7 0.7 } }			
+	}
+}
+aoe_WAL_monarchy = { # Wallachia - Modern eagle variant in Romanian arms
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 { 204 100 60 }
+	color2 = "yellow"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_eagle_wallachia_late.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 }  scale = { 0.95 0.95 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		color3= color1
+		instance = { position = { 0.10 0.15 }  scale = { 0.275 0.275 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_increscent_shield_charge.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.90 0.16 } scale = { 0.225 0.225 } }
+	}
+}
+aoe_WAL_dominion = { # Wallachia - Modern eagle variant in Romanian arms
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 204 100 60 }
+	color2 = "yellow"
+	color3 = "red_secondary"
+
+	colored_emblem = {
+		texture = "ce_eagle_wallachia_late.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 }  scale = { 0.95 0.95 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		color3= color1
+		instance = { position = { 0.10 0.15 }  scale = { 0.275 0.275 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_increscent_shield_charge.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.90 0.16 } scale = { 0.225 0.225 } }
+	}
+}
+aoe_WAL = { # Wallachia - Modern eagle variant in Romanian arms
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 { 204 100 60 }
+	color2 = "yellow"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_eagle_wallachia_late.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 }  scale = { 0.95 0.95 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		color3= color1
+		instance = { position = { 0.10 0.15 }  scale = { 0.275 0.275 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_increscent_shield_charge.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.90 0.16 } scale = { 0.225 0.225 } }
+	}
+}
+aoe_WAL_republic = { # Wallachia - Modern eagle variant in Romanian arms
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_eagle_wallachia_late.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 }  scale = { 0.95 0.95 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		color3= color1
+		instance = { position = { 0.10 0.15 }  scale = { 0.275 0.275 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_increscent_shield_charge.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.90 0.16 } scale = { 0.225 0.225 } }
+	}
+}
 aoe_WEI_monarchy = { textured_emblem = { texture = "aoe/WEI_monarchy.tga" } }
 aoe_WEI_dominion = { textured_emblem = { texture = "aoe/WEI_dominion.tga" } }
 aoe_WRI = { textured_emblem = { texture = "aoe/WRI.tga" } }

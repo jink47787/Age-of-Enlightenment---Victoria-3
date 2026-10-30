@@ -1,0 +1,46 @@
+bingus = {
+	social_hierarchy = landed_elite
+	strata = upper
+
+	allowed_professions = {
+		aristocrats
+	}
+}
+
+bangus = {
+	social_hierarchy = landed_elite
+	strata = middle
+
+	allowed_professions = {
+		clergymen
+	}
+}
+
+bongus = {
+	social_hierarchy = landed_elite
+	strata = middle
+	
+	allowed_professions = {
+		officers
+		academics
+		bureaucrats
+		capitalists
+		engineers
+	}
+}
+
+racial_minorities = {
+	social_hierarchy = landed_elite
+	strata = lower
+
+	allowed_professions = {
+		clerks
+		laborers
+		machinists
+		peasants
+		farmers
+		shopkeepers
+		slaves
+		soldiers
+	}
+}

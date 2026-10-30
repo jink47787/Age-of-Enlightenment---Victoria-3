@@ -29,6 +29,36 @@ lawgroup_distribution_of_power = {
 	affected_by_regime_change = yes
 }
 
+lawgroup_ennoblement = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 1.0
+	affected_by_regime_change = yes
+	linked_social_hierarchy = strat_aristo
+	is_visible = {
+		has_law = law:law_strat_aristo
+	}
+}
+
+lawgroup_land_titles = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 1.0
+	affected_by_regime_change = yes
+	linked_social_hierarchy = landed_elite
+	is_visible = {
+		has_law = law:law_landed_elite
+	}
+}
+
+lawgroup_state_ranks = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 1.0
+	affected_by_regime_change = yes
+	linked_social_hierarchy = state_service_aristo
+	is_visible = {
+		has_law = law:law_state_service_aristo
+	}
+}
+
 lawgroup_citizenship = {
 	law_group_category = power_structure
 	ideological_opinion_impact = 1.0

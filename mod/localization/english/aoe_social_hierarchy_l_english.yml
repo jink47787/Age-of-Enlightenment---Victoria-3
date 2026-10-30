@@ -1,0 +1,10 @@
+﻿l_english:
+#SocialClass.GetStrata links
+ first_estate_class: "The First Estate"
+ first_estate_class_desc: "The First Estate"
+ second_estate_class: "The Second Estate"
+ second_estate_class_desc: "The Second Estate"
+ statesmen_class: "The Statesmen"
+ statesmen_class_desc: "The Statesmen"
+ third_estate_class: "The Third Estate"
+ third_estate_class_desc: "The Third Estate"

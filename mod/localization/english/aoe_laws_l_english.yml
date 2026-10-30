@@ -2,10 +2,17 @@
 
  
   # Government Principles group
+ law_strat_aristo:0 "Stratified Aristocracy"
+ law_strat_aristo_desc:0 "Stratified Aristocracy"
+ law_state_service_aristo:0 "Aristocracy By State Service"
+ law_state_service_aristo_desc:0 "Aristocracy By State Service"
+ law_landed_elite:0 "Landed Elite"
+ law_landed_elite_desc:0 "Landed Elite"
+ 
  lawgroup_diplomatic_corps:0 "Foreign Affairs"
  lawgroup_diplomatic_corps_desc:0 "Laws regulating the structure of your diplomacy."
 
- law_no_ministry:0 "No Ministry"
+ law_no_ministry:0 "Plenipotentiaries"
  law_no_ministry_desc:0 "No ministry exists through which a country conducts foreign affairs. Rather each mission is handled through indivudual plenipotentiaries."
  law_centralized_foreign_affairs:0 "Independent Foreign Ministry"
  law_centralized_foreign_affairs_desc:0 "An arrangement in which the state's diplomatic service and foreign policy are directed through a single central authority. The ministry coordinates diplomatic missions, negotiations, intelligence from foreign posts, and the implementation of foreign policy, ensuring consistency across the state's international relations and limiting the autonomy of individual envoys or regional authorities."

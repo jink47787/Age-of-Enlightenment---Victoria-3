@@ -1,0 +1,72 @@
+﻿
+objective_north_america = {
+	enabled_background = "gfx/interface/icons/objectives/obj_aoe_north_america.dds"
+	icon = "gfx/interface/icons/objectives/aoe_north_america.dds"
+
+	recommended_tags = { THC FCA VNS }
+	available_for_all_countries = no
+
+	objective_subgoals = {
+
+	}
+
+	on_start = {
+
+	}
+
+}
+
+objective_south_america = {
+	enabled_background = "gfx/interface/icons/objectives/obj_aoe_south_america.dds"
+	icon = "gfx/interface/icons/objectives/aoe_south_america_icon.dds"
+	
+	recommended_tags = { PBZ VOP }
+	
+	objective_subgoals = {}	
+	
+	on_start = {
+
+	}
+}
+
+objective_western_europe = {
+	enabled_background = "gfx/interface/icons/objectives/obj_aoe_western_europe.dds"
+	icon = "gfx/interface/icons/objectives/aoe_western_europe_icon.dds"
+
+	recommended_tags = { SPA FRA GBR NET AUS }
+
+	objective_subgoals = {
+
+	}
+
+	on_start = {
+	}
+}
+
+objective_eastern_europe = {
+	enabled_background = "gfx/interface/icons/objectives/obj_aoe_eastern_europe.dds"
+	icon = "gfx/interface/icons/objectives/aoe_eastern_europe_icon.dds"
+
+	recommended_tags = { SWE PLC RUS TUR BRN }
+
+	objective_subgoals = {
+
+	}
+
+	on_start = {
+	}
+}
+
+
+objective_asia = {
+	enabled_background = "gfx/interface/icons/objectives/obj_aoe_asia.dds"
+	icon = "gfx/interface/icons/objectives/aoe_asia_icon.dds"
+	
+	recommended_tags = { QNG MUG MAH PER }
+	
+	objective_subgoals = {}	
+	
+	on_start = {
+
+	}
+}

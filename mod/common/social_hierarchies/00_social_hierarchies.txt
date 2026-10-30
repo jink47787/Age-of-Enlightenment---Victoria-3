@@ -1,0 +1,42 @@
+﻿default_social_hierarchy = {
+	is_default = yes
+}
+
+british_indian_caste_system = {
+	pop_criteria = {
+		custom_tooltip = {
+			text = british_indian_caste_system_trigger_desc
+			has_pop_religion = hindu
+			culture = {
+				has_discrimination_trait_group = heritage_group_south_asian
+			}
+		}
+	}
+}
+
+edo_system = {
+	pop_criteria = {
+		OR = {
+			has_pop_culture = japanese
+			has_pop_culture = ryukyuan
+		}
+	}
+}
+
+strat_aristo = {
+	pop_criteria = {
+	
+	}
+}
+
+landed_elite = {
+	pop_criteria = {
+	
+	}
+}
+
+state_service_aristo = {
+	pop_criteria = {
+	
+	}
+}

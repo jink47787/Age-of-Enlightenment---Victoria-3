@@ -1,0 +1,46 @@
+big_chungus = {
+	social_hierarchy = state_service_aristo
+	strata = upper
+
+	allowed_professions = {
+		aristocrats
+	}
+}
+
+big_big_chungus = {
+	social_hierarchy = state_service_aristo
+	strata = middle
+
+	allowed_professions = {
+		clergymen
+	}
+}
+
+big_big_big_chungus = {
+	social_hierarchy = state_service_aristo
+	strata = middle
+	
+	allowed_professions = {
+		officers
+		academics
+		bureaucrats
+		capitalists
+		engineers
+	}
+}
+
+tungus = {
+	social_hierarchy = state_service_aristo
+	strata = lower
+
+	allowed_professions = {
+		clerks
+		laborers
+		machinists
+		peasants
+		farmers
+		shopkeepers
+		slaves
+		soldiers
+	}
+}

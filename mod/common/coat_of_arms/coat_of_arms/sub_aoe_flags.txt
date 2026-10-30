@@ -1,0 +1,219 @@
+﻿sub_GBR = {
+	# 1707-1800 flag without the Irish red diagonals
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_england_fimbriated.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+
+FRA = {# France - White semy, greater coa, cherubs - Absolute monarchy 17th-18th c.
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = hsv360 	{	42	80	70	}
+	color3 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_fleur_de_lis.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.10 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 0.20 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.10 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.40 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 0.60 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.10 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.30 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.50 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.70 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.90 0.80 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.00 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.20 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.40 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.60 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 0.80 1.00 } scale = { 0.24 0.24 } }
+		instance = { position = { 1.00 1.00 } scale = { 0.24 0.24 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_france_absolute.dds"	# TODO improve cherub colour	
+	}		
+}
+
+BRN = { # Brandenburg - Crowned & attributes for a Kingdom (so minus the inescutcheon)
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_crowned_wide_brandenburg.dds"
+		color1 = color2
+		color2 = color3
+		color3 = "white"
+		instance = { position = { 0.5 0.51 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_bones_trefly.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.51 } scale = { 1.0 1.0 } }
+	}
+}
+
+THC = { textured_emblem = { texture = "aoe/THC_monarchy.tga" } }
+
+VNS = { textured_emblem = { texture = "aoe/VNS.tga" } }
+
+VOP = { textured_emblem = { texture = "aoe/VOP.tga" } }
+
+FCA = { textured_emblem = { texture = "aoe/FCA.tga" } }
+
+PBZ = { textured_emblem = { texture = "aoe/PBZ.tga" } }
+
+TUR = { # Ottomans (Later variant)
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	358 	85	55	}
+	color2 = "yellow_light"
+	color3 = hsv360 	{	90	80	35	} 
+	
+	colored_emblem = {
+		texture = "ce_crescent_triple_roundel.dds"
+		color1 = color3
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }				
+	}
+}
+
+QNG = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.16 0.16 } position = { 0.10 0.155 } }
+	}
+	colored_emblem = {
+		texture = "ce_clouds_china_02.dds"
+		color1 = "azure"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.59 0.45 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_dragon_china.dds"
+		color1 = "blue"
+		color2 = "white"
+		color3 = "blue_light"
+		instance = { scale = { 1.4 1.4 } position = { 0.5 0.49 } }
+	}
+	colored_emblem = {
+		texture = "ce_clouds_china_01.dds"
+		color1 = "azure"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.76 0.76 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_clouds_china_03.dds"
+		color1 = "white"
+		color2 = "blue"
+		color3 = "azure"
+		instance = { scale = { 0.4 0.4 } position = { 0.39 0.81 } }
+	}
+}
+
+MUG = { # Mughals
+	pattern = "pattern_solid.tga"
+	color1 = hsv360 	{	97	70	35	} 
+	color2 = hsv360 	{	42	78	88	}
+	color3 = hsv360 	{	42	85	80	}
+	color4 = hsv360 	{	35	35	92	} 
+
+	colored_emblem = {
+		texture = "ce_field_semy_stars.dds"
+		color1 = "yellow"
+		color2 = color3			
+		instance = { position = { 0.5 0.5 } scale = { 0.97 0.98 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sun_face_dharampur.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.51 0.375 } scale = { 0.725 0.725 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.51 0.305 } scale = { 0.06 0.06 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_lion_turco_persian.dds"
+		color1 = color3
+		color2 = color2
+		color3 = "green"
+		instance = { position = { 0.5 0.58 } scale = { 0.9 0.9 } }			
+	}
+	colored_emblem = {
+		texture = "ce_border_thin.dds"
+		color1 = "red"
+		instance = { position = { 0.5 0.50 } scale = { 1.0 1.0 } }			
+	}
+}
+
+PER = { # Persia
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_persia.dds" # TODO
+		color1 = color2
+		color2 = hsv360 	{	42	70	90	}
+		color3 = "white"
+		instance = { position = { 0.49 0.48 } scale = { 0.95 0.95 } }
+	}
+}
+
+SPA = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+
+MAH = { textured_emblem = { texture = "aoe/MAH_monarchy.tga" } }

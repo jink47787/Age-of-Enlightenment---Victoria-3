@@ -1,0 +1,97 @@
+types ingame_menu_logo {
+	type v3_logo_animation = container {
+		### letters
+		container = {
+			parentanchor = center
+			
+			widget = {
+				size = { 130 80 }
+				position = { -3 -10 }
+				parentanchor = center
+				icon = {
+					texture = "gfx/interface/illustrations/frontend/menu_logo_age.png"
+					size = { 100% 100% }
+				}
+			}
+			
+			widget = {
+				size = { 27 30 }
+				position = { 2 35 }
+				parentanchor = center
+				icon = {
+					texture = "gfx/interface/illustrations/frontend/menu_logo_of.png"
+					size = { 100% 100% }
+				}
+			}
+			
+			widget = {
+				size = { 400 80 }
+				position = { -3 70 }
+				parentanchor = center
+				icon = {
+					texture = "gfx/interface/illustrations/frontend/menu_logo_enlightenment.png"
+					size = { 100% 100% }
+				}
+			}
+			
+			widget = {
+				size = { 170 15 }
+				position = { 100 34 }
+				parentanchor = center
+				icon = {
+					texture = "gfx/interface/illustrations/frontend/line.png"
+					size = { 100% 100% }
+				}
+			}
+			
+			widget = {
+				size = { 170 15 }
+				position = { -103 34 }
+				parentanchor = center
+				icon = {
+					texture = "gfx/interface/illustrations/frontend/line.png"
+					size = { 100% 100% }
+				}
+			}
+			### V
+			
+			### I
+
+			### C
+
+			### T
+
+			### O
+
+			### R
+
+			### I
+			### A
+		}
+	}
+	
+	type v3_logo_animation_game_start = container {
+		### letters
+		container = {
+			parentanchor = center
+			
+			
+		}
+		
+	}
+}
+
+### TEMPLATES
+template "logo_letter_duration" {
+	duration = 0.15
+}
+template "logo_letter_delay" {
+	duration = 0.075
+}
+template "logo_letter_scale" {
+	scale = 0.001
+}
+template "logo_letter_properties" {
+	position = { 0 0 }
+	alpha = 0
+}

@@ -1,0 +1,46 @@
+﻿first_estate_class = {
+	social_hierarchy = strat_aristo
+	strata = upper
+
+	allowed_professions = {
+		aristocrats
+	}
+}
+
+second_estate_class = {
+	social_hierarchy = strat_aristo
+	strata = middle
+
+	allowed_professions = {
+		clergymen
+	}
+}
+
+statesmen_class = {
+	social_hierarchy = strat_aristo
+	strata = middle
+	
+	allowed_professions = {
+		officers
+		academics
+		bureaucrats
+		capitalists
+		engineers
+	}
+}
+
+third_estate_class = {
+	social_hierarchy = strat_aristo
+	strata = lower
+
+	allowed_professions = {
+		clerks
+		laborers
+		machinists
+		peasants
+		farmers
+		shopkeepers
+		slaves
+		soldiers
+	}
+}

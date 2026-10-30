@@ -9,7 +9,7 @@
 		create_diplomatic_pact = { country = c:DPR type = personal_union }
 	}
 	c:DNN ?= {
-		create_diplomatic_pact = { country = c:HOL type = puppet }
+		create_diplomatic_pact = { country = c:HOL type = protectorate }
 		set_relations = { country = c:RUS value = 50 }
 		set_relations = { country = c:PLC value = 50 }
 	}

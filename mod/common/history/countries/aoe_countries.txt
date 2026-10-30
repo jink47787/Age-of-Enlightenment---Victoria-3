@@ -654,6 +654,7 @@
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_elite
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
@@ -1726,6 +1727,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_elite
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_tenant_farmers
@@ -1867,6 +1869,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_elite
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_censorship
@@ -2205,6 +2208,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_state_service_aristo
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_outlawed_dissent
 		activate_law = law_type:law_tenant_farmers
