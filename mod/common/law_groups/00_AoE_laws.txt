@@ -4,7 +4,7 @@
 # enable = {} trigger for whether laws in this group should be possible at all
 
 INJECT:lawgroup_diplomatic_corps = {
-	law_group_category = power_structure
+	law_group_category = other
 	base_enactment_days = 200
 	enactment_approval_mult = 2.0
 	ideological_opinion_impact = 2.0
