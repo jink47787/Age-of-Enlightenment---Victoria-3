@@ -587,7 +587,15 @@ aoe_ETH_dominion = { textured_emblem = { texture = "aoe/ETH_dominion.tga" } }
 aoe_FCA = { textured_emblem = { texture = "aoe/FCA.tga" } }
 aoe_FCA_monarchy = { textured_emblem = { texture = "aoe/FCA_monarchy.tga" } }
 aoe_FCA_republic = { textured_emblem = { texture = "aoe/FCA_republic.tga" } }
-aoe_FCA_dominion = { textured_emblem = { texture = "aoe/FCA_dominion.tga" } }
+aoe_FCA_dominion = {# France - White semy, greater coa, cherubs - Absolute monarchy 17th-18th c.
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	textured_emblem = {
+		texture = "te_coa_france_variant.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
 aoe_FRA = {# France - White semy, greater coa, cherubs - Absolute monarchy 17th-18th c.
 	pattern = "pattern_solid.dds"
 	color1 = "white"
@@ -1037,6 +1045,34 @@ aoe_KON = { textured_emblem = { texture = "aoe/KON.tga" } }
 aoe_KON_monarchy = { textured_emblem = { texture = "aoe/KON_monarchy.tga" } }
 aoe_KON_republic = { textured_emblem = { texture = "aoe/KON_republic.tga" } }
 aoe_KON_dominion = { textured_emblem = { texture = "aoe/KON_dominion.tga" } }
+aoe_KOR = { textured_emblem = { texture = "aoe/KOR.tga" } }
+aoe_KOR_monarchy = {
+	# Flag of the Joseon Dynasty
+
+	pattern = "pattern_border_of_4.dds"
+	color1 = "red"
+	color2 = "golden"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+        instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+	}
+	colored_emblem = {
+		texture = "ce_joseon_centre_element.dds"
+		color1 = "golden"
+		color2 = "white"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_joseon_trigrams.dds"
+		color1 = "golden"
+		color2 = "golden"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+aoe_KOR_republic = { textured_emblem = { texture = "aoe/KOR_republic.tga" } }
+aoe_KOR_dominion = { textured_emblem = { texture = "aoe/KOR_dominion.tga" } }
 aoe_KRN = { textured_emblem = { texture = "aoe/KRN.tga" } }
 aoe_KRN_monarchy = { textured_emblem = { texture = "aoe/KRN_monarchy.tga" } }
 aoe_KRN_republic = { textured_emblem = { texture = "aoe/KRN_republic.tga" } }
@@ -2496,10 +2532,88 @@ aoe_PRK = { textured_emblem = { texture = "aoe/PRK.tga" } }
 aoe_PRK_monarchy = { textured_emblem = { texture = "aoe/PRK_monarchy.tga" } }
 aoe_PRK_republic = { textured_emblem = { texture = "aoe/PRK_republic.tga" } }
 aoe_PRK_dominion = { textured_emblem = { texture = "aoe/PRK_dominion.tga" } }
-aoe_DPR = { textured_emblem = { texture = "aoe/DPR.tga" } }
-aoe_DPR_monarchy = { textured_emblem = { texture = "aoe/DPR_monarchy.tga" } }
+aoe_DPR = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_aoe.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_aoe.dds"
+		color1 = "yellow"
+		color3 = "red"
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.35 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_letter_s_variant_bold.dds"
+		color1 = "yellow"
+		color3 = "orange"
+		instance = { scale = { 0.2 0.2 } position = { 0.5 0.44 } }
+	}
+}
+aoe_DPR_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_aoe.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_aoe.dds"
+		color1 = "yellow"
+		color3 = "red"
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.35 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_letter_s_variant_bold.dds"
+		color1 = "yellow"
+		color3 = "orange"
+		instance = { scale = { 0.2 0.2 } position = { 0.5 0.44 } }
+	}
+}
 aoe_DPR_republic = { textured_emblem = { texture = "aoe/DPR_republic.tga" } }
-aoe_DPR_dominion = { textured_emblem = { texture = "aoe/DPR_dominion.tga" } }
+aoe_DPR_dominion = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_aoe.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_aoe.dds"
+		color1 = "yellow"
+		color3 = "red"
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.35 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_letter_s_variant_bold.dds"
+		color1 = "yellow"
+		color3 = "orange"
+		instance = { scale = { 0.2 0.2 } position = { 0.5 0.44 } }
+	}
+}
 aoe_PTK = { textured_emblem = { texture = "aoe/PTK.tga" } }
 aoe_PTK_monarchy = { textured_emblem = { texture = "aoe/PTK_monarchy.tga" } }
 aoe_PTK_republic = { textured_emblem = { texture = "aoe/PTK_republic.tga" } }

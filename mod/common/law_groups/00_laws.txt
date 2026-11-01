@@ -22,6 +22,20 @@ lawgroup_governance_principles = {
 	}
 }
 
+lawgroup_executive_structure = {
+	law_group_category = power_structure
+	base_enactment_days = 150
+	ideological_opinion_impact = 2.0
+	affected_by_regime_change = yes
+}
+
+lawgroup_legislative_power = {
+	law_group_category = power_structure
+	base_enactment_days = 150
+	ideological_opinion_impact = 2.0
+	affected_by_regime_change = yes
+}
+
 lawgroup_distribution_of_power = {
 	law_group_category = power_structure
 	base_enactment_days = 150
@@ -85,13 +99,30 @@ lawgroup_church_and_state = {
 	affected_by_regime_change = yes
 }
 
+lawgroup_rel_minorities = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 1.0
+	affected_by_regime_change = yes
+}
+
 lawgroup_bureaucracy = {
 	law_group_category = power_structure
 	ideological_opinion_impact = 0.25
 	affected_by_regime_change = yes
 }
 
+lawgroup_local_government = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 0.25
+	affected_by_regime_change = yes
+}
+
 lawgroup_army_model = {
+	law_group_category = other
+	ideological_opinion_impact = 0.25
+}
+
+lawgroup_conscription_model = {
 	law_group_category = other
 	ideological_opinion_impact = 0.25
 }
@@ -122,6 +153,10 @@ lawgroup_economic_system = {
 	law_group_category = economy
 	ideological_opinion_impact = 2.0
 	base_enactment_days = 150
+	
+	is_visible = {
+		always = no
+	}
 }
 
 lawgroup_trade_policy = {
@@ -146,15 +181,54 @@ lawgroup_land_reform = {
 	enactment_approval_mult = 1.5 # people REALLY care about land reform
 }
 
+lawgroup_land_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
+}
+
+lawgroup_per_capita_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
+}
+
+lawgroup_guild_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
+}
+
+lawgroup_consumption_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
+}
+
+lawgroup_eco_power_stuctures = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
+}
+
 lawgroup_colonization = {
 	law_group_category = economy
 	ideological_opinion_impact = 0.0
 }
 
-lawgroup_policing = {
-	law_group_category = other
-	ideological_opinion_impact = 0.25
+lawgroup_investment_rights = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
 }
+
+lawgroup_monopoly_laws = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.0
+}
+
+#lawgroup_policing = {
+#	law_group_category = other
+#	ideological_opinion_impact = 0.25
+#	
+#	is_visible = {
+#		always = no
+#	}
+#}
 
 lawgroup_education_system = {
 	law_group_category = other
@@ -164,6 +238,7 @@ lawgroup_education_system = {
 lawgroup_health_system = {
 	law_group_category = other
 	ideological_opinion_impact = 0.25
+	
 }
 
 lawgroup_free_speech = {
@@ -171,19 +246,31 @@ lawgroup_free_speech = {
 	ideological_opinion_impact = 0.5
 }
 
-lawgroup_labor_rights = {
-	law_group_category = other
-	ideological_opinion_impact = 0.5
-}
+#lawgroup_labor_rights = {
+#	law_group_category = other
+#	ideological_opinion_impact = 0.5
+#	
+#	is_visible = {
+#		always = no
+#	}
+#
 
-lawgroup_childrens_rights = {
-	law_group_category = human_rights
-	ideological_opinion_impact = 0.25
-}
+#lawgroup_childrens_rights = {
+#	law_group_category = human_rights
+#	ideological_opinion_impact = 0.25
+#	
+#	is_visible = {
+#		always = no
+#	}
+#}
 
 lawgroup_rights_of_women = {
 	law_group_category = human_rights
 	ideological_opinion_impact = 0.5
+	
+	is_visible = {
+		always = no
+	}
 }
 
 lawgroup_welfare = {
@@ -209,7 +296,26 @@ lawgroup_slavery = {
 	}
 }
 
-lawgroup_labour_associations = {
+lawgroup_guild_system = {
 	law_group_category = human_rights
-	ideological_opinion_impact = 0.5
+	ideological_opinion_impact = 0.0
 }
+
+lawgroup_market_system = {
+	law_group_category = human_rights
+	ideological_opinion_impact = 0.0
+}
+
+lawgroup_property_rights = {
+	law_group_category = human_rights
+	ideological_opinion_impact = 0.0
+}
+
+#lawgroup_labour_associations = {
+#	law_group_category = human_rights
+#	ideological_opinion_impact = 0.5
+#	
+#	is_visible = {
+#		always = no
+#	}
+#}

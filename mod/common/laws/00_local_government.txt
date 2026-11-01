@@ -1,0 +1,37 @@
+﻿law_lg_local_custom = {
+	group = lawgroup_local_government
+
+	icon = "gfx/interface/icons/law_icons/lg_local_custom.dds"
+
+
+	progressiveness = 0
+	
+	modifier = {
+	
+	}
+
+}
+
+law_lg_state_subserviant = {
+	group = lawgroup_local_government
+
+	icon = "gfx/interface/icons/law_icons/lg_state_subsarviant.dds"
+
+	progressiveness = 25
+
+	modifier = {
+		
+	}
+}
+
+law_lg_self_governence = {
+	group = lawgroup_local_government
+
+	icon = "gfx/interface/icons/law_icons/lg_elected.dds"
+
+	progressiveness = 25
+
+	modifier = {
+		
+	}
+}

@@ -9,8 +9,80 @@
  law_landed_elite:0 "Landed Elite"
  law_landed_elite_desc:0 "Landed Elite"
  
+ lawgroup_executive_structure: "Executive Structure"
+ lawgroup_executive_structure_desc: "The relationship between the [Concept('concept_ruler','Head of State')] and the Head of Government."
+
+ law_head_of_state_appointed: "[GetPlayer.GetRuler.GetPrimaryRoleTitle] Appointed"
+ law_head_of_state_appointed_desc: "The [GetPlayer.GetRuler.GetPrimaryRoleTitle] maintains absolute authority in appointing or firing the Head of Government."
+
+ law_appointed_on_advice: "Appointed on Advice"
+ law_appointed_on_advice_desc: "The [GetPlayer.GetRuler.GetPrimaryRoleTitle] chooses the Head of Government with formal support from the legislature."
+
+ law_unified_executive: "Unified Executive"
+ law_unified_executive_desc: "The [GetPlayer.GetRuler.GetPrimaryRoleTitle] also functions as the Head of Government."
+
+ law_ceremonial_monarch: "Ceremonial [GetPlayer.GetRuler.GetPrimaryRoleTitle]"
+ law_ceremonial_monarch_desc: "The [GetPlayer.GetRuler.GetPrimaryRoleTitle] is purely ceremonial and the Head of Government is accountable to the legislature only."
+
+ lawgroup_legislative_power: "Legislative Power"
+ lawgroup_legislative_power_desc: "The relationship between the Legislative and Executive branches."
+
+ law_advisory_body: "Advisory Body"
+ law_advisory_body_desc: "The legislature is merely an advisory body, with no authority to pass laws. Under Ceremonial [GetPlayer.GetRuler.GetPrimaryRoleTitle], the [GetPlayer.GetCustom('bpm_hog_title')] will be a dictator for life."
+
+ law_seperation_of_powers: "Separation of Powers"
+ law_seperation_of_powers_desc: "The legislature and the [concept_government] are separate entities, with distinct powers and responsibilities."
+
+ law_supreme_legislature: "Supreme Legislature"
+ law_supreme_legislature_desc: "The legislature is the supreme authority in the state, performing both legislative and executive functions."
+ 
+ law_diet: "Estate Diet"
+ law_diet_desc: "The legislature is merely an advisory body, with no authority to pass laws. Under Ceremonial [GetPlayer.GetRuler.GetPrimaryRoleTitle], the [GetPlayer.GetCustom('bpm_hog_title')] will be a dictator for life."
+ 
+ law_hereditary_bureaucrats: "Hereditary Governors"
+ 
+ law_appointed_bureaucrats: "Appointed Governors"
+ 
+ law_elected_bureaucrats: "Elected Governors"
+ 
+ law_lifetime_appointed: "Appointed For Life Governors"
+ law_lifetime_appointed_desc: "Public officials are appointed to their positions for life, enjoying considerable security and independence from political interference. Once appointed, they retain their offices regardless of changes in government, with dismissal possible only under exceptional circumstances."
+ 
+ lawgroup_local_government: "Local Government"
+ 
+ law_lg_local_custom: "Local Custom"
+ law_lg_local_custom_desc: "Local affairs are governed primarily through long-established customs and traditions, with authority resting in the hands of established community leaders and local elites. The central government exercises little direct supervision, allowing each locality to preserve its own practices and institutions."
+ 
+ law_lg_state_subserviant: "State Subserviance"
+ law_lg_state_subserviant_desc: "Local authorities operate as subordinate agents of the central government, carrying out orders issued by the sovereign and their appointed officials. Traditional local privileges and autonomy are increasingly limited by the demands of the state."
+ 
+ law_lg_self_governence: "Self Governence"
+ law_lg_self_governence_desc: "Local communities enjoy broad authority over their own affairs, electing or appointing their representatives and managing local administration independently. The central government exercises limited oversight, intervening primarily in matters concerning the wider realm."
+ 
+ law_sovereign_rel_authority: "Sovereign Church"
+ law_sovereign_rel_authority_desc: "The Church maintains its own institutions, hierarchy, and authority, largely independent of the secular government. Religious authorities govern ecclesiastical affairs without direct interference from the state, retaining control over appointments, property, and internal discipline. Relations between the State and the clergy are conducted through negotiation rather than subordination."
+ 
+ law_cesaropapism: "Cesaropapism"
+ law_cesaropapism_desc: "The sovereign exercises supreme authority over the Church, combining secular power with considerable control over religious institutions. Ecclesiastical appointments, doctrine, and administration are subject to the ruler's influence, making the clergy an instrument of state authority. Religious institutions remain powerful, but their independence is subordinated to the State."
+ 
+ lawgroup_rel_minorities: "Minority Worship Rights"
+ 
+ law_persecusion: "Persecusion"
+ law_persecusion_desc: "Religious minorities are denied legal protection and face systematic discrimination by the state and established Church. Their public worship may be restricted or forbidden, while conversion, expulsion, or forced conformity are used to enforce religious uniformity. Heresy and religious dissent are treated as threats to public order and political stability."
+ law_exclusion_from_public_office: "Public Life Exclusion"
+ law_exclusion_from_public_office_desc: "Religious minorities are permitted to practise their faith but are excluded from positions of public authority and influence. Access to state offices, political institutions, and certain professions remains restricted, preserving the privileges of the established religion. Their presence is tolerated, provided they remain outside the centres of public life."
+ law_criminilized_apostasy: "Criminilized Apostasy"
+ law_criminilized_apostasy_desc: "Worship of other religions is generally permitted, but abandoning the state religion remains a criminal offence under secular law. Those who formally renounce the established faith or convert from it may face prosecution and civil penalties. The state protects freedom of worship while prohibiting apostasy from its official religion."
+ law_freedom_of_religion: "Freedom Of Religion"
+ law_freedom_of_religion_desc: "Individuals are free to practise and profess religions other than the established faith without fear of legal persecution. Religious minorities enjoy legal recognition and may establish their own places of worship and institutions. The state refrains from enforcing religious conformity, allowing diverse faiths to coexist within its borders."
+ 
+ 
+ 
+ # Institutions group
+ 
  lawgroup_diplomatic_corps:0 "Foreign Affairs"
  lawgroup_diplomatic_corps_desc:0 "Laws regulating the structure of your diplomacy."
+ 
 
  law_no_ministry:0 "Plenipotentiaries"
  law_no_ministry_desc:0 "No ministry exists through which a country conducts foreign affairs. Rather each mission is handled through indivudual plenipotentiaries."
@@ -20,4 +92,13 @@
  law_parliamentary_control_foreign_affairs_desc:0 "An arrangement in which the state's foreign affairs office operates under parliamentary oversight. Parliament supervises diplomatic policy, scrutinises negotiations and international commitments, and holds the executive or foreign office accountable for its conduct abroad. The degree of oversight may range from reviewing and approving major decisions to exercising direct control over diplomatic policy."
  law_split_foreign_affairs:0 "Clandestine Foreign Ministry"
  law_split_foreign_affairs_desc:0 "An arrangement in which a ruler conducts foreign policy through two parallel channels: an official diplomatic service and a confidential network operating under their direct authority. The latter pursues secret negotiations, intelligence gathering, and political objectives that may complement or contradict official state policy, allowing the ruler greater freedom of action and plausible deniability."
+ lawgroup_conscription_model: "Conscription Model"
  
+ law_recruitment_officers: "Recruitment Officers"
+ law_recruitment_officers_desc: "Recruitment is entrusted to appointed officers, who travel throughout the realm to enlist men for the army. These professionals are responsible for filling regiments, often relying on promises of pay, privileges, or coercion to secure sufficient numbers."
+ law_land_tied_impressment: "Land-Tied Impressment"
+ law_land_tied_impressment_desc: "Military service is imposed upon the peasantry as an obligation attached to the land they cultivate. Landowners and local authorities are responsible for supplying a fixed number of recruits from their holdings, with service falling primarily upon the rural population. Desertion or refusal to serve is treated as a breach of one's obligations to the estate."
+ law_allotment_system: "Allotment System"
+ law_allotment_system_desc: "Military recruitment is conducted through periodic allotments, with each administrative district required to provide a predetermined quota of men. Local authorities distribute the burden among the population, selecting eligible individuals to fill the army's ranks. The system ensures a steady supply of recruits while leaving the state considerable flexibility in determining its military needs."
+ law_levee_en_masse: "Levée En Masse"
+ law_levee_en_masse_desc: "The entire nation is called upon to defend the state, with military service becoming a collective duty rather than an obligation limited to particular classes. All able-bodied men may be summoned to the ranks, while the civilian population is mobilised to sustain the war effort. The system enables the state to raise vast armies, often at the cost of placing society under extraordinary strain."
