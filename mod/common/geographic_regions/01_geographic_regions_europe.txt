@@ -82,3 +82,43 @@ geographic_region_greater_bulgaria = {
 	short_key = greater_bulgaria
 	state_regions = { STATE_SOUTHERN_SERBIA STATE_THRACE STATE_MACEDONIA STATE_SOUTHERN_RUMELIA STATE_NORTHERN_RUMELIA STATE_SILISTRIA }
 }
+
+geographic_region_northwestern_russia = {
+	short_key = northwestern_russia
+	state_regions = { STATE_KARELIA STATE_ARKHANGEL_SK STATE_GALICH STATE_TVER STATE_NOVGOROD }
+}
+
+geographic_region_central_russia = {
+	short_key = central_russia
+	state_regions = { STATE_MOSKVA STATE_KURSK STATE_BRYANSK }
+}
+
+geographic_region_southern_russia = {
+	short_key = southern_russia
+	state_regions = { STATE_DAGESTAN STATE_KUBAN STATE_CIRCASSIA STATE_ASTRAKHAN STATE_DONBASS STATE_AZOV }
+}
+
+geographic_region_russian_eurasia = {
+	short_key = russian_eurasia
+	strategic_regions = { sr:region_eastern_europe sr:region_russia sr:region_siberia sr:region_central_asia sr:region_northeast_asia }
+}
+
+geographic_region_russian_siberia = {
+	short_key = russian_siberia
+	state_regions = { STATE_MAGADAN STATE_KOLYMA STATE_HAILANPAO STATE_VERKHOYANSK STATE_ZHIGANSK STATE_TRANS_BAIKAL STATE_IRKUTSK STATE_VILYUYSK STATE_TOMSK STATE_OMSK STATE_EVENKIYSK STATE_YENISEYSK STATE_NORTHERN_YENISEYSK STATE_YAMALIA STATE_KHANTY_MANSI STATE_URAL }
+}
+
+geographic_region_priamurye = {
+	short_key = priamurye
+	state_regions = { STATE_GUANWAI STATE_CHUKOTKA STATE_PETROPAVLOVSK }
+}
+
+geographic_region_transcaucasia = {
+	short_key = transcaucasia
+	state_regions = { STATE_GEORGIA STATE_KARS STATE_ARMENIA STATE_AZERBAIJAN }
+}
+
+geographic_region_austria = {
+	short_key = austria
+	state_regions = { STATE_TIROL STATE_OSTERREICH STATE_SUDTIROL }
+}

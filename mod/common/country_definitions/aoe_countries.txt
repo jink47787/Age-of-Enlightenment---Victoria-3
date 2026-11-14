@@ -1,10 +1,28 @@
 ﻿ABB = {
 	color = { 49 102 112 }
-	country_type = unrecognized
-	tier = city_state
-	cultures = { native_american_minor }
-	religion = protestant
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
 	capital = STATE_MAINE
+}
+
+ABP = {
+	color = { 221 202 196 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chaco }
+	religion = animist
+	capital = STATE_CHACO
+}
+
+ABS = {
+	color = { 199 102 22 }
+	country_type = decentralized
+	tier = principality
+	cultures = { siouan }
+	religion = animist
+	capital = STATE_MONTANA
 }
 
 ABU = {
@@ -43,6 +61,15 @@ AGC = {
 	capital = STATE_MOCAMBIQUE
 }
 
+AIS = {
+	color = { 174 178 168 }
+	country_type = decentralized
+	tier = principality
+	cultures = { floridian }
+	religion = animist
+	capital = STATE_FLORIDA
+}
+
 ALD = {
 	color = { 113 130 78 }
 	country_type = unrecognized
@@ -50,6 +77,15 @@ ALD = {
 	cultures = { maghrebi berber }
 	religion = sunni
 	capital = STATE_ORAN
+}
+
+ALG = {
+	color = { 168 154 225 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_ONTARIO
 }
 
 ANH = {
@@ -72,11 +108,11 @@ ANS = {
 
 APC = {
 	color = { 99 25 29 }
-	country_type = unrecognized
+	country_type = decentralized
 	tier = principality
-	cultures = { navajo }
+	cultures = { apache }
 	religion = animist
-	capital = STATE_TEXAS
+	capital = STATE_ARIZONA
 }
 
 ARK = {
@@ -97,6 +133,15 @@ ARO = {
 	capital = STATE_NIGER_DELTA
 }
 
+ARW = {
+	color = { 218 232 226 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cariban }
+	religion = animist
+	capital = STATE_GUAYANA
+}
+
 ASH = {
 	color = { 255 213 0 }
 	country_type = unrecognized
@@ -115,6 +160,24 @@ ASM = {
 	capital = STATE_ASSAM
 }
 
+ASN = {
+	color = { 192 164 161 }
+	country_type = decentralized
+	tier = principality
+	cultures = { amazonian }
+	religion = animist
+	capital = STATE_LIMA
+}
+
+ATB = {
+	color = { 88 105 137 }
+	country_type = decentralized
+	tier = principality
+	cultures = { athabaskan }
+	religion = animist
+	capital = STATE_ALBERTA
+}
+
 ATJ = {
 	color = { 73 152 76 }
 	country_type = unrecognized
@@ -122,6 +185,15 @@ ATJ = {
 	cultures = { acehnese malay sinitic }
 	religion = sunni
 	capital = STATE_ACEH
+}
+
+ATK = {
+	color = { 210 174 152 }
+	country_type = decentralized
+	tier = principality
+	cultures = { coahuiltecan }
+	religion = animist
+	capital = STATE_LOUISIANA
 }
 
 AUG = {
@@ -259,6 +331,15 @@ BIJ = {
 	capital = STATE_BIJAPUR
 }
 
+BLF = {
+	color = { 49 72 153 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_ALBERTA
+}
+
 BNG = {
 	color = { 36 109 194 }
 	country_type = unrecognized
@@ -313,6 +394,24 @@ BRU = {
 	capital = STATE_WEST_BORNEO
 }
 
+BTC = {
+	color = { 225 205 165 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_MINAS_GERAIS
+}
+
+BTK = {
+	color = { 163 150 189 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_NEWFOUNDLAND
+}
+
 BTN = {
 	color = { 25 70 220 }
 	country_type = unrecognized
@@ -349,6 +448,15 @@ BUR = {
 	capital = STATE_MANDALAY
 }
 
+CAD = {
+	color = { 206 173 159 }
+	country_type = decentralized
+	tier = principality
+	cultures = { caddoan }
+	religion = animist
+	capital = STATE_TEXAS
+}
+
 CAM = {
 	color = { 127 180 60 }
 	country_type = unrecognized
@@ -356,6 +464,33 @@ CAM = {
 	cultures = { khmer }
 	religion = theravada
 	capital = STATE_CAMBODIA
+}
+
+CCH = {
+	color = { 219 237 216 }
+	country_type = decentralized
+	tier = principality
+	cultures = { yuman }
+	religion = animist
+	capital = STATE_SONORA
+}
+
+CCM = {
+	color = { 156 171 67 }
+	country_type = decentralized
+	tier = principality
+	cultures = { oodham }
+	religion = animist
+	capital = STATE_ARIZONA
+}
+
+CHE = {
+	color = { 105 145 40 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cherokee }
+	religion = animist
+	capital = STATE_NORTH_CAROLINA
 }
 
 CHG = {
@@ -385,6 +520,15 @@ CIT = {
 	capital = STATE_KERALA
 }
 
+CKS = {
+	color = { 158 194 202 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_EAST_MISSISSIPI
+}
+
 CLA = {
 	color = { 136 157 23 }
 	country_type = unrecognized
@@ -394,6 +538,15 @@ CLA = {
 	capital = STATE_NIGER_DELTA
 }
 
+CLU = {
+	color = { 150 212 229 }
+	country_type = decentralized
+	tier = principality
+	cultures = { floridian }
+	religion = animist
+	capital = STATE_FLORIDA
+}
+
 CMG = {
 	color = { 76 122 90 }
 	country_type = unrecognized
@@ -401,15 +554,6 @@ CMG = {
 	cultures = { thai lao kachin }
 	religion = theravada
 	capital = STATE_SHAN
-}
-
-CMN = {
-	color = { 109 125 29 }
-	country_type = unrecognized
-	tier = city_state
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_COLORADO
 }
 
 COB = {
@@ -430,6 +574,15 @@ COC = {
 	capital = STATE_KERALA
 }
 
+COM = {
+	color = { 96 57 19 }
+	country_type = decentralized
+	tier = principality
+	cultures = { comanche }
+	religion = animist
+	capital = STATE_CENTRAL_GREAT_PLAINS
+}
+
 CRI = {
 	color = { 59 158 125 }
 	country_type = unrecognized
@@ -446,6 +599,69 @@ CRL = {
 	cultures = { pashtun }
 	religion = shiite
 	capital = STATE_PESHAWAR
+}
+
+CRR = {
+	color = { 232 158 218 }
+	country_type = decentralized
+	tier = principality
+	cultures = { charrua }
+	religion = animist
+	capital = STATE_URUGUAY
+}
+
+CSC = {
+	color = { 105 152 73 }
+	country_type = decentralized
+	tier = principality
+	cultures = { salish }
+	religion = animist
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+CTA = {
+	color = { 229 223 203 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_EAST_MISSISSIPI
+}
+
+CTF = {
+	color = { 220 147 37 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_ONTARIO
+}
+
+CTL = {
+	color = { 159 154 227 }
+	country_type = decentralized
+	tier = principality
+	cultures = { coahuiltecan }
+	religion = animist
+	capital = STATE_TEXAS
+}
+
+CTM = {
+	color = { 151 199 182 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_LOUISIANA
+}
+
+CTW = {
+	color = { 172 233 169 }
+	country_type = decentralized
+	tier = principality
+	cultures = { siouan }
+	religion = animist
+	capital = STATE_NORTH_CAROLINA
 }
 
 DAH = {
@@ -473,6 +689,15 @@ DJA = {
 	cultures = { malay }
 	religion = sunni
 	capital = STATE_SIAK
+}
+
+DKT = {
+	color = { 68 14 98 }
+	country_type = decentralized
+	tier = principality
+	cultures = { dakota }
+	religion = animist
+	capital = STATE_SIOUX_TERRITORY
 }
 
 DLM = {
@@ -529,6 +754,15 @@ DOR = {
 	capital = STATE_WESTFALEN
 }
 
+DPR = {
+	color = { 160 160 160 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_german }
+	religion = protestant
+	capital = STATE_OSTPREUSSEN
+}
+
 DZN = {
 	color = { 129 97 62 }
 	country_type = unrecognized
@@ -556,6 +790,15 @@ EIC = {
 	capital = STATE_KOLKATA
 }
 
+EMB = {
+	color = { 227 156 167 }
+	country_type = decentralized
+	tier = principality
+	cultures = { choco }
+	religion = animist
+	capital = STATE_ANTIOQUIA
+}
+
 ETH = {
 	color = { 56 120 191 }
 	country_type = unrecognized
@@ -568,10 +811,19 @@ ETH = {
 FCA = {
 	color = { 0 34 255 }
 	country_type = colonial
-	tier = kingdom
+	tier = grand_principality
 	cultures = { french_canadian louisianan }
 	religion = catholic
 	capital = STATE_QUEBEC
+}
+
+FLK = {
+	color = { 179 154 209 }
+	country_type = decentralized
+	tier = principality
+	cultures = { patagonian }
+	religion = animist
+	capital = STATE_PATAGONIA_MERIDIONAL
 }
 
 FRA = {
@@ -655,6 +907,24 @@ GFL = {
 	capital = STATE_SENEGAL
 }
 
+GNA = {
+	color = { 235 172 191 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chibchan }
+	religion = animist
+	capital = STATE_PANAMA
+}
+
+GNI = {
+	color = { 73 139 166 }
+	country_type = decentralized
+	tier = principality
+	cultures = { guarani }
+	religion = animist
+	capital = STATE_SANTA_CRUZ
+}
+
 GOL = {
 	color = { 210 106 47 }
 	country_type = unrecognized
@@ -673,6 +943,15 @@ GRH = {
 	capital = STATE_BUNDLEKHAND_CENTRAL_INDIA
 }
 
+GRM = {
+	color = { 156 178 203 }
+	country_type = decentralized
+	tier = principality
+	cultures = { guarani }
+	religion = animist
+	capital = STATE_MATO_GROSSO
+}
+
 GUJ = {
 	color = { 192 111 1 }
 	country_type = unrecognized
@@ -680,6 +959,24 @@ GUJ = {
 	cultures = { gujarati marathi rajput }
 	religion = sunni
 	capital = STATE_GUJARAT
+}
+
+GYC = {
+	color = { 171 205 150 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chaco }
+	religion = animist
+	capital = STATE_ALTO_PARAGUAY
+}
+
+GYP = {
+	color = { 155 192 154 }
+	country_type = decentralized
+	tier = principality
+	cultures = { yuman }
+	religion = animist
+	capital = STATE_SONORA
 }
 
 GZK = {
@@ -730,7 +1027,7 @@ HAW = {
 HBC = {
 	color = { 99 91 69 }
 	country_type = company
-	tier = principality
+	tier = city_state
 	cultures = { british }
 	religion = protestant
 	capital = STATE_ONTARIO
@@ -763,6 +1060,24 @@ HOL = {
 	capital = STATE_HOLSTEIN
 }
 
+HOP = {
+	color = { 223 150 194 }
+	country_type = decentralized
+	tier = principality
+	cultures = { pueblo }
+	religion = animist
+	capital = STATE_ARIZONA
+}
+
+HOU = {
+	color = { 162 189 189 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_LOUISIANA
+}
+
 HSA = {
 	color = { 18 106 112 }
 	country_type = unrecognized
@@ -770,6 +1085,24 @@ HSA = {
 	cultures = { bedouin }
 	religion = shiite
 	capital = STATE_TRUCIAL_COAST
+}
+
+ICB = {
+	color = { 216 163 234 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cariban }
+	religion = animist
+	capital = STATE_WEST_INDIES
+}
+
+ILN = {
+	color = { 198 225 193 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_ILLINOIS_COUNTRY
 }
 
 IMO = {
@@ -781,13 +1114,31 @@ IMO = {
 	capital = STATE_OMAN
 }
 
+INU = {
+	color = { 205 176 226 }
+	country_type = decentralized
+	tier = principality
+	cultures = { inuit }
+	religion = animist
+	capital = STATE_ISLAND_GRONLAND
+}
+
 IQS = {
 	color = { 204 204 255 }
 	country_type = unrecognized
 	tier = grand_principality
-	cultures = { native_american_minor }
+	cultures = { iroquoian }
 	religion = animist
 	capital = STATE_NEW_YORK
+}
+
+IRC = {
+	color = { 61 158 124 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cree }
+	religion = animist
+	capital = STATE_ONTARIO
 }
 
 JAI = {
@@ -817,6 +1168,24 @@ JEY = {
 	capital = STATE_CICARS
 }
 
+JMN = {
+	color = { 216 217 183 }
+	country_type = decentralized
+	tier = principality
+	cultures = { coahuiltecan }
+	religion = animist
+	capital = STATE_TEXAS
+}
+
+JNB = {
+	color = { 224 215 157 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chichimeca }
+	religion = animist
+	capital = STATE_DURANGO
+}
+
 JOD = {
 	color = { 104 207 140 }
 	country_type = unrecognized
@@ -833,6 +1202,15 @@ JOH = {
 	cultures = { malay sinitic }
 	religion = sunni
 	capital = STATE_MALAYA
+}
+
+KAI = {
+	color = { 201 171 152 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_PARANA
 }
 
 KAL = {
@@ -952,6 +1330,15 @@ KOR = {
 	capital = STATE_HANSEONG
 }
 
+KRK = {
+	color = { 200 167 155 }
+	country_type = decentralized
+	tier = principality
+	cultures = { coahuiltecan }
+	religion = animist
+	capital = STATE_TEXAS
+}
+
 KRN = {
 	color = { 226 22 48 }
 	country_type = unrecognized
@@ -986,6 +1373,24 @@ KUR = {
 	cultures = { north_german latvian }
 	religion = protestant
 	capital = STATE_COURLAND
+}
+
+KYP = {
+	color = { 198 195 236 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_MARANHAO
+}
+
+KYS = {
+	color = { 179 206 177 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_MINAS_GERAIS
 }
 
 LAD = {
@@ -1026,11 +1431,11 @@ LIP = {
 
 LNP = {
 	color = { 114 159 175 }
-	country_type = unrecognized
-	tier = city_state
-	cultures = { native_american_minor }
-	religion = protestant
-	capital = STATE_PENNSYLVANIA
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_NEW_JERSEY
 }
 
 LOR = {
@@ -1114,6 +1519,15 @@ MAL = {
 	capital = STATE_CELEBES
 }
 
+MAP = {
+	color = { 150 211 223 }
+	country_type = decentralized
+	tier = principality
+	cultures = { patagonian }
+	religion = animist
+	capital = STATE_SANTIAGO
+}
+
 MAW = {
 	color = { 192 5 24 }
 	country_type = unrecognized
@@ -1123,6 +1537,24 @@ MAW = {
 	capital = STATE_MALWA
 }
 
+MAY = {
+	color = { 98 88 142 }
+	country_type = decentralized
+	tier = principality
+	cultures = { mayan }
+	religion = animist
+	capital = STATE_GUATEMALA
+}
+
+MBL = {
+	color = { 213 233 197 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_EAST_MISSISSIPI
+}
+
 MDR = {
 	color = { 161 38 148 }
 	country_type = unrecognized
@@ -1130,6 +1562,15 @@ MDR = {
 	cultures = { kannada }
 	religion = hindu
 	capital = STATE_MADURAI
+}
+
+MDU = {
+	color = { 150 178 204 }
+	country_type = decentralized
+	tier = principality
+	cultures = { amazonian }
+	religion = animist
+	capital = STATE_MARANHAO
 }
 
 MEC = {
@@ -1168,6 +1609,15 @@ MGL = {
 	capital = STATE_MONGOLIA
 }
 
+MGP = {
+	color = { 90 180 90 }
+	country_type = colonial
+	tier = city_state
+	cultures = { brazilian afro_brazilian }
+	religion = catholic
+	capital = STATE_MARANHAO
+}
+
 MGW = {
 	color = { 12 177 122 }
 	country_type = unrecognized
@@ -1184,6 +1634,15 @@ MHR = {
 	cultures = { bedouin }
 	religion = sunni
 	capital = STATE_YEMEN
+}
+
+MIA = {
+	color = { 159 185 233 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_OTTAWA_TERRITORY
 }
 
 MLD = {
@@ -1204,6 +1663,15 @@ MLT = {
 	capital = STATE_SICILIA
 }
 
+MNO = {
+	color = { 209 150 169 }
+	country_type = decentralized
+	tier = principality
+	cultures = { amazonian }
+	religion = animist
+	capital = STATE_AMAZONAS
+}
+
 MNP = {
 	color = { 190 144 0 }
 	country_type = unrecognized
@@ -1220,6 +1688,15 @@ MNT = {
 	cultures = { north_italian south_italian }
 	religion = catholic
 	capital = STATE_LOMBARDIA
+}
+
+MNU = {
+	color = { 153 167 216 }
+	country_type = decentralized
+	tier = principality
+	cultures = { charrua }
+	religion = animist
+	capital = STATE_URUGUAY
 }
 
 MNZ = {
@@ -1258,13 +1735,49 @@ MOR = {
 	capital = STATE_FEZ
 }
 
+MSC = {
+	color = { 108 139 208 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_CREEK_TERRITORY
+}
+
 MSK = {
 	color = { 0 36 125 }
-	country_type = unrecognized
-	tier = city_state
-	cultures = { native_american_minor }
-	religion = protestant
-	capital = STATE_NICARAGUA
+	country_type = decentralized
+	tier = principality
+	cultures = { miskito }
+	religion = animist
+	capital = STATE_GUATEMALA
+}
+
+MSQ = {
+	color = { 220 161 203 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_MESKWAKI_TERRITORY
+}
+
+MTG = {
+	color = { 178 174 205 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cree }
+	religion = animist
+	capital = STATE_QUEBEC
+}
+
+MTL = {
+	color = { 197 171 158 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chibchan }
+	religion = animist
+	capital = STATE_ZULIA
 }
 
 MUG = {
@@ -1438,15 +1951,6 @@ N0E = {
 	capital = STATE_BENIN
 }
 
-N25 = {
-	color = { 166 176 189 }
-	country_type = decentralized
-	tier = principality
-	cultures = { volta }
-	religion = animist
-	capital = STATE_NIGER_DELTA
-}
-
 N0F = {
 	color = { 118 187 129 }
 	country_type = decentralized
@@ -1465,15 +1969,6 @@ N0G = {
 	capital = STATE_ASSAM
 }
 
-N26 = {
-	color = { 176 108 94 }
-	country_type = decentralized
-	tier = principality
-	cultures = { asian_minor }
-	religion = animist
-	capital = STATE_IMPHAL
-}
-
 N0H = {
 	color = { 134 177 190 }
 	country_type = decentralized
@@ -1481,15 +1976,6 @@ N0H = {
 	cultures = { bantu }
 	religion = animist
 	capital = STATE_MASHONALAND
-}
-
-N0I = {
-	color = { 136 164 190 }
-	country_type = decentralized
-	tier = principality
-	cultures = { cherokee }
-	religion = animist
-	capital = STATE_CHEROKEE_TERRITORY
 }
 
 N0J = {
@@ -1528,15 +2014,6 @@ N0M = {
 	capital = STATE_ASTRAKHAN
 }
 
-N24 = {
-	color = { 116 153 152 }
-	country_type = decentralized
-	tier = principality
-	cultures = { oirat }
-	religion = gelugpa
-	capital = STATE_ASTRAKHAN
-}
-
 N0N = {
 	color = { 171 149 188 }
 	country_type = decentralized
@@ -1546,24 +2023,6 @@ N0N = {
 	capital = STATE_GAMKA
 }
 
-N0O = {
-	color = { 149 189 148 }
-	country_type = decentralized
-	tier = principality
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_OHIO_VALLEY
-}
-
-N0P = {
-	color = { 148 184 166 }
-	country_type = decentralized
-	tier = principality
-	cultures = { guarani }
-	religion = animist
-	capital = STATE_BAJO_PARAGUAY
-}
-
 N0Q = {
 	color = { 101 120 118 }
 	country_type = decentralized
@@ -1571,15 +2030,6 @@ N0Q = {
 	cultures = { kazak }
 	religion = sunni
 	capital = STATE_URALSK
-}
-
-N27 = {
-	color = { 196 194 189 }
-	country_type = decentralized
-	tier = principality
-	cultures = { kazak }
-	religion = sunni
-	capital = STATE_BUKHARA
 }
 
 N0R = {
@@ -1618,15 +2068,6 @@ N0U = {
 	capital = STATE_CAPE_TOWN
 }
 
-N28 = {
-	color = { 129 91 126 }
-	country_type = decentralized
-	tier = principality
-	cultures = { khoikhoi }
-	religion = animist
-	capital = STATE_OTJOZONDJII
-}
-
 N0V = {
 	color = { 90 152 177 }
 	country_type = decentralized
@@ -1645,15 +2086,6 @@ N0W = {
 	capital = STATE_FIJI_2
 }
 
-N0X = {
-	color = { 90 100 131 }
-	country_type = decentralized
-	tier = principality
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_LOUISIANA
-}
-
 N0Y = {
 	color = { 185 190 112 }
 	country_type = decentralized
@@ -1663,24 +2095,6 @@ N0Y = {
 	capital = STATE_MOGADISHU
 }
 
-N0Z = {
-	color = { 197 191 114 }
-	country_type = decentralized
-	tier = principality
-	cultures = { amazonian }
-	religion = animist
-	capital = STATE_SANTA_CRUZ
-}
-
-N10 = {
-	color = { 172 151 94 }
-	country_type = decentralized
-	tier = principality
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_EAST_MISSISSIPI
-}
-
 N11 = {
 	color = { 114 189 158 }
 	country_type = decentralized
@@ -1688,15 +2102,6 @@ N11 = {
 	cultures = { aborigine }
 	religion = animist
 	capital = STATE_VICTORIA
-}
-
-N12 = {
-	color = { 165 143 130 }
-	country_type = decentralized
-	tier = principality
-	cultures = { brazilian }
-	religion = catholic
-	capital = STATE_MATO_GROSSO
 }
 
 N13 = {
@@ -1726,15 +2131,6 @@ N15 = {
 	capital = STATE_OMSK
 }
 
-N16 = {
-	color = { 166 176 189 }
-	country_type = decentralized
-	tier = principality
-	cultures = { amazonian }
-	religion = animist
-	capital = STATE_ANTIOQUIA
-}
-
 N17 = {
 	color = { 176 108 94 }
 	country_type = decentralized
@@ -1753,15 +2149,6 @@ N18 = {
 	capital = STATE_SOUTH_MADAGASCAR
 }
 
-N19 = {
-	color = { 129 91 126 }
-	country_type = decentralized
-	tier = principality
-	cultures = { spanish_american }
-	religion = catholic
-	capital = STATE_CHACO
-}
-
 N1A = {
 	color = { 180 162 94 }
 	country_type = decentralized
@@ -1771,60 +2158,6 @@ N1A = {
 	capital = STATE_TAHITI
 }
 
-N1B = {
-	color = { 159 145 181 }
-	country_type = decentralized
-	tier = principality
-	cultures = { spanish_american }
-	religion = catholic
-	capital = STATE_ARAUCANIA
-}
-
-N1C = {
-	color = { 193 185 115 }
-	country_type = decentralized
-	tier = principality
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_SIOUX_TERRITORY
-}
-
-N1D = {
-	color = { 119 93 108 }
-	country_type = decentralized
-	tier = principality
-	cultures = { cree }
-	religion = animist
-	capital = STATE_OTTAWA_TERRITORY
-}
-
-N29 = {
-	color = { 121 114 189 }
-	country_type = decentralized
-	tier = principality
-	cultures = { cree }
-	religion = animist
-	capital = STATE_MESKWAKI_TERRITORY
-}
-
-N2A = {
-	color = { 159 145 181 }
-	country_type = decentralized
-	tier = principality
-	cultures = { cree }
-	religion = animist
-	capital = STATE_MANITOBA
-}
-
-N2B = {
-	color = { 193 185 115 }
-	country_type = decentralized
-	tier = principality
-	cultures = { cree }
-	religion = animist
-	capital = STATE_ONTARIO
-}
-
 N1E = {
 	color = { 118 187 129 }
 	country_type = decentralized
@@ -1832,15 +2165,6 @@ N1E = {
 	cultures = { melanesian }
 	religion = animist
 	capital = STATE_BALI
-}
-
-N1F = {
-	color = { 192 192 181 }
-	country_type = decentralized
-	tier = principality
-	cultures = { patagonian }
-	religion = animist
-	capital = STATE_BUENOS_AIRES
 }
 
 N1G = {
@@ -1861,22 +2185,13 @@ N1H = {
 	capital = STATE_HAILANPAO
 }
 
-N1I = {
-	color = { 94 161 115 }
-	country_type = decentralized
-	tier = principality
-	cultures = { polynesian }
-	religion = animist
-	capital = STATE_FIJI
-}
-
 N1J = {
 	color = { 122 198 104 }
 	country_type = decentralized
 	tier = principality
-	cultures = { native_american_minor }
+	cultures = { micronesian }
 	religion = animist
-	capital = STATE_CALIFORNIA
+	capital = STATE_MARIANA_ISLANDS
 }
 
 N1K = {
@@ -1892,63 +2207,18 @@ N1L = {
 	color = { 124 175 193 }
 	country_type = decentralized
 	tier = principality
-	cultures = { micronesian }
-	religion = animist
-	capital = STATE_MARIANA_ISLANDS
-}
-
-N1M = {
-	color = { 171 149 188 }
-	country_type = decentralized
-	tier = principality
 	cultures = { malagasy }
 	religion = animist
 	capital = STATE_MAURITIUS
-}
-
-N1N = {
-	color = { 149 189 148 }
-	country_type = decentralized
-	tier = principality
-	cultures = { amazonian }
-	religion = animist
-	capital = STATE_MARANHAO
-}
-
-N2C = {
-	color = { 119 93 108 }
-	country_type = decentralized
-	tier = principality
-	cultures = { amazonian }
-	religion = animist
-	capital = STATE_GUAYANA
-}
-
-N1O = {
-	color = { 148 184 166 }
-	country_type = decentralized
-	tier = principality
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_WYOMING
-}
-
-N1P = {
-	color = { 101 120 118 }
-	country_type = decentralized
-	tier = principality
-	cultures = { native_american_minor }
-	religion = animist
-	capital = STATE_ALBERTA
 }
 
 N1Q = {
 	color = { 188 194 183 }
 	country_type = decentralized
 	tier = principality
-	cultures = { pueblo }
+	cultures = { polynesian }
 	religion = animist
-	capital = STATE_ARIZONA
+	capital = STATE_FIJI
 }
 
 N1R = {
@@ -1960,42 +2230,6 @@ N1R = {
 	capital = STATE_TRIPOLITANIA
 }
 
-N1S = {
-	color = { 119 169 159 }
-	country_type = decentralized
-	tier = principality
-	cultures = { cree }
-	religion = animist
-	capital = STATE_SASKATCHEWAN
-}
-
-N1T = {
-	color = { 107 139 98 }
-	country_type = decentralized
-	tier = principality
-	cultures = { inuit }
-	religion = animist
-	capital = STATE_ALYASKA
-}
-
-N1U = {
-	color = { 90 152 177 }
-	country_type = decentralized
-	tier = principality
-	cultures = { dakota }
-	religion = animist
-	capital = STATE_DAKOTA_TERRITORY
-}
-
-N1V = {
-	color = { 109 161 137 }
-	country_type = decentralized
-	tier = principality
-	cultures = { spanish_american }
-	religion = catholic
-	capital = STATE_SONORA
-}
-
 N1W = {
 	color = { 90 100 131 }
 	country_type = decentralized
@@ -2003,15 +2237,6 @@ N1W = {
 	cultures = { ugrian }
 	religion = animist
 	capital = STATE_ARKHANGEL_SK
-}
-
-N2D = {
-	color = { 118 187 129 }
-	country_type = decentralized
-	tier = principality
-	cultures = { ugrian }
-	religion = animist
-	capital = STATE_YAMALIA
 }
 
 N1X = {
@@ -2025,15 +2250,6 @@ N1X = {
 
 N1Y = {
 	color = { 197 191 114 }
-	country_type = decentralized
-	tier = principality
-	cultures = { siberian }
-	religion = animist
-	capital = STATE_NORTHERN_YENISEYSK
-}
-
-N2E = {
-	color = { 192 192 181 }
 	country_type = decentralized
 	tier = principality
 	cultures = { siberian }
@@ -2086,6 +2302,69 @@ N23 = {
 	capital = STATE_HAWAIIAN_ISLANDS
 }
 
+N24 = {
+	color = { 116 153 152 }
+	country_type = decentralized
+	tier = principality
+	cultures = { oirat }
+	religion = gelugpa
+	capital = STATE_ASTRAKHAN
+}
+
+N25 = {
+	color = { 166 176 189 }
+	country_type = decentralized
+	tier = principality
+	cultures = { volta }
+	religion = animist
+	capital = STATE_NIGER_DELTA
+}
+
+N26 = {
+	color = { 176 108 94 }
+	country_type = decentralized
+	tier = principality
+	cultures = { asian_minor }
+	religion = animist
+	capital = STATE_IMPHAL
+}
+
+N27 = {
+	color = { 196 194 189 }
+	country_type = decentralized
+	tier = principality
+	cultures = { kazak }
+	religion = sunni
+	capital = STATE_BUKHARA
+}
+
+N28 = {
+	color = { 129 91 126 }
+	country_type = decentralized
+	tier = principality
+	cultures = { khoikhoi }
+	religion = animist
+	capital = STATE_OTJOZONDJII
+}
+
+N2D = {
+	color = { 118 187 129 }
+	country_type = decentralized
+	tier = principality
+	cultures = { ugrian }
+	religion = animist
+	capital = STATE_YAMALIA
+}
+
+N2E = {
+	color = { 192 192 181 }
+	country_type = decentralized
+	tier = principality
+	cultures = { siberian }
+	religion = animist
+	capital = STATE_NORTHERN_YENISEYSK
+}
+
 NAS = {
 	color = { 107 94 169 }
 	country_type = recognized
@@ -2093,6 +2372,15 @@ NAS = {
 	cultures = { north_german }
 	religion = protestant
 	capital = STATE_RHEIN_RUHR
+}
+
+NAY = {
+	color = { 219 232 186 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cora }
+	religion = animist
+	capital = STATE_JALISCO
 }
 
 NEJ = {
@@ -2140,6 +2428,15 @@ NJN = {
 	capital = STATE_NEJD
 }
 
+NTZ = {
+	color = { 174 170 199 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_LOUISIANA
+}
+
 NUR = {
 	color = { 255 119 0 }
 	country_type = recognized
@@ -2147,6 +2444,15 @@ NUR = {
 	cultures = { south_german }
 	religion = catholic
 	capital = STATE_FRANKEN
+}
+
+NVJ = {
+	color = { 126 180 154 }
+	country_type = decentralized
+	tier = principality
+	cultures = { navajo }
+	religion = animist
+	capital = STATE_NEW_MEXICO
 }
 
 NYE = {
@@ -2176,6 +2482,24 @@ ORI = {
 	capital = STATE_ORISSA
 }
 
+ORN = {
+	color = { 55 120 25 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cariban }
+	religion = animist
+	capital = STATE_ZULIA
+}
+
+OSA = {
+	color = { 211 218 196 }
+	country_type = decentralized
+	tier = principality
+	cultures = { siouan }
+	religion = animist
+	capital = STATE_WEST_MISSISSIPI
+}
+
 OYO = {
 	color = { 184 134 11 }
 	country_type = unrecognized
@@ -2192,6 +2516,15 @@ PAL = {
 	cultures = { south_german }
 	religion = catholic
 	capital = STATE_RHEIN_RUHR
+}
+
+PAM = {
+	color = { 212 226 183 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chichimeca }
+	religion = animist
+	capital = STATE_ZACATECAS
 }
 
 PAP = {
@@ -2257,6 +2590,15 @@ PLM = {
 	capital = STATE_PALEMBANG
 }
 
+PMP = {
+	color = { 230 216 228 }
+	country_type = decentralized
+	tier = principality
+	cultures = { patagonian }
+	religion = animist
+	capital = STATE_BUENOS_AIRES
+}
+
 PNJ = {
 	color = { 155 87 127 }
 	country_type = unrecognized
@@ -2284,15 +2626,6 @@ PRK = {
 	capital = STATE_PATTANI
 }
 
-DPR = {
-	color = { 160 160 160 }
-	country_type = recognized
-	tier = principality
-	cultures = { north_german }
-	religion = protestant
-	capital = STATE_OSTPREUSSEN
-}
-
 PTK = {
 	color = { 189 136 44 }
 	country_type = unrecognized
@@ -2300,6 +2633,24 @@ PTK = {
 	cultures = { malay dayak }
 	religion = sunni
 	capital = STATE_SOUTH_BORNEO
+}
+
+PUR = {
+	color = { 226 194 209 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_MINAS_GERAIS
+}
+
+PWN = {
+	color = { 252 84 118 }
+	country_type = decentralized
+	tier = principality
+	cultures = { caddoan }
+	religion = animist
+	capital = STATE_NEBRASKA
 }
 
 PYG = {
@@ -2311,6 +2662,24 @@ PYG = {
 	capital = STATE_SIAK
 }
 
+PYU = {
+	color = { 217 192 171 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chaco }
+	religion = animist
+	capital = STATE_ALTO_PARAGUAY
+}
+
+QCN = {
+	color = { 171 201 183 }
+	country_type = decentralized
+	tier = principality
+	cultures = { yuman }
+	religion = animist
+	capital = STATE_CALIFORNIA
+}
+
 QNG = {
 	color = { 237 152 18 }
 	country_type = unrecognized
@@ -2318,6 +2687,15 @@ QNG = {
 	cultures = { manchu mongol khorchin beifaren }
 	religion = taoist
 	capital = STATE_ZHONGDING
+}
+
+QPW = {
+	color = { 217 205 156 }
+	country_type = decentralized
+	tier = principality
+	cultures = { siouan }
+	religion = animist
+	capital = STATE_LOWER_MISSISSIPI
 }
 
 QSM = {
@@ -2338,6 +2716,15 @@ RAJ = {
 	capital = STATE_RAJPUTANA
 }
 
+RAR = {
+	color = { 183 181 209 }
+	country_type = decentralized
+	tier = principality
+	cultures = { tarahumara }
+	religion = animist
+	capital = STATE_DURANGO
+}
+
 REW = {
 	color = { 48 140 70 }
 	country_type = unrecognized
@@ -2345,6 +2732,15 @@ REW = {
 	cultures = { kanauji avadhi }
 	religion = hindu
 	capital = STATE_BUNDLEKHAND_CENTRAL_INDIA
+}
+
+RPN = {
+	color = { 160 163 213 }
+	country_type = decentralized
+	tier = principality
+	cultures = { polynesian }
+	religion = animist
+	capital = STATE_ARAUCANIA
 }
 
 RTP = {
@@ -2381,6 +2777,15 @@ SAL = {
 	cultures = { south_german }
 	religion = catholic
 	capital = STATE_TIROL
+}
+
+SAP = {
+	color = { 213 215 168 }
+	country_type = decentralized
+	tier = principality
+	cultures = { siouan }
+	religion = animist
+	capital = STATE_NORTH_CAROLINA
 }
 
 SAT = {
@@ -2473,6 +2878,24 @@ SHI = {
 	capital = STATE_SIMLA
 }
 
+SHO = {
+	color = { 163 227 202 }
+	country_type = decentralized
+	tier = principality
+	cultures = { paiute }
+	religion = animist
+	capital = STATE_IDAHO
+}
+
+SHR = {
+	color = { 166 231 156 }
+	country_type = decentralized
+	tier = principality
+	cultures = { amazonian }
+	religion = animist
+	capital = STATE_ECUADOR
+}
+
 SIE = {
 	color = { 211 207 173 }
 	country_type = recognized
@@ -2509,6 +2932,15 @@ SKH = {
 	capital = STATE_SIMLA
 }
 
+SLS = {
+	color = { 50 152 173 }
+	country_type = decentralized
+	tier = principality
+	cultures = { salish }
+	religion = animist
+	capital = STATE_MONTANA
+}
+
 SLW = {
 	color = { 131 50 50 }
 	country_type = unrecognized
@@ -2527,6 +2959,15 @@ SPA = {
 	capital = STATE_CASTILLA_LA_NUEVA
 }
 
+SRI = {
+	color = { 150 227 188 }
+	country_type = decentralized
+	tier = principality
+	cultures = { yuman }
+	religion = animist
+	capital = STATE_SONORA
+}
+
 SUD = {
 	color = { 121 175 235 }
 	country_type = unrecognized
@@ -2543,6 +2984,15 @@ SUL = {
 	cultures = { malay filipino }
 	religion = sunni
 	capital = STATE_MINDANAO
+}
+
+SUM = {
+	color = { 165 172 159 }
+	country_type = decentralized
+	tier = principality
+	cultures = { miskito }
+	religion = animist
+	capital = STATE_NICARAGUA
 }
 
 SVY = {
@@ -2572,6 +3022,24 @@ SWI = {
 	capital = STATE_WEST_SWITZERLAND
 }
 
+SWN = {
+	color = { 215 155 192 }
+	country_type = decentralized
+	tier = principality
+	cultures = { algonquian }
+	religion = animist
+	capital = STATE_NORTH_CAROLINA
+}
+
+TBS = {
+	color = { 165 172 190 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chichimeca }
+	religion = animist
+	capital = STATE_DURANGO
+}
+
 THC = {
 	color = { 153 0 0 }
 	country_type = colonial
@@ -2579,6 +3047,15 @@ THC = {
 	cultures = { yankee british }
 	religion = protestant
 	capital = STATE_MASSACHUSETTS
+}
+
+THL = {
+	color = { 57 124 138 }
+	country_type = decentralized
+	tier = principality
+	cultures = { patagonian }
+	religion = animist
+	capital = STATE_PATAGONIA_MERIDIONAL
 }
 
 TIB = {
@@ -2606,6 +3083,42 @@ TKL = {
 	cultures = { north_german }
 	religion = catholic
 	capital = STATE_WESER_EMS
+}
+
+TLI = {
+	color = { 179 181 221 }
+	country_type = decentralized
+	tier = principality
+	cultures = { northwest_coast }
+	religion = animist
+	capital = STATE_ALYASKA
+}
+
+TLM = {
+	color = { 168 173 172 }
+	country_type = decentralized
+	tier = principality
+	cultures = { chibchan }
+	religion = animist
+	capital = STATE_NICARAGUA
+}
+
+TMB = {
+	color = { 178 220 193 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_MARANHAO
+}
+
+TNC = {
+	color = { 157 173 191 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_LOWER_MISSISSIPI
 }
 
 TOS = {
@@ -2662,6 +3175,15 @@ TRR = {
 	capital = STATE_UPPER_RHINELAND
 }
 
+TRU = {
+	color = { 151 206 177 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_RIO_GRANDE_DO_NORTE
+}
+
 TRZ = {
 	color = { 235 48 99 }
 	country_type = unrecognized
@@ -2669,6 +3191,15 @@ TRZ = {
 	cultures = { western_african berber bedouin }
 	religion = sunni
 	capital = STATE_MAURITANIA
+}
+
+TSC = {
+	color = { 190 194 212 }
+	country_type = decentralized
+	tier = principality
+	cultures = { iroquoian }
+	religion = animist
+	capital = STATE_NORTH_CAROLINA
 }
 
 TUR = {
@@ -2696,6 +3227,15 @@ ULM = {
 	cultures = { south_german }
 	religion = protestant
 	capital = STATE_WURTTEMBERG
+}
+
+UTE = {
+	color = { 235 126 175 }
+	country_type = decentralized
+	tier = principality
+	cultures = { paiute }
+	religion = animist
+	capital = STATE_NEVADA
 }
 
 VEN = {
@@ -2734,6 +3274,15 @@ WAL = {
 	capital = STATE_WALLACHIA
 }
 
+WCH = {
+	color = { 175 153 225 }
+	country_type = decentralized
+	tier = principality
+	cultures = { caddoan }
+	religion = animist
+	capital = STATE_CENTRAL_GREAT_PLAINS
+}
+
 WEI = {
 	color = { 209 212 126 }
 	country_type = recognized
@@ -2761,6 +3310,15 @@ WRL = {
 	capital = STATE_MOGADISHU
 }
 
+WRO = {
+	color = { 234 209 156 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cariban }
+	religion = animist
+	capital = STATE_ZULIA
+}
+
 WUL = {
 	color = { 162 158 123 }
 	country_type = recognized
@@ -2779,6 +3337,24 @@ WUR = {
 	capital = STATE_WURTTEMBERG
 }
 
+WYN = {
+	color = { 162 157 217 }
+	country_type = decentralized
+	tier = principality
+	cultures = { cariban }
+	religion = animist
+	capital = STATE_GUAYANA
+}
+
+WYU = {
+	color = { 40 96 65 }
+	country_type = decentralized
+	tier = principality
+	cultures = { guajiro }
+	religion = animist
+	capital = STATE_ANTIOQUIA
+}
+
 XIN = {
 	color = { 255 234 174 }
 	country_type = unrecognized
@@ -2786,6 +3362,33 @@ XIN = {
 	cultures = { uighur }
 	religion = taoist
 	capital = STATE_URUMQUI
+}
+
+XVT = {
+	color = { 179 161 198 }
+	country_type = decentralized
+	tier = principality
+	cultures = { je }
+	religion = animist
+	capital = STATE_MARANHAO
+}
+
+YAM = {
+	color = { 187 223 179 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	religion = animist
+	capital = STATE_CREEK_TERRITORY
+}
+
+YKT = {
+	color = { 216 215 167 }
+	country_type = decentralized
+	tier = principality
+	cultures = { californian }
+	religion = animist
+	capital = STATE_CALIFORNIA
 }
 
 YZW = {

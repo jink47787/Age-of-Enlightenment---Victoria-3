@@ -1,12 +1,4 @@
 ﻿CHARACTERS = {
-	c:ABB ?= {
-		create_character = {
-			ruler = yes
-			interest_group = ig_rural_folk
-			ideology = ideology_traditionalist
-			traits = { brave }
-		}
-	}
 	c:ABU ?= {
 		create_character = {
 			ruler = yes
@@ -76,14 +68,6 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { reckless }
-		}
-	}
-	c:APC ?= {
-		create_character = {
-			ruler = yes
-			interest_group = ig_rural_folk
-			ideology = ideology_traditionalist
-			traits = { brave }
 		}
 	}
 	c:ARK ?= {
@@ -464,14 +448,6 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { reserved }
-		}
-	}
-	c:CMN ?= {
-		create_character = {
-			ruler = yes
-			interest_group = ig_rural_folk
-			ideology = ideology_traditionalist
-			traits = { reckless }
 		}
 	}
 	c:COB ?= {
@@ -1210,14 +1186,6 @@
 			traits = { cautious }
 		}
 	}
-	c:LNP ?= {
-		create_character = {
-			ruler = yes
-			interest_group = ig_rural_folk
-			ideology = ideology_traditionalist
-			traits = { cautious }
-		}
-	}
 	c:LOR ?= {
 		create_character = {
 			first_name = aoe_ruler_LOR_first
@@ -1379,6 +1347,18 @@
 			traits = { pious }
 		}
 	}
+	c:MGP ?= {
+		create_character = {
+			first_name = aoe_ruler_MGP_first
+			last_name = aoe_ruler_MGP_last
+			historical = yes
+			ruler = yes
+			culture = cu:portuguese
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = { imperious }
+		}
+	}
 	c:MGW ?= {
 		create_character = {
 			first_name = aoe_ruler_MGW_first
@@ -1495,17 +1475,6 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { cruel }
-		}
-	}
-	c:MSK ?= {
-		create_character = {
-			first_name = aoe_ruler_MSK_first
-			last_name = aoe_ruler_MSK_last
-			historical = yes
-			ruler = yes
-			interest_group = ig_landowners
-			ideology = ideology_traditionalist
-			traits = { tactful }
 		}
 	}
 	c:MUG ?= {

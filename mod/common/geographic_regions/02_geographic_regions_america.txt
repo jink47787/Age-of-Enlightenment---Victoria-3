@@ -60,6 +60,11 @@ geographic_region_northern_mexico = {
 	state_regions = { STATE_CENTRAL_GREAT_PLAINS STATE_COLORADO STATE_TEXAS STATE_NEVADA STATE_ARIZONA STATE_NEW_MEXICO STATE_CALIFORNIA }
 }
 
+geographic_region_north_andes = {
+	short_key = north_andes
+	state_regions = { STATE_ZULIA STATE_ANTIOQUIA }
+}
+
 geographic_region_latin_america = {
 	short_key = latin_america
 	strategic_regions = { sr:region_brazil sr:region_la_plata sr:region_andes sr:region_gran_colombia sr:region_central_america }
@@ -71,9 +76,9 @@ geographic_region_greater_canada = {
 	state_regions = { STATE_YUKON_TERRITORY STATE_BRITISH_COLUMBIA STATE_ALBERTA STATE_SASKATCHEWAN STATE_WASHINGTON STATE_OREGON STATE_IDAHO STATE_ACADIA }
 }
 
-geographic_region_north_andes = {
-	short_key = north_andes
-	state_regions = { STATE_ZULIA STATE_ANTIOQUIA }
+geographic_region_canadian_confederation = {
+	short_key = canadian_confederation
+	state_regions = { STATE_YUKON_TERRITORY STATE_NORTHWEST_TERRITORIES STATE_BRITISH_COLUMBIA STATE_ALBERTA STATE_SASKATCHEWAN STATE_MANITOBA STATE_ONTARIO STATE_QUEBEC STATE_ACADIA }
 }
 
 geographic_region_southern_cone = {

@@ -28,6 +28,24 @@
 	}
 }
 
+ABP = {
+	flag_definition = {
+		coa = aoe_ABP
+		subject_canton = aoe_ABP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+ABS = {
+	flag_definition = {
+		coa = ABS
+		subject_canton = ABS
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 ABU = {
 	flag_definition = {
 		coa = aoe_ABU
@@ -112,6 +130,7 @@ AFG = {
 	flag_definition = {
 		coa = aoe_AFG_dominion
 		subject_canton = aoe_AFG_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -147,6 +166,15 @@ AGC = {
 	}
 }
 
+AIS = {
+	flag_definition = {
+		coa = aoe_AIS
+		subject_canton = aoe_AIS
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 ALD = {
 	flag_definition = {
 		coa = aoe_ALD
@@ -174,6 +202,15 @@ ALD = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+ALG = {
+	flag_definition = {
+		coa = aoe_ALG
+		subject_canton = aoe_ALG
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -327,6 +364,15 @@ ARO = {
 	}
 }
 
+ARW = {
+	flag_definition = {
+		coa = aoe_ARW
+		subject_canton = aoe_ARW
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 ASH = {
 	flag_definition = {
 		coa = aoe_ASH
@@ -387,6 +433,24 @@ ASM = {
 	}
 }
 
+ASN = {
+	flag_definition = {
+		coa = aoe_ASN
+		subject_canton = aoe_ASN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+ATB = {
+	flag_definition = {
+		coa = ATB
+		subject_canton = ATB
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 ATJ = {
 	flag_definition = {
 		coa = aoe_ATJ
@@ -414,6 +478,15 @@ ATJ = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+ATK = {
+	flag_definition = {
+		coa = aoe_ATK
+		subject_canton = aoe_ATK
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -447,6 +520,7 @@ AUG = {
 	}
 }
 
+
 AWA = {
 	flag_definition = {
 		coa = aoe_AWA
@@ -471,6 +545,7 @@ AWA = {
 	flag_definition = {
 		coa = aoe_AWA_dominion
 		subject_canton = aoe_AWA_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -779,6 +854,7 @@ BIH = {
 	flag_definition = {
 		coa = aoe_BIH_dominion
 		subject_canton = aoe_BIH_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -808,8 +884,18 @@ BIJ = {
 	flag_definition = {
 		coa = aoe_BIJ_dominion
 		subject_canton = aoe_BIJ_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+BLF = {
+	flag_definition = {
+		coa = aoe_BLF
+		subject_canton = aoe_BLF
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -837,6 +923,7 @@ BNG = {
 	flag_definition = {
 		coa = aoe_BNG_dominion
 		subject_canton = aoe_BNG_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -919,6 +1006,7 @@ BRR = {
 	flag_definition = {
 		coa = aoe_BRR_dominion
 		subject_canton = aoe_BRR_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -981,6 +1069,24 @@ BRU = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+BTC = {
+	flag_definition = {
+		coa = aoe_BTC
+		subject_canton = aoe_BTC
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+BTK = {
+	flag_definition = {
+		coa = aoe_BTK
+		subject_canton = aoe_BTK
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -1090,6 +1196,15 @@ BUR = {
 	}
 }
 
+CAD = {
+	flag_definition = {
+		coa = aoe_CAD
+		subject_canton = aoe_CAD
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 CAM = {
 	flag_definition = {
 		coa = aoe_CAM
@@ -1117,6 +1232,33 @@ CAM = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+CCH = {
+	flag_definition = {
+		coa = aoe_CCH
+		subject_canton = aoe_CCH
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CCM = {
+	flag_definition = {
+		coa = aoe_CCM
+		subject_canton = aoe_CCM
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CHE = {
+	flag_definition = {
+		coa = CHE
+		subject_canton = CHE
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -1210,6 +1352,15 @@ CIT = {
 	}
 }
 
+CKS = {
+	flag_definition = {
+		coa = aoe_CKS
+		subject_canton = aoe_CKS
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 CLA = {
 	flag_definition = {
 		coa = aoe_CLA
@@ -1240,6 +1391,15 @@ CLA = {
 	}
 }
 
+CLU = {
+	flag_definition = {
+		coa = aoe_CLU
+		subject_canton = aoe_CLU
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 CMG = {
 	flag_definition = {
 		coa = aoe_CMG
@@ -1264,36 +1424,6 @@ CMG = {
 	flag_definition = {
 		coa = aoe_CMG_dominion
 		subject_canton = aoe_CMG_dominion
-		allow_overlord_canton = yes
-		priority = 20
-		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
-	}
-}
-
-CMN = {
-	flag_definition = {
-		coa = aoe_CMN
-		subject_canton = aoe_CMN
-		allow_overlord_canton = yes
-		priority = 1
-	}
-	flag_definition = {
-		coa = aoe_CMN_monarchy
-		subject_canton = aoe_CMN_monarchy
-		allow_overlord_canton = yes
-		priority = 10
-		trigger = { coa_def_monarchy_flag_trigger = yes }
-	}
-	flag_definition = {
-		coa = aoe_CMN_republic
-		subject_canton = aoe_CMN_republic
-		allow_overlord_canton = yes
-		priority = 10
-		trigger = { coa_def_republic_flag_trigger = yes }
-	}
-	flag_definition = {
-		coa = aoe_CMN_dominion
-		subject_canton = aoe_CMN_dominion
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
@@ -1350,6 +1480,15 @@ COC = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+COM = {
+	flag_definition = {
+		coa = COM
+		subject_canton = COM
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -1413,6 +1552,69 @@ CRL = {
 	}
 }
 
+CRR = {
+	flag_definition = {
+		coa = aoe_CRR
+		subject_canton = aoe_CRR
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CSC = {
+	flag_definition = {
+		coa = aoe_CSC
+		subject_canton = aoe_CSC
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CTA = {
+	flag_definition = {
+		coa = aoe_CTA
+		subject_canton = aoe_CTA
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CTF = {
+	flag_definition = {
+		coa = aoe_CTF
+		subject_canton = aoe_CTF
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CTL = {
+	flag_definition = {
+		coa = aoe_CTL
+		subject_canton = aoe_CTL
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CTM = {
+	flag_definition = {
+		coa = aoe_CTM
+		subject_canton = aoe_CTM
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+CTW = {
+	flag_definition = {
+		coa = aoe_CTW
+		subject_canton = aoe_CTW
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 DAH = {
 	flag_definition = {
 		coa = aoe_DAH
@@ -1467,6 +1669,7 @@ DGH = {
 	flag_definition = {
 		coa = aoe_DGH_dominion
 		subject_canton = aoe_DGH_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { is_subject_of = c:MUG } }
 	}
@@ -1499,6 +1702,15 @@ DJA = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+DKT = {
+	flag_definition = {
+		coa = DKT
+		subject_canton = DKT
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -1556,6 +1768,7 @@ DLT = {
 	flag_definition = {
 		coa = aoe_DLT_dominion
 		subject_canton = aoe_DLT_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -1681,6 +1894,36 @@ DOR = {
 	}
 }
 
+DPR = {
+	flag_definition = {
+		coa = aoe_DPR
+		subject_canton = aoe_DPR
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = aoe_DPR_monarchy
+		subject_canton = aoe_DPR_monarchy
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = { coa_def_monarchy_flag_trigger = yes }
+	}
+	flag_definition = {
+		coa = aoe_DPR_republic
+		subject_canton = aoe_DPR_republic
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = { coa_def_republic_flag_trigger = yes }
+	}
+	flag_definition = {
+		coa = aoe_DPR_dominion
+		subject_canton = aoe_DPR_dominion
+		allow_overlord_canton = yes
+		priority = 20
+		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
 DZN = {
 	flag_definition = {
 		coa = aoe_DZN
@@ -1771,6 +2014,15 @@ EIC = {
 	}
 }
 
+EMB = {
+	flag_definition = {
+		coa = aoe_EMB
+		subject_canton = aoe_EMB
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 ETH = {
 	flag_definition = {
 		coa = aoe_ETH
@@ -1825,8 +2077,18 @@ FCA = {
 	flag_definition = {
 		coa = aoe_FCA_dominion
 		subject_canton = aoe_FCA_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+FLK = {
+	flag_definition = {
+		coa = aoe_FLK
+		subject_canton = aoe_FLK
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -2093,6 +2355,24 @@ GFL = {
 	}
 }
 
+GNA = {
+	flag_definition = {
+		coa = aoe_GNA
+		subject_canton = aoe_GNA
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+GNI = {
+	flag_definition = {
+		coa = aoe_GNI
+		subject_canton = aoe_GNI
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 GOL = {
 	flag_definition = {
 		coa = aoe_GOL
@@ -2117,6 +2397,7 @@ GOL = {
 	flag_definition = {
 		coa = aoe_GOL_dominion
 		subject_canton = aoe_GOL_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -2132,6 +2413,7 @@ GRH = {
 	flag_definition = {
 		coa = aoe_GRH_monarchy
 		subject_canton = aoe_GRH_monarchy
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_monarchy_flag_trigger = yes }
 	}
@@ -2145,8 +2427,18 @@ GRH = {
 	flag_definition = {
 		coa = aoe_GRH_dominion
 		subject_canton = aoe_GRH_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= {is_subject_of = c:MUG } }
+	}
+}
+
+GRM = {
+	flag_definition = {
+		coa = aoe_GRM
+		subject_canton = aoe_GRM
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -2174,8 +2466,27 @@ GUJ = {
 	flag_definition = {
 		coa = aoe_GUJ_dominion
 		subject_canton = aoe_GUJ_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+GYC = {
+	flag_definition = {
+		coa = aoe_GYC
+		subject_canton = aoe_GYC
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+GYP = {
+	flag_definition = {
+		coa = aoe_GYP
+		subject_canton = aoe_GYP
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -2385,6 +2696,7 @@ HET = {
 	flag_definition = {
 		coa = aoe_HET_dominion
 		subject_canton = aoe_HET_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -2410,6 +2722,24 @@ HOL = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+HOP = {
+	flag_definition = {
+		coa = aoe_HOP
+		subject_canton = aoe_HOP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+HOU = {
+	flag_definition = {
+		coa = aoe_HOU
+		subject_canton = aoe_HOU
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -2443,6 +2773,24 @@ HSA = {
 	}
 }
 
+ICB = {
+	flag_definition = {
+		coa = aoe_ICB
+		subject_canton = aoe_ICB
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+ILN = {
+	flag_definition = {
+		coa = aoe_ILN
+		subject_canton = aoe_ILN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 IMO = {
 	flag_definition = {
 		coa = aoe_IMO
@@ -2473,6 +2821,15 @@ IMO = {
 	}
 }
 
+INU = {
+	flag_definition = {
+		coa = aoe_INU
+		subject_canton = aoe_INU
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 IQS = {
 	flag_definition = {
 		coa = aoe_IQS
@@ -2500,6 +2857,15 @@ IQS = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+IRC = {
+	flag_definition = {
+		coa = IRC
+		subject_canton = IRC
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -2586,6 +2952,24 @@ JEY = {
 	}
 }
 
+JMN = {
+	flag_definition = {
+		coa = aoe_JMN
+		subject_canton = aoe_JMN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+JNB = {
+	flag_definition = {
+		coa = aoe_JNB
+		subject_canton = aoe_JNB
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 JOD = {
 	flag_definition = {
 		coa = aoe_JOD_dominion
@@ -2632,6 +3016,15 @@ JOH = {
 	}
 }
 
+KAI = {
+	flag_definition = {
+		coa = aoe_KAI
+		subject_canton = aoe_KAI
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 KAL = {
 	flag_definition = {
 		coa = aoe_KAL_monarchy
@@ -2672,6 +3065,7 @@ KAS = {
 	flag_definition = {
 		coa = aoe_KAS_dominion
 		subject_canton = aoe_KAS_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -2981,25 +3375,38 @@ KOR = {
 	flag_definition = {
 		coa = aoe_KOR
 		subject_canton = aoe_KOR
+		allow_overlord_canton = yes
 		priority = 1
 	}
 	flag_definition = {
 		coa = aoe_KOR_monarchy
 		subject_canton = aoe_KOR_monarchy
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_monarchy_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_KOR_republic
 		subject_canton = aoe_KOR_republic
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_republic_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_KOR_dominion
 		subject_canton = aoe_KOR_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+KRK = {
+	flag_definition = {
+		coa = aoe_KRK
+		subject_canton = aoe_KRK
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -3027,6 +3434,7 @@ KRN = {
 	flag_definition = {
 		coa = aoe_KRN_dominion
 		subject_canton = aoe_KRN_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -3122,15 +3530,35 @@ KUR = {
 	}
 }
 
+KYP = {
+	flag_definition = {
+		coa = aoe_KYP
+		subject_canton = aoe_KYP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+KYS = {
+	flag_definition = {
+		coa = aoe_KYS
+		subject_canton = aoe_KYS
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 LAD = {
 	flag_definition = {
 		coa = aoe_LAD_dominion
 		subject_canton = aoe_LAD_dominion
+		allow_overlord_canton = yes
 		priority = 1
 	}
 	flag_definition = {
 		coa = aoe_LAD_dominion
 		subject_canton = aoe_LAD_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -3498,6 +3926,15 @@ MAL = {
 	}
 }
 
+MAP = {
+	flag_definition = {
+		coa = aoe_MAP
+		subject_canton = aoe_MAP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 MAW = {
 	flag_definition = {
 		coa = aoe_MAW
@@ -3522,8 +3959,27 @@ MAW = {
 	flag_definition = {
 		coa = aoe_MAW_dominion
 		subject_canton = aoe_MAW_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+MAY = {
+	flag_definition = {
+		coa = MAY
+		subject_canton = MAY
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+MBL = {
+	flag_definition = {
+		coa = aoe_MBL
+		subject_canton = aoe_MBL
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -3554,6 +4010,15 @@ MDR = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+MDU = {
+	flag_definition = {
+		coa = aoe_MDU
+		subject_canton = aoe_MDU
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -3656,6 +4121,36 @@ MGL = {
 	}
 }
 
+MGP = {
+	flag_definition = {
+		coa = aoe_MGP
+		subject_canton = aoe_MGP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = aoe_MGP_monarchy
+		subject_canton = aoe_MGP_monarchy
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = { coa_def_monarchy_flag_trigger = yes }
+	}
+	flag_definition = {
+		coa = aoe_MGP_republic
+		subject_canton = aoe_MGP_republic
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = { coa_def_republic_flag_trigger = yes }
+	}
+	flag_definition = {
+		coa = aoe_MGP_dominion
+		subject_canton = aoe_MGP_dominion
+		allow_overlord_canton = yes
+		priority = 20
+		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
 MGW = {
 	flag_definition = {
 		coa = aoe_MGW
@@ -3713,6 +4208,15 @@ MHR = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+MIA = {
+	flag_definition = {
+		coa = aoe_MIA
+		subject_canton = aoe_MIA
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -3776,6 +4280,15 @@ MLT = {
 	}
 }
 
+MNO = {
+	flag_definition = {
+		coa = aoe_MNO
+		subject_canton = aoe_MNO
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 MNP = {
 	flag_definition = {
 		coa = aoe_MNP
@@ -3833,6 +4346,15 @@ MNT = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+MNU = {
+	flag_definition = {
+		coa = aoe_MNU
+		subject_canton = aoe_MNU
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -3949,6 +4471,15 @@ MOR = {
 	}
 }
 
+MSC = {
+	flag_definition = {
+		coa = aoe_MSC
+		subject_canton = aoe_MSC
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 MSK = {
 	flag_definition = {
 		coa = aoe_MSK
@@ -3976,6 +4507,33 @@ MSK = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+MSQ = {
+	flag_definition = {
+		coa = aoe_MSQ
+		subject_canton = aoe_MSQ
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+MTG = {
+	flag_definition = {
+		coa = aoe_MTG
+		subject_canton = aoe_MTG
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+MTL = {
+	flag_definition = {
+		coa = aoe_MTL
+		subject_canton = aoe_MTL
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -4033,6 +4591,7 @@ MUL = {
 	flag_definition = {
 		coa = aoe_MUL_dominion
 		subject_canton = aoe_MUL_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -4246,15 +4805,6 @@ N0H = {
 	}
 }
 
-N0I = {
-	flag_definition = {
-		coa = aoe_N0I
-		subject_canton = aoe_N0I
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N0J = {
 	flag_definition = {
 		coa = aoe_N0J
@@ -4295,24 +4845,6 @@ N0N = {
 	flag_definition = {
 		coa = aoe_N0N
 		subject_canton = aoe_N0N
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N0O = {
-	flag_definition = {
-		coa = aoe_N0O
-		subject_canton = aoe_N0O
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N0P = {
-	flag_definition = {
-		coa = aoe_N0P
-		subject_canton = aoe_N0P
 		allow_overlord_canton = yes
 		priority = 1
 	}
@@ -4381,15 +4913,6 @@ N0W = {
 	}
 }
 
-N0X = {
-	flag_definition = {
-		coa = aoe_N0X
-		subject_canton = aoe_N0X
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N0Y = {
 	flag_definition = {
 		coa = aoe_N0Y
@@ -4399,37 +4922,10 @@ N0Y = {
 	}
 }
 
-N0Z = {
-	flag_definition = {
-		coa = aoe_N0Z
-		subject_canton = aoe_N0Z
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N10 = {
-	flag_definition = {
-		coa = aoe_N10
-		subject_canton = aoe_N10
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N11 = {
 	flag_definition = {
 		coa = aoe_N11
 		subject_canton = aoe_N11
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N12 = {
-	flag_definition = {
-		coa = aoe_N12
-		subject_canton = aoe_N12
 		allow_overlord_canton = yes
 		priority = 1
 	}
@@ -4462,15 +4958,6 @@ N15 = {
 	}
 }
 
-N16 = {
-	flag_definition = {
-		coa = aoe_N16
-		subject_canton = aoe_N16
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N17 = {
 	flag_definition = {
 		coa = aoe_N17
@@ -4489,15 +4976,6 @@ N18 = {
 	}
 }
 
-N19 = {
-	flag_definition = {
-		coa = aoe_N19
-		subject_canton = aoe_N19
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N1A = {
 	flag_definition = {
 		coa = aoe_N1A
@@ -4507,46 +4985,10 @@ N1A = {
 	}
 }
 
-N1B = {
-	flag_definition = {
-		coa = aoe_N1B
-		subject_canton = aoe_N1B
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1C = {
-	flag_definition = {
-		coa = aoe_N1C
-		subject_canton = aoe_N1C
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1D = {
-	flag_definition = {
-		coa = aoe_N1D
-		subject_canton = aoe_N1D
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N1E = {
 	flag_definition = {
 		coa = aoe_N1E
 		subject_canton = aoe_N1E
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1F = {
-	flag_definition = {
-		coa = aoe_N1F
-		subject_canton = aoe_N1F
 		allow_overlord_canton = yes
 		priority = 1
 	}
@@ -4565,15 +5007,6 @@ N1H = {
 	flag_definition = {
 		coa = aoe_N1H
 		subject_canton = aoe_N1H
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1I = {
-	flag_definition = {
-		coa = aoe_N1I
-		subject_canton = aoe_N1I
 		allow_overlord_canton = yes
 		priority = 1
 	}
@@ -4606,42 +5039,6 @@ N1L = {
 	}
 }
 
-N1M = {
-	flag_definition = {
-		coa = aoe_N1M
-		subject_canton = aoe_N1M
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1N = {
-	flag_definition = {
-		coa = aoe_N1N
-		subject_canton = aoe_N1N
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1O = {
-	flag_definition = {
-		coa = aoe_N1O
-		subject_canton = aoe_N1O
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1P = {
-	flag_definition = {
-		coa = aoe_N1P
-		subject_canton = aoe_N1P
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N1Q = {
 	flag_definition = {
 		coa = aoe_N1Q
@@ -4655,42 +5052,6 @@ N1R = {
 	flag_definition = {
 		coa = aoe_N1R
 		subject_canton = aoe_N1R
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1S = {
-	flag_definition = {
-		coa = aoe_N1S
-		subject_canton = aoe_N1S
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1T = {
-	flag_definition = {
-		coa = aoe_N1T
-		subject_canton = aoe_N1T
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1U = {
-	flag_definition = {
-		coa = aoe_N1U
-		subject_canton = aoe_N1U
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N1V = {
-	flag_definition = {
-		coa = aoe_N1V
-		subject_canton = aoe_N1V
 		allow_overlord_canton = yes
 		priority = 1
 	}
@@ -4813,42 +5174,6 @@ N28 = {
 	}
 }
 
-N29 = {
-	flag_definition = {
-		coa = aoe_N29
-		subject_canton = aoe_N29
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N2A = {
-	flag_definition = {
-		coa = aoe_N2A
-		subject_canton = aoe_N2A
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N2B = {
-	flag_definition = {
-		coa = aoe_N2B
-		subject_canton = aoe_N2B
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
-N2C = {
-	flag_definition = {
-		coa = aoe_N2C
-		subject_canton = aoe_N2C
-		allow_overlord_canton = yes
-		priority = 1
-	}
-}
-
 N2D = {
 	flag_definition = {
 		coa = aoe_N2D
@@ -4887,6 +5212,15 @@ NAS = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+NAY = {
+	flag_definition = {
+		coa = aoe_NAY
+		subject_canton = aoe_NAY
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -4940,23 +5274,27 @@ NET = {
 	flag_definition = {
 		coa = aoe_NET
 		subject_canton = aoe_NET
+		allow_overlord_canton = yes
 		priority = 1
 	}
 	flag_definition = {
 		coa = aoe_NET_monarchy
 		subject_canton = aoe_NET_monarchy
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_monarchy_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_NET_republic
 		subject_canton = aoe_NET_republic
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_republic_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_NET_dominion
 		subject_canton = aoe_NET_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -5022,6 +5360,15 @@ NJN = {
 	}
 }
 
+NTZ = {
+	flag_definition = {
+		coa = aoe_NTZ
+		subject_canton = aoe_NTZ
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 NUR = {
 	flag_definition = {
 		coa = aoe_NUR
@@ -5049,6 +5396,15 @@ NUR = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+NVJ = {
+	flag_definition = {
+		coa = NVJ
+		subject_canton = NVJ
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -5135,6 +5491,24 @@ ORI = {
 	}
 }
 
+ORN = {
+	flag_definition = {
+		coa = aoe_ORN
+		subject_canton = aoe_ORN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+OSA = {
+	flag_definition = {
+		coa = aoe_OSA
+		subject_canton = aoe_OSA
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 OYO = {
 	flag_definition = {
 		coa = aoe_OYO
@@ -5192,6 +5566,15 @@ PAL = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+PAM = {
+	flag_definition = {
+		coa = aoe_PAM
+		subject_canton = aoe_PAM
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -5302,6 +5685,7 @@ PBZ = {
 	flag_definition = {
 		coa = aoe_PBZ_dominion
 		subject_canton = aoe_PBZ_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -5341,23 +5725,27 @@ PLC = {
 	flag_definition = {
 		coa = aoe_PLC
 		subject_canton = aoe_PLC
+		allow_overlord_canton = yes
 		priority = 1
 	}
 	flag_definition = {
 		coa = aoe_PLC_monarchy
 		subject_canton = aoe_PLC_monarchy
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_monarchy_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_PLC_republic
 		subject_canton = aoe_PLC_republic
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_republic_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_PLC_dominion
 		subject_canton = aoe_PLC_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -5393,6 +5781,15 @@ PLM = {
 	}
 }
 
+PMP = {
+	flag_definition = {
+		coa = aoe_PMP
+		subject_canton = aoe_PMP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 PNJ = {
 	flag_definition = {
 		coa = aoe_PNJ
@@ -5417,6 +5814,7 @@ PNJ = {
 	flag_definition = {
 		coa = aoe_PNJ_dominion
 		subject_canton = aoe_PNJ_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -5482,32 +5880,6 @@ PRK = {
 	}
 }
 
-DPR = {
-	flag_definition = {
-		coa = aoe_DPR
-		subject_canton = aoe_DPR
-		priority = 1
-	}
-	flag_definition = {
-		coa = aoe_DPR_monarchy
-		subject_canton = aoe_DPR_monarchy
-		priority = 10
-		trigger = { coa_def_monarchy_flag_trigger = yes }
-	}
-	flag_definition = {
-		coa = aoe_DPR_republic
-		subject_canton = aoe_DPR_republic
-		priority = 10
-		trigger = { coa_def_republic_flag_trigger = yes }
-	}
-	flag_definition = {
-		coa = aoe_DPR_dominion
-		subject_canton = aoe_DPR_dominion
-		priority = 20
-		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
-	}
-}
-
 PTK = {
 	flag_definition = {
 		coa = aoe_PTK
@@ -5535,6 +5907,24 @@ PTK = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+PUR = {
+	flag_definition = {
+		coa = aoe_PUR
+		subject_canton = aoe_PUR
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+PWN = {
+	flag_definition = {
+		coa = aoe_PWN
+		subject_canton = aoe_PWN
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -5568,6 +5958,24 @@ PYG = {
 	}
 }
 
+PYU = {
+	flag_definition = {
+		coa = aoe_PYU
+		subject_canton = aoe_PYU
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+QCN = {
+	flag_definition = {
+		coa = aoe_QCN
+		subject_canton = aoe_QCN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 QNG = {
 	flag_definition = {
 		coa = aoe_QNG
@@ -5595,6 +6003,15 @@ QNG = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+QPW = {
+	flag_definition = {
+		coa = aoe_QPW
+		subject_canton = aoe_QPW
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -5652,8 +6069,18 @@ RAJ = {
 	flag_definition = {
 		coa = aoe_RAJ_dominion
 		subject_canton = aoe_RAJ_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { is_subject_of = c:MUG } }
+	}
+}
+
+RAR = {
+	flag_definition = {
+		coa = aoe_RAR
+		subject_canton = aoe_RAR
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -5684,6 +6111,15 @@ REW = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+RPN = {
+	flag_definition = {
+		coa = aoe_RPN
+		subject_canton = aoe_RPN
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -5807,6 +6243,15 @@ SAL = {
 	}
 }
 
+SAP = {
+	flag_definition = {
+		coa = aoe_SAP
+		subject_canton = aoe_SAP
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 SAT = {
 	flag_definition = {
 		coa = aoe_SAT
@@ -5841,23 +6286,27 @@ SAX = {
 	flag_definition = {
 		coa = aoe_SAX_monarchy
 		subject_canton = aoe_SAX_monarchy
+		allow_overlord_canton = yes
 		priority = 1
 	}
 	flag_definition = {
 		coa = aoe_SAX_monarchy
 		subject_canton = aoe_SAX_monarchy
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_monarchy_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_SAX_republic
 		subject_canton = aoe_SAX_republic
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_republic_flag_trigger = yes }
 	}
 	flag_definition = {
 		coa = aoe_SAX_dominion
 		subject_canton = aoe_SAX_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -5897,11 +6346,13 @@ SCO = {
 	flag_definition = {
 		coa = aoe_SCO
 		subject_canton = aoe_SCO
+		allow_overlord_canton = yes
 		priority = 1
 	}
 	flag_definition = {
 		coa = aoe_SCO_monarchy
 		subject_canton = aoe_SCO_monarchy
+		allow_overlord_canton = yes
 		priority = 10
 		trigger = { coa_def_monarchy_flag_trigger = yes }
 	}
@@ -6094,6 +6545,24 @@ SHI = {
 	}
 }
 
+SHO = {
+	flag_definition = {
+		coa = aoe_SHO
+		subject_canton = aoe_SHO
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+SHR = {
+	flag_definition = {
+		coa = aoe_SHR
+		subject_canton = aoe_SHR
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 SIE = {
 	flag_definition = {
 		coa = aoe_SIE
@@ -6150,6 +6619,7 @@ SIN = {
 	flag_definition = {
 		coa = aoe_SIN_dominion
 		subject_canton = aoe_SIN_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { is_subject_of = c:MUG } }
 	}
@@ -6182,6 +6652,15 @@ SKH = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+SLS = {
+	flag_definition = {
+		coa = aoe_SLS
+		subject_canton = aoe_SLS
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -6245,6 +6724,15 @@ SPA = {
 	}
 }
 
+SRI = {
+	flag_definition = {
+		coa = aoe_SRI
+		subject_canton = aoe_SRI
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 SUD = {
 	flag_definition = {
 		coa = aoe_SUD
@@ -6302,6 +6790,15 @@ SUL = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+SUM = {
+	flag_definition = {
+		coa = aoe_SUM
+		subject_canton = aoe_SUM
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -6395,6 +6892,24 @@ SWI = {
 	}
 }
 
+SWN = {
+	flag_definition = {
+		coa = aoe_SWN
+		subject_canton = aoe_SWN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+TBS = {
+	flag_definition = {
+		coa = aoe_TBS
+		subject_canton = aoe_TBS
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 THC = {
 	flag_definition = {
 		coa = aoe_THC
@@ -6422,6 +6937,15 @@ THC = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+THL = {
+	flag_definition = {
+		coa = aoe_THL
+		subject_canton = aoe_THL
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -6512,6 +7036,42 @@ TKL = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+TLI = {
+	flag_definition = {
+		coa = aoe_TLI
+		subject_canton = aoe_TLI
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+TLM = {
+	flag_definition = {
+		coa = aoe_TLM
+		subject_canton = aoe_TLM
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+TMB = {
+	flag_definition = {
+		coa = aoe_TMB
+		subject_canton = aoe_TMB
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+TNC = {
+	flag_definition = {
+		coa = aoe_TNC
+		subject_canton = aoe_TNC
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -6688,6 +7248,15 @@ TRR = {
 	}
 }
 
+TRU = {
+	flag_definition = {
+		coa = aoe_TRU
+		subject_canton = aoe_TRU
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 TRZ = {
 	flag_definition = {
 		coa = aoe_TRZ
@@ -6715,6 +7284,15 @@ TRZ = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+TSC = {
+	flag_definition = {
+		coa = aoe_TSC
+		subject_canton = aoe_TSC
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -6808,6 +7386,15 @@ ULM = {
 	}
 }
 
+UTE = {
+	flag_definition = {
+		coa = aoe_UTE
+		subject_canton = aoe_UTE
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 VEN = {
 	flag_definition = {
 		coa = aoe_VEN_monarchy
@@ -6862,6 +7449,7 @@ VNS = {
 	flag_definition = {
 		coa = aoe_VNS_dominion
 		subject_canton = aoe_VNS_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -6891,6 +7479,7 @@ VOP = {
 	flag_definition = {
 		coa = aoe_VOP_dominion
 		subject_canton = aoe_VOP_dominion
+		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
 	}
@@ -6923,6 +7512,15 @@ WAL = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+WCH = {
+	flag_definition = {
+		coa = aoe_WCH
+		subject_canton = aoe_WCH
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
@@ -7009,6 +7607,15 @@ WRL = {
 	}
 }
 
+WRO = {
+	flag_definition = {
+		coa = aoe_WRO
+		subject_canton = aoe_WRO
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 WUL = {
 	flag_definition = {
 		coa = aoe_WUL
@@ -7062,6 +7669,24 @@ WUR = {
 	}
 }
 
+WYN = {
+	flag_definition = {
+		coa = aoe_WYN
+		subject_canton = aoe_WYN
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+WYU = {
+	flag_definition = {
+		coa = aoe_WYU
+		subject_canton = aoe_WYU
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 XIN = {
 	flag_definition = {
 		coa = aoe_XIN
@@ -7089,6 +7714,33 @@ XIN = {
 		allow_overlord_canton = yes
 		priority = 20
 		trigger = { scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration } }
+	}
+}
+
+XVT = {
+	flag_definition = {
+		coa = aoe_XVT
+		subject_canton = aoe_XVT
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+YAM = {
+	flag_definition = {
+		coa = aoe_YAM
+		subject_canton = aoe_YAM
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+YKT = {
+	flag_definition = {
+		coa = aoe_YKT
+		subject_canton = aoe_YKT
+		allow_overlord_canton = yes
+		priority = 1
 	}
 }
 
