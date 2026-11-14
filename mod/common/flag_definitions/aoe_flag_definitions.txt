@@ -4768,6 +4768,105 @@ N23 = {
 	}
 }
 
+N24 = {
+	flag_definition = {
+		coa = aoe_N24
+		subject_canton = aoe_N24
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N25 = {
+	flag_definition = {
+		coa = aoe_N25
+		subject_canton = aoe_N25
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N26 = {
+	flag_definition = {
+		coa = aoe_N26
+		subject_canton = aoe_N26
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N27 = {
+	flag_definition = {
+		coa = aoe_N27
+		subject_canton = aoe_N27
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N28 = {
+	flag_definition = {
+		coa = aoe_N28
+		subject_canton = aoe_N28
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N29 = {
+	flag_definition = {
+		coa = aoe_N29
+		subject_canton = aoe_N29
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N2A = {
+	flag_definition = {
+		coa = aoe_N2A
+		subject_canton = aoe_N2A
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N2B = {
+	flag_definition = {
+		coa = aoe_N2B
+		subject_canton = aoe_N2B
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N2C = {
+	flag_definition = {
+		coa = aoe_N2C
+		subject_canton = aoe_N2C
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N2D = {
+	flag_definition = {
+		coa = aoe_N2D
+		subject_canton = aoe_N2D
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
+N2E = {
+	flag_definition = {
+		coa = aoe_N2E
+		subject_canton = aoe_N2E
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
+
 NAS = {
 	flag_definition = {
 		coa = aoe_NAS_monarchy

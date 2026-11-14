@@ -639,11 +639,19 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:N25 ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
 	c:N0F ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
 	c:N0G ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
+	c:N26 ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
@@ -671,6 +679,10 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:N24 ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
 	c:N0N ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
@@ -687,6 +699,10 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:N27 ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
 	c:N0R ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
@@ -700,6 +716,10 @@
 		effect_starting_pop_literacy_very_low = yes
 	}
 	c:N0U ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
+	c:N28 ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
@@ -779,6 +799,18 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:N29 ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
+	c:N2A ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
+	c:N2B ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
 	c:N1E ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
@@ -819,6 +851,10 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:N2C ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
 	c:N1O ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
@@ -855,11 +891,19 @@
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
+	c:N2D ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
 	c:N1X ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}
 	c:N1Y ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
+	c:N2E ?= {
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_very_low = yes
 	}

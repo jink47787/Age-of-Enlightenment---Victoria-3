@@ -809,7 +809,7 @@
 			}
 		}
 	}
-	s:STATE_TEXAS = {
+	s:STATE_COLORADO = {
 		region_state:CMN = {
 			create_building = {
 				building = "building_government_administration"
