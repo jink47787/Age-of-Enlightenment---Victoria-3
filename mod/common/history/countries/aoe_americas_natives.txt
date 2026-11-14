@@ -1,0 +1,306 @@
+﻿COUNTRIES = {
+	c:ABB ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ABP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ABS ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:AIS ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ALG ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:APC ?= {
+		effect_native_conscription_12 = yes
+	}
+	c:ARW ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ASN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ATB ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ATK ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:BLF ?= {
+		effect_native_conscription_11 = yes
+	}
+	c:BTC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:BTK ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CAD ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CCH ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CCM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CHE ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CKS ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CLU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:COM ?= {
+		effect_native_conscription_11 = yes
+	}
+	c:CRR ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CSC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CTA ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CTF ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CTL ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CTM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:CTW ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:DKT ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:EMB ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:FLK ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:GNA ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:GNI ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:GRM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:GYC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:GYP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:HOP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:HOU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ICB ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:ILN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:INU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:IRC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:JMN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:JNB ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:KAI ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:KRK ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:KYP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:KYS ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:LNP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MAP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MAY ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MBL ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MDU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MIA ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MNO ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MNU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MSC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MSK ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MSQ ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MTG ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:MTL ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:NAY ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:NTZ ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:NVJ ?= {
+		effect_native_conscription_11 = yes
+	}
+	c:ORN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:OSA ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:PAM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:PMP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:PUR ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:PWN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:PYU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:QCN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:QPW ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:RAR ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:RPN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SAP ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SHO ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SHR ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SLS ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SRI ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SUM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:SWN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TBS ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:THL ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TLI ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TLM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TMB ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TNC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TRU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:TSC ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:UTE ?= {
+		effect_native_conscription_12 = yes
+	}
+	c:WCH ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:WRO ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:WYN ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:WYU ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:XVT ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:YAM ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:YKT ?= {
+		effect_native_conscription_10 = yes
+	}
+	c:VOP ?= {
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_SANTA_CRUZ			# Moxos and Chiquitos
+					state_region = s:STATE_BAJO_PARAGUAY		# San Ignacio Guazu and the Tebicuary reductions
+					state_region = s:STATE_CORRIENTES			# Candelaria, San Ignacio Mini, Yapeyu, San Borja
+					state_region = s:STATE_RIO_GRANDE_DO_SUL	# the reductions east of the Uruguay (San Miguel, San Nicolas ...)
+				}
+			}
+			add_modifier = { name = aoe_modifier_jesuit_reductions }
+		}
+	}
+}

@@ -143,3 +143,9 @@ geographic_region_gujarat_bombay_line = {
 	short_key = gujarat_bombay_line
 	state_regions = { STATE_AHMEDNAGAR STATE_GUJARAT STATE_BARODA STATE_BOMBAY STATE_BIJAPUR STATE_DIU STATE_SURAT STATE_BASSEIN STATE_GOA STATE_MUMBAI STATE_DAMAN }
 }
+
+geographic_region_qing_empire = {
+	short_key = qing_empire
+	strategic_regions = { sr:region_south_china sr:region_north_china }
+	state_regions = { STATE_TIBETAN_PLATEAU STATE_URUMQUI STATE_MANCHURIA STATE_FENGTIAN STATE_GUANWAI STATE_QINGHAI STATE_PORT_ARTHUR STATE_ALAY }
+}

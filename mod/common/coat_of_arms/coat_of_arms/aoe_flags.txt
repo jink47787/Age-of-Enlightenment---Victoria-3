@@ -443,10 +443,6 @@ aoe_CMG = { textured_emblem = { texture = "aoe/CMG.tga" } }
 aoe_CMG_monarchy = { textured_emblem = { texture = "aoe/CMG_monarchy.tga" } }
 aoe_CMG_republic = { textured_emblem = { texture = "aoe/CMG_republic.tga" } }
 aoe_CMG_dominion = { textured_emblem = { texture = "aoe/CMG_dominion.tga" } }
-aoe_CMN = { textured_emblem = { texture = "aoe/CMN.tga" } }
-aoe_CMN_monarchy = { textured_emblem = { texture = "aoe/CMN_monarchy.tga" } }
-aoe_CMN_republic = { textured_emblem = { texture = "aoe/CMN_republic.tga" } }
-aoe_CMN_dominion = { textured_emblem = { texture = "aoe/CMN_dominion.tga" } }
 aoe_COB_monarchy = { textured_emblem = { texture = "aoe/COB_monarchy.tga" } }
 aoe_COB_dominion = { textured_emblem = { texture = "aoe/COB_dominion.tga" } }
 aoe_COC = { textured_emblem = { texture = "aoe/COC.tga" } }
@@ -1680,17 +1676,6 @@ aoe_N0H = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N0I = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 136 164 190 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_horse_tribal.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N0J = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 94 161 115 }
@@ -1741,28 +1726,6 @@ aoe_N0N = {
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_native_american_pattern_diamond.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N0O = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 149 189 148 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_comanche_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N0P = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 148 184 166 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_comanche_sun.dds"
 		color1 = "white"
 		color2 = "black"
 		instance = { scale = { 0.6 0.6 } }
@@ -1845,17 +1808,6 @@ aoe_N0W = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N0X = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 90 100 131 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N0Y = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 185 190 112 }
@@ -1867,45 +1819,12 @@ aoe_N0Y = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N0Z = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 197 191 114 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_circle.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N10 = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 172 151 94 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_native_american_pattern_diamond.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N11 = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 114 189 158 }
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_spearhead.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N12 = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 165 143 130 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_native_american_pattern_diamond.dds"
 		color1 = "white"
 		color2 = "black"
 		instance = { scale = { 0.6 0.6 } }
@@ -1944,17 +1863,6 @@ aoe_N15 = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N16 = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 166 176 189 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_native_american_pattern_diamond.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N17 = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 176 108 94 }
@@ -1977,17 +1885,6 @@ aoe_N18 = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N19 = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 129 91 126 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_horse_tribal.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N1A = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 180 162 94 }
@@ -1999,56 +1896,12 @@ aoe_N1A = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N1B = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 159 145 181 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_comanche_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1C = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 193 185 115 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_circle.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1D = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 119 93 108 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_spearhead.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N1E = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 118 187 129 }
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_spearhead.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1F = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 192 192 181 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_circle.dds"
 		color1 = "white"
 		color2 = "black"
 		instance = { scale = { 0.6 0.6 } }
@@ -2071,17 +1924,6 @@ aoe_N1H = {
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_horse_tribal.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1I = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 94 161 115 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_sun.dds"
 		color1 = "white"
 		color2 = "black"
 		instance = { scale = { 0.6 0.6 } }
@@ -2120,50 +1962,6 @@ aoe_N1L = {
 		instance = { scale = { 0.6 0.6 } }
 	}
 }
-aoe_N1M = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 171 149 188 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_native_american_pattern_diamond.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1N = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 149 189 148 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_comanche_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1O = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 148 184 166 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_comanche_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1P = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 101 120 118 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
 aoe_N1Q = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 188 194 183 }
@@ -2181,50 +1979,6 @@ aoe_N1R = {
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_native_american_pattern_diamond.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1S = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 119 169 159 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_spearhead.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1T = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 107 139 98 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1U = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 90 152 177 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_sun.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { scale = { 0.6 0.6 } }
-	}
-}
-aoe_N1V = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 109 161 137 }
-	color2 = "white"
-	colored_emblem = {
-		texture = "ce_spearhead.dds"
 		color1 = "white"
 		color2 = "black"
 		instance = { scale = { 0.6 0.6 } }
@@ -2310,6 +2064,83 @@ aoe_N22 = {
 aoe_N23 = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 198 190 105 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N24 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 116 153 152 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N25 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 166 176 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N26 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 176 108 94 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N27 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 196 194 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N28 = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 129 91 126 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N2D = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 118 187 129 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_N2E = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 192 192 181 }
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_circle.dds"
@@ -3518,3 +3349,944 @@ aoe_ZZH = { textured_emblem = { texture = "aoe/ZZH.tga" } }
 aoe_ZZH_monarchy = { textured_emblem = { texture = "aoe/ZZH_monarchy.tga" } }
 aoe_ZZH_republic = { textured_emblem = { texture = "aoe/ZZH_republic.tga" } }
 aoe_ZZH_dominion = { textured_emblem = { texture = "aoe/ZZH_dominion.tga" } }
+
+# The Americas in 1700
+aoe_ABP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 221 202 196 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_AIS = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 174 178 168 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ALG = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 168 154 225 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ARW = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 218 232 226 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ASN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 192 164 161 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ATK = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 210 174 152 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_BLF = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 49 72 153 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_BTC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 225 205 165 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_BTK = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 163 150 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CAD = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 206 173 159 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CCH = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 219 237 216 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CCM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 156 171 67 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CKS = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 158 194 202 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CLU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 212 229 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CRR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 232 158 218 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CSC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 105 152 73 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CTA = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 229 223 203 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CTF = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 220 147 37 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CTL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 159 154 227 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CTM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 199 182 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_CTW = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 172 233 169 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_EMB = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 227 156 167 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_FLK = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 179 154 209 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_GNA = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 235 172 191 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_GNI = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 73 139 166 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_GRM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 156 178 203 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_GYC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 171 205 150 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_GYP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 155 192 154 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_HOP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 223 150 194 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_HOU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 162 189 189 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ICB = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 216 163 234 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ILN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 198 225 193 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_INU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 205 176 226 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_JMN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 216 217 183 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_JNB = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 224 215 157 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_KAI = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 201 171 152 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_KRK = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 200 167 155 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_KYP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 198 195 236 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_KYS = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 179 206 177 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MAP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 211 223 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MBL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 213 233 197 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MDU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 178 204 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MGP = { textured_emblem = { texture = "aoe/MGP.tga" } }
+aoe_MGP_monarchy = { textured_emblem = { texture = "aoe/MGP_monarchy.tga" } }
+aoe_MGP_republic = { textured_emblem = { texture = "aoe/MGP_republic.tga" } }
+aoe_MGP_dominion = { textured_emblem = { texture = "aoe/MGP_dominion.tga" } }
+aoe_MIA = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 159 185 233 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MNO = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 209 150 169 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MNU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 153 167 216 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MSC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 108 139 208 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MSQ = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 220 161 203 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MTG = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 178 174 205 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_MTL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 197 171 158 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_NAY = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 219 232 186 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_NTZ = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 174 170 199 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_ORN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 55 120 25 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_OSA = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 211 218 196 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_PAM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 212 226 183 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_PMP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 230 216 228 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_PUR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 226 194 209 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_PWN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 252 84 118 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_PYU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 217 192 171 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_QCN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 171 201 183 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_QPW = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 217 205 156 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_RAR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 183 181 209 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_RPN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 160 163 213 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SAP = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 213 215 168 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SHO = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 163 227 202 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SHR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 166 231 156 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SLS = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 50 152 173 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SRI = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 227 188 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SUM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 165 172 159 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_SWN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 215 155 192 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TBS = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 165 172 190 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_THL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 57 124 138 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TLI = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 179 181 221 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TLM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 168 173 172 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_native_american_pattern_diamond.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TMB = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 178 220 193 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TNC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 157 173 191 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TRU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 206 177 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_TSC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 190 194 212 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_UTE = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 235 126 175 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_WCH = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 175 153 225 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_WRO = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 234 209 156 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_WYN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 162 157 217 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_WYU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 40 96 65 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_XVT = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 179 161 198 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_YAM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 187 223 179 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_spearhead.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}
+aoe_YKT = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 216 215 167 }
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_comanche_sun.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 0.6 0.6 } }
+	}
+}

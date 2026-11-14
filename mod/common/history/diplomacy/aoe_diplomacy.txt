@@ -60,6 +60,7 @@
 	}
 	c:POR ?= {
 		create_diplomatic_pact = { country = c:PBZ type = colony }
+		create_diplomatic_pact = { country = c:MGP type = colony }
 	}
 	c:QNG ?= {
 		create_diplomatic_pact = { country = c:KOR type = vassal }

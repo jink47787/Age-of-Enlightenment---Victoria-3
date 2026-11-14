@@ -1,0 +1,11 @@
+# Jesuit reductions (Paraguay, Moxos, Chiquitos): mission towns run by the Society of Jesus under the Spanish crown.
+# Applied in 1700 history to VOP's split states that hold the reductions (see aoe_jesuit_history_snippet.txt).
+aoe_modifier_jesuit_reductions = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_tax_collection_mult = -0.5		# tribute owed at a reduced rate and collected by the fathers
+	state_conscription_rate_mult = 0.5		# armed Guarani militias, raised against the bandeirantes
+	state_conversion_mult = 0.5			# mission catechism
+	state_assimilation_mult = -0.5			# Guarani and Chiquitano kept as the mission languages
+	state_migration_pull_mult = -0.5		# Spaniards and mestizos barred from living in the reductions
+	state_education_access_add = 0.05		# mission schools, workshops and print shop
+}
