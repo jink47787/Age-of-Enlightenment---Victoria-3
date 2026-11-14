@@ -6,8 +6,8 @@
  law_strat_aristo_desc:0 "Stratified Aristocracy"
  law_state_service_aristo:0 "Aristocracy By State Service"
  law_state_service_aristo_desc:0 "Aristocracy By State Service"
- law_landed_elite:0 "Landed Elite"
- law_landed_elite_desc:0 "Landed Elite"
+ law_landed_elite:0 "Open Elite"
+ law_landed_elite_desc:0 "Open Elite"
  
  lawgroup_executive_structure: "Executive Structure"
  lawgroup_executive_structure_desc: "The relationship between the [Concept('concept_ruler','Head of State')] and the Head of Government."
@@ -76,6 +76,120 @@
  law_freedom_of_religion: "Freedom Of Religion"
  law_freedom_of_religion_desc: "Individuals are free to practise and profess religions other than the established faith without fear of legal persecution. Religious minorities enjoy legal recognition and may establish their own places of worship and institutions. The state refrains from enforcing religious conformity, allowing diverse faiths to coexist within its borders."
  
+ lawgroup_ennoblement: "Ennoblement"
+ 
+ law_strict_nobile_hierarchy: "Eight Generations Lineage"
+ law_strict_nobile_hierarchy_desc: "High Noblity status is granted only to those who can demonstrate descent from at least eight noble ancestors within their family lineage. Claims to aristocratic standing are subject to genealogical scrutiny, with ancestry serving as the sole basis for recognition. Those unable to satisfy the required lineage remain commoners, regardless of wealth or personal achievement."
+ law_international_nobility: "International Nobility"
+ law_international_nobility_desc: "International Nobility"
+ law_loose_nobile_hierarchy: "Six Generations Lineage"
+ law_loose_nobile_hierarchy_desc: "High Nobility status is granted only to those who can demonstrate descent from at least six noble ancestors within their family lineage. Claims to aristocratic standing are subject to genealogical scrutiny, with ancestry serving as the sole basis for recognition. Those unable to satisfy the required lineage remain commoners, regardless of wealth or personal achievement."
+ law_very_loose_nobile_hierarchy: "Four Generations Lineage"
+ law_very_loose_nobile_hierarchy_desc: "High Nobility status is granted only to those who can demonstrate descent from at least four noble ancestors within their family lineage. Claims to aristocratic standing are subject to genealogical scrutiny, with ancestry serving as the sole basis for recognition. Those unable to satisfy the required lineage remain commoners, regardless of wealth or personal achievement."
+ 
+ lawgroup_market_system: "Market System"
+ 
+ law_barter_system: "Barter System"
+ law_barter_system_desc: "Barter System"
+ law_limited_exchange: "Limited Exchange"
+ law_limited_exchange_desc: "Limited Exchange"
+ law_regulated_prices: "Regulated Prices"
+ law_regulated_prices_desc: "Regulated Prices"
+ law_open_price_signals: "Price Signals"
+ law_open_price_signals_desc: "Price Signals"
+ 
+ lawgroup_guild_system: "Guild System"
+ 
+ law_urbanism_repressed: "Urbanism Repressed"
+ law_urbanism_repressed_desc: "Urbanism Repressed"
+ law_feudal_guild_rights: "Feudal Guild Rights"
+ law_feudal_guild_rights_desc: "Feudal Guild Rights"
+ law_free_enterprise: "Free Enterprise"
+ law_free_enterprise_desc: "Free Enterprise"
+ law_capitalism: "Capitalism"
+ law_capitalism_desc: "Capitalism"
+ 
+ lawgroup_property_rights: "Property Rights"
+ 
+ law_customary_rights: "Customary Rights"
+ law_customary_rights_desc: "Customary Rights"
+ 
+ lawgroup_land_tax: "Land Taxation"
+ 
+ law_no_land_tax: "No Land Tax"
+ law_no_land_tax_desc: "No Land Tax."
+ law_low_land_tax: "Low Land Tax"
+ law_low_land_tax_desc: "Low Land Tax"
+ law_medium_land_tax: "Medium Land Tax"
+ law_medium_land_tax_desc: "Medium Land Tax."
+ law_high_land_tax: "High Land Tax"
+ law_high_land_tax_desc: "High Land Tax."
+ 
+ lawgroup_guild_tax: "Guild Taxation"
+ 
+ law_no_guild_tax: "No Guild Tax"
+ law_no_guild_tax_desc: "No Guild Tax."
+ law_low_guild_tax: "Low Guild Tax"
+ law_low_guild_tax_desc: "Low Guild Tax."
+ law_medium_guild_tax: "Medium Guild Tax"
+ law_medium_guild_tax_desc: "Medium Guild Tax."
+ law_high_land_tax: "High Guild Tax"
+ law_high_land_tax_desc: "High Guild Tax."
+ 
+ lawgroup_per_capita_tax: "Per-Capita Taxation"
+ 
+ law_no_per_capita_tax: "No Per-Capita Taxation"
+ law_no_per_capita_tax_desc: "No Per-Capita Taxation."
+ law_low_per_capita_tax: "Low Per-Capita Taxation"
+ law_low_per_capita_tax_desc: "Low Per-Capita Taxation."
+ law_medium_per_capita_tax: "Medium Per-Capita Taxation"
+ law_medium_per_capita_tax_desc: "Medium Per-Capita Taxation."
+ law_high_per_capita_tax: "High Per-Capita Taxation"
+ law_high_per_capita_tax_desc: "High Per-Capita Taxation."
+ 
+ lawgroup_consumption_tax: "Consumption Taxation"
+ 
+ law_no_consumption_tax: "No Consumption Tax"
+ law_no_consumption_tax_desc: "No Consumption Tax."
+ law_low_consumption_tax: "Low Consumption Tax"
+ law_low_consumption_tax_desc: "Low Consumption Tax."
+ law_medium_consumption_tax: "Medium Consumption Tax"
+ law_medium_consumption_tax_desc: "Medium Consumption Tax."
+ law_high_consumption_tax: "High Consumption Tax"
+ law_high_consumption_tax_desc: "High Consumption Tax."
+ 
+ lawgroup_monopoly_laws: "Monopoly Laws"
+ 
+ law_monopolies_allowed: "Monopolies Allowed"
+ law_monopolies_allowed_desc: "Monopolies Allowed."
+ law_monopolies_unallowed: "Monopolies Unallowed"
+ law_monopolies_unallowed_desc: "Monopolies Unallowed."
+ 
+ lawgroup_investment_rights: "Investment Rights"
+ 
+ law_agrarianism_investment: "Agrarianism Investment"
+ law_agrarianism_investment_desc: "Agrarianism Investment."
+ law_artisanalism: "Artisanalism"
+ law_artisanalism_desc: "Artisanalism."
+ law_commercialism: "Commercialism"
+ law_commercialism_desc: "Commercialism."
+ 
+ lawgroup_property_rights: "Property Rights"
+ 
+ law_noble_privileges: "Nobility Privliged Property Rights"
+ law_noble_privileges_desc: "Nobility Privliged Property Rights."
+ law_alienable_property: "Alienable Property Rights"
+ law_alienable_property_desc: "Alienable Property Rights."
+ law_defined_property_rights: "Defined Property Rights"
+ law_defined_property_rights_desc: "Defined Property Rights."
+ 
+ lawgroup_state_ranks: "State Ranks Promotion"
+ 
+ law_strict_state_hierarchy: "Military-Civil Service Ethos"
+ law_loose_state_hierarchy: "Military Service Ethos"
+ law_very_loose_state_hierarchy: "Civil Service Ethos"
+ 
+ law_lese_majeste: "Lèse-Majesté"
  
  
  # Institutions group
@@ -92,6 +206,16 @@
  law_parliamentary_control_foreign_affairs_desc:0 "An arrangement in which the state's foreign affairs office operates under parliamentary oversight. Parliament supervises diplomatic policy, scrutinises negotiations and international commitments, and holds the executive or foreign office accountable for its conduct abroad. The degree of oversight may range from reviewing and approving major decisions to exercising direct control over diplomatic policy."
  law_split_foreign_affairs:0 "Clandestine Foreign Ministry"
  law_split_foreign_affairs_desc:0 "An arrangement in which a ruler conducts foreign policy through two parallel channels: an official diplomatic service and a confidential network operating under their direct authority. The latter pursues secret negotiations, intelligence gathering, and political objectives that may complement or contradict official state policy, allowing the ruler greater freedom of action and plausible deniability."
+ 
+  law_regimental_proprietor: "Regimental Proprietors"
+  law_regimental_proprietor_desc: "Military regiments are privately owned by appointed proprietors, who hold the right to their designation and exercise administrative and patronage authority over their command, while officers manage their day-to-day military affairs."
+ law_officer_corps_centred: "Centralized Officer Corps"
+ law_officer_corps_centred_desc: "Centralized Officer Corps"
+ law_regimental_administration: "Regimental Administration"
+ law_regimental_administration_desc: "Regimental Administration"
+ law_division_corps_system: "Divisions & Corps"
+ law_division_corps_system_desc: "Divisions & Corps"
+ 
  lawgroup_conscription_model: "Conscription Model"
  
  law_recruitment_officers: "Recruitment Officers"
@@ -102,3 +226,5 @@
  law_allotment_system_desc: "Military recruitment is conducted through periodic allotments, with each administrative district required to provide a predetermined quota of men. Local authorities distribute the burden among the population, selecting eligible individuals to fill the army's ranks. The system ensures a steady supply of recruits while leaving the state considerable flexibility in determining its military needs."
  law_levee_en_masse: "Levée En Masse"
  law_levee_en_masse_desc: "The entire nation is called upon to defend the state, with military service becoming a collective duty rather than an obligation limited to particular classes. All able-bodied men may be summoned to the ranks, while the civilian population is mobilised to sustain the war effort. The system enables the state to raise vast armies, often at the cost of placing society under extraordinary strain."
+ 
+ BARRACKS_ONLY_IN_CAPITAL_STATE: "Barracks only in Capital State"

@@ -182,3 +182,14 @@ effect_SH_landed_elite = {
 	set_social_hierarchy = landed_elite
 	}
 }
+
+effect_army_only_capital = {
+	any_state = {
+		if = {
+			limit = {
+				is_capital = no
+			}
+			state_disallow_barracks_construction_bool = yes
+		}
+	}
+}

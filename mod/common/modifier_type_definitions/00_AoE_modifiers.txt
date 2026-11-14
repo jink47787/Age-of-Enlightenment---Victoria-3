@@ -1,0 +1,25 @@
+﻿REPLACE_OR_CREATE:country_institution_size_change_speed_institution_army_model_mult={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+REPLACE_OR_CREATE:country_institution_army_model_max_investment_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+REPLACE_OR_CREATE:country_institution_cost_institution_army_model_mult={
+	decimals=0
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

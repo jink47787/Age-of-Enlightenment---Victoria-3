@@ -1,0 +1,101 @@
+﻿pm_local_proprietor = {
+	texture = "gfx/interface/icons/production_method_icons/local_proprietor.dds"
+	is_default = yes
+
+	profession_ratio = {
+		soldiers = 97
+		officers = 3
+	}
+
+	building_modifiers = {
+		unscaled = {
+			building_training_rate_mult = -0.25
+		}
+	}
+	
+	state_modifiers = {
+		level_scaled = {
+			state_pop_support_movement_radical_mult = -0.001
+		}
+	}
+}
+
+pm_officer_corps_administered = {
+	texture = "gfx/interface/icons/production_method_icons/officer_corps.dds"
+	is_default = yes
+
+	profession_ratio = {
+		soldiers = 95
+		officers = 5
+	}
+
+	unlocking_laws = {
+		law_officer_corps_centred
+	}
+	
+	building_modifiers = {
+		unscaled = {
+			building_training_rate_mult = -0.15
+		}
+	}
+	
+	country_modifiers = {
+		level_scaled = {
+			country_institution_cost_institution_army_model_mult = 0.05
+		}
+	}
+}
+
+pm_state_administered = {
+	texture = "gfx/interface/icons/production_method_icons/state_administered.dds"
+
+	profession_ratio = {
+		soldiers = 90
+		officers = 10
+	}
+	
+	unlocking_laws = {
+		law_officer_corps_centred
+		law_regimental_administration
+	}
+
+	building_modifiers = {
+		unscaled = {
+			building_training_rate_mult = -0.1
+		}
+	}
+	
+	country_modifiers = {
+		level_scaled = {
+			country_institution_cost_institution_army_model_mult = 0.02
+		}
+	}
+}
+
+pm_nco_incorporation_adm = {
+	texture = "gfx/interface/icons/production_method_icons/nco_incorporation_adm.dds"
+
+	profession_ratio = {
+		soldiers = 85
+		officers = 15
+	}
+	
+	unlocking_laws = {
+		law_officer_corps_centred
+		law_regimental_administration
+		law_division_corps_system
+	}
+
+	building_modifiers = {
+		unscaled = {
+			building_training_rate_mult = -0.05
+		}
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			country_institution_cost_institution_army_model_mult = 0.01
+		}
+	}
+}
+

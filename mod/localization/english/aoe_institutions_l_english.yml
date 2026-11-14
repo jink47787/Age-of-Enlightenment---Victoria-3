@@ -1,0 +1,12 @@
+﻿l_english:
+
+ 
+  # Instittutions
+  institution_army_model: "Army Model"
+  country_institution_size_change_speed_institution_army_model_mult: "Institution Size Change Speed for [GetInstitutionType('institution_army_model').GetName]"
+  country_institution_size_change_speed_institution_army_model_mult_desc: "Institution Size Change Speed for [GetInstitutionType('institution_army_model').GetName]"
+  country_institution_army_model_max_investment_add: "Max $institution_army_model$ [concept_institution] Investment"
+  country_institution_army_model_max_investment_add_desc: "Max $institution_army_model$ [concept_institution] Investment"
+  country_institution_cost_institution_army_model_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_army_model').GetName]"
+  country_institution_cost_institution_army_model_mult_desc: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_army_model').GetName]"
+ 
