@@ -1,0 +1,14 @@
+﻿# Flag definitions allow the overlord canton only under this trigger: a colony,
+# dominion, crown land or chartered company whose direct overlord is Britain.
+aoe_coa_def_british_colony_trigger = {
+	NOT = { has_game_rule = no_subject_flags }
+	scope:actor ?= {
+		overlord ?= { c:GBR ?= this }
+		OR = {
+			is_subject_type = subject_type_colony
+			is_subject_type = subject_type_dominion
+			is_subject_type = subject_type_crown_land
+			is_subject_type = subject_type_chartered_company
+		}
+	}
+}

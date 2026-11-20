@@ -6,6 +6,10 @@ government's flag type and falls back to TAG.tga; the Vic3 flag definitions
 reproduce that with the monarchy/republic triggers and, for AoE's dominion
 flags, the colonial administration law.
 
+Subjects only show their overlord's flag as a canton when they are British
+colonies: every flag definition has a twin one priority higher that allows the
+canton, valid only under CANTON_TRIGGER (written to common/scripted_triggers).
+
 Generated native nations have no AoE flag and get a simple two-colour emblem.
 
 Reads mod/common/country_definitions/aoe_countries.txt (from build_history.py).
@@ -26,6 +30,22 @@ VARIANTS = [  # (file suffix, priority, trigger)
     ("_republic", 10, "coa_def_republic_flag_trigger = yes"),
     ("_dominion", 20, "scope:actor ?= { has_law_or_variant = law_type:law_colonial_administration }"),
 ]
+CANTON_TRIGGER = "aoe_coa_def_british_colony_trigger"
+COA_TRIGGERS = f"""# Flag definitions allow the overlord canton only under this trigger: a colony,
+# dominion, crown land or chartered company whose direct overlord is Britain.
+{CANTON_TRIGGER} = {{
+	NOT = {{ has_game_rule = no_subject_flags }}
+	scope:actor ?= {{
+		overlord ?= {{ c:GBR ?= this }}
+		OR = {{
+			is_subject_type = subject_type_colony
+			is_subject_type = subject_type_dominion
+			is_subject_type = subject_type_crown_land
+			is_subject_type = subject_type_chartered_company
+		}}
+	}}
+}}
+"""
 NATIVE_EMBLEMS = ["ce_sun.dds", "ce_spearhead.dds", "ce_horse_tribal.dds", "ce_comanche_sun.dds",
                   "ce_native_american_pattern_diamond.dds", "ce_circle.dds"]
 
@@ -67,11 +87,14 @@ def main():
 
         lines = [f"{tag} = {{"]
         for name, priority, trigger in variants:
-            lines += ["\tflag_definition = {", f"\t\tcoa = {name}", f"\t\tsubject_canton = {name}",
-                      "\t\tallow_overlord_canton = yes", f"\t\tpriority = {priority}"]
-            if trigger:
-                lines.append(f"\t\ttrigger = {{ {trigger} }}")
-            lines.append("\t}")
+            for canton in (False, True):
+                conditions = [t for t in (trigger, canton and f"{CANTON_TRIGGER} = yes") if t]
+                lines += ["\tflag_definition = {", f"\t\tcoa = {name}", f"\t\tsubject_canton = {name}",
+                          f"\t\tallow_overlord_canton = {'yes' if canton else 'no'}",
+                          f"\t\tpriority = {priority + canton}"]
+                if conditions:
+                    lines.append(f"\t\ttrigger = {{ {' '.join(conditions)} }}")
+                lines.append("\t}")
         lines.append("}")
         flag_defs.append("\n".join(lines))
 
@@ -81,6 +104,9 @@ def main():
     fd_path = config.MOD / "common" / "flag_definitions" / "aoe_flag_definitions.txt"
     fd_path.parent.mkdir(parents=True, exist_ok=True)
     fd_path.write_text("\n\n".join(flag_defs) + "\n", encoding="utf-8-sig")
+    trigger_path = config.MOD / "common" / "scripted_triggers" / "aoe_coa_triggers.txt"
+    trigger_path.parent.mkdir(parents=True, exist_ok=True)
+    trigger_path.write_text(COA_TRIGGERS, encoding="utf-8-sig")
     print(f"{len(flag_defs)} flag definitions, {len(list(emblem_dir.glob('*.tga')))} AoE flag images")
     if missing:
         print(f"AoE countries with no flag file: {' '.join(missing)}")
